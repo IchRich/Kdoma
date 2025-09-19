@@ -1,306 +1,1436 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
+
+:root {
+    --container: 1720px;
+    --gap: 44px;
+    --edge: 11px;
+    --text: #111;
+    --muted: #444;
+    --brand: #c2171a;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    font-family: Geologica, system-ui, Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--edge);
+    padding-right: var(--edge);
+}
 
 .hero {
-
-    width: 95%;
     position: relative;
     min-height: 822px;
-    background: #ddd url('../Photo/BackgroundPhoto.png') center/cover no-repeat;
-    margin: 25px auto;
-    padding-bottom: 76px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 76px;
+    background: #ddd url('../Photo/BackgroundPhoto.png') center/cover no-repeat;
 }
 
 .hero h1 {
-    margin: 80px auto;
+    margin: 0 0 80px;
     color: #fff;
-    font-family: Geologica;
-    font-size: 92px;
     font-weight: 200;
+    font-size: 92px;
+    line-height: 1.05;
     text-align: center;
-
-    text-shadow: 0 2px 8px rgba(0,0,0,.050);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, .05);
 }
 
 .hero-btn {
-    display: inline-block;
-    background: #c2171a;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--brand);
     color: #fff;
     text-decoration: none;
     padding: 14px 38px;
     border-radius: 4px;
     font-size: 18px;
-    font-family: Geologica;
     font-weight: 300;
-    letter-spacing: 0.03em;
-    box-shadow: 0 3px 16px rgba(0,0,0,.10);
-    transition: background 0.2s;
-    position: absolute;
-    left: 50%;
-    bottom: 32px;
-    transform: translateX(-50%);
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .10);
+    transition: background .18s ease, color .18s ease;
+    margin-top: auto;
 }
+
 .hero-btn:hover {
-    background-color: #666 !important;
-    color: #fff !important;
-}
-.hero-icon {
-
-
-    vertical-align: middle;
+    background: #111;
+    color: #fff;
 }
 
-@media (max-width: 900px) {
-    .hero h1 { font-size: 40px; }
-    .hero-btn { font-size: 16px; padding: 12px 24px; }
-}
-@media (max-width: 600px) {
-    .hero { min-height: 240px; padding-bottom: 60px; }
-    .hero h1 { font-size: 22px; margin-bottom: 18px; }
-}
 .cards {
-    margin: 48px auto 0;
-    height: 700px;
-    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 0;
 }
 
 .cards-row {
-    margin-left: 50px;
-    height: 650px;
     display: flex;
-    gap: 32px;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: var(--gap);
 }
 
-.card-tall {
-    flex: 0 0 26%;
-    aspect-ratio: 0.75/1;
+.card {
     position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .25s ease;
 }
 
-.card-wide {
-    flex: 1 1 46%;
-    aspect-ratio: 1.3/1;
-    position: relative;
+.card:hover {
+    transform: scale(1.03);
 }
 
-.card-col {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    flex: 0 0 24%;
-}
-
-.card-small {
-    aspect-ratio: 1.75/1;
-    position: relative;
-}
-
-.card-small-ban {
-    width: 97%;
-    height: 60%;
-    position: relative;
-}
-.card-bg {
+.card .card-bg {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
-    filter: brightness(0.68);
+    filter: brightness(.68);
 }
-.card-bg-interior{
-
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    filter: brightness(0.68);
-}
-/* Укажи свои картинки */
-.card-designers .card-bg { background-image: url('../Photo/DesignerPhoto.png'); }
-.card-interiors .card-bg-interior { background-image: url('../Photo/interiorPhoto.png'); }
-.card-companies .card-bg { background-image: url('../Photo/CompanyPhoto.png'); }
-.card-banner   .card-bg { background-image: url('/Photo/BannerPhoto.png'); }
 
 .card h2 {
     position: absolute;
-    top: 22px;
-    left: 22px;
+    top: 18px;
+    left: 18px;
+    margin: 0;
     color: #fff;
-    font-family: Geologica;
     font-size: 26px;
     font-weight: 600;
     letter-spacing: .01em;
-    margin: 0;
 }
 
 .card-arrow {
     position: absolute;
-    right: 28px;
-    bottom: 22px;
-
-
+    right: 22px;
+    bottom: 18px;
+    width: 32px;
+    height: 32px;
 }
 
-/* Адаптив */
-@media (max-width: 860px) {
-    .cards-row { flex-direction: column; gap: 24px; }
-    .card-col { flex-direction: row; gap: 24px; }
-    .card-tall, .card-wide, .card-small { aspect-ratio: unset; min-height: 240px; }
-}
-@media (max-width: 600px) {
-    .cards-row, .card-col { flex-direction: column; gap: 16px; }
-    .card-tall, .card-wide, .card-small { min-height: 160px; }
-    .card h2 { font-size: 18px; }
-    .card-arrow { font-size: 28px; }
-}
-.card {
-    width: 90%;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.card-tall {
+    flex: 0 0 389px;
+    aspect-ratio: 389 / 720;
 }
 
-/* Псевдоэлемент для затемнения */
-.card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0); /* без затемнения по умолчанию */
-    transition: background-color 0.3s ease;
-    pointer-events: none; /* чтобы не мешать кликам */
+.card-wide {
+    flex: 0 0 832px;
+    aspect-ratio: 832 / 720;
 }
 
-/* При наведении плавное затемнение и лёгкое увеличение */
-.card:hover::before,
-.card:focus-within::before {
-    background: rgba(0,0,0,0.25); /* тёмное затемнение */
+.card-col {
+    flex: 0 0 389px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
 }
 
-.card:hover,
-.card:focus-within {
-    transform: scale(1.03);
-    z-index: 2; /* чтобы была выше соседних */
+.card-small {
+    aspect-ratio: 389 / 229;
 }
 
+.card-banner {
+    aspect-ratio: 389 / 436;
+}
 
+.card-designers .card-bg {
+    background-image: url('../Photo/DesignerPhoto.png');
+}
+
+.card-interiors .card-bg {
+    background-image: url('../Photo/interiorPhoto.png');
+}
+
+.card-companies .card-bg {
+    background-image: url('../Photo/CompanyPhoto.png');
+}
+
+.card-banner .card-bg {
+    background-image: url('../Photo/BannerPhoto.png');
+}
+
+.about-design {
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
 
 .about-design h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 24px;
-    margin-top: 0;
-    letter-spacing: 0;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 16px;
 }
 
 .about-design-row {
     display: flex;
-    gap: 16px;
-    width: 105%;
+    gap: 4px;
+    align-items: stretch;
+    justify-content: flex-start;
+    cursor: pointer;
 }
+
 .about-design-card {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    background: none;
+    gap: 10px;
+    min-width: 0;
+    margin-left: 0;
 }
-sss
+
+.about-design-card.fig-1 {
+    flex: 0 0 833px;
+}
+
+.about-design-card.fig-2,
+.about-design-card.fig-3 {
+    flex: 0 0 388px;
+}
 
 .about-design-card img {
-    height: 550px;
-    object-fit: cover;
     width: 100%;
     border-radius: 8px;
-    display: block;
+    object-fit: cover;
 }
 
-.about-design-card.fig-1 { flex: 0 0 54%; } /* чуть увеличили */
-.about-design-card.fig-2,
-.about-design-card.fig-3 { flex: 0 0 23%; } /* чуть уменьшили остальные */
+.about-design-card.fig-1 img {
+    aspect-ratio: 650 / 413;
+}
+
+.about-design-card.fig-2 img,
+.about-design-card.fig-3 img {
+    aspect-ratio: 388 / 530;
+}
 
 .about-design-card figcaption {
-    margin-top: 12px;
     font-size: 16px;
     color: #242424;
-    font-family: Geologica, Arial, sans-serif;
 }
-
-
-
-.about-design {
-    margin-left: 35px;
-    max-width: 1720px;
-    width: 100%;
-    height: 750px;
-    padding: 0 12px;
-    box-sizing: border-box;
-    font-family: Geologica;
-}
-
-
-@media (max-width: 1760px) {
-    .about-design-card.fig-1 { flex: 0 0 50%; }
-    .about-design-card.fig-2,
-    .about-design-card.fig-3 { flex: 0 0 25%; }
-}
-@media (max-width: 1240px) {
-    .about-design-card.fig-1,
-    .about-design-card.fig-2,
-    .about-design-card.fig-3 { flex: 1 1 100%; }
-    .about-design-row { flex-direction: column; gap: 20px; }
-    .about-design-card img { height: 220px; }
-}
-
 
 .about-design-footer {
-    width: 107%;
-    margin-top: 32px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    margin-top: 24px;
 }
 
 .about-design-all {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    padding: 12px 117px;
-    font-size: 18px;
-    color: #111;
+    justify-content: center;
+    gap: 12px;
+    width: 389px;
+    height: 60px;
     border: 1px solid #111;
     border-radius: 3px;
+    color: #111;
     background: #fff;
     text-decoration: none;
-    font-family: Geologica, Arial, sans-serif;
-    letter-spacing: 0;
-    gap: 12px;
-    transition: background 0.18s, color 0.18s, border-color 0.18s;
-    box-shadow: none;
+    transition: all .18s ease;
 }
 
-.about-design-all:hover,
-.about-design-all:focus {
+.about-design-all:hover {
     background: #111;
     color: #fff;
-    border-color: #111;
-    outline: none;
 }
 
 .design-arrow {
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.journal-block {
+    padding-top: 64px;
+    padding-bottom: 0;
+    display: flex;
+    gap: var(--gap);
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.journal-sidebar {
+    flex: 0 0 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.journal-header h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 10px;
+}
+
+.journal-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.journal-big {
+    font-size: 120px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.journal-note {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .08em;
+}
+
+.journal-cover {
+    flex: 0 0 444px;
+}
+
+.journal-cover img {
+    width: 444px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .07);
+}
+
+.journal-content {
+    flex: 0 0 948px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-desc {
+    font-size: 30px;
+    line-height: 1.42;
+    margin: 0 0 24px;
+}
+
+.journal-btns {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: nowrap;
+    margin-top: 145px;
+}
+
+.journal-btn, .journal-btn-s {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 60px;
+    padding: 0 24px;
+    border: 1px solid #222;
+    border-radius: 3px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    transition: all .18s ease;
+    white-space: nowrap;
+}
+
+.journal-btn {
+    width: 388px;
+}
+
+.journal-btn-s {
+    width: 389px;
+}
+
+.journal-btn:hover, .journal-btn-s:hover {
+    background: #111;
+    color: #fff;
+}
+
+.events-block {
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+
+.events-block h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 18px;
+}
+
+.events-row {
+    display: flex;
+    gap: var(--gap);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    min-width: 0;
+}
+
+.event-card--small {
+    flex: 0 0 389px;
+}
+
+.event-card--wide {
+    flex: 0 0 832px;
+}
+
+.event-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+
+.event-card--small img {
+    aspect-ratio: 389 / 292;
+}
+
+.event-card--wide img {
+    aspect-ratio: 832 / 520;
+}
+
+.event-caption {
+    font-size: 16px;
+    color: #1a1a1a;
+    padding: 12px 10px 16px;
+    line-height: 1.35;
+}
+
+.events-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.events-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 389px;
+    height: 60px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    transition: all .18s ease;
+}
+
+.events-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+.about-editorial {
+    padding-top: 56px;
+    padding-bottom: 72px;
+}
+
+.about-editorial h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin: 0 0 20px;
+}
+
+.about-editorial__content {
+    background: #ededed;
+    border-radius: 6px;
+    padding: 38px;
+    display: flex;
+    gap: 80px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.about-editorial__col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-editorial__title {
+    font-size: 24px;
     font-weight: 500;
-    margin-left: 6px;
+    margin: 0;
+}
+
+.about-editorial__text {
+    font-size: 17px;
+    margin: 0;
+}
+
+.about-editorial__list {
+    margin: 8px 0 0 18px;
+    font-size: 17px;
+    list-style: disc;
+}
+
+.readmore {
+    color: #be2a21;
+    text-decoration: underline;
+}
+
+.about-editorial__btn {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 36px;
+    font-size: 17px;
+    color: #111;
+    border: 1px solid #222;
+    border-radius: 3px;
+    background: #fff;
+    text-decoration: none;
+    transition: all .18s ease;
+}
+
+.about-editorial__btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+.about-editorial__btn--red {
+    background: #a21411;
+    border-color: #a21411;
+    color: #fff;
+}
+
+.about-editorial__btn--red:hover {
+    background: #111;
+    border-color: #111;
+}
+
+@media (max-width: 430px) {
+    :root {
+        --gap: 12px;
+        --edge: 10px;
+        --container: 430px;
+    }
+
+    section {
+        padding-left: var(--edge);
+        padding-right: var(--edge);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 560px;
+        padding-top: 48px;
+        padding-bottom: 28px;
+        background-position: center top;
+    }
+    .hero h1 {
+        margin-top: 190px;
+        place-self: center;             /* по центру и по горизонтали, и по вертикали */
+        text-align: center;
+        font-size: 28px;                /* как раньше в мобиле */
+        line-height: 1.15;
+        padding: 0 12px;                /* небольшой внутренний отступ, чтобы не лип к краям */
+    }
+    .hero-btn {
+
+
+        padding: 12px 18px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+
+    /* Карточки: порядок как в SVG — сначала Интерьеры (высокая), потом Дизайнеры, Компании, затем Баннер, всё в одну колонку */
+    .cards { padding-top: 18px; }
+    .cards-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .card,
+    .card-tall,
+    .card-wide,
+    .card-small,
+    .card-banner,
+    .card-col {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .card-col { gap: 12px; }
+    /* высоты под макет */
+    .card-tall { aspect-ratio: 1 / 1.65; }          /* Интерьеры — высокая */
+    .card-small { aspect-ratio: 1 / .58; }          /* Две малые */
+    .card-banner { aspect-ratio: 1 / .92; }         /* Баннер */
+    .card h2 {
+        top: 12px;
+        left: 12px;
+        font-size: 18px;
+    }
+    .card-arrow {
+        right: 12px;
+        bottom: 12px;
+        width: 24px;
+        height: 24px;
+    }
+    /* Убираем среднюю «широкую» заглушку, если она только фон */
+    .card.card-wide { display: none; }
+
+    /* Про дизайн */
+    .about-design { padding-top: 22px; padding-bottom: 10px; }
+    .about-design h2 { font-size: 28px; margin-bottom: 12px; }
+    .about-design-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-design-card.fig-1,
+    .about-design-card.fig-2,
+    .about-design-card.fig-3 { flex: 0 0 auto; width: 100%; }
+    .about-design-card.fig-1 img { aspect-ratio: 16 / 10; }
+    .about-design-card.fig-2 img,
+    .about-design-card.fig-3 img { aspect-ratio: 16 / 20; }
+    .about-design-card figcaption { font-size: 14px; }
+    .about-design-footer { justify-content: center; margin-top: 14px; }
+    .about-design-all {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    /* Журнал: колонку превращаем в столбец и переносим «кнопки» сразу под описанием */
+    .journal-block {
+        padding-top: 26px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .journal-sidebar { order: 1; flex: none; gap: 12px; }
+    .journal-header h2 { font-size: 28px; margin: 0; }
+    .journal-big { font-size: 62px; }
+    .journal-note { font-size: 11px; }
+    .journal-cover { order: 2; flex: none; }
+    .journal-cover img { width: 100%; height: auto; }
+    .journal-content { order: 3; flex: none; }
+    .journal-desc {
+        font-size: 16px;
+        line-height: 1.35;
+        margin: 0 0 12px;
+    }
+    .journal-btns {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .journal-btn,
+    .journal-btn-s {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    /* События: одна колонка в порядке «маленькая — широкая — маленькая» */
+    .events-block { padding-top: 28px; padding-bottom: 16px; }
+    .events-block h2 { font-size: 28px; margin-bottom: 12px; }
+    .events-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .event-card { border-radius: 8px; }
+    .event-card--small,
+    .event-card--wide { flex: none; width: 100%; }
+    .event-card img { height: auto; }
+    .event-card--small img { aspect-ratio: 16 / 9; }
+    .event-card--wide img { aspect-ratio: 16 / 10; }
+    .event-caption { font-size: 14px; padding: 10px 8px 12px; }
+    .events-footer { margin-top: 12px; }
+    .events-btn {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    /* О редакции: колонки в столбец, кнопки — вверх колонки справа по макету */
+    .about-editorial { padding-top: 28px; padding-bottom: 28px; }
+    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
+    .about-editorial__content {
+        padding: 16px;
+        gap: 16px;
+        flex-direction: column;
+        border-radius: 6px;
+    }
+    .about-editorial__title { font-size: 18px; }
+    .about-editorial__text,
+    .about-editorial__list { font-size: 14px; }
+    .about-editorial__btn {
+        height: 44px;
+        padding: 0 92px;
+        font-size: 14px;
+    }
+    .about-editorial__col:last-child { gap: 10px; }
+    .readmore { font-size: 14px; }
+}
+
+
+/* Мобильное расположение «как в SVG» — 4 карточки в строгом порядке */
+@media (max-width: 430px) {
+    :root { --gap: 12px; --edge: 10px; }
+
+    .cards { padding-top: 18px; }
+    .cards-row {
+        display: flex;
+        flex-direction: column;   /* одна колонка */
+        gap: 12px;
+    }
+
+    /* Разгруппируем правую колонку, чтобы дети стали на один уровень */
+    .card-col { display: contents; }
+
+    /* НИЧЕГО не скрываем: «Интерьеры» (бывшая wide) остаётся */
+    .card-wide { display: block !important; width: 100% !important; flex: 0 0 auto !important; }
+
+    /* Точный порядок как в SVG */
+    .card-interiors { order: 1; }  /* Интерьеры — сверху, высокая */
+    .card-designers { order: 2; }  /* Дизайнеры */
+    .card-companies { order: 3; }  /* Компании */
+    .card-banner   { order: 4; }  /* Баннер — последним */
+
+    /* Единая ширина и скругление для всех карточек */
+    .card,
+    .card-tall,
+    .card-small,
+    .card-banner {
+        width: 100% !important;
+        max-width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        flex: 0 0 auto !important;
+    }
+
+    /* Соотношения сторон — как в макете */
+    .card-interiors { aspect-ratio: 1 / 1.65; } /* высокая */
+    .card-designers { aspect-ratio: 1 / .58; }  /* малая */
+    .card-companies { aspect-ratio: 1 / .58; }  /* малая */
+    .card-banner   { aspect-ratio: 1 / .92; }   /* средняя */
+
+    /* Текст и стрелки — ровно у краёв */
+    .card h2 { top: 12px; left: 12px; font-size: 18px; }
+    .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
+}
+@media (max-width: 430px) {
+    :root { --gap: 12px; --edge: 10px; }
+
+    .cards { padding-top: 18px; }
+    .cards-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  /* две равные колонки */
+        grid-auto-rows: auto;
+        gap: 12px;
+    }
+
+    /* «Разгруппировать» правую колонку из HTML */
+    .card-col { display: contents; }
+
+    /* Ничего не скрываем */
+    .card-wide { display: block !important; }
+
+    /* Базовые размеры */
+    .card, .card-tall, .card-small, .card-banner {
+        width: 100% !important;
+        max-width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Верхний блок — на две колонки */
+    .card-interiors {
+        grid-column: 1 / -1;
+        aspect-ratio: 16 / 11;
+    }
+
+    /* Левая высокая колонка — «Дизайнеры» растягивается на две строки */
+    .card-designers {
+        grid-column: 1 / 2;   /* левая колонка */
+        grid-row: span 2;     /* занимает две строки по высоте */
+        aspect-ratio: 3 / 4;  /* вертикальная пропорция; высота доберётся за счёт span 2 */
+    }
+
+    /* Правая колонка: сверху «Компании», ниже «Баннер» */
+    .card-companies {
+        grid-column: 2 / 3;   /* правая колонка */
+        grid-row: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    .card-banner {
+        grid-column: 2 / 3;   /* правая колонка */
+        grid-row: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+    /* Заголовки/стрелки */
+    .card h2 { top: 12px; left: 12px; font-size: 18px; }
+    .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
+}
+@media (max-width: 430px) {
+    .about-design { padding-top: 22px; padding-bottom: 14px; }
+    .about-design h2 { font-size: 28px; margin-bottom: 12px; }
+
+    /* Переключаем ряд на grid из двух колонок */
+    .about-design-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /* Сбрасываем фиксированные flex-основы */
+    .about-design-card { flex: none; width: 100%; }
+
+    /* Верхний ряд: fig-2 слева, fig-1 справа */
+    .about-design-card.fig-2 { order: 1; grid-column: 1 / 2; }
+    .about-design-card.fig-1 { order: 2; grid-column: 2 / 3; }
+
+    /* Нижняя широкая: fig-3 на две колонки */
+    .about-design-card.fig-3 { order: 3; grid-column: 1 / -1; }
+
+    /* Пропорции изображений под мобильный макет */
+    .about-design-card.fig-2 img,
+    .about-design-card.fig-1 img { aspect-ratio: 1 / 1; }   /* квадраты в верхнем ряду */
+    .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }  /* широкая нижняя */
+
+    /* Подписи компактнее */
+    .about-design-card figcaption { font-size: 14px; margin-top: 6px; }
+
+    /* Кнопка — на всю ширину под сеткой */
+    .about-design-footer { margin-top: 14px; justify-content: center; }
+    .about-design-all { width: 100%; height: 48px; font-size: 14px; }
+}
+@media (max-width: 430px) {
+    .journal-block {
+        display: grid;                 /* используем grid для верхнего ряда */
+        grid-template-columns: 1fr 140px; /* слева текстовая колонка, справа узкая под обложку */
+        grid-auto-rows: auto;
+        gap: 12px 14px;
+        padding-top: 22px;
+    }
+
+    /* Левая колонка с цифрами (как на скрине) */
+    .journal-sidebar {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;    /* вертикальный стек: заголовок + два блока чисел */
+        gap: 10px;
+        flex: none;
+    }
+    .journal-header h2 { font-size: 28px; margin: 0; }
+    .journal-numbers { display: grid; gap: 16px; }
+    .journal-big { font-size: 64px; line-height: 1; }
+    .journal-note { font-size: 12px; }
+
+    /* Обложка справа в первом ряду */
+    .journal-cover {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: start;
+        justify-self: end;
+        width: 140px;                  /* фиксируем ширину как на макете */
+    }
+    .journal-cover img {
+        width: 140px;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+
+    /* Длинный абзац — во второй строке на всю ширину */
+    .journal-content {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 0;
+    }
+    .journal-desc {
+        font-size: 15px;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    /* Кнопки — стэк на всю ширину, одинаковая высота */
+    .journal-btns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0;
+    }
+    .journal-btn,
+    .journal-btn-s {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+        padding: 0 14px;
+    }
+}
+@media (max-width: 430px) {
+    .events-block { padding-top: 24px; padding-bottom: 16px; }
+    .events-block h2 { font-size: 28px; margin-bottom: 12px; }
+
+    /* Сетка 2 колонки для верхнего ряда */
+    .events-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /* Малые — один ряд слева и справа */
+    .event-card--small {
+        grid-column: auto;       /* займут 1 ячейку каждая */
+    }
+
+    /* Широкая карточка — на всю ширину ниже */
+    .event-card--wide {
+        grid-column: 1 / -1;     /* растянуть на две колонки */
+        order: 3;
+    }
+
+    /* Пропорции изображений под макет */
+    .event-card--small img { aspect-ratio: 1 / 1; height: auto; }
+    .event-card--wide img  { aspect-ratio: 16 / 9; height: auto; }
+
+    /* Подписи компактнее */
+    .event-caption { font-size: 14px; line-height: 1.35; padding: 8px 6px 10px; }
+
+    /* Кнопка — на всю ширину ниже сетки */
+    .events-footer { margin-top: 12px; }
+    .events-btn { width: 100%; height: 48px; font-size: 14px; border-radius: 4px; }
+}
+@media (max-width: 430px) {
+    .about-editorial { padding-top: 22px; padding-bottom: 22px; }
+    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
+
+    .about-editorial__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 16px;
+        background: #e9e9e9;        /* слегка темнее для контраста на мобиле */
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,.06);
+    }
+
+    /* Общие тексты */
+    .about-editorial__title { font-size: 18px; font-weight: 600; }
+    .about-editorial__text { font-size: 14px; line-height: 1.4; }
+    .about-editorial__list { font-size: 14px; margin: 6px 0 0 18px; }
+    .readmore { font-size: 14px; }
+
+    /* Разделители между блоками */
+    .about-editorial__col {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .about-editorial__col + .about-editorial__col {
+        padding-top: 16px;
+        border-top: 1px solid rgba(0,0,0,.18);
+    }
+
+    /* Кнопки — на всю ширину, одинаковая высота */
+    .about-editorial__btn {
+        align-self: stretch;
+        height: 48px;
+        padding: 0 14px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    .about-editorial__btn--red {
+        background: #c2171a;
+        border-color: #c2171a;
+        color: #fff;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root { --edge: 16px; --gap: 20px; }
+
+    section { padding-left: var(--edge); padding-right: var(--edge); }
+
+    /* HERO: текст центр, кнопка снизу по центру */
+    .hero {
+        min-height: 680px;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        align-items: center;
+        background-position: center;
+    }
+    .hero h1 { margin: 0; font-size: 44px; line-height: 1.1; text-align: center; }
+    .hero-btn { place-self: end center; height: 50px; padding: 0 22px; font-size: 16px; margin-bottom: 26px; }
+
+
+    .cards { padding-top: 28px; }
+    .cards-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap);
+    }
+    .card-col { display: contents; }
+    .card-wide { display: block; }           /* не скрываем */
+    .card-interiors { grid-column: 1 / 2; grid-row: 1 / 3; aspect-ratio: 3 / 4; } /* высокая слева */
+    .card-companies { grid-column: 2 / 3; grid-row: 1 / 2; aspect-ratio: 16 / 10; }
+    .card-banner   { grid-column: 2 / 3; grid-row: 2 / 3; aspect-ratio: 16 / 10; }
+    .card-designers{ grid-column: 1 / -1; grid-row: 3 / 4; aspect-ratio: 16 / 7; } /* низом на всю ширину */
+    .card h2 { font-size: 22px; top: 14px; left: 14px; }
+    .card-arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
+
+    /* ПРО ДИЗАЙН:
+       верх: два превью в ряд; низ: широкая */
+    .about-design { padding-top: 24px; }
+    .about-design h2 { font-size: 36px; }
+    .about-design-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    .about-design-card.fig-2 { order: 1; } /* левое верхнее */
+    .about-design-card.fig-1 { order: 2; } /* правое верхнее */
+    .about-design-card.fig-3 { order: 3; grid-column: 1 / -1; }
+    .about-design-card img { border-radius: 8px; }
+    .about-design-card.fig-2 img,
+    .about-design-card.fig-1 img { aspect-ratio: 4 / 3; }
+    .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }
+    .about-design-card figcaption { font-size: 15px; }
+    .about-design-footer { margin-top: 16px; }
+    .about-design-all { width: 320px; height: 50px; font-size: 15px; }
+
+    /* ЖУРНАЛ:
+       ┌── цифры ┬ обложка ┬ текст/кнопки ┐ */
+    .journal-block {
+        display: grid;
+        grid-template-columns: 180px 200px 1fr;
+        gap: 16px 20px;
+        align-items: start;
+        padding-top: 36px;
+    }
+    .journal-sidebar { grid-column: 1 / 2; gap: 12px; }
+    .journal-header h2 { font-size: 36px; margin: 0 0 6px; }
+    .journal-big { font-size: 72px; }
+    .journal-note { font-size: 12px; }
+    .journal-cover { grid-column: 2 / 3; }
+    .journal-cover img { width: 200px; border-radius: 8px; }
+    .journal-content { grid-column: 3 / 4; display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .journal-desc { font-size: 18px; line-height: 1.4; margin: 0; }
+    .journal-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+    .journal-btn, .journal-btn-s { height: 50px; width: auto; font-size: 14px; }
+
+    /* СОБЫТИЯ: три карточки, широкая по центру на 2 колонки */
+    .events-block { padding-top: 32px; }
+    .events-block h2 { font-size: 36px; margin-bottom: 14px; }
+    .events-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+    /* порядок: малое слева, wide на весь ряд, малое справа под ним */
+    .event-card--small:nth-of-type(1) { grid-column: 1 / 2; }
+    .event-card--wide { grid-column: 1 / -1; }
+    .event-card--small:nth-of-type(3) { grid-column: 2 / 3; }
+    .event-card--small img { aspect-ratio: 4 / 3; height: auto; }
+    .event-card--wide img  { aspect-ratio: 16 / 9; height: auto; }
+    .event-caption { font-size: 15px; padding: 10px 8px 12px; }
+    .events-footer { margin-top: 14px; }
+    .events-btn { width: 320px; height: 50px; font-size: 15px; }
+
+    /* О РЕДАКЦИИ: две колонки */
+    .about-editorial { padding-top: 32px; padding-bottom: 40px; }
+    .about-editorial h2 { font-size: 36px; }
+    .about-editorial__content {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 20px;
+        padding: 22px;
+        border-radius: 8px;
+    }
+    /* Левая колонка — описание + список */
+    .about-editorial__col:nth-child(1) { grid-column: 1 / 2; }
+    .about-editorial__col:nth-child(2) { grid-column: 1 / 2; }
+    /* Правая колонка — два блока с кнопками один под другим */
+    .about-editorial__col:nth-child(3) { grid-column: 2 / 3; }
+    .about-editorial__col:nth-child(4) { grid-column: 2 / 3; }
+    .about-editorial__title { font-size: 18px; }
+    .about-editorial__text, .about-editorial__list { font-size: 15px; }
+    .about-editorial__btn { height: 48px; font-size: 14px; align-self: start; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cards { padding-top: 28px; }
+
+    .cards-row {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr 1fr; /* левая узкая, центр широкая, правая узкая */
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    /* Разгруппировать правую колонку, чтобы её дети стали grid-элементами */
+    .card-col { display: contents; }
+
+    /* Ничего не скрываем */
+    .card-wide { display: block !important; }
+
+    /* Позиции */
+    .card-designers {         /* левая высокая */
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;        /* на две строки по высоте */
+        aspect-ratio: 3 / 4;
+    }
+    .card-interiors {         /* центральная широкая */
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;        /* на всю высоту как на макете */
+        aspect-ratio: 16 / 10;
+    }
+    .card-companies {         /* правая верхняя */
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        aspect-ratio: 4 / 3;
+    }
+    .card-banner {            /* правая нижняя */
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        aspect-ratio: 4 / 3;
+    }
+
+    /* Типографика карточек и иконка */
+    .card h2 { font-size: 22px; top: 14px; left: 14px; }
+    .card-arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Гарантированный зазор между всеми карточками */
+    .cards-row {
+        gap: 20px !important;        /* межкарточный отступ */
+        padding: 0;                  /* на всякий случай убираем внутренние, если мешают */
+    }
+
+    /* Снимаем фиксированные flex-basis/width от десктопных классов */
+    .card,
+    .card-tall,
+    .card-wide,
+    .card-small,
+    .card-banner,
+    .card-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 auto !important;   /* grid управляет размещением */
+    }
+
+    /* Для безопасности убираем высоту по пикселям, оставляем aspect-ratio */
+    .card img,
+    .event-card img {
+        height: auto !important;
+    }
+
+    /* Небольшие внутренние скругления, чтобы визуально не «сливались» */
+    .card { border-radius: 8px; overflow: hidden; }
+
+    /* Если у .cards-row остался display:flex откуда‑то, насильно включаем grid */
+    .cards-row { display: grid !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* 1) Сетка: три равные колонки */
+    .about-design-row {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+        align-items: start !important;
+    }
+
+    /* 2) Сброс жёстких десктопных размеров */
+    .about-design-card {
+        flex: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        order: 0 !important;
+    }
+
+    /* 3) Порядок слева→направо: Анна(fig-1), Юлия(fig-2), Успех(fig-3) — у тебя именно так в HTML */
+    .about-design-card.fig-1 { order: 1 !important; grid-column: 1 / 2 !important; }
+    .about-design-card.fig-2 { order: 2 !important; grid-column: 2 / 3 !important; }
+    .about-design-card.fig-3 { order: 3 !important; grid-column: 3 / 4 !important; }
+
+    /* 4) Единая высота превью и отключение старых пропорций */
+    .about-design-card img {
+        width: 100% !important;
+        height: 365px !important;           /* можно 200–220px */
+        aspect-ratio: auto !important;      /* критично: убрать 650/413 и 388/530 */
+        object-fit: cover !important;
+        object-position: center !important;
+        border-radius: 8px !important;
+        display: block !important;
+    }
+
+    /* 5) Подписи и кнопка */
+    .about-design-card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
+    .about-design-footer { margin-top: 18px !important; display: flex !important; justify-content: center !important; }
+    .about-design-all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
 }
 
 
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Сетка: три колонки */
+    .about-design .about-design-row {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+        align-items: start !important;
+        justify-items: stretch !important;
+    }
+
+    /* Сброс десктопных flex-баз */
+    .about-design .about-design-card {
+        flex: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        order: 0 !important;
+    }
+
+    /* Порядок по твоему HTML: fig-1 Анна, fig-2 Юлия, fig-3 Успех */
+    .about-design .about-design-card.fig-1 { order: 1 !important; grid-column: 1 / 2 !important; }
+    .about-design .about-design-card.fig-2 { order: 2 !important; grid-column: 2 / 3 !important; }
+    .about-design .about-design-card.fig-3 { order: 3 !important; grid-column: 3 / 4 !important; }
+
+    /* Единая высота превью и отключение старых пропорций */
+    .about-design .about-design-card img {
+        display: block !important;
+        width: 100% !important;
+        height: 365px !important;           /* при необходимости 200–220px */
+        aspect-ratio: auto !important;      /* снимаем 650/413 и 388/530 */
+        object-fit: cover !important;
+        object-position: center !important;
+        border-radius: 8px !important;
+    }
+
+    /* Подписи и кнопка */
+    .about-design .about-design-card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
+    .about-design .about-design-footer { display: flex !important; justify-content: center !important; margin-top: 18px !important; }
+    .about-design .about-design-all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
+}
+/* === TABLET JOURNAL — FINAL OVERRIDE (768–1024px) === */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header .journal-block {
+        display: grid !important;
+        grid-template-columns: 180px 220px 1fr !important; /* цифры • обложка • текст */
+        gap: 16px 20px !important;
+        align-items: start !important;
+        padding-top: 32px !important;
+    }
+
+    /* Левая колонка (цифры) */
+    header .journal-block .journal-sidebar {
+        grid-column: 1 / 2 !important;
+        grid-row: 1 / 2 !important;
+        display: grid !important;
+        gap: 14px !important;
+    }
+    header .journal-block .journal-header h2 { font-size: 36px !important; margin: 0 0 6px !important; }
+    header .journal-block .journal-big { font-size: 72px !important; line-height: 1 !important; }
+    header .journal-block .journal-note { font-size: 12px !important; }
+
+    /* Обложка по центру */
+    header .journal-block .journal-cover {
+        grid-column: 2 / 3 !important;
+        grid-row: 1 / 2 !important;
+        align-self: start !important;
+        justify-self: start !important;
+    }
+    header .journal-block .journal-cover img {
+        width: 220px !important;
+        height: auto !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08) !important;
+    }
+
+    /* Текст справа */
+    header .journal-block .journal-content {
+        grid-column: 3 / 4 !important;
+        grid-row: 1 / 2 !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin: 0 !important;
+    }
+    header .journal-block .journal-desc {
+        font-size: 16px !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+    }
+
+    /* Кнопки — одна строка, 50/50 */
+    header .journal-block .journal-btns {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 14px !important;
+        margin: 0 !important;
+    }
+    header .journal-block .journal-btn,
+    header .journal-block .journal-btn-s {
+        width: 100% !important;
+        height: 48px !important;
+        font-size: 14px !important;
+        padding: 0 14px !important;
+    }
+}
+
+
+/* TABLET 768–1024px — «События»: 3 в ряд, равная высота, кнопка по центру */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .events-block { padding-top: 32px !important; padding-bottom: 20px !important; }
+    .events-block h2 { font-size: 36px !important; margin-bottom: 14px !important; }
+
+    /* Сетка: три равные колонки (перебиваем прежние 2) */
+    .events-row {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+        align-items: start !important;
+    }
+
+    /* Все карточки — «малые» по сетке, без растягивания на всю ширину */
+    .event-card { width: 100% !important; min-width: 0 !important; }
+    .event-card--small,
+    .event-card--wide { grid-column: auto !important; }
+
+    /* Ровная высота превью ~220px для всех трёх */
+    .event-card img {
+        width: 100% !important;
+        height: 365px !important;            /* выстави 200–240 по макету */
+        aspect-ratio: auto !important;       /* выключаем десктопные пропорции */
+        object-fit: cover !important;
+        object-position: center !important;
+        border-radius: 8px !important;
+        display: block !important;
+    }
+
+    .event-caption { font-size: 15px !important; line-height: 1.35 !important; padding: 10px 6px 12px !important; }
+
+    /* Кнопка — по центру под сеткой */
+    .events-footer { margin-top: 16px !important; display: flex !important; justify-content: center !important; }
+    .events-btn { width: 340px !important; height: 50px !important; font-size: 15px !important; border-radius: 4px !important; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-editorial { padding-top: 32px !important; padding-bottom: 40px !important; }
+    .about-editorial h2 { font-size: 36px !important; margin-bottom: 14px !important; }
+
+    /* Серый контейнер в две строки, четыре области 2x2 */
+    .about-editorial__content {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;   /* левая/правая */
+        grid-template-rows: auto auto !important;    /* верх/низ */
+        gap: 16px 24px !important;
+        padding: 22px !important;
+        background: #e9e9e9 !important;
+        border-radius: 8px !important;
+        position: relative;
+    }
+
+    /* Тонкий разделитель между верхом и низом */
+    .about-editorial__content::after {
+        content: "" !important;
+        grid-column: 1 / -1 !important;
+        height: 1px !important;
+        background: rgba(0,0,0,.18) !important;
+        position: absolute !important;
+        left: 22px !important;
+        right: 22px !important;
+        top: calc(50% - 8px) !important; /* визуально как на скрине */
+    }
+
+    /* Верхний ряд: описание слева, список справа */
+    .about-editorial__col:nth-child(1) { grid-column: 1 / 2 !important; grid-row: 1 / 2 !important; }
+    .about-editorial__col:nth-child(2) { grid-column: 2 / 3 !important; grid-row: 1 / 2 !important; }
+
+    /* Нижний ряд: две карточки с кнопками */
+    .about-editorial__col:nth-child(3) { grid-column: 1 / 2 !important; grid-row: 2 / 3 !important; }
+    .about-editorial__col:nth-child(4) { grid-column: 2 / 3 !important; grid-row: 2 / 3 !important; }
+
+    /* Типографика и интервалы */
+    .about-editorial__title { font-size: 20px !important; font-weight: 600 !important; }
+    .about-editorial__text, .about-editorial__list { font-size: 15px !important; line-height: 1.4 !important; }
+    .about-editorial__list { margin: 6px 0 0 18px !important; }
+    .readmore { font-size: 14px !important; }
+
+    /* Кнопки одинаковой высоты, прижаты к низу своей колонки */
+    .about-editorial__btn {
+        margin-top: auto !important;
+        height: 48px !important;
+        padding: 0 18px !important;
+        font-size: 14px !important;
+        align-self: start !important;
+    }
+    .about-editorial__btn--red { background: #c2171a !important; border-color: #c2171a !important; color: #fff !important; }
+}
+
+@media (max-width: 1024px) {
+    /* Убедимся, что блок контента — грид со стэком: [текст] над [кнопками] */
+    .journal-content {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: auto !important;
+        gap: 14px !important;
+    }
+
+    .journal-desc { grid-column: 1 / -1 !important; grid-row: 1 !important; margin: 0 !important; }
+
+    /* Кнопки сразу под текстом отдельной строкой */
+    .journal-btns {
+        grid-column: 1 / -1 !important;
+        grid-row: 2 !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;   /* столбец */
+        gap: 10px !important;
+        margin: 0 !important;
+    }
+
+    .journal-btn,
+    .journal-btn-s {
+        width: 100% !important;
+        height: 48px !important;
+        font-size: 14px !important;
+        padding: 0 14px !important;
+    }
+}
+
+/* Десктоп > 1024px — оставляем твой текущий горизонтальный вариант */
+@media (min-width: 1025px) {
+    .journal-btns {
+        display: flex !important;
+        gap: var(--gap) !important;
+        margin-top: 145px !important;   /* как в твоём десктопе */
+    }
+    .journal-btn { width: 388px !important; height: 60px !important; }
+    .journal-btn-s { width: 389px !important; height: 60px !important; }
+}

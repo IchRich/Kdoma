@@ -8,63 +8,186 @@
 </head>
 <body>
 <header>
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" aria-label="Подписка на телеграм канал">
         <h1>Подпишись на наш<br>телеграм канал</h1>
         <a href="#" class="hero-btn">
-            подписаться <img src="../Photo/TelegramLogo.png" class="hero-icon" alt="">
+            подписаться
+            <img src="../Photo/TelegramLogo.png" class="hero-icon" alt="telegram" loading="lazy">
         </a>
     </section>
-    <section class="cards">
+
+    <!-- Карточки -->
+    <section class="cards" aria-label="Разделы сайта">
         <div class="cards-row">
             <article class="card card-tall card-designers">
-                <div class="card-bg"></div>
+                <div class="card-bg" aria-hidden="true"></div>
                 <h2>ДИЗАЙНЕРЫ</h2>
-                <img src="../Photo/Pointer.png" alt="" class="card-arrow">
+                <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
             </article>
 
             <article class="card card-wide card-interiors">
-                <div class="card-bg-interior"></div>
+                <div class="card-bg" aria-hidden="true"></div>
                 <h2>ИНТЕРЬЕРЫ</h2>
-                <img src="../Photo/Pointer.png" alt="" class="card-arrow">
+                <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
             </article>
 
             <div class="card-col">
                 <article class="card card-small card-companies">
-                    <div class="card-bg"></div>
+                    <div class="card-bg" aria-hidden="true"></div>
                     <h2>КОМПАНИИ</h2>
-                    <img src="../Photo/Pointer.png" alt="" class="card-arrow">
+                    <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
                 </article>
-                <article class="card card-small-ban card-banner">
-                    <div class="card-bg"></div>
+
+                <article class="card card-small card-banner">
+                    <div class="card-bg" aria-hidden="true"></div>
                     <h2>(БАННЕР)</h2>
-                    <img src="../Photo/Pointer.png" alt="" class="card-arrow">
+                    <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
                 </article>
             </div>
-        </div>s
+        </div>
     </section>
-    <section class="about-design">
-        <h2>Про дизайн</h2>
+
+    <!-- Про дизайн -->
+    <section class="about-design" aria-labelledby="about-design-title">
+        <h2 id="about-design-title">Про дизайн</h2>
         <div class="about-design-row">
             <figure class="about-design-card fig-1">
-                <img src="../Photo/AnyaPhoto.png" alt="Интерьер 1">
+                <img src="../Photo/AnyaPhoto.png" alt="Интерьер 1" loading="lazy">
                 <figcaption>Мысли вслух: Анна Кичигина</figcaption>
             </figure>
             <figure class="about-design-card fig-2">
-                <img src="../Photo/YuliaPhoto.png" alt="Интерьер 2">
+                <img src="../Photo/YuliaPhoto.png" alt="Интерьер 2" loading="lazy">
                 <figcaption>Мысли вслух: Юлия Березуцкая</figcaption>
             </figure>
             <figure class="about-design-card fig-3">
-                <img src="../Photo/SuccessPhoto.png" alt="Интерьер 3">
+                <img src="../Photo/SuccessPhoto.png" alt="Интерьер 3" loading="lazy">
                 <figcaption>В рамках успеха</figcaption>
             </figure>
         </div>
         <div class="about-design-footer">
             <a href="#" class="about-design-all">
-                СМОТРЕТЬ ВСЕ <span class="design-arrow">&#8599;</span>
+                СМОТРЕТЬ ВСЕ <span class="design-arrow">↗</span>
             </a>
         </div>
     </section>
-</header>
 
+    <!-- Журнал -->
+    <section class="journal-block" aria-labelledby="journal-title">
+        <div class="journal-sidebar">
+            <div class="journal-header">
+                <h2 id="journal-title">Журнал</h2>
+            </div>
+            <div class="journal-numbers">
+                <div>
+                    <span class="journal-big">233</span>
+                    <div class="journal-note">КОЛИЧЕСТВО НОМЕРОВ</div>
+                </div>
+                <div>
+                    <span class="journal-big">20</span>
+                    <div class="journal-note">ЛЕТ ИЗДАНИЮ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="journal-cover">
+            <img src="../Photo/KDomaLogo.png" alt="Обложка журнала" loading="lazy">
+        </div>
+
+        <div class="journal-content">
+            <div class="journal-desc">
+                В Калининграде сформировалось понятие «локальный дизайн». Не могу сказать, что этого не было раньше, но сейчас можно уже точно описать, что такое балтийский стиль. И не только на уровне ощущений, а классифицировать в цветах, фактурах, формах. И за это стоит сказать спасибо туристам. Именно для того, чтобы овладеть их вниманием и благосклонностью, калининградские дизайнеры стали активно привносить в интерьеры.
+            </div>
+
+            <div class="journal-btns">
+                <a href="#" class="journal-btn">
+                    <span class="icon">💾</span> СКАЧАТЬ АКТУАЛЬНЫЙ ЖУРНАЛ
+                </a>
+                <a href="#" class="journal-btn-s journal-btn--border">
+                    СМОТРЕТЬ АРХИВ <span class="arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- События -->
+    <section class="events-block" aria-labelledby="events-title">
+        <h2 id="events-title">События</h2>
+        <div class="events-row">
+            <article class="event-card event-card--small">
+                <img src="../Photo/SofiDeMarkoPhoto.png" alt="Событие 1" loading="lazy">
+                <div class="event-caption">
+                    Открытие салона домашнего текстиля Sofi de marko,<br>
+                    25 апреля 2025 г.
+                </div>
+            </article>
+
+            <article class="event-card event-card--wide">
+                <img src="../Photo/MebelGradPhoto.png" alt="Событие 2" loading="lazy">
+                <div class="event-caption">
+                    Открытие нового салона «Мебельград» и семинар<br>
+                    «Квартира для посуточной аренды».<br>
+                    23 апреля 2025 г.
+                </div>
+            </article>
+
+            <article class="event-card event-card--small">
+                <img src="../Photo/WipartPhoto.png" alt="Событие 3" loading="lazy">
+                <div class="event-caption">
+                    Занятие школы Ступени<br>
+                    Корпусная мебель, салон Випарт<br>
+                    11 марта 2025 г
+                </div>
+            </article>
+        </div>
+
+        <div class="events-footer">
+            <a href="#" class="events-btn">
+                СМОТРЕТЬ ВСЕ <span class="events-arrow">↗</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- О редакции -->
+    <section class="about-editorial" aria-labelledby="about-editorial-title">
+        <h2 id="about-editorial-title">О редакции</h2>
+        <div class="about-editorial__content">
+            <div class="about-editorial__col">
+                <div class="about-editorial__title">Калининградские дома</div>
+                <div class="about-editorial__text">
+                    <p>KDoma.ru — ваш дом начинается здесь. Находите проверенных специалистов, вдохновляйтесь реализованными проектами и получайте актуальные советы по созданию идеального пространства.</p>
+                </div>
+            </div>
+
+            <div class="about-editorial__col">
+                <ul class="about-editorial__list">
+                    <li>Каталог топовых архитекторов и дизайнеров</li>
+                    <li>Реальные кейсы и тренды интерьерных решений <a href="#" class="readmore">Читать далее</a></li>
+                </ul>
+            </div>
+
+            <div class="about-editorial__col">
+                <div class="about-editorial__title">Желаете разместить рекламу на нашем сайте?</div>
+                <div class="about-editorial__text">
+                    Свяжитесь с нашим менеджером по рекламе: <br>
+                    <a href="mailto:project@kdoma.ru">project@kdoma.ru</a>
+                </div>
+                <a href="#" class="about-editorial__btn">
+                    АКТУАЛЬНЫЙ ПРАЙС <span class="about-editorial__arrow">↗</span>
+                </a>
+            </div>
+
+            <div class="about-editorial__col">
+                <div class="about-editorial__title">Хотите опубликовать реализованный проект?</div>
+                <div class="about-editorial__text">
+                    Заполните заявку перейдя по данной ссылке
+                </div>
+                <a href="#" class="about-editorial__btn about-editorial__btn--red">
+                    РАЗМЕСТИТЬ ИНТЕРЬЕР <span class="about-editorial__arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</header>
 </body>
 </html>
