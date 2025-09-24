@@ -56,9 +56,10 @@ section {
     color: #fff;
     font-weight: 200;
     font-size: 120px;
-    line-height: 1.05;
+
     text-align: center;
     text-shadow: 0 2px 8px rgba(0,0,0,.05);
+    line-height: 75%;
 }
 
 .hero-btn {
@@ -69,7 +70,7 @@ section {
     color: #fff;
     text-decoration: none;
     padding: 14px 38px;
-    border-radius: 4px;
+
     font-size: 18px;
     font-weight: 300;
     box-shadow: 0 3px 16px rgba(0,0,0,.10);
@@ -156,7 +157,7 @@ section {
 }
 
 .card-banner {
-    aspect-ratio: 389/436;
+    aspect-ratio: 389/447;
 }
 
 .card-designers .card-bg {
@@ -176,7 +177,7 @@ section {
 }
 
 .about-design {
-    padding-top: 36px;
+    padding-top: 100px;
     padding-bottom: 24px;
 }
 
@@ -245,18 +246,25 @@ section {
     width: 389px;
     height: 60px;
     border: 1px solid #111;
-    border-radius: 3px;
+    font-weight: 300;
     color: #111;
     background: #fff;
     text-decoration: none;
     transition: all .18s ease;
+    font-size: 20px;
 }
 
 .about-design-all:hover {
     background: #111;
     color: #fff;
 }
-
+.about-design-all:hover img{
+    filter: invert(1)
+    brightness(1.15)
+    contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
 .design-arrow {
     color: black;
     font-size: 20px;
@@ -272,6 +280,7 @@ section {
 }
 
 .journal-sidebar {
+    width: 101%;
     margin-right: 102px;
     flex: 0 0 240px;
     display: flex;
@@ -280,7 +289,7 @@ section {
 }
 
 .journal-header {
-    margin-top: -113px;
+    margin-top: -97px;
 }
 
 .journal-header h2 {
@@ -290,7 +299,7 @@ section {
 }
 
 .journal-numbers {
-    width: 120%;
+
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -326,8 +335,11 @@ section {
 
 .journal-desc {
     font-size: 30px;
-    line-height: 1.42;
+    font-weight: 300;
     margin: 0 0 24px;
+    font-family: Geologica;
+    line-height: 110.00000000000001%;
+    color: black;
 }
 
 .journal-btns {
@@ -335,6 +347,14 @@ section {
     gap: var(--gap);
     flex-wrap: nowrap;
     margin-top: 145px;
+}
+.journal-btn:hover img,
+.journal-btn-s:hover img {
+    filter: invert(1)
+    brightness(1.15)
+    contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
 }
 
 .journal-btn,
@@ -346,16 +366,20 @@ section {
     height: 60px;
     padding: 0 24px;
     border: 1px solid #222;
-    border-radius: 3px;
+    font-weight: 300;
     background: #fff;
     color: #111;
     text-decoration: none;
     transition: all .18s ease;
     white-space: nowrap;
+    font-size: 20px;
+    line-height: 110%;
 }
 
 .journal-btn {
     width: 388px;
+    text-decoration: underline;
+    text-underline-offset: 3px ;
 }
 
 .journal-btn-s {
@@ -440,17 +464,25 @@ section {
     width: 389px;
     height: 60px;
     border: 1.5px solid #000;
-    border-radius: 5px;
-    background: #fff;
+    font-weight: 300;
+
     color: #111;
     text-decoration: none;
     transition: all .18s ease;
+    font-size: 20px;
 }
-
+.events-btn:hover img {
+    filter: invert(1)
+    brightness(1.15)
+    contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
 .events-btn:hover {
     background: #111;
     color: #fff;
 }
+
 
 .about-editorial {
     padding-top: 56px;
@@ -465,7 +497,7 @@ section {
 
 .about-editorial__content {
     background: #ededed;
-    border-radius: 6px;
+
     padding: 38px;
     display: flex;
     gap: 80px;
@@ -516,15 +548,21 @@ section {
     align-items: center;
     gap: 12px;
     padding: 15px 36px;
-    font-size: 17px;
+    font-weight: 300;
     color: #111;
     border: 1px solid #222;
-    border-radius: 3px;
-    background: #fff;
+
+    font-size: 20px;
     text-decoration: none;
     transition: all .18s ease;
 }
-
+.about-editorial__btn:hover img {
+    filter: invert(1)
+    brightness(1.15)
+    contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
 .about-editorial__btn:hover {
     background: #111;
     color: #fff;
@@ -536,11 +574,11 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    padding: 15px 36px;
-    font-size: 16px;
+    padding: 15px 34px;
+    font-weight: 300;
     color: #fff;
     border: 1px solid #a21411;
-    border-radius: 3px;
+    font-size: 20px;
     background: #a21411;
     text-decoration: none;
     transition: all .18s ease;
@@ -572,15 +610,16 @@ section {
     .hero h1 {
         margin-top: 190px;
         text-align: center;
-        font-size: 28px;
-        line-height: 1.15;
+        font-size: 40px;
+        line-height: 85%;
+
         padding: 0 12px;
     }
 
     .hero-btn {
         padding: 12px 18px;
         font-size: 14px;
-        border-radius: 3px;
+
     }
 
     .cards {
@@ -682,7 +721,7 @@ section {
         width: 100%;
         height: 48px;
         font-size: 14px;
-        border-radius: 4px;
+
     }
 
     .journal-block {
@@ -804,7 +843,7 @@ section {
         width: 100%;
         height: 48px;
         font-size: 14px;
-        border-radius: 4px;
+
     }
 
     .about-editorial {
@@ -821,7 +860,7 @@ section {
         padding: 16px;
         gap: 16px;
         flex-direction: column;
-        border-radius: 6px;
+
         background: #e9e9e9;
         border: 1px solid rgba(0,0,0,.06);
     }
@@ -840,7 +879,7 @@ section {
         padding: 0 92px;
         font-size: 14px;
         align-self: center;
-        border-radius: 4px;
+
     }
 
     .about-editorial__col:last-child {
@@ -1134,7 +1173,7 @@ section {
         gap: 16px 24px;
         padding: 22px;
         background: #e9e9e9;
-        border-radius: 8px;
+
     }
 
     .about-editorial__col:nth-child(1) {
@@ -1213,19 +1252,21 @@ section {
         background-position: center top;
     }
     .hero h1 {
+        width: 101%;
         margin-top: 190px;
         place-self: center;             /* по центру и по горизонтали, и по вертикали */
         text-align: center;
-        font-size: 28px;                /* как раньше в мобиле */
-        line-height: 1.15;
+        font-size: 40px;                /* как раньше в мобиле */
+        line-height: 85%;
+        font-weight: 300;
         padding: 0 12px;                /* небольшой внутренний отступ, чтобы не лип к краям */
     }
     .hero-btn {
 
 
-        padding: 12px 18px;
-        font-size: 14px;
-        border-radius: 3px;
+        padding: 5px 90px;
+        font-size: 16px;
+
     }
 
     /* Карточки: порядок как в SVG — сначала Интерьеры (высокая), потом Дизайнеры, Компании, затем Баннер, всё в одну колонку */
@@ -1281,7 +1322,7 @@ section {
         width: 100%;
         height: 48px;
         font-size: 14px;
-        border-radius: 4px;
+
     }
 
     /* Журнал: колонку превращаем в столбец и переносим «кнопки» сразу под описанием */
@@ -1335,7 +1376,7 @@ section {
         width: 100%;
         height: 48px;
         font-size: 14px;
-        border-radius: 4px;
+
     }
 
     /* О редакции: колонки в столбец, кнопки — вверх колонки справа по макету */
@@ -1345,7 +1386,7 @@ section {
         padding: 16px;
         gap: 16px;
         flex-direction: column;
-        border-radius: 6px;
+
     }
     .about-editorial__title { font-size: 18px; }
     .about-editorial__text,
@@ -1483,7 +1524,7 @@ section {
 
     /* Пропорции изображений под мобильный макет */
     .about-design-card.fig-2 img,
-    .about-design-card.fig-1 img { aspect-ratio: 1 / 1; }   /* квадраты в верхнем ряду */
+    .about-design-card.fig-1 img { aspect-ratio: 1 / 1; height: 224px; }   /* квадраты в верхнем ряду */
     .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }  /* широкая нижняя */
 
     /* Подписи компактнее */
@@ -1587,7 +1628,7 @@ section {
     }
 
     /* Пропорции изображений под макет */
-    .event-card--small img { aspect-ratio: 1 / 1; height: auto; }
+    .event-card--small img { aspect-ratio: 1 / 1; height: 224px; }
     .event-card--wide img  { aspect-ratio: 16 / 9; height: auto; }
 
     /* Подписи компактнее */
@@ -1595,7 +1636,7 @@ section {
 
     /* Кнопка — на всю ширину ниже сетки */
     .events-footer { margin-top: 12px; }
-    .events-btn { width: 100%; height: 48px; font-size: 14px; border-radius: 4px; }
+    .events-btn { width: 100%; height: 48px; font-size: 14px; }
 }
 @media (min-width: 360px) and (max-width: 430px) {
     .about-editorial { padding-top: 40px; padding-bottom: 22px; }
@@ -1634,7 +1675,7 @@ section {
         height: 48px;
         padding: 0 93px;
         font-size: 14px;
-        border-radius: 4px;
+
     }
     .about-editorial__btn--red {
         background: #c2171a;
@@ -2019,7 +2060,7 @@ section {
 
     /* Кнопка — по центру под сеткой */
     .events-footer { margin-top: 16px !important; display: flex !important; justify-content: end !important; }
-    .events-btn { width: 340px !important; height: 50px !important; font-size: 15px !important; border-radius: 4px !important; }
+    .events-btn { width: 340px !important; height: 50px !important; font-size: 15px !important; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .about-editorial { padding-top: 32px !important; padding-bottom: 40px !important; width: 110% !important; }
@@ -2033,7 +2074,7 @@ section {
         gap: 16px 24px !important;
         padding: 22px !important;
         background: #e9e9e9 !important;
-        border-radius: 8px !important;
+
         position: relative;
     }
 
@@ -2106,16 +2147,7 @@ section {
     }
 }
 
-/* Десктоп > 1024px — оставляем твой текущий горизонтальный вариант */
-@media (min-width: 1025px) {
-    .journal-btns {
-        display: flex !important;
-        gap: var(--gap) !important;
-        margin-top: 145px !important;   /* как в твоём десктопе */
-    }
-    .journal-btn { width: 388px !important; height: 60px !important; }
-    .journal-btn-s { width: 389px !important; height: 60px !important; }
-}
+
 
 
 /* ===== TABLET 768–1024: ЖУРНАЛ — ЖЁСТКИЙ ОВЕРРАЙД ===== */
@@ -2202,7 +2234,7 @@ section {
         width: 100% !important;
         padding: 0 14px !important;
         font-size: 14px !important;
-        border-radius: 4px !important;
+
         white-space: nowrap !important;
     }
 
@@ -2248,7 +2280,7 @@ section {
         padding: 0 14px !important;
         font-size: 14px !important;
         border: 1px solid #111 !important;
-        border-radius: 4px !important;
+
         white-space: nowrap !important;
     }
 
@@ -2301,7 +2333,7 @@ section {
         justify-content:center !important;
         padding:0 14px !important;
         font-size:14px !important;
-        border-radius:4px !important;
+
         white-space:nowrap !important;
         box-sizing:border-box !important;
     }
@@ -2326,7 +2358,7 @@ section {
         grid-auto-rows:auto !important;
         grid-template-areas: "side cover text" !important;
         gap: 16px 44px !important;          /* твой десктопный --gap */
-        padding-top: 36px !important;
+
     }
 
     .journal-sidebar{ grid-area: side !important; }
@@ -2369,12 +2401,12 @@ section {
         margin-right: 103px !important;
         width: 457px !important;
         height: 60px !important;
-        font-size: 15px !important;
+
     }
     .journal-actions .journal-btn-s{
         width: 458px !important;
         height: 60px !important;
-        font-size: 15px !important;
+
     }
 
     /* Типографика слева */
@@ -2484,4 +2516,107 @@ section {
         white-space:nowrap !important;
     }
 }
+@media (min-width: 431px) and (max-width: 767px) {
+    :root { --gap: 12px; --edge: 10px; }
+
+    section { padding-inline: var(--edge); }
+
+    .hero {
+        width: 95%;
+        min-height: 560px;
+        padding-top: 48px;
+        padding-bottom: 28px;
+        background-position: center top;
+    }
+    .hero h1 {
+        margin-top: 190px;
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.15;
+        padding: 0 12px;
+    }
+    .hero-btn { padding: 12px 18px; font-size: 14px; border-radius: 3px; }
+
+    .cards { padding-top: 18px; }
+    .cards-row { display: flex; flex-direction: column; gap: 12px; }
+    .card, .card-tall, .card-wide, .card-small, .card-banner, .card-col {
+        flex: 0 0 auto; width: 100%; max-width: 100%; overflow: hidden;
+    }
+    .card-col { gap: 12px; }
+
+    .card-interiors { aspect-ratio: 1/1.65; }
+    .card-designers  { aspect-ratio: 1/.58; }
+    .card-companies  { aspect-ratio: 1/.58; }
+    .card-banner     { aspect-ratio: 1/.92; }
+
+    .card h2 { top: 12px; left: 12px; font-size: 18px; }
+    .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
+
+    .about-design { padding-top: 22px; padding-bottom: 10px; }
+    .about-design h2 { font-size: 28px; margin-bottom: 12px; }
+    .about-design-row { flex-direction: column; gap: 10px; }
+    .about-design-card.fig-1,
+    .about-design-card.fig-2,
+    .about-design-card.fig-3 { flex: 0 0 auto; width: 100%; }
+    .about-design-card.fig-1 img { aspect-ratio: 16/10; }
+    .about-design-card.fig-2 img,
+    .about-design-card.fig-3 img { aspect-ratio: 16/20; }
+    .about-design-card figcaption { font-size: 14px; }
+    .about-design-footer { justify-content: center; margin-top: 14px; }
+    .about-design-all { width: 100%; height: 48px; font-size: 14px; border-radius: 4px; }
+
+    .journal-block {
+        margin-top: 48px;
+        padding-top: 26px;
+        display: grid;
+        grid-template-columns: minmax(0,1fr) 140px;
+        gap: 12px;
+    }
+    .journal-sidebar { order: 1; display: grid; gap: 10px; }
+    .journal-header h2 { font-size: 28px; margin: 0; }
+    .journal-big { font-size: 60px; }
+    .journal-note { font-size: 12px; }
+    .journal-cover {
+        order: 2; grid-column: 2/3;
+        align-self: start; justify-self: end; width: 140px;
+    }
+    .journal-cover img {
+        width: 140px; height: auto; margin-left: -6px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+    .journal-content { order: 3; grid-column: 1/-1; display: grid; gap: 12px; margin: 0; }
+    .journal-desc { font-size: 15px; line-height: 1.35; margin: 0; }
+    .journal-btns { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0; width: 100%; }
+    .journal-btn, .journal-btn-s { width: 100%; height: 48px; font-size: 14px; padding: 0 14px; }
+
+    .events-block { padding-top: 28px; padding-bottom: 16px; }
+    .events-block h2 { font-size: 28px; margin-bottom: 12px; }
+    .events-row { display: flex; flex-direction: column; gap: 12px; }
+    .event-card--small, .event-card--wide { flex: none; width: 100%; }
+    .event-card img { height: auto; }
+    .event-card--small img { aspect-ratio: 16/9; }
+    .event-card--wide  img { aspect-ratio: 16/10; }
+    .event-caption { font-size: 14px; padding: 10px 8px 12px; }
+    .events-footer { margin-top: 12px; }
+    .events-btn { width: 100%; height: 48px; font-size: 14px; border-radius: 4px; }
+
+    .about-editorial { padding-top: 28px; padding-bottom: 28px; }
+    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
+    .about-editorial__content {
+        padding: 16px; gap: 16px; flex-direction: column;
+        border-radius: 6px; background: #e9e9e9; border: 1px solid rgba(0,0,0,.06);
+    }
+    .about-editorial__title { font-size: 18px; }
+    .about-editorial__text, .about-editorial__list { font-size: 14px; }
+    .about-editorial__btn {
+        height: 48px; padding: 0 92px; font-size: 14px; align-self: center; border-radius: 4px;
+    }
+    .about-editorial__col:last-child { gap: 10px; }
+    .readmore { font-size: 14px; display: flex; justify-content: center; }
+    .about-editorial__btn--red {
+        background: #c2171a; border-color: #c2171a; color: #fff;
+        padding: 15px 84px; font-size: 14px; align-self: center;
+    }
+}
+
 
