@@ -37,6 +37,7 @@ section {
 }
 
 .hero {
+    margin-top: 60px;
     position: relative;
     min-height: 822px;
     display: flex;
@@ -52,7 +53,7 @@ section {
     margin: 0 0 80px;
     color: #fff;
     font-weight: 200;
-    font-size: 92px;
+    font-size: 120px;
     line-height: 1.05;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0, 0, 0, .05);
@@ -80,7 +81,7 @@ section {
 }
 
 .cards {
-    padding-top: 48px;
+    padding-top: 100px;
     padding-bottom: 0;
 }
 
@@ -94,7 +95,7 @@ section {
 
 .card {
     position: relative;
-    border-radius: 8px;
+
     overflow: hidden;
     cursor: pointer;
     transition: transform .25s ease;
@@ -118,9 +119,10 @@ section {
     left: 18px;
     margin: 0;
     color: #fff;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 500;
     letter-spacing: .01em;
+    font-family: Geologica;
 }
 
 .card-arrow {
@@ -210,7 +212,7 @@ section {
 
 .about-design-card img {
     width: 100%;
-    border-radius: 8px;
+
     object-fit: cover;
 }
 
@@ -224,8 +226,9 @@ section {
 }
 
 .about-design-card figcaption {
-    font-size: 16px;
-    color: #242424;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
 }
 
 .about-design-footer {
@@ -255,11 +258,12 @@ section {
 }
 
 .design-arrow {
+    color: black;
     font-size: 20px;
 }
 
 .journal-block {
-    padding-top: 64px;
+    padding-top: 100px;
     padding-bottom: 0;
     display: flex;
     gap: var(--gap);
@@ -268,12 +272,15 @@ section {
 }
 
 .journal-sidebar {
+    margin-right: 102px;
     flex: 0 0 240px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-
+.journal-header{
+    margin-top: -113px;
+}
 .journal-header h2 {
     font-size: 50px;
     font-weight: 200;
@@ -281,6 +288,7 @@ section {
 }
 
 .journal-numbers {
+    width: 120%;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -293,8 +301,8 @@ section {
 }
 
 .journal-note {
-    font-size: 12px;
-    color: var(--muted);
+    font-size: 20px;
+    color: black;
     letter-spacing: .08em;
 }
 
@@ -304,13 +312,13 @@ section {
 
 .journal-cover img {
     width: 444px;
-    height: auto;
-    border-radius: 8px;
+    height: 613px;
+
     box-shadow: 0 2px 14px rgba(0, 0, 0, .07);
 }
 
 .journal-content {
-    flex: 0 0 948px;
+
     min-width: 0;
     display: flex;
     flex-direction: column;
@@ -381,7 +389,7 @@ section {
 .event-card {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+
     overflow: hidden;
     background: #fff;
     min-width: 0;
@@ -410,9 +418,10 @@ section {
 }
 
 .event-caption {
-    font-size: 16px;
-    color: #1a1a1a;
-    padding: 12px 10px 16px;
+    font-size: 24px;
+    color: black;
+    font-weight: 300;
+    padding: 12px 0px 16px;
     line-height: 1.35;
 }
 
@@ -481,14 +490,18 @@ section {
     font-size: 17px;
     margin: 0;
 }
-
+.mail{
+    color: black;
+    text-decoration: none;
+}
 .about-editorial__list {
-    margin: 8px 0 0 18px;
+    margin: 55px 0 0 18px;
     font-size: 17px;
     list-style: disc;
 }
 
 .readmore {
+    margin-left: -20px;
     color: #be2a21;
     text-decoration: underline;
 }
@@ -515,6 +528,21 @@ section {
 }
 
 .about-editorial__btn--red {
+    margin-top: auto;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 36px;
+    font-size: 16px;
+    color: #111;
+    border: 1px solid #222;
+    border-radius: 3px;
+    background: #fff;
+    text-decoration: none;
+    transition: all .18s ease;
+}
+.about-editorial__btn--red {
     background: #a21411;
     border-color: #a21411;
     color: #fff;
@@ -539,6 +567,7 @@ section {
 
     /* Hero */
     .hero {
+        width: 95%;
         min-height: 560px;
         padding-top: 48px;
         padding-bottom: 28px;
@@ -618,6 +647,7 @@ section {
 
     /* Журнал: колонку превращаем в столбец и переносим «кнопки» сразу под описанием */
     .journal-block {
+        margin-top: 48px;
         padding-top: 26px;
         flex-direction: column;
         gap: 16px;
@@ -641,7 +671,7 @@ section {
     }
     .journal-btn,
     .journal-btn-s {
-        width: 100%;
+        width: 150%;
         height: 48px;
         font-size: 14px;
         padding: 0 16px;
@@ -654,7 +684,7 @@ section {
         flex-direction: column;
         gap: 12px;
     }
-    .event-card { border-radius: 8px; }
+
     .event-card--small,
     .event-card--wide { flex: none; width: 100%; }
     .event-card img { height: auto; }
@@ -692,7 +722,7 @@ section {
 
 
 /* Мобильное расположение «как в SVG» — 4 карточки в строгом порядке */
-@media (max-width: 430px) {
+@media (min-width: 360px) and (max-width: 430px) {
     :root { --gap: 12px; --edge: 10px; }
 
     .cards { padding-top: 18px; }
@@ -721,7 +751,7 @@ section {
     .card-banner {
         width: 100% !important;
         max-width: 100%;
-        border-radius: 8px;
+
         overflow: hidden;
         flex: 0 0 auto !important;
     }
@@ -736,7 +766,7 @@ section {
     .card h2 { top: 12px; left: 12px; font-size: 18px; }
     .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
 }
-@media (max-width: 430px) {
+@media (min-width: 360px) and (max-width: 430px) {
     :root { --gap: 12px; --edge: 10px; }
 
     .cards { padding-top: 18px; }
@@ -757,7 +787,7 @@ section {
     .card, .card-tall, .card-small, .card-banner {
         width: 100% !important;
         max-width: 100%;
-        border-radius: 8px;
+
         overflow: hidden;
     }
 
@@ -791,8 +821,8 @@ section {
     .card h2 { top: 12px; left: 12px; font-size: 18px; }
     .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
 }
-@media (max-width: 430px) {
-    .about-design { padding-top: 22px; padding-bottom: 14px; }
+@media (min-width: 360px) and (max-width: 430px) {
+    .about-design { padding-top: 50px; padding-bottom: 14px; }
     .about-design h2 { font-size: 28px; margin-bottom: 12px; }
 
     /* Переключаем ряд на grid из двух колонок */
@@ -824,12 +854,12 @@ section {
     .about-design-footer { margin-top: 14px; justify-content: center; }
     .about-design-all { width: 100%; height: 48px; font-size: 14px; }
 }
-@media (max-width: 430px) {
+@media (min-width: 360px) and (max-width: 430px) {
     .journal-block {
         display: grid;                 /* используем grid для верхнего ряда */
         grid-template-columns: 1fr 140px; /* слева текстовая колонка, справа узкая под обложку */
         grid-auto-rows: auto;
-        gap: 12px 14px;
+        gap: 12px 0;
         padding-top: 22px;
     }
 
@@ -843,10 +873,13 @@ section {
         flex: none;
     }
     .journal-header h2 { font-size: 28px; margin: 0; }
-    .journal-numbers { display: grid; gap: 16px; }
-    .journal-big { font-size: 64px; line-height: 1; }
+    .journal-numbers { display: grid; margin-top: -5px }
+    .journal-big { font-size: 60px; line-height: 1; }
     .journal-note { font-size: 12px; }
-
+    .icon{
+        width: 24px;
+        height: 24px;
+    }
     /* Обложка справа в первом ряду */
     .journal-cover {
         grid-column: 2 / 3;
@@ -857,8 +890,8 @@ section {
     }
     .journal-cover img {
         width: 140px;
-        height: auto;
-        border-radius: 6px;
+        height: 196px;
+        margin-left: -6px;
         box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
 
@@ -886,14 +919,14 @@ section {
     }
     .journal-btn,
     .journal-btn-s {
-        width: 100%;
+        width: 150%;
         height: 48px;
         font-size: 14px;
         padding: 0 14px;
     }
 }
-@media (max-width: 430px) {
-    .events-block { padding-top: 24px; padding-bottom: 16px; }
+@media (min-width: 360px) and (max-width: 430px) {
+    .events-block { padding-top: 50px; padding-bottom: 16px; }
     .events-block h2 { font-size: 28px; margin-bottom: 12px; }
 
     /* Сетка 2 колонки для верхнего ряда */
@@ -925,8 +958,8 @@ section {
     .events-footer { margin-top: 12px; }
     .events-btn { width: 100%; height: 48px; font-size: 14px; border-radius: 4px; }
 }
-@media (max-width: 430px) {
-    .about-editorial { padding-top: 22px; padding-bottom: 22px; }
+@media (min-width: 360px) and (max-width: 430px) {
+    .about-editorial { padding-top: 40px; padding-bottom: 22px; }
     .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
 
     .about-editorial__content {
@@ -935,15 +968,15 @@ section {
         gap: 18px;
         padding: 16px;
         background: #e9e9e9;        /* слегка темнее для контраста на мобиле */
-        border-radius: 8px;
+
         border: 1px solid rgba(0,0,0,.06);
     }
 
     /* Общие тексты */
     .about-editorial__title { font-size: 18px; font-weight: 600; }
     .about-editorial__text { font-size: 14px; line-height: 1.4; }
-    .about-editorial__list { font-size: 14px; margin: 6px 0 0 18px; }
-    .readmore { font-size: 14px; }
+    .about-editorial__list { font-size: 14px; margin: 0 0 0 -20px; }
+    .readmore { font-size: 14px; display: flex; justify-content: center; }
 
     /* Разделители между блоками */
     .about-editorial__col {
@@ -958,9 +991,9 @@ section {
 
     /* Кнопки — на всю ширину, одинаковая высота */
     .about-editorial__btn {
-        align-self: stretch;
+        align-self: center;
         height: 48px;
-        padding: 0 14px;
+        padding: 0 93px;
         font-size: 14px;
         border-radius: 4px;
     }
@@ -968,6 +1001,9 @@ section {
         background: #c2171a;
         border-color: #c2171a;
         color: #fff;
+        padding: 15px 84px;
+        font-size: 14px !important;
+        align-self: center;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -977,17 +1013,19 @@ section {
 
     /* HERO: текст центр, кнопка снизу по центру */
     .hero {
+        margin-left: 17px;
+        width: 106%;
         min-height: 680px;
-        display: grid;
+
         grid-template-rows: 1fr auto;
         align-items: center;
         background-position: center;
     }
-    .hero h1 { margin: 0; font-size: 44px; line-height: 1.1; text-align: center; }
-    .hero-btn { place-self: end center; height: 50px; padding: 0 22px; font-size: 16px; margin-bottom: 26px; }
+    .hero h1 { margin: 100px; font-size: 70px; line-height: 1.1; text-align: center; }
+    .hero-btn { height: 50px; padding: 0 122px; font-size: 16px; margin-bottom: -55px; }
 
 
-    .cards { padding-top: 28px; }
+    .cards { padding-top: 28px; width: 110% }
     .cards-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1004,7 +1042,7 @@ section {
 
     /* ПРО ДИЗАЙН:
        верх: два превью в ряд; низ: широкая */
-    .about-design { padding-top: 24px; }
+    .about-design { padding-top: 80px; width: 110% }
     .about-design h2 { font-size: 36px; }
     .about-design-row {
         display: grid;
@@ -1014,7 +1052,7 @@ section {
     .about-design-card.fig-2 { order: 1; } /* левое верхнее */
     .about-design-card.fig-1 { order: 2; } /* правое верхнее */
     .about-design-card.fig-3 { order: 3; grid-column: 1 / -1; }
-    .about-design-card img { border-radius: 8px; }
+    .about-design-card img {  }
     .about-design-card.fig-2 img,
     .about-design-card.fig-1 img { aspect-ratio: 4 / 3; }
     .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }
@@ -1025,25 +1063,27 @@ section {
     /* ЖУРНАЛ:
        ┌── цифры ┬ обложка ┬ текст/кнопки ┐ */
     .journal-block {
+        margin-top: 40px;
         display: grid;
         grid-template-columns: 180px 200px 1fr;
         gap: 16px 20px;
         align-items: start;
         padding-top: 36px;
     }
+
     .journal-sidebar { grid-column: 1 / 2; gap: 12px; }
     .journal-header h2 { font-size: 36px; margin: 0 0 6px; }
     .journal-big { font-size: 72px; }
     .journal-note { font-size: 12px; }
     .journal-cover { grid-column: 2 / 3; }
-    .journal-cover img { width: 200px; border-radius: 8px; }
+    .journal-cover img { width: 200px;  }
     .journal-content { grid-column: 3 / 4; display: grid; grid-template-columns: 1fr; gap: 14px; }
     .journal-desc { font-size: 18px; line-height: 1.4; margin: 0; }
     .journal-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
     .journal-btn, .journal-btn-s { height: 50px; width: auto; font-size: 14px; }
 
     /* СОБЫТИЯ: три карточки, широкая по центру на 2 колонки */
-    .events-block { padding-top: 32px; }
+    .events-block { padding-top: 32px; width: 110% }
     .events-block h2 { font-size: 36px; margin-bottom: 14px; }
     .events-row {
         display: grid;
@@ -1061,14 +1101,14 @@ section {
     .events-btn { width: 320px; height: 50px; font-size: 15px; }
 
     /* О РЕДАКЦИИ: две колонки */
-    .about-editorial { padding-top: 32px; padding-bottom: 40px; }
+    .about-editorial { padding-top: 32px; padding-bottom: 40px; width: 110% }
     .about-editorial h2 { font-size: 36px; }
     .about-editorial__content {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
         gap: 20px;
         padding: 22px;
-        border-radius: 8px;
+
     }
     /* Левая колонка — описание + список */
     .about-editorial__col:nth-child(1) { grid-column: 1 / 2; }
@@ -1082,7 +1122,7 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .cards { padding-top: 28px; }
+    .cards { padding-top: 80px; }
 
     .cards-row {
         display: grid;
@@ -1149,7 +1189,7 @@ section {
     }
 
     /* Небольшие внутренние скругления, чтобы визуально не «сливались» */
-    .card { border-radius: 8px; overflow: hidden; }
+    .card { overflow: hidden; }
 
     /* Если у .cards-row остался display:flex откуда‑то, насильно включаем grid */
     .cards-row { display: grid !important; }
@@ -1185,7 +1225,7 @@ section {
         aspect-ratio: auto !important;      /* критично: убрать 650/413 и 388/530 */
         object-fit: cover !important;
         object-position: center !important;
-        border-radius: 8px !important;
+
         display: block !important;
     }
 
@@ -1193,6 +1233,7 @@ section {
     .about-design-card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
     .about-design-footer { margin-top: 18px !important; display: flex !important; justify-content: center !important; }
     .about-design-all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
+
 }
 
 
@@ -1231,12 +1272,12 @@ section {
         aspect-ratio: auto !important;      /* снимаем 650/413 и 388/530 */
         object-fit: cover !important;
         object-position: center !important;
-        border-radius: 8px !important;
+
     }
 
     /* Подписи и кнопка */
     .about-design .about-design-card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
-    .about-design .about-design-footer { display: flex !important; justify-content: center !important; margin-top: 18px !important; }
+    .about-design .about-design-footer { display: flex !important; justify-content: end !important; margin-top: 18px !important; }
     .about-design .about-design-all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
 }
 /* === TABLET JOURNAL — FINAL OVERRIDE (768–1024px) === */
@@ -1246,7 +1287,7 @@ section {
         grid-template-columns: 180px 220px 1fr !important; /* цифры • обложка • текст */
         gap: 16px 20px !important;
         align-items: start !important;
-        padding-top: 32px !important;
+        padding-top: 80px !important;
     }
 
     /* Левая колонка (цифры) */
@@ -1270,7 +1311,7 @@ section {
     header .journal-block .journal-cover img {
         width: 220px !important;
         height: auto !important;
-        border-radius: 8px !important;
+
         box-shadow: 0 2px 10px rgba(0,0,0,.08) !important;
     }
 
@@ -1308,7 +1349,7 @@ section {
 
 /* TABLET 768–1024px — «События»: 3 в ряд, равная высота, кнопка по центру */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .events-block { padding-top: 32px !important; padding-bottom: 20px !important; }
+    .events-block { padding-top: 80px !important; padding-bottom: 20px !important; }
     .events-block h2 { font-size: 36px !important; margin-bottom: 14px !important; }
 
     /* Сетка: три равные колонки (перебиваем прежние 2) */
@@ -1331,18 +1372,18 @@ section {
         aspect-ratio: auto !important;       /* выключаем десктопные пропорции */
         object-fit: cover !important;
         object-position: center !important;
-        border-radius: 8px !important;
+
         display: block !important;
     }
 
     .event-caption { font-size: 15px !important; line-height: 1.35 !important; padding: 10px 6px 12px !important; }
 
     /* Кнопка — по центру под сеткой */
-    .events-footer { margin-top: 16px !important; display: flex !important; justify-content: center !important; }
+    .events-footer { margin-top: 16px !important; display: flex !important; justify-content: end !important; }
     .events-btn { width: 340px !important; height: 50px !important; font-size: 15px !important; border-radius: 4px !important; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .about-editorial { padding-top: 32px !important; padding-bottom: 40px !important; }
+    .about-editorial { padding-top: 32px !important; padding-bottom: 40px !important; width: 110% !important; }
     .about-editorial h2 { font-size: 36px !important; margin-bottom: 14px !important; }
 
     /* Серый контейнер в две строки, четыре области 2x2 */
@@ -1414,10 +1455,12 @@ section {
         gap: 10px !important;
         margin: 0 !important;
     }
-
+    .journal-header{
+        margin-top: -28px ;
+    }
     .journal-btn,
     .journal-btn-s {
-        width: 100% !important;
+        width: 150% !important;
         height: 48px !important;
         font-size: 14px !important;
         padding: 0 14px !important;
@@ -1434,3 +1477,323 @@ section {
     .journal-btn { width: 388px !important; height: 60px !important; }
     .journal-btn-s { width: 389px !important; height: 60px !important; }
 }
+
+
+/* ===== TABLET 768–1024: ЖУРНАЛ — ЖЁСТКИЙ ОВЕРРАЙД ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* 1) Секция-журнал: только grid с 3 колонками */
+    header .journal-block{
+        width: 108% !important;
+        display: grid !important;
+        grid-template-columns: 180px 220px 1fr !important; /* цифры • обложка • текст */
+        gap: 16px 20px !important;
+        align-items: start !important;
+        padding-top: 80px !important;
+        padding-left: 12px !important;
+        padding-right: 0 !important;
+        margin: 0 auto !important;
+
+    }
+
+    /* 2) Левая колонка: заголовок + метрики в столбик */
+    header .journal-sidebar{
+        grid-column: 1 / 2 !important;
+        grid-row: 1 !important;
+        display: grid !important;
+        gap: 14px !important;
+        margin: 0 !important;
+        width: auto !important;
+        min-width: 0 !important;
+    }
+    header .journal-header h2{
+        font-size: 36px !important;
+        margin: 0 0 6px !important;
+        line-height: 1.1 !important;
+        font-weight: 200 !important;
+    }
+    header .journal-numbers{ display: grid !important; gap: 14px !important; margin-top: -20px !important;}
+    header .journal-big{ font-size: 72px !important; line-height: 1 !important; }
+    header .journal-note{ font-size: 12px !important; letter-spacing: .02em !important; }
+
+    /* 3) Обложка по центру, строго 220px шириной */
+    header .journal-cover{
+        grid-column: 2 / 3 !important;
+        grid-row: 1 !important;
+        align-self: start !important;
+        justify-self: start !important;
+        margin: 0 !important;
+        width: auto !important;
+    }
+    header .journal-cover img{
+        width: 220px !important;
+        height: auto !important;
+        display: block !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,.08) !important;
+    }
+
+    /* 4) Текст справа в столбик: абзац + блок кнопок */
+    header .journal-content{
+        grid-column: 3 / 4 !important;
+        grid-row: 1 !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin: 0 !important;
+        min-width: 0 !important;
+    }
+    header .journal-desc{
+        font-size: 16px !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+    }
+
+    /* 5) Кнопки — одна строка 50/50 */
+    header .journal-btns{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 14px !important;
+        margin: 0 !important;
+    }
+    header .journal-btn,
+    header .journal-btn-s{
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 48px !important;
+        width: 100% !important;
+        padding: 0 14px !important;
+        font-size: 14px !important;
+        border-radius: 4px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 6) Сброс конфликтов с десктопом и мобильной версией */
+    header .journal-header{ margin-top: -60px !important; }
+    header .journal-btns .icon,
+    header .journal-btns .arrow{ max-height: 18px !important; }
+
+    /* На всякий случай убираем любые flex/width из старых стилей */
+    header .journal-block > *{
+        flex: none !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+}
+/* TABLET 768–1024: кнопки «Журнала» ровно как на макете */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Правая колонка — текст + кнопки */
+    header .journal-content{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;                 /* отступ между абзацем и блоком кнопок */
+    }
+
+    /* Блок кнопок — строго 2 равные колонки в одну строку */
+    header .journal-btns{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;  /* 50 / 50 */
+        gap: 20px !important;                        /* как на макете между кнопками */
+        justify-items: stretch !important;           /* растянуть на всю ширину колонки */
+        align-items: stretch !important;
+        margin: 0 !important;
+    }
+
+    /* Сами кнопки заполняют свою ячейку, одинаковая высота */
+    header .journal-btn,
+    header .journal-btn-s{
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 50px !important;                     /* как на макете */
+        padding: 0 14px !important;
+        font-size: 14px !important;
+        border: 1px solid #111 !important;
+        border-radius: 4px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Иконки не раздувают высоту и не смещают текст */
+    header .journal-btn .icon{ width: 18px !important; height: 18px !important; margin-right: 10px !important; }
+    header .journal-btn-s .arrow{ width: 18px !important; height: 18px !important; margin-left: 10px !important; }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .journal-block{
+        display:grid !important;
+        grid-template-columns:180px 220px minmax(420px,1fr) !important;
+        grid-template-rows:auto auto !important;
+        grid-template-areas:
+      "side cover text"
+      "buttons buttons buttons" !important;
+        gap:16px 20px !important;
+        align-items:start !important;
+        padding-top:80px !important;
+    }
+
+    .journal-sidebar{ grid-area: side !important; }
+    .journal-cover{   grid-area: cover !important; }
+    .journal-cover img{ width:220px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
+
+    .journal-content{
+        grid-area: text !important;
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:16px !important;
+        margin:0 !important;
+        min-width:0 !important;
+    }
+    .journal-desc{ font-size:16px !important; line-height:1.45 !important; margin:0 !important; }
+
+    /* Кнопки вынесены в отдельный контейнер и растянуты на всю ширину */
+    .journal-actions{ grid-area: buttons !important; }
+    .journal-actions .journal-btns{
+        display:grid !important;
+        grid-template-columns:1fr 1fr !important;
+        gap:20px !important;
+        margin:6px 0 0 0 !important;
+        align-items:stretch !important;
+    }
+    .journal-actions .journal-btn,
+    .journal-actions .journal-btn-s{
+        height:50px !important;
+        width:100% !important;
+        display:inline-flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+        padding:0 14px !important;
+        font-size:14px !important;
+        border-radius:4px !important;
+        white-space:nowrap !important;
+        box-sizing:border-box !important;
+    }
+
+    /* Типографика слева */
+    .journal-header h2{ font-size:36px !important; margin:0 0 6px !important; }
+    .journal-big{ font-size:72px !important; line-height:1 !important; }
+    .journal-note{ font-size:12px !important; }
+}
+
+/* === DESKTOP ≥1025px: вернуть исходную раскладку как на дизайне (скрин 2) === */
+@media (min-width:1025px){
+    .hero {
+        width: 160%;
+    }
+
+
+    /* Секция: одна строка, три колонки без нижней полосы */
+    .journal-block{
+        display:grid !important;
+        grid-template-columns: 180px 388px 1fr !important; /* цифры • обложка • текст+кнопки */
+        grid-auto-rows:auto !important;
+        grid-template-areas: "side cover text" !important;
+        gap: 16px 44px !important;          /* твой десктопный --gap */
+        padding-top: 36px !important;
+    }
+
+    .journal-sidebar{ grid-area: side !important; }
+    .journal-cover{   grid-area: cover !important; }
+    .journal-cover img{
+        width: 388px !important;            /* как в макете для десктопа */
+        height: auto !important;
+        box-shadow: none !important;
+    }
+
+    /* Правая колонка: текст + кнопки под ним в одну строку */
+    .journal-content{
+        width: 100%;
+        grid-area: text !important;
+        display:grid !important;
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: auto !important;
+        gap: 14px !important;
+        margin: 0 !important;
+        min-width: 0 !important;
+        align-content: start !important;
+
+    }
+    .journal-desc{
+        font-size: 30px !important;
+        line-height: 1.45 !important;
+        margin: 0 !important;
+    }
+
+    /* Перемещаем вынесенный блок с кнопками внутрь правой колонки визуально */
+    .journal-actions{
+        grid-area: text !important;          /* тот же столбец, ниже текста */
+    }
+    .journal-actions .journal-btns{
+        display:flex !important;
+        gap: var(--gap, 44px) !important;
+        margin-top: 438px !important;
+    }
+    .journal-actions .journal-btn{
+        margin-right: 103px !important;
+        width: 457px !important;
+        height: 60px !important;
+        font-size: 15px !important;
+    }
+    .journal-actions .journal-btn-s{
+        width: 458px !important;
+        height: 60px !important;
+        font-size: 15px !important;
+    }
+
+    /* Типографика слева */
+    .journal-header h2{ font-size: 42px !important; margin: 0 0 10px !important; }
+    .journal-big{ font-size: 96px !important; line-height: 1 !important; }
+    .journal-note{ font-size: 13px !important; }
+}
+/* MOBILE 360–430: фикс переполнения и резиновая сетка */
+@media (min-width:360px) and (max-width:430px){
+    .journal-block{
+        display:grid !important;
+        grid-template-columns: minmax(0,1fr) 140px !important; /* левая — тянется, правая — фикс */
+        grid-auto-rows:auto !important;
+        gap:12px 12px !important;
+        padding-top:22px !important;
+        overflow:hidden !important;         /* страховка от вытекания */
+    }
+
+    .journal-sidebar{ grid-column:1 / 2 !important; grid-row:1 !important; }
+    .journal-header h2{ font-size:28px !important; margin:0 !important; }
+    .journal-numbers{ display:grid !important; margin-top:-5px !important; }
+    .journal-big{ font-size:60px !important; line-height:1 !important; }
+    .journal-note{ font-size:12px !important; }
+
+    .journal-cover{ grid-column:2 / 3 !important; grid-row:1 !important; width:140px !important; }
+    .journal-cover img{ width:140px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
+
+    .journal-content{
+        grid-column:1 / -1 !important;
+        grid-row:2 !important;
+        display:grid !important;
+        grid-template-columns:minmax(0,1fr) !important;
+        gap:12px !important;
+        margin:0 !important;
+        min-width:0 !important;             /* текст не расширяет контейнер */
+    }
+    .journal-desc{ font-size:15px !important; line-height:1.35 !important; margin:0 !important; }
+
+    .journal-btns{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:10px !important;
+        margin:0 !important;
+        width:100% !important;
+    }
+    .journal-btn,
+    .journal-btn-s{
+        width:85% !important;              /* было 150% — убирает переполнение */
+        height:48px !important;
+        font-size:14px !important;
+        padding:0 81px !important;
+        box-sizing:border-box !important;
+    }
+}
+
+/* Сброс глобальных «широких» правил, влияющих на мобилку */
+@media (max-width:430px){
+    .journal-cover img{ max-width:140px !important; }
+    .journal-block, .journal-content, .journal-btns{ max-width:100% !important; }
+}
+
