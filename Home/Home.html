@@ -5,9 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Header.css">
 </head>
 <body>
-<header>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="/" aria-label="Home">
+            <img src="/Photo/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile-drawer"
+               aria-expanded="false"></label>
+
+        <aside id="mobile-drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
+                <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form>
+            </div>
+
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="#">Интерьеры</a></li>
+                    <li><a href="#">Дизайнеры</a></li>
+                    <li><a href="#">Компании</a></li>
+                    <li><a href="#">Про дизайн</a></li>
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">О редакции</a></li>
+                    <li><a class="accent" href="#">Школа дизайна</a></li>
+                    <li><a class="accent" href="#">Неделя дизайна</a></li>
+                    <li><a class="accent" href="#">Премия</a></li>
+                </ul>
+            </nav>
+
+            <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li >
+                        <img src="/Photo/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li >
+                        <img src="/Photo/TelegramLogo.svg">
+                        <a href="#">Telegram</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="mobile_overlay"></div>
+
+        <nav class="main-nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="#">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="#">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="#">КОМПАНИИ</a></li>
+                <li><a href="#">ПРО ДИЗАЙН</a></li>
+                <li><a href="#">СОБЫТИЯ</a></li>
+                <li><a class="accent" href="#">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
+
+        <div class="utils">
+            <a class="icon-btn" href="#" aria-label="VK">
+                <img src="/Photo/vk.svg" alt="VK">
+            </a>
+            <a class="icon-btn" href="#" aria-label="Telegram">
+               <img src="/Photo/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="/Photo/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
     <!-- Hero -->
     <section class="hero" aria-label="Подписка на телеграм канал">
         <h1>Подпишись на наш<br>телеграм канал</h1>
@@ -16,9 +98,7 @@
             <img src="../Photo/TelegramLogo.png" class="hero-icon" alt="telegram" loading="lazy">
         </a>
     </section>
-</header>
 
-<main>
     <!-- Карточки -->
     <section class="cards" aria-label="Разделы сайта">
         <div class="cards-row">
@@ -194,6 +274,78 @@
     </section>
 </main>
 
-<footer></footer>
+<footer class="site_footer" role="contentinfo">
+    <div class="site_footer__inner">
+        <!-- Колонка: бренд и реквизиты -->
+        <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer-brand">
+
+            <a class="site_footer__logo" href="/" aria-label="На главную">
+                <img src="/Photo/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+            </a>
+            <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+            <p class="site_footer__text">ООО «Стартап»</p>
+            <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+        </section>
+
+        <!-- Колонка: соцсети -->
+        <nav class="site_footer__col footer_social" aria-labelledby="footer-social">
+            <div class="site_footer__col footer_social" aria-label="Соцсети">
+                <ul class="site_footer__list-media">
+                    <li class="site_footer__list-TG">
+                        <img src="/Photo/TgLogo.png" width="30" height="30" alt="<UNK> <UNK>">
+                        <a class="site_footer__link" href="https://t.me/">Telegram</a>
+                    </li>
+                    <li class="site_footer__list-VK">
+                        <img src="/Photo/VkLogo.png" width="30" height="30" alt="<UNK> <UNK>"/>
+                        <a class="site_footer__link" href="https://vk.com/">ВКонтакте</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Колонка: разделы 1 -->
+        <nav class="site_footer__col footer_sections" aria-labelledby="footer-sections-1">
+            <h2 id="footer-sections-1" class="site_footer__title">Разделы сайта:</h2>
+            <ul class="site_footer__list">
+                <li><a class="site_footer__link" href="/interiors">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="/designers">Дизайнеры</a></li>
+                <li><a class="site_footer__link" href="/companies">Компании</a></li>
+                <li><a class="site_footer__link" href="/about-design">Про дизайн</a></li>
+                <li><a class="site_footer__link" href="/events">События</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: разделы 2 -->
+        <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer-sections-2">
+
+            <ul class="site_footer__list-second">
+                <li><a class="site_footer__link" href="/archive">Архив номеров</a></li>
+                <li><a class="site_footer__link" href="/about">О редакции</a></li>
+                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
+                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
+                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: контакты -->
+        <section class="site_footer__col footer_contacts" aria-labelledby="footer-contacts">
+            <h2 id="footer-contacts" class="site_footer__title">Контакты</h2>
+            <address class="site_footer__address">
+                г. Калининград,<br>
+                ул. Рокоссовского, д. 16/18<br>
+                Телефон редакции:<br>
+                <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+            </address>
+        </section>
+    </div>
+
+    <div class="site_footer__bottom">
+        <a class="site_footer__policy" href="/privacy">Политика ОПД</a>
+        <div class="site_footer__dev-container">
+            <p class="site_footer__dev">Сайт разработан</p>
+            <img src="/Photo/LogoKant.svg" width="138" height="14" alt="<UNK> <UNK>">
+        </div>
+    </div>
+</footer>
 </body>
 </html>
