@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
+:root {
+    --gap: 50px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+}
+
+
+.visually_hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0);
+    white-space: nowrap; border: 0;
+}
+
+
+.container {
+    width: 90.8%;
+    margin-inline: auto;
+}
+
+.section { padding-block: 22px; }
+
+.title {
+    margin: 16px 0 10px;
+    font-weight: 200;
+    font-family: 'Geologica', serif;
+    font-size: 70px;
+
+}
+
+
+.cards_grid {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+.card {
+    display: grid;
+    gap: 10px;
+    grid-column: span 3;
+}
+
+.card_size_lg {
+    grid-column: span 6;
+}
+
+.card_media { margin: 0; }
+
+.card_image {
+    height: 584px;
+    inline-size: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background: #eee;
+}
+
+.card_caption {
+    font-weight: 300;
+    font-family: Geologica, Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+/* Кнопка */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 0 40px;
+}
+
+.btn {
+    appearance: none;
+    border: 1px solid black;
+    background: var(--btn-bg);
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Geologica', serif;
+    width: 22.8%;
+    height: 60px;
+    cursor: pointer;
+
+    transition: color .15s ease, border-color .15s ease, transform .05s ease;
+}
+.btn:hover {
+    background: #111;
+    color: #fff;
+}
+.btn:active {
+    transform: translateY(1px);
+}
+
+
+@media (min-width:360px) and (max-width:767px){
+
+    .container{ width:100%; padding-inline:10px; }
+
+    .cards_grid{
+        grid-template-columns: repeat(4, 1fr);
+        gap:40px;
+    }
+
+
+    .cards_grid > .card:nth-child(1),
+    .cards_grid > .card:nth-child(2){
+        grid-column: 1 / -1;
+    }
+    .cards_grid > .card:nth-child(1) .card_image,
+    .cards_grid > .card:nth-child(2) .card_image{
+        width:100%;
+        height:auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+    .cards_grid > .card:nth-child(1) .card_caption,
+    .cards_grid > .card:nth-child(2) .card_caption{
+        font-size:16px;
+        line-height:1.25;
+        margin-top:6px;
+    }
+
+
+    .cards_grid > .card:nth-child(3),
+    .cards_grid > .card:nth-child(4){
+        grid-column: span 2;
+        display:grid;
+        justify-items:start;
+    }
+
+    .cards_grid > .card:nth-child(3) .card_image,
+    .cards_grid > .card:nth-child(4) .card_image{
+        width:150px;
+        height:225px;
+        aspect-ratio:auto;
+        object-fit:cover;
+    }
+    .cards_grid > .card:nth-child(3) .card_caption,
+    .cards_grid > .card:nth-child(4) .card_caption{
+        max-width:150px;
+        font-size:14px;
+        line-height:1.25;
+        margin-top:6px;
+    }
+
+    /* Прячем всё после 4‑й карточки */
+    .cards_grid > .card:nth-child(n+5){ display:none; }
+
+    /* Кнопка — на всю ширину */
+    .actions{ margin:16px 0 28px; }
+    .btn{ width:100%; min-width:0; height:48px; font-size:16px; }
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .site-header{
+       width:110%;
+    }
+    .site_footer__inner{
+        margin-left: -23px;
+    }
+
+    .container{
+        width: 107%;
+        margin-inline: auto;
+    }
+
+
+    .title{
+        margin: 16px 0 10px;
+        font-weight: 200;
+        font-family: 'Geologica', serif;
+        font-size: 70px;
+    }
+
+
+    .cards_grid{
+        display: grid;
+        gap: var(--gap);
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+
+    .card{
+        display: grid;
+        gap: 10px;
+        grid-column: span 3;
+    }
+    .card_size_lg{
+        grid-column: span 6;
+    }
+
+    .card_media{ margin: 0; }
+
+
+    .card_image{
+        height: 275px;
+        inline-size: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        border-radius: var(--radius);
+        background: #eee;
+    }
+
+    .card_caption{
+        font-weight: 300;
+        font-family: Geologica, Arial, sans-serif;
+        font-size: 18px;
+        color: black;
+    }
+
+    /* Кнопка: как на десктопе */
+    .actions{
+        display: flex;
+        justify-content: flex-end;
+        margin: 24px 0 40px;
+    }
+    .btn{
+        appearance: none;
+        border: 1px solid black;
+        background: var(--btn-bg);
+        color: black;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Geologica', serif;
+        width: 47.3%;
+        height: 45px;
+        cursor: pointer;
+        transition: color .15s ease, border-color .15s ease, transform .05s ease;
+    }
+    .btn:hover{ background:#111; color:#fff; }
+    .btn:active{ transform: translateY(1px); }
+}
+
+
+
+
+
+
+
+
+

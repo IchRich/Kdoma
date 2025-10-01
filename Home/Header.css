@@ -1,5 +1,4 @@
 .site-header {
-    position: sticky;
     top: 0;
     z-index: 1000;
     background: #fff;
@@ -102,7 +101,11 @@
     color: #111;
     font-family: geologica, system-ui, Arial, sans-serif;
 }
-
+.site_footer__header{
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: 300;
+}
 .site_footer__inner {
 
     margin: 0 auto;
@@ -234,6 +237,7 @@
 }
 
 .site_footer__dev-container {
+    align-items: center;
     display: flex;
     gap: 5px;
 }
@@ -452,7 +456,9 @@
     .main-nav, .utils {
         display: none;
     }
-
+    .site_footer__header{
+        display: none;
+    }
     .burger_btn {
         display: block;
     }
@@ -468,21 +474,6 @@
     .header-inner {
         justify-content: space-between;
     }
-}
-
-
-@media (min-width: 768px) {
-    .burger_btn, .nav_toggle, .mobile_drawer, .mobile_overlay {
-        display: none;
-    }
-
-    .main-nav, .utils {
-        display: flex;
-    }
-}
-
-
-@media (min-width: 360px) and (max-width: 767px) {
     .site_footer {
         overflow-x: hidden;
     }
@@ -574,7 +565,6 @@
     .site_footer__list-second {
         font-size: 12px;
     }
-//
     .site_footer__inner {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -666,19 +656,7 @@
 
 }
 
-@media (max-width: 1024px) {
-    .main-nav, .utils {
-        display: none;
-    }
 
-    .burger_btn, .nav_toggle, .mobile_overlay, .mobile_drawer {
-        display: block;
-    }
-
-    .header-inner {
-        justify-content: flex-start;
-    }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .site_footer__inner {
@@ -689,7 +667,16 @@
         flex-wrap: nowrap;
         align-items: flex-start;
     }
+    .site_footer__header{
+        display: none;
+    }
+    .burger_btn, .nav_toggle, .mobile_drawer, .mobile_overlay {
+        display: none;
+    }
 
+    .main-nav, .utils {
+        display: flex;
+    }
     /* Базовые ширины колонок под одну строку */
     .site_footer__col_brand {
         flex: 0 0 260px;
@@ -769,6 +756,19 @@
     }
     .site_footer__dev-container img{
         width: 83px;
+    }
+}
+@media (max-width: 1024px) {
+    .main-nav, .utils {
+        display: none;
+    }
+
+    .burger_btn, .nav_toggle, .mobile_overlay, .mobile_drawer {
+        display: block;
+    }
+
+    .header-inner {
+        justify-content: flex-start;
     }
 }
 
