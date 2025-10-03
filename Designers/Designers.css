@@ -1,0 +1,310 @@
+/* База */
+:root {
+    --container: 1200px;
+    --gap-x: 32px;
+    --gap-y: 48px;
+    --text: #111;
+    --muted: #6B6B6B;
+    --border: #E6E6E6;
+    --accent: #000;
+    --dot: #D9D9D9;
+    --dot-active: #AD0C0C;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+.container {
+    max-width: 1720px;
+    margin:0 100px  80px;
+    padding: 0 16px;
+}
+
+.page-title {
+    margin: 0 0 50px;
+    font-weight: 200;
+    font-size: 70px;
+
+}
+/* Общий контейнер справа */
+.brand-stack{
+    position: absolute;   /* было fixed */
+    right: 115px;
+    top: 137px;            /* базовая стартовая позиция */
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(0);  /* будет меняться из JS */
+    will-change: transform;    /* подсказка браузеру */
+}
+
+/* Лого */
+.brand-stack__logo img{
+    display:block;
+    width: 320px;
+    height: auto;
+}
+
+/* Серая плашка */
+/* Базовый вид серой плашки */
+.brand-stack__cta{
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    width: 320px;
+    height: 410px;
+
+    background: rgba(145, 145, 145, 1);
+    color: #fff;
+    text-decoration: none;
+
+    overflow: hidden;
+}
+.brand-stack__cta .cta__text{
+    white-space: nowrap;
+    font-family:'Geologica',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+}
+.brand-stack__cta .cta__arrow{
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    width: 40px;                 /* подогнать под макет */
+    height: 40px;
+    object-fit: contain;         /* не искажать PNG/SVG */
+    pointer-events: none;        /* кликабельность по всей плашке */
+}
+
+
+
+/* Ховер */
+.brand-stack__cta:hover{
+    background: rgba(145, 145, 145, 0.7);
+}
+
+
+/* Список строк */
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-y);
+}
+
+/* Строка: слева about, справа work */
+.row {
+    display: flex;
+
+    gap: var(--gap-x);
+    align-items: start;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 32px;
+}
+
+/* Левая колонка */
+.about {
+    display: flex;
+    column-gap: 16px;
+    row-gap: 12px;
+    align-items: start;
+}
+
+.about__avatar {
+
+    width: 320px;
+    height: 444px;
+    object-fit: cover;
+
+}
+
+.about__info {
+    min-width: 0
+}
+
+.about__name {
+    margin: 0 0 6px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: Geologica, Arial, sans-serif;
+}
+
+.about__roles {
+    margin: 0 0 16px;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+}
+
+.about__cta {
+    margin-top: 314px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 14px;
+    border: 1px solid var(--accent);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: background .18s ease, color .18s ease;
+
+}
+
+.about__cta:hover img {
+    filter: invert(1)
+    brightness(1.15)
+    contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+
+
+.about__cta:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+/* Правая колонка (слайдер) */
+.work {
+
+    width: 40%
+}
+
+.work-slider {
+    width: 100%;
+    overflow: hidden;
+
+    position: relative; /* для позиционирования стрелок */
+}
+
+.work-slider__track {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform .35s ease;
+    will-change: transform;
+}
+
+.work-slider__slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+
+.work-slider__slide img {
+    display: block;
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+
+}
+
+.work-slider .nav {
+    position: absolute;
+    height: 444px;
+    width: 30px;
+    border: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* правая шторка и градиент справа-налево */
+.work-slider .nav.next {
+    left: auto;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* иконка-стрелка: рисуем псевдоэлементом */
+.work-slider .nav::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(225deg);
+}
+
+/* для правой — поворот в другую сторону */
+.work-slider .nav.next::after {
+    transform: rotate(45deg); /* стрелка «вправо» */
+}
+
+/* ховеры/фокус */
+.work-slider .nav:hover {
+    background: rgba(0, 0, 0, .42);
+}
+
+.work-slider .nav.next:hover {
+   background: rgba(0, 0, 0, .42);
+}
+
+.work-slider .nav:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+}
+
+/* Точки */
+.work-slider__dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--dot);
+    border: none;
+    cursor: pointer;
+}
+
+.dot.is-active {
+    width: 15px;
+    height: 15px;
+    background: var(--dot-active);
+}
+
+/* Кнопка "Показать еще" */
+.more {
+    width: 19%;
+    transition: background .18s ease, color .18s ease;
+    display: block;
+    margin-left: auto;
+    padding: 14px 18px;
+    border: 1px solid black;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.more:hover {
+    background: #111;
+    color: #fff;
+}
