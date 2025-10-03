@@ -1,4 +1,3 @@
-/* База */
 :root {
     --container: 1200px;
     --gap-x: 32px;
@@ -11,7 +10,7 @@
     --dot-active: #AD0C0C;
 }
 
-* {
+{
     box-sizing: border-box
 }
 
@@ -28,52 +27,46 @@ body {
 
 .container {
     max-width: 1720px;
-    margin:0 100px  80px;
-    padding: 0 16px;
+    margin: 0 100px 80px;
+
 }
 
 .page-title {
     margin: 0 0 50px;
     font-weight: 200;
     font-size: 70px;
-
 }
-/* Общий контейнер справа */
+
 .brand-stack{
-    position: absolute;   /* было fixed */
-    right: 115px;
-    top: 137px;            /* базовая стартовая позиция */
+    position: absolute;
+    right: 105px;
+    top: 137px;
     z-index: 1100;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    transform: translateY(0);  /* будет меняться из JS */
-    will-change: transform;    /* подсказка браузеру */
+    transform: translateY(0);
+    will-change: transform;
 }
 
-/* Лого */
 .brand-stack__logo img{
     display:block;
     width: 320px;
     height: auto;
 }
 
-/* Серая плашка */
-/* Базовый вид серой плашки */
 .brand-stack__cta{
     position: relative;
     display: grid;
     place-items: center;
-
     width: 320px;
     height: 410px;
-
     background: rgba(145, 145, 145, 1);
     color: #fff;
     text-decoration: none;
-
     overflow: hidden;
 }
+
 .brand-stack__cta .cta__text{
     white-space: nowrap;
     font-family:'Geologica',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -81,25 +74,21 @@ body {
     font-weight: 300;
     line-height: 1;
 }
+
 .brand-stack__cta .cta__arrow{
     position: absolute;
     right: 14px;
     bottom: 12px;
-    width: 40px;                 /* подогнать под макет */
+    width: 40px;
     height: 40px;
-    object-fit: contain;         /* не искажать PNG/SVG */
-    pointer-events: none;        /* кликабельность по всей плашке */
+    object-fit: contain;
+    pointer-events: none;
 }
 
-
-
-/* Ховер */
 .brand-stack__cta:hover{
     background: rgba(145, 145, 145, 0.7);
 }
 
-
-/* Список строк */
 .cards {
     list-style: none;
     margin: 0;
@@ -109,17 +98,14 @@ body {
     gap: var(--gap-y);
 }
 
-/* Строка: слева about, справа work */
 .row {
     display: flex;
-
-    gap: var(--gap-x);
+    gap: 45px;
     align-items: start;
     border-bottom: 1px solid var(--border);
     padding-bottom: 32px;
 }
 
-/* Левая колонка */
 .about {
     display: flex;
     column-gap: 16px;
@@ -128,11 +114,9 @@ body {
 }
 
 .about__avatar {
-
     width: 320px;
     height: 444px;
     object-fit: cover;
-
 }
 
 .about__info {
@@ -166,36 +150,27 @@ body {
     font-size: 20px;
     font-weight: 300;
     transition: background .18s ease, color .18s ease;
-
 }
 
 .about__cta:hover img {
-    filter: invert(1)
-    brightness(1.15)
-    contrast(1.05);
+    filter: invert(1) brightness(1.15) contrast(1.05);
     mix-blend-mode: normal;
     opacity: 1;
 }
-
-
 
 .about__cta:hover {
     background: #111;
     color: #fff;
 }
 
-
-/* Правая колонка (слайдер) */
 .work {
-
     width: 40%
 }
 
 .work-slider {
     width: 100%;
     overflow: hidden;
-
-    position: relative; /* для позиционирования стрелок */
+    position: relative;
 }
 
 .work-slider__track {
@@ -215,7 +190,6 @@ body {
     width: 100%;
     height: 444px;
     object-fit: cover;
-
 }
 
 .work-slider .nav {
@@ -232,14 +206,12 @@ body {
     justify-content: center;
 }
 
-/* правая шторка и градиент справа-налево */
 .work-slider .nav.next {
     left: auto;
     right: 0;
     background: rgba(0, 0, 0, 0.2);
 }
 
-/* иконка-стрелка: рисуем псевдоэлементом */
 .work-slider .nav::after {
     content: "";
     width: 10px;
@@ -249,18 +221,16 @@ body {
     transform: rotate(225deg);
 }
 
-/* для правой — поворот в другую сторону */
 .work-slider .nav.next::after {
-    transform: rotate(45deg); /* стрелка «вправо» */
+    transform: rotate(45deg);
 }
 
-/* ховеры/фокус */
 .work-slider .nav:hover {
     background: rgba(0, 0, 0, .42);
 }
 
 .work-slider .nav.next:hover {
-   background: rgba(0, 0, 0, .42);
+    background: rgba(0, 0, 0, .42);
 }
 
 .work-slider .nav:focus-visible {
@@ -268,7 +238,6 @@ body {
     outline-offset: -2px;
 }
 
-/* Точки */
 .work-slider__dots {
     display: flex;
     gap: 6px;
@@ -291,7 +260,6 @@ body {
     background: var(--dot-active);
 }
 
-/* Кнопка "Показать еще" */
 .more {
     width: 19%;
     transition: background .18s ease, color .18s ease;
@@ -304,6 +272,7 @@ body {
     font-weight: 300;
     cursor: pointer;
 }
+
 .more:hover {
     background: #111;
     color: #fff;
