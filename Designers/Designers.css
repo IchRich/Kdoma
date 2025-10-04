@@ -295,7 +295,7 @@ body {
         line-height: 1.1;
     }
 
-    /* опционально: спрятать бренд-стек */
+    
     .brand-stack{
         display:none;
     }
@@ -326,7 +326,7 @@ body {
 
     .about__info{
         display:flex;
-        flex-direction:column;         /* колонка для имени/ролей/кнопки */
+        flex-direction:column;         
         min-width:0;
     }
 
@@ -340,7 +340,7 @@ body {
         font-size: 16px;
         margin: 0 0 12px;
     }
-    /* прячем реальный текст так, чтобы скринридеры его видели */
+    
     .about__cta {
         position: relative;
         color: transparent;
@@ -353,10 +353,10 @@ body {
         top: 50%;
         transform: translateY(-50%);
     }
-    /* иконку-стрелку оставить как есть */
+ 
 
     .about__cta{
-        margin-top:auto;               /* прижать вниз до низа колонки */
+        margin-top:auto;               
         align-self:flex-start;
 
         width: 85%;
@@ -424,15 +424,15 @@ body {
         line-height: 1.05;
     }
 
-    /* скрыть брендовую колонку или увести вниз */
+  
     .brand-stack{ display:none; }
 
     .cards{ gap: 40px; }
 
-    /* строка в две колонки: слева about (аватар+текст), справа работы */
+
     .row{
         display: flex;
-        align-items: stretch;      /* одинаковая высота двух колонок */
+        align-items: stretch;      
         gap: 32px;
     }
 
@@ -447,7 +447,7 @@ body {
     .about__avatar{
         width: 167px;
         height: 235px;
-        object-fit: cover;                  /* обрезка без искажений */
+        object-fit: cover;                  
     }
 
     .about__info{
@@ -459,7 +459,7 @@ body {
     .about__name{ font-size: 22px; margin: 0 0 6px; }
     .about__roles{ font-size: 18px; margin: 0 0 12px; }
 
-    /* прижать кнопку к низу колонки с текстом */
+    
     .about__cta{
         height: 20px;
         width: 90%;
@@ -495,7 +495,7 @@ body {
     .dot.is-active{ width: 12px; height: 12px; }
 
     .more{
-        width: 320px;                       /* кнопка “показать еще” компактнее */
+        width: 320px;                      
         margin: 8px auto 0;
         font-size: 18px;
         padding: 12px 16px;
