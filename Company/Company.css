@@ -34,10 +34,10 @@ body{
 .section{padding: 32px 0}
 .section--header{padding-top: 40px; padding-bottom: 12px}
 
-/* Header */
+
 .header{
     display:flex;
-    align-items:flex-end; /* базовая линия как в макете */
+    align-items:flex-end; 
     justify-content:space-between;
     gap: var(--gap-lg);
 }
@@ -70,7 +70,7 @@ body{
     font-size:20px;
     line-height:1}
 
-/* Catalog grid */
+
 .catalog{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -96,7 +96,7 @@ body{
 .card__row{
     display:flex;
     justify-content:space-between;
-    align-items:flex-end;          /* ссылка по нижней кромке логотипа */
+    align-items:flex-end;         
     gap: 16px;
     padding: 14px 0;
 }
@@ -156,7 +156,7 @@ body{
 }
 
 @media (min-width: 360px) and (max-width: 767px){
-    .select{ display:none; }         /* скрываем текстовую кнопку */
+    .select{ display:none; }        
     .filters-btn{
         display:inline-flex;
         align-items:center;
@@ -258,11 +258,11 @@ body{
     .container{ padding-inline: 20px; font-family: Geologica, Arial, sans-serif;}
     .section{ padding: 24px 0; }
 
-    /* шапка остаётся как на десктопе; мобильную иконку прячем */
+    
     .filters-btn{ display:none; }
     .select{ display:inline-flex; }
 
-    /* двухколоночная сетка каталога */
+ 
     .catalog{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -270,16 +270,16 @@ body{
         margin-top: 16px;
     }
 
-    /* карточка — та же, что и на десктопе */
+    
     .card{
         height: 249px;
-        display:grid;                 /* если у вас grid по умолчанию */
+        display:grid;                
         grid-template-rows:auto 1fr auto;
         padding:18px;
         min-height:190px;
     }
 
-    /* ряд лого + ссылка */
+
     .card__row{
         display:flex;
         justify-content:space-between;
@@ -304,7 +304,7 @@ body{
     .card__title{
         font-size: 18px;
     }
-    /* показываем только первые 6 карточек */
+  
     .catalog .card{ display:none; }
     .catalog .card:nth-child(-n+6){ display:grid; }
     .btn{
@@ -318,8 +318,7 @@ body{
         background:var(--link-hover);
         color:white;
     }
-    /* при необходимости скрыть "Показать еще" в этом диапазоне */
-    /* .catalog__more{ display:none; } */
+    
 }
 
 
