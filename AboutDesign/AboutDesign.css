@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&display=swap');
 
-/* Контейнер 1720px */
+
 .pd__container{
     max-width: 1720px;
     margin: 0 auto;
@@ -9,8 +9,8 @@
 }
 
 :root{
-    --gap: 28px;          /* межколоночный/межстрочный отступ как на примере */
-    --caption-mt: 8px;    /* отступ текста от фото */
+    --gap: 28px;         
+    --caption-mt: 8px;    
     --text: #0d0d0d;
     --border: #e5e5e5;
 }
@@ -32,7 +32,7 @@ body{
 
 }
 
-/* Grid: 2 равные колонки, одинаковые зазоры */
+
 .pd-grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -40,11 +40,11 @@ body{
     grid-template-areas:
     "c1 c2"
     "c3 c4"
-    "c5 c7";   /* ВАЖНО: третий ряд — слева зона c5, справа — широкая c7 */
+    "c5 c7";   
 }
 .pd-left-pair{
     display:grid;
-    grid-template-columns: 1fr 1fr;  /* две карточки слева в ряд */
+    grid-template-columns: 1fr 1fr; 
     gap: 28px;
 }
 
@@ -59,8 +59,8 @@ body{
 .pd-card__media img{
     display:block;
 
-    height:auto;       /* сохраняем пропорции: как в макете — разные высоты */
-    object-fit: cover; /* если будут кривые источники, картинка не «сожмётся» */
+    height:auto;       
+    object-fit: cover; 
 }
 .pd-card__caption{
     margin: var(--caption-mt) 0 0;
@@ -69,7 +69,7 @@ body{
 
 }
 .pd-card--floor--dup{ display:none; }
-/* Кнопка снизу по центру */
+
 .pd__more{
     display:flex;
     justify-content:end;
@@ -91,16 +91,16 @@ body{
 
 @media (min-width: 360px) and (max-width: 767px) {
 
-    /* Резиновый контейнер: тянется, но не уже 320 */
+
     .pd__container {
         width: min(100%, 767px);
         max-width: 100%;
         margin: 0 auto;
-        padding: 0 20px; /* небольшие поля, чтобы контент не лип */
+        padding: 0 20px; 
         box-sizing: border-box;
     }
 
-    /* Показываем 4 карточки, используем дубликат Floor в паре */
+  
     .pd-card--kitchen,
     .pd-card--aledo,
     .pd-card--relax-2 {
@@ -115,7 +115,7 @@ body{
         display: block !important;
     }
 
-    /* Колонная компоновка и порядок: 1) interior, 2) пара, 3) green-bay */
+
     .pd-grid {
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@ body{
         order: 3;
     }
 
-    /* Широкие карточки: всегда на всю ширину контейнера */
+
     .pd-card--interior .pd-card__media img,
     .pd-card--green-bay .pd-card__media img {
         width: 100%;
@@ -143,7 +143,7 @@ body{
         display: block;
     }
 
-    /* Пара малых — резиновая строка */
+
     .pd-left-pair {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -156,7 +156,7 @@ body{
         min-width: 0;
     }
 
-    /* Высота малых адаптивная: от 150px на узких до 200px ближе к 767px */
+ 
     .pd-left-pair .pd-card--floor--dup .pd-card__media img,
     .pd-left-pair .pd-card--relax-1 .pd-card__media img {
         width: 100%;
@@ -165,7 +165,7 @@ body{
         display: block;
     }
 
-    /* Типографика и кнопка тянутся по ширине контейнера */
+
     .pd__title {
         margin: 0 0 12px;
         font-size: 30px;
@@ -195,10 +195,9 @@ body{
 
 @media (min-width:768px) and (max-width:1024px){
 
-    /* Скрываем мобильный дубликат Floor на планшете */
-    .pd-card--floor--dup{ display:none !important; } /* [OK] */
+ 
+    .pd-card--floor--dup{ display:none !important; } 
 
-    /* Контейнер тянется, добавим боковые поля */
     .pd__container{
         width: min(100%, 1024px);
         margin: 0 auto;
@@ -206,16 +205,16 @@ body{
         box-sizing: border-box;
     }
 
-    /* Унифицированный адаптивный зазор */
+
     :root{ --gap: clamp(16px, 2vw, 24px); }
 
-    /* Большие карточки: ширина 100% родителя, высота плавно растёт вокруг 241px */
+
     .pd-card--interior .pd-card__media img,
     .pd-card--kitchen  .pd-card__media img,
     .pd-card--green-bay .pd-card__media img,
     .pd-card--aledo   .pd-card__media img{
         width: 100%;
-        height: 241px;   /* растёт вместе с шириной */
+        height: 241px;   
         object-fit: cover;
         object-position: center;
         display: block;
@@ -223,7 +222,6 @@ body{
     .pd-card--floor-text{
         width: 50%;
     }
-    /* Малые карточки: пополам внутри пары, высота тоже резиновая */
     .pd-left-pair{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -237,13 +235,13 @@ body{
     .pd-card--relax-1 .pd-card__media img,
     .pd-card--relax-2 .pd-card__media img{
         width: 100%;
-        height: 241px;   /* плавная высота вместо фиксированных 241 */
+        height: 241px; 
         object-fit: cover;
         object-position: center;
         display: block;
     }
 
-    /* Подписи остаются компактными */
+
     .pd-card__caption{
         margin-top: 8px;
         font-size: 18px;
