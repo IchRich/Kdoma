@@ -5,15 +5,15 @@
 
 
 
-    --container: 1720px;     /* фиксированный контейнер */
-    --gap: 24px;             /* горизонтальные и вертикальные отступы */
+    --container: 1720px;   
+    --gap: 24px;             
     --radius: 12px;
     --shadow: 0 8px 24px rgba(0,0,0,.06);
     --text: #111;
     --muted: #666;
-    --media-h: 567px;        /* целевая высота превью по макету */
-    --media-w-lg: 845px;     /* большая ширина */
-    --media-w-sm: 408px;     /* малая ширина */
+    --media-h: 567px;       
+    --media-w-lg: 845px;    
+    --media-w-sm: 408px;    
 
 }
 
@@ -32,15 +32,15 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
     font-weight: 200;
 }
 
-/* Лента без grid: inline-block с отрицательными полями-корректорами */
+
 .events__list{
     list-style: none;
     margin: calc(var(--gap) * -1) 0 0 calc(var(--gap) * -1);
     padding: 0;
-    font-size: 0; /* убрать межэлементные пробелы */
+    font-size: 0; 
 }
 
-/* Базовая карточка */
+
 .event{
     display: inline-block;
     vertical-align: top;
@@ -49,15 +49,14 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
 
     box-shadow: var(--shadow);
     overflow: hidden;
-    font-size: 16px; /* вернуть текстовый размер */
-    /* ширина/высота задаются модификаторами */
+    font-size: 16px; 
 }
 
 .event__inner{
     display: block;
 }
 
-/* Медиа блок под нужные размеры */
+
 .event__media{
     display: block;
     width: 100%;
@@ -68,11 +67,11 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* аккуратный кроп */
+    object-fit: cover;      
     object-position: center;
 }
 
-/* Контент */
+
 .event__content{
     padding: 14px 0 16px;
 }
@@ -92,7 +91,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
     font-weight: 300;
 }
 
-/* Размеры карточек по макету */
+
 .event--lg{ width: var(--media-w-lg); }
 .event--sm{ width: var(--media-w-sm); }
 .event--sm .event__content{
@@ -101,7 +100,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
 .event--lg .event__content{
     width: 70%;
 }
-/* Кнопка "Показать ещё" */
+
 .events__more{
     margin-top: 24px;
     text-align: end;
@@ -122,17 +121,17 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
     color: white;
 }
 @media (min-width:360px) and (max-width:767px){
-    /* Контейнер + заголовок */
+   
     .events{ width: 100vw; padding: 12px 0; }
     .events__title{ font-size: 28px; padding: 0 12px; margin: 0 5px 12px; }
 
-    /* Лента как Flexbox с переносом; выравниваем по центру */
+   
     .events__list{
         display: flex !important;
-        flex-wrap: wrap !important;       /* разрешаем перенос строк */
-        justify-content: center;          /* центрируем сетку */
-        align-items: flex-start;          /* не растягивать по высоте */
-        gap: 16px 12px;                   /* вертикальный/гориз. интервал между плитками */
+        flex-wrap: wrap !important;       
+        justify-content: center;         
+        align-items: flex-start;          
+        gap: 16px 12px;                  
         padding: 0 12px !important;
         margin: 0 !important;
         list-style: none;
@@ -151,29 +150,27 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         font-size: 16px;
     }
 
-    /* ——— ШИРИНЫ ПЛИТОК ПО ТИПУ ——— */
-    /* Большая плитка: ширина 320 */
+
     .events__list > li.event.event--lg{
-        flex: 0 0 320px !important;        /* ширина блока 320 */
+        flex: 0 0 320px !important;        
     }
-    /* Маленькая плитка: ширина 150 */
+   
     .events__list > li.event.event--sm{
-        flex: 0 0 150px !important;        /* ширина блока 150 */
+        flex: 0 0 150px !important;        
     }
 
-    /* ——— РАЗМЕРЫ ФОТО ПО ТИПУ ——— */
-    /* Большая: фото 320×212 */
+  
     .event.event--lg .event__media{
         width: 320px !important;
         height: 212px !important;
     }
-    /* Маленькая: фото 150×224 */
+ 
     .event.event--sm .event__media{
         width: 150px !important;
         height: 224px !important;
     }
 
-    /* Картинки заполняют свой контейнер медиа */
+ 
     .event__media img{
         display: block;
         width: 100%;
@@ -181,7 +178,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         object-fit: cover;
     }
 
-    /* Контент под фото: подгоняем под ширину своей плитки */
+   
     .event.event--lg .event__content{
         width: 320px; box-sizing: border-box; padding: 10px 8px 12px;
     }
@@ -199,10 +196,9 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         margin: 0;
         font-weight: 300; }
 
-    /* Порядок остаётся исходным: 1 и 6 — большие; 2–5 — маленькие.
-       Flex сам выстроит: [320][150 150] на строках в зависимости от ширины экрана. */
+  
 
-    /* Кнопка */
+   
     .events__more{ margin: 8px 12px 24px; text-align: center; }
     .btn-more{
         width: 95%;
@@ -212,7 +208,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
 }
 @media (min-width:768px) and (max-width:1024px){
 
-    /* Контейнер секции — тянется, но ограничен по ширине и с полями */
+
     .events{
         width: min(100%, 736px);
         margin: 0 auto;
@@ -220,17 +216,17 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         box-sizing: border-box;
     }
 
-    /* Унифицированный зазор для inline-блоков (если нужно) */
+
     :root{ --gap: 24px; }
 
-    /* Список — без отрицательных маргинов на планшете */
+
     .events__list{
 
         padding: 0;
         font-size: 0;
     }
 
-    /* Большие карточки: фото 354×248, контент на ту же ширину */
+ 
     .event.event--lg{
         width: 354px !important;
     }
@@ -251,7 +247,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         padding: 10px 0 12px;
     }
 
-    /* Малые карточки: фото 167×248, контент на 167 */
+
     .event.event--sm{
         width: 167px !important;
     }
@@ -272,7 +268,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         padding: 8px 0 10px;
     }
 
-    /* Заголовки/подписи — компактнее, как на планшете */
+
     .events__title {
         font-size: 50px;
         margin: 0 0 16px;
@@ -293,7 +289,7 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         margin: 0;
     }
 
-    /* Кнопка — без изменений раскладки */
+
     .events__more {
         margin-top: 20px;
         text-align: end;
