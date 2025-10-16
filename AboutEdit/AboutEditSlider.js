@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.work-slider[data-slider]').forEach(initSlider);
+    document.querySelectorAll('.work_slider[data-slider]').forEach(initSlider);
 });
 
 function initSlider(root){
@@ -35,7 +35,7 @@ function initSlider(root){
         index = clamp(i);
         track.style.transition = anim ? 'transform .35s ease' : 'none';
         track.style.transform  = `translateX(${-index * 100}%)`;
-        dots.forEach((d, j) => d.classList.toggle('is-active', j === index));
+        dots.forEach((d, j) => d.classList.toggle('is_active', j === index));
     }
 
     function layout(){

@@ -1,112 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
 
-
-:root{
-
-
-
-    --container: 1720px;     /* фиксированный контейнер */
-    --gap: 24px;             /* горизонтальные и вертикальные отступы */
+:root {
+    --container: 1720px;
+    --gap: 24px;
     --radius: 12px;
-    --shadow: 0 8px 24px rgba(0,0,0,.06);
+    --shadow: 0 8px 24px rgba(0, 0, 0, .06);
     --text: #111;
     --muted: #666;
-    --media-h: 567px;        /* целевая высота превью по макету */
-    --media-w-lg: 845px;     /* большая ширина */
-    --media-w-sm: 408px;     /* малая ширина */
-
+    --media-h: 567px;
+    --media-w-lg: 845px;
+    --media-w-sm: 408px;
 }
 
-*{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
+* {
+    box-sizing: border-box;
+}
 
-.events{
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Geologica, Arial, sans-serif;
+}
+
+.events {
     width: var(--container);
     margin: 0 auto;
     padding: 24px 0 16px;
 }
 
-.events__title{
+.events__title {
     margin: 0 0 40px;
     font-size: 70px;
     font-weight: 200;
 }
 
-/* Лента без grid: inline-block с отрицательными полями-корректорами */
-.events__list{
+.events__list {
     list-style: none;
     margin: calc(var(--gap) * -1) 0 0 calc(var(--gap) * -1);
     padding: 0;
-    font-size: 0; /* убрать межэлементные пробелы */
+    font-size: 0;
 }
 
-/* Базовая карточка */
-.event{
+.event {
     display: inline-block;
     vertical-align: top;
     margin: var(--gap) 0 0 var(--gap);
     background: #fff;
-
     box-shadow: var(--shadow);
     overflow: hidden;
-    font-size: 16px; /* вернуть текстовый размер */
-    /* ширина/высота задаются модификаторами */
+    font-size: 16px;
 }
 
-.event__inner{
+.event__inner {
     display: block;
 }
 
-/* Медиа блок под нужные размеры */
-.event__media{
+.event__media {
     display: block;
     width: 100%;
     height: var(--media-h);
     overflow: hidden;
 }
-.event__media img{
+
+.event__media img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* аккуратный кроп */
+    object-fit: cover;
     object-position: center;
 }
 
-/* Контент */
-.event__content{
+.event__content {
     padding: 14px 0 16px;
 }
-.event__title{
+
+.event__title {
     margin: 0 0 0;
-
     line-height: 135%;
-
-
     font-size: 24px;
     font-weight: 300;
 }
-.event__meta{
+
+.event__meta {
     margin: 0;
     color: black;
     font-size: 24px;
     font-weight: 300;
 }
 
-/* Размеры карточек по макету */
-.event--lg{ width: var(--media-w-lg); }
-.event--sm{ width: var(--media-w-sm); }
-.event--sm .event__content{
+.event__lg {
+    width: var(--media-w-lg);
+}
+
+.event__sm {
+    width: var(--media-w-sm);
+}
+
+.event__sm .event__content {
     width: 100%;
 }
-.event--lg .event__content{
+
+.event__lg .event__content {
     width: 70%;
 }
-/* Кнопка "Показать ещё" */
-.events__more{
+
+.events__more {
     margin-top: 24px;
     text-align: end;
 }
-.btn-more{
+
+.btn_more {
     width: 30%;
     appearance: none;
     border: 1px solid black;
@@ -117,162 +120,170 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
     font-family: Geologica, Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.btn-more:hover{
+
+.btn_more:hover {
     background: black;
     color: white;
 }
-@media (min-width:360px) and (max-width:767px){
-    /* Контейнер + заголовок */
-    .events{ width: 100vw; padding: 12px 0; }
-    .events__title{ font-size: 28px; padding: 0 12px; margin: 0 5px 12px; }
 
-    /* Лента как Flexbox с переносом; выравниваем по центру */
-    .events__list{
+@media (min-width: 360px) and (max-width: 767px) {
+    .events {
+        width: 100vw;
+        padding: 12px 0;
+    }
+
+    .events__title {
+        font-size: 28px;
+        padding: 0 12px;
+        margin: 0 5px 12px;
+    }
+
+    .events__list {
         display: flex !important;
-        flex-wrap: wrap !important;       /* разрешаем перенос строк */
-        justify-content: center;          /* центрируем сетку */
-        align-items: flex-start;          /* не растягивать по высоте */
-        gap: 16px 12px;                   /* вертикальный/гориз. интервал между плитками */
+        flex-wrap: wrap !important;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px 12px;
         padding: 0 12px !important;
         margin: 0 !important;
         list-style: none;
         font-size: 0;
     }
 
-    /* Базовые стили карточки */
-    .events__list > li.event{
+    .events__list > li.event {
         display: flex !important;
-        flex-direction: column !important; /* фото сверху, текст снизу */
-        margin: 0 !important;              /* интервалы идут из gap контейнера */
+        flex-direction: column !important;
+        margin: 0 !important;
         background: #fff;
-
         overflow: hidden;
         box-shadow: var(--shadow);
         font-size: 16px;
     }
 
-    /* ——— ШИРИНЫ ПЛИТОК ПО ТИПУ ——— */
-    /* Большая плитка: ширина 320 */
-    .events__list > li.event.event--lg{
-        flex: 0 0 320px !important;        /* ширина блока 320 */
-    }
-    /* Маленькая плитка: ширина 150 */
-    .events__list > li.event.event--sm{
-        flex: 0 0 150px !important;        /* ширина блока 150 */
+    .events__list > li.event.event__lg {
+        flex: 0 0 320px !important;
     }
 
-    /* ——— РАЗМЕРЫ ФОТО ПО ТИПУ ——— */
-    /* Большая: фото 320×212 */
-    .event.event--lg .event__media{
+    .events__list > li.event.event__sm {
+        flex: 0 0 150px !important;
+    }
+
+    .event.event__lg .event__media {
         width: 320px !important;
         height: 212px !important;
     }
-    /* Маленькая: фото 150×224 */
-    .event.event--sm .event__media{
+
+    .event.event__sm .event__media {
         width: 150px !important;
         height: 224px !important;
     }
 
-    /* Картинки заполняют свой контейнер медиа */
-    .event__media img{
-        display: block;
+    .event__media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    /* Контент под фото: подгоняем под ширину своей плитки */
-    .event.event--lg .event__content{
-        width: 320px; box-sizing: border-box; padding: 10px 8px 12px;
+    .event.event__lg .event__content {
+        width: 320px;
+        box-sizing: border-box;
+        padding: 10px 8px 12px;
     }
-    .event.event--sm .event__content{
-        width: 150px; box-sizing: border-box; padding: 8px 0 10px;
-    }
-    .event__title{
-        font-size: 16px;
 
+    .event.event__sm .event__content {
+        width: 150px;
+        box-sizing: border-box;
+        padding: 8px 0 10px;
+    }
+
+    .event__title {
+        font-size: 16px;
         margin: 0 0 6px;
-        font-weight: 300; }
-    .event__meta{
+        font-weight: 300;
+    }
+
+    .event__meta {
         font-size: 16px;
         color: black;
         margin: 0;
-        font-weight: 300; }
+        font-weight: 300;
+    }
 
-    /* Порядок остаётся исходным: 1 и 6 — большие; 2–5 — маленькие.
-       Flex сам выстроит: [320][150 150] на строках в зависимости от ширины экрана. */
+    .events__more {
+        margin: 8px 12px 24px;
+        text-align: center;
+    }
 
-    /* Кнопка */
-    .events__more{ margin: 8px 12px 24px; text-align: center; }
-    .btn-more{
+    .btn_more {
         width: 95%;
         height: 40px;
         font-size: 16px;
     }
 }
-@media (min-width:768px) and (max-width:1024px){
 
-    /* Контейнер секции — тянется, но ограничен по ширине и с полями */
-    .events{
+@media (min-width: 768px) and (max-width: 1024px) {
+    .events {
         width: min(100%, 736px);
         margin: 0 auto;
         padding: 16px 0;
         box-sizing: border-box;
     }
 
-    /* Унифицированный зазор для inline-блоков (если нужно) */
-    :root{ --gap: 24px; }
+    :root {
+        --gap: 24px;
+    }
 
-    /* Список — без отрицательных маргинов на планшете */
-    .events__list{
-
+    .events__list {
         padding: 0;
         font-size: 0;
     }
 
-    /* Большие карточки: фото 354×248, контент на ту же ширину */
-    .event.event--lg{
+    .event.event__lg {
         width: 354px !important;
     }
-    .event.event--lg .event__media{
+
+    .event.event__lg .event__media {
         width: 354px !important;
         height: 248px !important;
     }
-    .event.event--lg .event__media img{
+
+    .event.event__lg .event__media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         display: block;
     }
-    .event.event--lg .event__content{
+
+    .event.event__lg .event__content {
         width: 354px;
         box-sizing: border-box;
         padding: 10px 0 12px;
     }
 
-    /* Малые карточки: фото 167×248, контент на 167 */
-    .event.event--sm{
+    .event.event__sm {
         width: 167px !important;
     }
-    .event.event--sm .event__media{
+
+    .event.event__sm .event__media {
         width: 167px !important;
         height: 248px !important;
     }
-    .event.event--sm .event__media img{
+
+    .event.event__sm .event__media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         display: block;
     }
-    .event.event--sm .event__content{
+
+    .event.event__sm .event__content {
         width: 167px;
         box-sizing: border-box;
         padding: 8px 0 10px;
     }
 
-    /* Заголовки/подписи — компактнее, как на планшете */
     .events__title {
         font-size: 50px;
         margin: 0 0 16px;
@@ -281,7 +292,6 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
 
     .event__title {
         font-size: 18px;
-
         margin: 0 0 6px;
         font-weight: 300;
     }
@@ -293,34 +303,15 @@ html,body{ margin:0; padding:0; font-family: Geologica, Arial, sans-serif; }
         margin: 0;
     }
 
-    /* Кнопка — без изменений раскладки */
     .events__more {
         margin-top: 20px;
         text-align: end;
     }
 
-    .btn-more {
+    .btn_more {
         width: 48.1%;
         min-width: 220px;
         height: 45px;
         font-size: 16px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

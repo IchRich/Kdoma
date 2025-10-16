@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ру">
+<html lang="ru">
 <head>
     <!-- Базовая конфигурация документа -->
     <meta charset="utf-8" />
@@ -11,29 +11,29 @@
 
     <!-- Скрипты: переключение активного года и мобильный дропдаун -->
     <script src="year-toggle.js" defer></script>
-    <script src="mobile-years-dropdown.js" defer></script>
+    <script src="filter-panel.js" defer></script>
 </head>
 <body>
 
 <!-- Шапка: заголовок + фильтры годов -->
-<header class="page-head">
+<header class="page_head">
     <div class="container">
         <h1 class="title">Все журналы</h1>
 
         <!-- Мобильный триггер и дропдаун годов -->
-        <button id="filter-trigger-mobile" class="filter-trigger-icon" type="button" aria-label="Годы" hidden>
-            <img class="filter-trigger-icon__img" src="/Photo/FilterIcon.svg" alt="" />
+        <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Годы" hidden>
+            <img class="filter_trigger_icon__img" src="/Photo/FilterIcon.svg" alt="" />
         </button>
-        <div class="years-dropdown" id="years-dropdown" hidden>
-            <div class="years-dropdown__panel" role="menu" aria-label="Выбор года">
-                <ul class="years-dropdown__list" id="years-dropdown-list"></ul>
+        <div class="years_dropdown" id="years_dropdown" hidden>
+            <div class="years_dropdown__panel" role="menu" aria-label="Выбор года">
+                <ul class="years_dropdown__list" id="years_dropdown_list"></ul>
             </div>
         </div>
 
         <!-- Десктопная панель годов -->
-        <nav class="years" aria-label="Фильтр по годам" id="year-nav">
+        <nav class="years" aria-label="Фильтр по годам" id="year_nav">
             <a class="year" data-year="2025" href="#2025">2025</a>
-            <a class="year is-active" data-year="2024" href="#2024" aria-current="page">2024</a>
+            <a class="year is_active" data-year="2024" href="#2024" aria-current="page">2024</a>
             <a class="year" data-year="2023" href="#2023">2023</a>
             <a class="year" data-year="2022" href="#2022">2022</a>
             <a class="year" data-year="archive" href="#archive">архив</a>
@@ -44,13 +44,13 @@
 <!-- Основной контент -->
 <main class="container">
     <section class="catalog" aria-labelledby="y2024">
-        <h2 id="y2024" class="visually-hidden">Журналы 2024</h2>
+        <h2 id="y2024" class="visually_hidden">Журналы 2024</h2>
 
         <ul class="grid">
             <!-- Карточка года -->
-            <li class="card card--year">
+            <li class="card card__year">
                 <a class="card__link" href="#y2024" aria-label="Текущий год: 2024">
-                    <div class="card__cover--year">
+                    <div class="card__cover__year">
                         <img src="/Photo/2024.svg" alt="Выбранный год 2024" />
                     </div>
                 </a>

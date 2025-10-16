@@ -1,11 +1,11 @@
-.site-header {
+.site_header {
     top: 0;
     z-index: 1000;
     background: #fff;
     border-bottom: 1px solid #eee;
 }
 
-.header-inner {
+.header_inner {
     position: relative;
     justify-content: center;
     padding: 10px 16px;
@@ -15,11 +15,11 @@
 }
 
 
-.main-nav {
+.main_nav {
     margin-left: 215px;
 }
 
-.main-nav ul {
+.main_nav ul {
     display: flex;
     gap: 24px;
     list-style: none;
@@ -28,7 +28,7 @@
 
 }
 
-.main-nav a {
+.main_nav a {
     text-decoration: none;
     color: #111;
     font-weight: 300;
@@ -38,19 +38,19 @@
     transition: opacity .2s ease;
 }
 
-.main-nav a:hover,
-.main-nav a:focus-visible {
+.main_nav a:hover,
+.main_nav a:focus-visible {
     opacity: .50;
 }
 
-.main-nav a.accent {
+.main_nav a.accent {
     color: #a10000;
     opacity: 1;
     transition: color .2s ease;
 }
 
-.main-nav a.accent:hover,
-.main-nav a.accent:focus-visible {
+.main_nav a.accent:hover,
+.main_nav a.accent:focus-visible {
     opacity: .50;
 }
 
@@ -61,7 +61,7 @@
 
 }
 
-.icon-btn {
+.icon_btn {
     padding: 2px;
 }
 
@@ -83,7 +83,7 @@
     font: 14px system-ui;
 }
 
-.header-spacer {
+.header_spacer {
     flex: 1 1 auto;
 }
 

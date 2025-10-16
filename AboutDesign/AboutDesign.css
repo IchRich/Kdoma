@@ -33,7 +33,7 @@ body{
 }
 
 /* Grid: 2 равные колонки, одинаковые зазоры */
-.pd-grid{
+.pd_grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
@@ -42,33 +42,33 @@ body{
     "c3 c4"
     "c5 c7";   /* ВАЖНО: третий ряд — слева зона c5, справа — широкая c7 */
 }
-.pd-left-pair{
+.pd_left_pair{
     display:grid;
     grid-template-columns: 1fr 1fr;  /* две карточки слева в ряд */
     gap: 28px;
 }
 
 /* Карточка */
-.pd-card{ display: block; }
-.pd-card__media{
+.pd_card{ display: block; }
+.pd_card__media{
     display:block;
     width:100%;
     border: 1px solid var(--border);
     background:#fff;
 }
-.pd-card__media img{
+.pd_card__media img{
     display:block;
 
     height:auto;       /* сохраняем пропорции: как в макете — разные высоты */
     object-fit: cover; /* если будут кривые источники, картинка не «сожмётся» */
 }
-.pd-card__caption{
+.pd_card__caption{
     margin: var(--caption-mt) 0 0;
     font-size: 24px;
     font-weight: 300;
 
 }
-.pd-card--floor--dup{ display:none; }
+.pd_card__floor__dup{ display:none; }
 /* Кнопка снизу по центру */
 .pd__more{
     display:flex;
@@ -76,7 +76,7 @@ body{
     margin: 28px 0 40px;
 }
 
-.pd-btn{
+.pd_btn{
     width: 407px;
     height: 60px;
     border: 1px solid #111;
@@ -87,7 +87,7 @@ body{
     cursor:pointer;
     transition: .2s ease;
 }
-.pd-btn:hover{ background:#111; color:#fff; }
+.pd_btn:hover{ background:#111; color:#fff; }
 
 @media (min-width: 360px) and (max-width: 767px) {
 
@@ -101,42 +101,42 @@ body{
     }
 
     /* Показываем 4 карточки, используем дубликат Floor в паре */
-    .pd-card--kitchen,
-    .pd-card--aledo,
-    .pd-card--relax-2 {
+    .pd_card__kitchen,
+    .pd_card__aledo,
+    .pd_card__relax_2 {
         display: none !important;
     }
 
-    .pd-card--floor:not(.pd-card--floor--dup) {
+    .pd_card__floor:not(.pd_card__floor__dup) {
         display: none !important;
     }
 
-    .pd-card--floor--dup {
+    .pd_card__floor__dup {
         display: block !important;
     }
 
     /* Колонная компоновка и порядок: 1) interior, 2) пара, 3) green-bay */
-    .pd-grid {
+    .pd_grid {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    .pd-card--interior {
+    .pd_card__interior {
         order: 1;
     }
 
-    .pd-pair {
+    .pd_pair {
         order: 2;
     }
 
-    .pd-card--green-bay {
+    .pd_card__green_bay {
         order: 3;
     }
 
     /* Широкие карточки: всегда на всю ширину контейнера */
-    .pd-card--interior .pd-card__media img,
-    .pd-card--green-bay .pd-card__media img {
+    .pd_card__interior .pd_card__media img,
+    .pd_card__green_bay .pd_card__media img {
         width: 100%;
         height: 213px;
         object-fit: cover;
@@ -144,21 +144,21 @@ body{
     }
 
     /* Пара малых — резиновая строка */
-    .pd-left-pair {
+    .pd_left_pair {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
         width: 100%;
     }
 
-    .pd-left-pair .pd-card--floor--dup,
-    .pd-left-pair .pd-card--relax-1 {
+    .pd_left_pair .pd_card__floor__dup,
+    .pd_left_pair .pd_card__relax_1 {
         min-width: 0;
     }
 
     /* Высота малых адаптивная: от 150px на узких до 200px ближе к 767px */
-    .pd-left-pair .pd-card--floor--dup .pd-card__media img,
-    .pd-left-pair .pd-card--relax-1 .pd-card__media img {
+    .pd_left_pair .pd_card__floor__dup .pd_card__media img,
+    .pd_left_pair .pd_card__relax_1 .pd_card__media img {
         width: 100%;
         height: 224px;
         object-fit: cover;
@@ -172,7 +172,7 @@ body{
         font-weight: 200;
     }
 
-    .pd-card__caption {
+    .pd_card__caption {
         margin: 8px 0 0;
         font-size: 16px;
         line-height: 1.3;
@@ -182,7 +182,7 @@ body{
         margin: 16px 0 20px;
     }
 
-    .pd-btn {
+    .pd_btn {
         width: 100%;
         height: 40px;
         text-transform: uppercase;
@@ -196,7 +196,7 @@ body{
 @media (min-width:768px) and (max-width:1024px){
 
     /* Скрываем мобильный дубликат Floor на планшете */
-    .pd-card--floor--dup{ display:none !important; } /* [OK] */
+    .pd_card__floor__dup{ display:none !important; } /* [OK] */
 
     /* Контейнер тянется, добавим боковые поля */
     .pd__container{
@@ -210,32 +210,32 @@ body{
     :root{ --gap: clamp(16px, 2vw, 24px); }
 
     /* Большие карточки: ширина 100% родителя, высота плавно растёт вокруг 241px */
-    .pd-card--interior .pd-card__media img,
-    .pd-card--kitchen  .pd-card__media img,
-    .pd-card--green-bay .pd-card__media img,
-    .pd-card--aledo   .pd-card__media img{
+    .pd_card__interior .pd_card__media img,
+    .pd_card__kitchen  .pd_card__media img,
+    .pd_card__green_bay .pd_card__media img,
+    .pd_card__aledo   .pd_card__media img{
         width: 100%;
         height: 241px;   /* растёт вместе с шириной */
         object-fit: cover;
         object-position: center;
         display: block;
     }
-    .pd-card--floor-text{
+    .pd_card__floor_text{
         width: 50%;
     }
     /* Малые карточки: пополам внутри пары, высота тоже резиновая */
-    .pd-left-pair{
+    .pd_left_pair{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--gap);
         width: 100%;
     }
-    .pd-card__media img{
+    .pd_card__media img{
         width: 47.5%;
         height: 241px;
     }
-    .pd-card--relax-1 .pd-card__media img,
-    .pd-card--relax-2 .pd-card__media img{
+    .pd_card__relax_1 .pd_card__media img,
+    .pd_card__relax_2 .pd_card__media img{
         width: 100%;
         height: 241px;   /* плавная высота вместо фиксированных 241 */
         object-fit: cover;
@@ -244,7 +244,7 @@ body{
     }
 
     /* Подписи остаются компактными */
-    .pd-card__caption{
+    .pd_card__caption{
         margin-top: 8px;
         font-size: 18px;
         font-weight: 300;
@@ -254,16 +254,9 @@ body{
         font-weight: 200;
 
     }
-    .pd-btn{
+    .pd_btn{
         width: 354px;
         height: 45px;
         font-size: 16px;
     }
 }
-
-
-
-
-
-
-

@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
+
 :root {
     --container: 1200px;
-    --gap-x: 32px;
-    --gap-y: 48px;
+    --gap_x: 32px;
+    --gap_y: 48px;
     --text: #111;
     --muted: #6B6B6B;
     --border: #E6E6E6;
     --accent: #000;
     --dot: #D9D9D9;
-    --dot-active: #AD0C0C;
+    --dot_active: #AD0C0C;
 }
 
-{
+* {
     box-sizing: border-box
 }
 
@@ -29,16 +30,15 @@ body {
 .container {
     max-width: 1720px;
     margin: 0 92px 80px;
-
 }
 
-.page-title {
+.page_title {
     margin: 0 0 50px;
     font-weight: 200;
     font-size: 70px;
 }
 
-.brand-stack{
+.brand_stack {
     position: absolute;
     right: 93px;
     top: 137px;
@@ -50,13 +50,13 @@ body {
     will-change: transform;
 }
 
-.brand-stack__logo img{
-    display:block;
+.brand_stack__logo img {
+    display: block;
     width: 320px;
     height: auto;
 }
 
-.brand-stack__cta{
+.brand_stack__cta {
     position: relative;
     display: grid;
     place-items: center;
@@ -68,15 +68,15 @@ body {
     overflow: hidden;
 }
 
-.brand-stack__cta .cta__text{
+.brand_stack__cta .cta__text {
     white-space: nowrap;
-    font-family:'Geologica',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 1;
 }
 
-.brand-stack__cta .cta__arrow{
+.brand_stack__cta .cta__arrow {
     position: absolute;
     right: 14px;
     bottom: 12px;
@@ -86,7 +86,7 @@ body {
     pointer-events: none;
 }
 
-.brand-stack__cta:hover{
+.brand_stack__cta:hover {
     background: rgba(145, 145, 145, 0.7);
 }
 
@@ -96,7 +96,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--gap-y);
+    gap: var(--gap_y);
 }
 
 .row {
@@ -168,32 +168,32 @@ body {
     width: 40%
 }
 
-.work-slider {
+.work_slider {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.work-slider__track {
+.work_slider__track {
     display: flex;
     flex-wrap: nowrap;
     transition: transform .35s ease;
     will-change: transform;
 }
 
-.work-slider__slide {
+.work_slider__slide {
     flex: 0 0 100%;
     min-width: 100%;
 }
 
-.work-slider__slide img {
+.work_slider__slide img {
     display: block;
     width: 100%;
     height: 444px;
     object-fit: cover;
 }
 
-.work-slider .nav {
+.work_slider .nav {
     position: absolute;
     height: 444px;
     width: 30px;
@@ -207,13 +207,13 @@ body {
     justify-content: center;
 }
 
-.work-slider .nav.next {
+.work_slider .nav.next {
     left: auto;
     right: 0;
     background: rgba(0, 0, 0, 0.2);
 }
 
-.work-slider .nav::after {
+.work_slider .nav::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -222,24 +222,24 @@ body {
     transform: rotate(225deg);
 }
 
-.work-slider .nav.next::after {
+.work_slider .nav.next::after {
     transform: rotate(45deg);
 }
 
-.work-slider .nav:hover {
+.work_slider .nav:hover {
     background: rgba(0, 0, 0, .42);
 }
 
-.work-slider .nav.next:hover {
+.work_slider .nav.next:hover {
     background: rgba(0, 0, 0, .42);
 }
 
-.work-slider .nav:focus-visible {
+.work_slider .nav:focus-visible {
     outline: 2px solid #fff;
     outline-offset: -2px;
 }
 
-.work-slider__dots {
+.work_slider__dots {
     display: flex;
     gap: 6px;
     justify-content: center;
@@ -255,10 +255,10 @@ body {
     cursor: pointer;
 }
 
-.dot.is-active {
+.dot.is_active {
     width: 15px;
     height: 15px;
-    background: var(--dot-active);
+    background: var(--dot_active);
 }
 
 .more {
@@ -280,73 +280,71 @@ body {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
-    :root{
-        --gap-x: 16px;
-        --gap-y: 24px;
+    :root {
+        --gap_x: 16px;
+        --gap_y: 24px;
     }
 
-    .container{
+    .container {
         max-width: 100%;
         margin: 0 20px 48px;
     }
 
-    .page-title{
+    .page_title {
         margin: 0 0 24px;
         font-size: 32px;
         line-height: 1.1;
     }
 
-    /* опционально: спрятать бренд-стек */
-    .brand-stack{
-        display:none;
+    .brand_stack {
+        display: none;
     }
 
-    .cards{
+    .cards {
         gap: 24px;
     }
 
-    .row{
+    .row {
         flex-direction: column;
         gap: 16px;
         padding-bottom: 24px;
         border-bottom: 1px solid var(--border);
     }
 
-    .about{
+    .about {
         gap: 12px;
         align-items: stretch;
         flex-direction: row;
     }
 
-    .about__avatar{
+    .about__avatar {
         height: 189px;
-
         flex: 0 0 120px;
         object-fit: cover;
     }
 
-    .about__info{
-        display:flex;
-        flex-direction:column;         /* колонка для имени/ролей/кнопки */
-        min-width:0;
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
     }
 
-    .about__name{
+    .about__name {
         font-size: 18px;
         margin: 0 0 4px;
     }
 
-    .about__roles{
-
+    .about__roles {
         font-size: 16px;
         margin: 0 0 12px;
     }
-    /* прячем реальный текст так, чтобы скринридеры его видели */
+
     .about__cta {
         position: relative;
         color: transparent;
     }
-    .about__cta::after{
+
+    .about__cta::after {
         content: "ПОРТФОЛИО";
         color: var(--text);
         position: absolute;
@@ -354,114 +352,121 @@ body {
         top: 50%;
         transform: translateY(-50%);
     }
-    /* иконку-стрелку оставить как есть */
 
-    .about__cta{
-        margin-top:auto;               /* прижать вниз до низа колонки */
-        align-self:flex-start;
-
+    .about__cta {
+        margin-top: auto;
+        align-self: flex-start;
         width: 85%;
         font-size: 16px;
         padding: 2px 12px;
         gap: 6px;
     }
 
-    .work{
+    .work {
         width: 100%;
     }
 
-    .work-slider{
-
+    .work_slider {
         overflow: hidden;
     }
 
-    .work-slider__slide img{
+    .work_slider__slide img {
         height: 212px;
     }
 
-    .work-slider .nav{
+    .work_slider .nav {
         display: none;
     }
 
-    .work-slider__dots{
+    .work_slider__dots {
         gap: 6px;
         padding-top: 8px;
     }
 
-    .dot{
+    .dot {
         width: 10px;
         height: 10px;
     }
-    .dot.is-active{
+
+    .dot.is_active {
         width: 12px;
         height: 12px;
     }
 
-    .more{
-        font-family: 'Geologica', system-ui, -apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    .more {
+        font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         width: 100%;
         margin-left: 0;
         font-size: 16px;
         padding: 12px 14px;
     }
-    .nav{
+
+    .nav {
         display: none;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
-    :root{
-        --gap-x: 24px;
-        --gap-y: 32px;
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --gap_x: 24px;
+        --gap_y: 32px;
     }
 
-    .container{
+    .container {
         max-width: 100%;
         margin: 0 20px 64px;
     }
 
-    .page-title{
+    .page_title {
         font-size: 56px;
         margin: 0 0 32px;
         line-height: 1.05;
     }
 
-    /* скрыть брендовую колонку или увести вниз */
-    .brand-stack{ display:none; }
+    .brand_stack {
+        display: none;
+    }
 
-    .cards{ gap: 40px; }
+    .cards {
+        gap: 40px;
+    }
 
-    /* строка в две колонки: слева about (аватар+текст), справа работы */
-    .row{
+    .row {
         display: flex;
-        align-items: stretch;      /* одинаковая высота двух колонок */
+        align-items: stretch;
         gap: 32px;
     }
 
-    .about{
+    .about {
         display: flex;
         align-items: flex-start;
         column-gap: 16px;
         row-gap: 8px;
-
     }
 
-    .about__avatar{
+    .about__avatar {
         width: 167px;
         height: 235px;
-        object-fit: cover;                  /* обрезка без искажений */
+        object-fit: cover;
     }
 
-    .about__info{
+    .about__info {
         display: flex;
         flex-direction: column;
         min-width: 0;
     }
 
-    .about__name{ font-size: 22px; margin: 0 0 6px; }
-    .about__roles{ font-size: 18px; margin: 0 0 12px; }
+    .about__name {
+        font-size: 22px;
+        margin: 0 0 6px;
+    }
 
-    /* прижать кнопку к низу колонки с текстом */
-    .about__cta{
+    .about__roles {
+        font-size: 18px;
+        margin: 0 0 12px;
+    }
+
+    .about__cta {
         height: 20px;
         width: 90%;
         gap: 0;
@@ -469,10 +474,10 @@ body {
         color: transparent;
         margin-top: 94px;
         font-size: 16px;
-
         align-self: flex-start;
     }
-    .about__cta::after{
+
+    .about__cta::after {
         content: "ПОРТФОЛИО";
         position: absolute;
         left: 14px;
@@ -483,20 +488,37 @@ body {
         font-weight: 300;
         pointer-events: none;
     }
-    .work{ width: 100%; }
 
-    .work-slider__slide img{
+    .work {
+        width: 100%;
+    }
+
+    .work_slider__slide img {
         height: 235px;
         object-fit: cover;
     }
 
-    .work-slider .nav{display: none }
-    .work-slider__dots{ padding-top: 8px; gap: 6px; }
-    .dot{ width: 10px; height: 10px; }
-    .dot.is-active{ width: 12px; height: 12px; }
+    .work_slider .nav {
+        display: none
+    }
 
-    .more{
-        width: 320px;                       /* кнопка “показать еще” компактнее */
+    .work_slider__dots {
+        padding-top: 8px;
+        gap: 6px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.is_active {
+        width: 12px;
+        height: 12px;
+    }
+
+    .more {
+        width: 320px;
         margin: 8px auto 0;
         font-size: 18px;
         padding: 12px 16px;

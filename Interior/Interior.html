@@ -11,8 +11,8 @@
 </head>
 <body>
 <!-- Основной контент страницы без реального хедера/футера -->
-<header class="site-header">
-  <div class="header-inner">
+<header class="site_header">
+  <div class="header_inner">
     <a class="logo" href="/untitled1/Home/Home.html?_ijt=hils8sf26est9ir0u2k6k3af97" aria-label="Home">
       <img src="/Photo/LogoKD.svg" alt="Logo">
     </a>
@@ -20,10 +20,10 @@
     <label for="nav-toggle"
            class="burger_btn"
            aria-label="Открыть меню"
-           aria-controls="mobile-drawer"
+           aria-controls="mobile_drawer"
            aria-expanded="false"></label>
 
-    <aside id="mobile-drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+    <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
       <div class="mobile_drawer__head">
         <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
                 onclick="document.getElementById('nav-toggle').checked=false"></button>
@@ -60,9 +60,7 @@
       </section>
     </aside>
 
-
-
-    <nav class="main-nav" aria-label="Главное меню">
+    <nav class="main_nav" aria-label="Главное меню">
       <ul>
         <li><a href="/untitled1/Interior/Interior.html?_ijt=i3pq15ka32td1045n2sourkfsb">ИНТЕРЬЕРЫ</a></li>
         <li><a href="#">ДИЗАЙНЕРЫ</a></li>
@@ -76,10 +74,10 @@
     </nav>
 
     <div class="utils">
-      <a class="icon-btn" href="#" aria-label="VK">
+      <a class="icon_btn" href="#" aria-label="VK">
         <img src="/Photo/vk.svg" alt="VK">
       </a>
-      <a class="icon-btn" href="#" aria-label="Telegram">
+      <a class="icon_btn" href="#" aria-label="Telegram">
         <img src="/Photo/TelegramLogo.svg" alt="Telegram">
       </a>
       <form class="search" role="search">
@@ -92,18 +90,18 @@
   </div>
 </header>
 
-<main class="page" id="main-content">
+<main class="page" id="main_content">
   <!-- Блок: заголовок страницы -->
-  <section class="section section_header" aria-labelledby="page-title">
+  <section class="section section_header" aria-labelledby="page_title">
     <div class="container">
-      <h1 id="page-title" class="title">Интерьеры</h1>
+      <h1 id="page_title" class="title">Интерьеры</h1>
     </div>
   </section>
 
   <!-- Блок: галерея карточек -->
-  <section class="section section_gallery" aria-labelledby="gallery-title">
+  <section class="section section_gallery" aria-labelledby="gallery_title">
     <div class="container">
-      <h2 id="gallery-title" class="visually_hidden">Галерея интерьеров</h2>
+      <h2 id="gallery_title" class="visually_hidden">Галерея интерьеров</h2>
 
       <!-- Сетка карточек -->
       <div class="cards_grid" role="list">
@@ -190,7 +188,7 @@
 <footer class="site_footer" role="contentinfo">
   <div class="site_footer__inner">
     <!-- Колонка: бренд и реквизиты -->
-    <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer-brand">
+    <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer_brand">
 
       <a class="site_footer__logo" href="/" aria-label="На главную">
         <img src="/Photo/LogoKD.svg" width="75" height="50" alt="Логотип КД">
@@ -201,15 +199,15 @@
     </section>
 
     <!-- Колонка: соцсети -->
-    <nav class="site_footer__col footer_social" aria-labelledby="footer-social">
+    <nav class="site_footer__col footer_social" aria-labelledby="footer_social">
       <div class="site_footer__col footer_social" aria-label="Соцсети">
         <h2 class="site_footer__header">Соцсети</h2>
-        <ul class="site_footer__list-media">
-          <li class="site_footer__list-TG">
+        <ul class="site_footer__list_media">
+          <li class="site_footer__list_TG">
             <img src="/Photo/TgLogo.png" width="30" height="30" alt="<UNK> <UNK>">
             <a class="site_footer__link" href="https://t.me/">Telegram</a>
           </li>
-          <li class="site_footer__list-VK">
+          <li class="site_footer__list_VK">
             <img src="/Photo/VkLogo.png" width="30" height="30" alt="<UNK> <UNK>"/>
             <a class="site_footer__link" href="https://vk.com/">ВКонтакте</a>
           </li>
@@ -218,8 +216,8 @@
     </nav>
 
     <!-- Колонка: разделы 1 -->
-    <nav class="site_footer__col footer_sections" aria-labelledby="footer-sections-1">
-      <h2 id="footer-sections-1" class="site_footer__title">Разделы сайта:</h2>
+    <nav class="site_footer__col footer_sections" aria-labelledby="footer_sections_1">
+      <h2 id="footer_sections_1" class="site_footer__title">Разделы сайта:</h2>
       <ul class="site_footer__list">
         <li><a class="site_footer__link" href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">Интерьеры</a></li>
         <li><a class="site_footer__link" href="/designers">Дизайнеры</a></li>
@@ -230,20 +228,20 @@
     </nav>
 
     <!-- Колонка: разделы 2 -->
-    <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer-sections-2">
+    <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer_sections_2">
 
-      <ul class="site_footer__list-second">
+      <ul class="site_footer__list_second">
         <li><a class="site_footer__link" href="/archive">Архив номеров</a></li>
         <li><a class="site_footer__link" href="/about">О редакции</a></li>
-        <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
-        <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
-        <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
+        <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
+        <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
+        <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
       </ul>
     </nav>
 
     <!-- Колонка: контакты -->
-    <section class="site_footer__col footer_contacts" aria-labelledby="footer-contacts">
-      <h2 id="footer-contacts" class="site_footer__title">Контакты</h2>
+    <section class="site_footer__col footer_contacts" aria-labelledby="footer_contacts">
+      <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
       <address class="site_footer__address">
         г. Калининград,<br>
         ул. Рокоссовского, д. 16/18<br>
@@ -255,7 +253,7 @@
 
   <div class="site_footer__bottom">
     <a class="site_footer__policy" href="/privacy">Политика ОПД</a>
-    <div class="site_footer__dev-container">
+    <div class="site_footer__dev_container">
       <p class="site_footer__dev">Сайт разработан</p>
       <img src="/Photo/LogoKant.svg" width="138" height="14" alt="<UNK> <UNK>">
     </div>
