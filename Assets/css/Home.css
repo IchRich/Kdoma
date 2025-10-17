@@ -48,7 +48,7 @@ section {
     justify-content: flex-start;
     padding-top: 80px;
     padding-bottom: 76px;
-    background: #ddd url('../Photo/BackgroundPhoto.png') center/cover no-repeat;
+    background: #ddd url('../image/BackgroundPhoto.png') center/cover no-repeat;
 }
 .hero h1 {
     margin: 0 0 80px;
@@ -162,19 +162,19 @@ section {
 }
 
 .card_designers .card_bg {
-    background-image: url('../Photo/DesignerPhoto.png');
+    background-image: url('../image/DesignerPhoto.png');
 }
 
 .card_interiors .card_bg {
-    background-image: url('../Photo/interiorPhoto.png');
+    background-image: url('../image/interiorPhoto.png');
 }
 
 .card_companies .card_bg {
-    background-image: url('../Photo/CompanyPhoto.png');
+    background-image: url('../image/CompanyPhoto.png');
 }
 
 .card_banner .card_bg {
-    background-image: url('../Photo/BannerPhoto.png');
+    background-image: url('../image/BannerPhoto.png');
 }
 
 .about_design {
