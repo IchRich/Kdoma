@@ -1,4 +1,5 @@
 .site_header {
+
     top: 0;
     z-index: 1000;
     background: #fff;
@@ -6,17 +7,21 @@
 }
 
 .header_inner {
-    position: relative;
-    justify-content: center;
-    padding: 10px 16px;
     display: flex;
     align-items: center;
     gap: 30px;
+    padding: 10px 0;
+    max-width: 1720px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
 }
 
-
 .main_nav {
-    margin-left: 215px;
+    margin-left: 0;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .main_nav ul {
@@ -25,9 +30,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
-
+.logo { flex: 0 0 auto; }
 .main_nav a {
     text-decoration: none;
     color: #111;
@@ -55,23 +59,21 @@
 }
 
 .utils {
-
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
-
+    gap: 5px;
 }
 
 .icon_btn {
     padding: 2px;
 }
 
-
 .search {
     margin-left: 40px;
     display: inline-flex;
     align-items: center;
     border: 1px solid #111;
-
     padding: 2px 6px 2px 10px;
     height: 32px;
 }
@@ -95,24 +97,22 @@
     cursor: pointer;
 }
 
+
 .site_footer {
     border-top: 1px solid #e5e5e5;
     background: #fff;
     color: #111;
     font-family: geologica, system-ui, Arial, sans-serif;
 }
-.site_footer__header{
-    margin-top: 0;
-    font-size: 26px;
-    font-weight: 300;
-}
-.site_footer__inner {
 
-    margin: 0 auto;
-    padding: 24px 90px;
+.site_footer__inner {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    padding: 24px 16px;      /* мягкие боковые поля */
+    max-width: 1720px;       /* синхронизируйте с шириной контента/баннера */
+    margin: 0 auto;          /* центрируем содержимое в полосе фона */
+    width: 100%;
 }
 
 .site_footer__col {
@@ -127,7 +127,6 @@
 .site_footer__logo {
     display: inline-flex;
     margin-bottom: 8px;
-
 }
 
 .site_footer__title {
@@ -144,7 +143,7 @@
     font-weight: 300;
 }
 
-.site_footer__list-media {
+.site_footer__list_media {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -162,7 +161,7 @@
     gap: 8px;
 }
 
-.site_footer__list-second {
+.site_footer__list_second {
     font-size: 22px;
     font-weight: 300;
     list-style: disc inside;
@@ -171,20 +170,24 @@
     display: grid;
     gap: 8px;
 }
+.site_footer__col_header{
 
-.site_footer__list-TG {
+}
+.site_footer__list_TG {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.site_footer__list-VK {
+.site_footer__list_VK {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .site_footer__link {
+    font-size: 22px;
+    font-weight: 300;
     color: #111;
     text-decoration: none;
     opacity: 1;
@@ -200,7 +203,7 @@
     color: #a10000;
 }
 
-.red-marker {
+.red_marker {
     color: red;
 }
 
@@ -212,15 +215,18 @@
 
 .site_footer__bottom {
     border-top: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1724px;
-    margin: 0 auto;
     gap: 12px;
     color: #666;
     font-size: 14px;
+
+
+    padding: 20px 16px;
+    max-width: 1720px;       /* то же значение, что выше */
+    margin: 0 auto;
+    width: 100%;
 }
 
 .site_footer__dev {
@@ -236,13 +242,12 @@
     font-weight: 300;
 }
 
-.site_footer__dev-container {
-    align-items: center;
+.site_footer__dev_container {
     display: flex;
     gap: 5px;
 }
 
-
+/* Навигация/бургер/оверлей */
 .nav_toggle {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -250,20 +255,19 @@
     height: 1px;
 }
 
-
 .burger_btn {
-
     display: none;
     width: 36px;
     height: 36px;
     position: relative;
     cursor: pointer;
-    order: 3; /* справа от всего */
-    margin-left: auto; /* прижим к правому краю */
+    order: 3;
+    margin-left: auto;
     margin-right: 0;
 }
 
-.burger_btn::before, .burger_btn::after {
+.burger_btn::before,
+.burger_btn::after {
     content: '';
     left: 0;
     position: absolute;
@@ -273,7 +277,11 @@
     border-radius: 10px;
     background: #000;
 }
-
+.site_footer__col_header{
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
 .burger_btn::before {
     top: 0;
     box-shadow: 0 11px 0 #000;
@@ -287,12 +295,10 @@
     top: 10px;
 }
 
-.burger_btn::after {
-}
+.burger_btn::after {}
 
 /* Панель */
 .mobile_drawer {
-
     position: fixed;
     inset: 0 0 0 auto;
     width: 86vw;
@@ -325,7 +331,8 @@
     cursor: pointer;
 }
 
-.mobile_drawer__close::before, .mobile_drawer__close::after {
+.mobile_drawer__close::before,
+.mobile_drawer__close::after {
     content: "";
     position: absolute;
     left: 9px;
@@ -367,7 +374,8 @@
     transition: opacity .2s ease;
 }
 
-.mobile_nav__list a:hover, .mobile_nav__list a:focus-visible {
+.mobile_nav__list a:hover,
+.mobile_nav__list a:focus-visible {
     opacity: .75;
 }
 
@@ -438,7 +446,6 @@
     pointer-events: auto;
 }
 
-
 .nav_toggle:checked ~ .burger_btn::before {
     transform: translateY(7px) rotate(45deg);
 }
@@ -450,15 +457,12 @@
 .nav_toggle:checked ~ .burger_btn span {
     opacity: 0;
 }
-
-
 @media (min-width: 360px) and (max-width: 767px) {
-    .main-nav, .utils {
+    .main_nav,
+    .utils {
         display: none;
     }
-    .site_footer__header{
-        display: none;
-    }
+
     .burger_btn {
         display: block;
     }
@@ -471,7 +475,7 @@
         display: block;
     }
 
-    .header-inner {
+    .header_inner {
         justify-content: space-between;
     }
     .site_footer {
@@ -484,9 +488,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-      "brand socials nav"
-      "brand socials contacts"
-      "footer footer footer";
+          "brand socials nav"
+          "brand socials contacts"
+          "footer footer footer";
         gap: 32px 40px;
         padding: 24px 90px;
     }
@@ -500,18 +504,14 @@
     .site_footer__policy {
         display: flex;
         font-size: 9px;
-
     }
 
-    .site_footer__dev-container p {
+    .site_footer__dev_container p {
         font-size: 9px;
-
     }
 
-    .site_footer__dev-container img {
+    .site_footer__dev_container img {
         width: 74px;
-
-
     }
 
     .site_footer__col_brand {
@@ -562,9 +562,10 @@
         font-size: 12px;
     }
 
-    .site_footer__list-second {
+    .site_footer__list_second {
         font-size: 12px;
     }
+
     .site_footer__inner {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -576,27 +577,28 @@
         gap: 16px 0;
         padding: 16px 10px;
     }
-    .site_footer__title{
+
+    .site_footer__title {
         font-size: 16px;
     }
+
     .site_footer__col_brand {
         grid-column: 1/3;
     }
 
-    .site_footer__list-TG img {
+    .site_footer__list_TG img {
         width: 24px;
         height: 24px;
     }
 
-    .site_footer__list-VK img {
+    .site_footer__list_VK img {
         width: 24px;
         height: 24px;
     }
 
-    .site_footer__list-media {
+    .site_footer__list_media {
         display: flex;
         flex-direction: column-reverse;
-
     }
 
     .footer_social {
@@ -607,12 +609,10 @@
     }
 
     .footer_sections {
-
         grid-column: 1/1;
     }
 
     .footer_sections_extra {
-
         margin-top: -62px;
         grid-column: 2/1;
     }
@@ -653,128 +653,135 @@
     .site_footer__col_brand p {
         display: none;
     }
+}
+/* Десктоп 768+ */
+@media (min-width: 768px) {
+    .burger_btn,
+    .nav_toggle,
+    .mobile_drawer,
+    .mobile_overlay {
+        display: none;
+    }
 
+    .main_nav,
+    .utils {
+        display: flex;
+    }
 }
 
+/* Мобильная сетка футера */
 
+
+/* Планшет и up-to-1024 */
+@media (max-width: 1024px) {
+    .main_nav,
+    .utils {
+        display: none;
+    }
+
+    .burger_btn,
+    .nav_toggle,
+    .mobile_overlay,
+    .mobile_drawer {
+        display: block;
+    }
+
+    .header_inner {
+        justify-content: flex-start;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .site_footer__inner {
         width: 100%;
-        padding: 24px ;
+        padding: 24px;
         display: flex;
-
         flex-wrap: nowrap;
         align-items: flex-start;
     }
-    .site_footer__header{
-        display: none;
-    }
-    .burger_btn, .nav_toggle, .mobile_drawer, .mobile_overlay {
-        display: none;
-    }
 
-    .main-nav, .utils {
-        display: flex;
-    }
-    /* Базовые ширины колонок под одну строку */
     .site_footer__col_brand {
         flex: 0 0 260px;
     }
 
-    /* логотип+текст */
     .site_footer__col_nav {
         flex: 1 1 0;
     }
 
-    .site_footer__list-TG a{
+    .site_footer__list_TG a {
         font-size: 14px;
     }
-    .site_footer__list-TG a {
-        font-size: 14px;
-    }
+
     .footer_sections {
         margin-left: -335px;
     }
-    /* разделы справа/контакты */
-    /* Чтобы текст не раздувал колонку */
+
     .site_footer__list,
-    .site_footer__list-second,
+    .site_footer__list_second,
     .site_footer__address,
     .site_footer__text {
-        min-width: 0; /* позволяем сжиматься */
-        word-wrap: break-word; /* перенос длинных слов */
-        overflow-wrap: anywhere; /* переносить где угодно при узких экранах */
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
     }
-    .site_footer__list-media{
+
+    .site_footer__list_media {
         margin-left: -291px;
         margin-top: 100px;
     }
-    /* Размеры текста чуть компактнее, чтобы влезло */
+
     .site_footer__title {
         font-size: 18px;
         margin: 0 0 16px;
     }
 
     .site_footer__list,
-    .site_footer__list-second {
+    .site_footer__list_second {
         font-size: 14px;
         gap: 8px;
     }
-    .footer_sections_extra{
+
+    .footer_sections_extra {
         margin-left: -42px;
         margin-top: -14px;
     }
+
     .site_footer__address {
         font-size: 14px;
         line-height: 1.4;
     }
+
     .footer_contacts {
         margin-left: -42px;
     }
-    /* Нижняя полоса на ту же ширину и в одну строку */
+
     .site_footer__bottom {
         width: 110%;
         padding: 16px 40px;
         display: flex;
-        flex-wrap: nowrap; /* одна линия */
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
         gap: 12px;
     }
+
     .site_footer__col_brand p {
         display: none;
     }
-    .site_footer__list-VK a {
+
+    .site_footer__list_VK a {
         font-size: 14px;
     }
-    .site_footer__policy{
+
+    .site_footer__policy {
         font-size: 10px;
     }
-    .site_footer__dev{
+
+    .site_footer__dev {
         font-size: 10px;
     }
-    .site_footer__dev-container img{
+
+    .site_footer__dev_container img {
         width: 83px;
     }
 }
-@media (max-width: 1024px) {
-    .main-nav, .utils {
-        display: none;
-    }
-
-    .burger_btn, .nav_toggle, .mobile_overlay, .mobile_drawer {
-        display: block;
-    }
-
-    .header-inner {
-        justify-content: flex-start;
-    }
-}
-
-
-
-
-
-
-

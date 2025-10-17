@@ -53,7 +53,7 @@ body{
 .pd_card__media{
     display:block;
     width:100%;
-    border: 1px solid var(--border);
+
     background:#fff;
 }
 .pd_card__media img{

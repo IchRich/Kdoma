@@ -34,11 +34,11 @@ section {
     max-width: var(--container);
     margin-left: auto;
     margin-right: auto;
-    padding-left: var(--edge);
-    padding-right: var(--edge);
+
 }
 
 .hero {
+
     margin-top: 20px;
     position: relative;
     min-height: 822px;
@@ -147,7 +147,7 @@ section {
 }
 
 .card_col {
-    flex: 0 0 389px;
+    flex: 0 0 411px;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
@@ -190,7 +190,7 @@ section {
 
 .about_design_row {
     display: flex;
-    gap: 4px;
+    gap: 15px;
     align-items: stretch;
     justify-content: flex-start;
     cursor: pointer;
@@ -408,7 +408,7 @@ section {
 
 .events_row {
     display: flex;
-    gap: var(--gap);
+    gap:55px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -550,6 +550,8 @@ section {
 }
 
 .about_editorial__btn {
+    height: 60px;
+    width: 100%;
     margin-top: auto;
     align-self: flex-start;
     display: inline-flex;
@@ -579,6 +581,7 @@ section {
 }
 
 .about_editorial__btn__red {
+    height: 60px;
     width: 100%;
     margin-top: auto;
     align-self: flex-start;
@@ -606,9 +609,7 @@ section {
         --edge: 10px;
     }
 
-    section {
-        padding-inline: var(--edge);
-    }
+
 
     .hero {
         width: 95%;
@@ -861,7 +862,9 @@ section {
         padding-top: 28px;
         padding-bottom: 28px;
     }
-
+    .site_footer__col_header{
+        display:none;
+    }
     .about_editorial h2 {
         font-size: 28px;
         margin-bottom: 12px;
@@ -1192,6 +1195,9 @@ section {
         grid-column: 1/2;
         grid-row: 1/2;
     }
+    .site_footer__col_header{
+        display:none;
+    }
 
     .about_editorial__col:nth-child(2) {
         grid-column: 2/3;
@@ -1257,7 +1263,8 @@ section {
 
     /* Hero */
     .hero {
-        width: 95%;
+        min-width: 320px;
+        width: 100%;
         min-height: 560px;
         padding-top: 48px;
         padding-bottom: 28px;
@@ -1282,10 +1289,11 @@ section {
     }
 
     /* Карточки: порядок как в SVG — сначала Интерьеры (высокая), потом Дизайнеры, Компании, затем Баннер, всё в одну колонку */
-    .cards { padding-top: 60px; }
+    .cards { padding-top: 60px; min-width: 340px; }
     .cards_row {
         flex-direction: column;
         gap: 12px;
+
     }
     .card,
     .card_tall,
@@ -1698,6 +1706,9 @@ section {
         padding: 15px 41px;
         font-size: 16px !important;
         align-self: center;
+        .site_footer__col_header{
+            display:none;
+        }
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2356,6 +2367,9 @@ section {
     .journal_header h2{ font-size:36px !important; margin:0 0 6px !important; }
     .journal_big{ font-size:80px !important; line-height:1 !important; }
     .journal_note{ font-size:18px !important; }
+    .site_footer__col_header{
+        display:none;
+    }
 }
 
 /* === DESKTOP ≥1025px: вернуть исходную раскладку как на дизайне (скрин 2) === */
@@ -2424,7 +2438,7 @@ section {
     }
 
     /* Типографика слева */
-    .journal_header h2{ font-size: 42px !important; margin: 0 0 10px !important; }
+    .journal_header h2{ font-size: 50px !important; margin: 0 0 10px !important; }
     .journal_big{ font-size: 96px !important; line-height: 1 !important; }
     .journal_note{ font-size: 13px !important; }
 }
@@ -2434,7 +2448,9 @@ section {
         --edge: 16px;
         --gap: 20px;
     }
-
+    .site_footer__col_header{
+        display:none;
+    }
     section {
         padding-inline: var(--edge);
     }
@@ -2790,6 +2806,9 @@ section {
         padding:0 81px !important;
         box-sizing:border-box !important;
     }
+    .site_footer__col_header{
+         display:none;
+     }
 }
 
 /* Сброс глобальных «широких» правил, влияющих на мобилку */
@@ -2797,6 +2816,7 @@ section {
     .journal_cover img{ max-width:140px !important; }
     .journal_block, .journal_content, .journal_btns{ max-width:100% !important; }
 }
+
 /* MOBILE 360–430: кнопки на ширину блока [текст + обложка], с пропорциональным сжатием */
 @media (min-width:360px) and (max-width:430px){
     /* Строка 1: [цифры] [обложка], Строка 2: [текст] на всю ширину; Строка 3: [кнопки] на всю ширину */
