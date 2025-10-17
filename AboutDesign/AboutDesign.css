@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&display=swap');
 
-/* Контейнер 1720px */
+
 .pd__container{
     max-width: 1720px;
     margin: 0 auto;
@@ -9,8 +9,8 @@
 }
 
 :root{
-    --gap: 28px;          /* межколоночный/межстрочный отступ как на примере */
-    --caption-mt: 8px;    /* отступ текста от фото */
+    --gap: 28px;         
+    --caption-mt: 8px;    
     --text: #0d0d0d;
     --border: #e5e5e5;
 }
@@ -40,11 +40,11 @@ body{
     grid-template-areas:
     "c1 c2"
     "c3 c4"
-    "c5 c7";   /* ВАЖНО: третий ряд — слева зона c5, справа — широкая c7 */
+    "c5 c7";   
 }
 .pd_left_pair{
     display:grid;
-    grid-template-columns: 1fr 1fr;  /* две карточки слева в ряд */
+    grid-template-columns: 1fr 1fr; 
     gap: 28px;
 }
 
@@ -59,8 +59,8 @@ body{
 .pd_card__media img{
     display:block;
 
-    height:auto;       /* сохраняем пропорции: как в макете — разные высоты */
-    object-fit: cover; /* если будут кривые источники, картинка не «сожмётся» */
+    height:auto;       
+    object-fit: cover; 
 }
 .pd_card__caption{
     margin: var(--caption-mt) 0 0;
@@ -91,12 +91,12 @@ body{
 
 @media (min-width: 360px) and (max-width: 767px) {
 
-    /* Резиновый контейнер: тянется, но не уже 320 */
+
     .pd__container {
         width: min(100%, 767px);
         max-width: 100%;
         margin: 0 auto;
-        padding: 0 20px; /* небольшие поля, чтобы контент не лип */
+        padding: 0 20px; 
         box-sizing: border-box;
     }
 
@@ -165,7 +165,7 @@ body{
         display: block;
     }
 
-    /* Типографика и кнопка тянутся по ширине контейнера */
+
     .pd__title {
         margin: 0 0 12px;
         font-size: 30px;
@@ -206,7 +206,7 @@ body{
         box-sizing: border-box;
     }
 
-    /* Унифицированный адаптивный зазор */
+
     :root{ --gap: clamp(16px, 2vw, 24px); }
 
     /* Большие карточки: ширина 100% родителя, высота плавно растёт вокруг 241px */
@@ -215,7 +215,7 @@ body{
     .pd_card__green_bay .pd_card__media img,
     .pd_card__aledo   .pd_card__media img{
         width: 100%;
-        height: 241px;   /* растёт вместе с шириной */
+        height: 241px;   
         object-fit: cover;
         object-position: center;
         display: block;
@@ -237,7 +237,7 @@ body{
     .pd_card__relax_1 .pd_card__media img,
     .pd_card__relax_2 .pd_card__media img{
         width: 100%;
-        height: 241px;   /* плавная высота вместо фиксированных 241 */
+        height: 241px; 
         object-fit: cover;
         object-position: center;
         display: block;
