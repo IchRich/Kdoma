@@ -6,11 +6,16 @@
     <title>О редакции — Проекты</title>
 
     <!-- Стили страницы -->
+
+    <!-- Стили страницы -->
     <link rel="stylesheet" href="AboutEdit.css">
+    <!-- Логика слайдера (переключение, свайпы, точки) -->
     <!-- Логика слайдера (переключение, свайпы, точки) -->
     <script src="AboutEditSlider.js" defer></script>
 </head>
 <body>
+
+<!-- Header: заголовок страницы -->
 
 <!-- Header: заголовок страницы -->
 <header class="container">
@@ -18,7 +23,9 @@
 </header>
 
 <!-- About: общий блок слайдера и текстового описания -->
+<!-- About: общий блок слайдера и текстового описания -->
 <section class="container about">
+    <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
     <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
     <div class="about__grid">
 
@@ -28,17 +35,22 @@
             <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
 
             <!-- Viewport: окно просмотра; внутри — трек слайдов -->
+            <!-- Viewport: окно просмотра; внутри — трек слайдов -->
             <div class="slider__viewport">
                 <!-- Track: лента слайдов, которую двигает JS -->
+                <!-- Track: лента слайдов, которую двигает JS -->
                 <div class="slider__track">
+                    <!-- Slide #1: изображение команды -->
                     <!-- Slide #1: изображение команды -->
                     <div class="slide">
                         <img src="/Photo/EditTeam.svg" alt="Команда редакции, фото 1" />
                     </div>
                     <!-- Slide #2 -->
+                    <!-- Slide #2 -->
                     <div class="slide">
                         <img src="/Photo/EditTeam.svg" alt="Команда редакции, фото 2" />
                     </div>
+                    <!-- Slide #3 -->
                     <!-- Slide #3 -->
                     <div class="slide">
                         <img src="/Photo/EditTeam.svg" alt="Команда редакции, фото 3" />
@@ -47,40 +59,60 @@
             </div>
 
             <!-- Стрелка «вперед» -->
+            <!-- Стрелка «вперед» -->
             <button class="nav next" type="button" aria-label="Следующий слайд"></button>
 
+            <!-- Dots: контейнер для пагинации (точки создаются JS) -->
             <!-- Dots: контейнер для пагинации (точки создаются JS) -->
             <div class="slider__dots" aria-label="Пагинация"></div>
         </div>
         <!-- /Slider -->
+        <!-- /Slider -->
 
+        <!-- Text: статический контент о редакции -->
         <!-- Text: статический контент о редакции -->
         <article class="about__text">
             <p>Как воплотить эту мечту в жизнь? Где почерпнуть идеи? С кем можно разработать концепцию и обсудить детали? Кто подскажет, предложит и сделает? Где купить, заказать, получить скидку? Именно для тех, кто задает вопросы и тех, кто знает на них ответы, журнал «Калининградские дома» создал сайт KDoma.ru KDoma.ru собрал профессионалов города Калининграда на одной интернет-площадке с единственной целью – помочь каждому мечтателю создать свой комфортный дом. Именно такой, который ему нужен. Ведущие дизайнеры, архитекторы, декораторы, флористы, продавцы мебели, отделочных материалов, света, сантехники, декора, мастера-отделочники, строители — творческая, профессиональная, создающая команда, на опыт и мастерство которой вы можете положиться. Ищите экспертов, вдохновляйтесь идеями, выбирайте товары на KDoma.ru , создавайте уют и красоту в вашем доме! Кому нужен KDoma.ru</p>
             <p>— Всем тем, кто хочет создать уютный, красивый и комфортный дом, кто заинтересован в качественном ремонте и дизайнерских продуктах. KDoma.ru предлагает множество вариантов интерьеров и помогает в поиске новых идей. Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
             <!-- Ссылка на СОУТ -->
+            <!-- Ссылка на СОУТ -->
             <a class="about__link" href="#">Информация о результатах проведения СОУТ</a>
         </article>
         <!-- /Text -->
 
+        <!-- /Text -->
+
     </div>
+    <!-- /about__grid -->
     <!-- /about__grid -->
 
     <!-- Внешние точки (если нужно выводить пагинацию ниже всего блока) -->
     <div class="slider__dots__outer" aria-hidden="true"></div>
 </section>
 <!-- /About -->
+<!-- /About -->
 
 <!-- Projects: список карточек проектов -->
+<!-- Projects: список карточек проектов -->
 <section class="container projects">
+    <!-- Заголовок секции проектов -->
     <!-- Заголовок секции проектов -->
     <h2 class="title">Проекты</h2>
 
     <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
+
+    <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
     <ul class="projects__list">
+        <!-- Card: Ступени -->
         <!-- Card: Ступени -->
         <li class="project">
             <div class="project__item">
+                <div class="project__logo">
+                    <img src="/Photo/Stupeni.svg" alt="Ступени">
+                </div>
+                <div class="project__text">
+                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                </div>
                 <div class="project__logo">
                     <img src="/Photo/Stupeni.svg" alt="Ступени">
                 </div>
@@ -91,8 +123,16 @@
         </li>
 
         <!-- Card: KD -->
+
+        <!-- Card: KD -->
         <li class="project">
             <div class="project__item">
+                <div class="project__logo">
+                    <img src="/Photo/KDdoma.svg" alt="KD">
+                </div>
+                <div class="project__text">
+                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                </div>
                 <div class="project__logo">
                     <img src="/Photo/KDdoma.svg" alt="KD">
                 </div>
@@ -103,8 +143,16 @@
         </li>
 
         <!-- Card: Премия -->
+
+        <!-- Card: Премия -->
         <li class="project">
             <div class="project__item">
+                <div class="project__logo">
+                    <img src="/Photo/Premia.svg" alt="Премия">
+                </div>
+                <div class="project__text">
+                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                </div>
                 <div class="project__logo">
                     <img src="/Photo/Premia.svg" alt="Премия">
                 </div>
@@ -115,8 +163,16 @@
         </li>
 
         <!-- Card: Design Week -->
+
+        <!-- Card: Design Week -->
         <li class="project">
             <div class="project__item">
+                <div class="project__logo">
+                    <img src="/Photo/DesignWeek.svg" alt="Design Week">
+                </div>
+                <div class="project__text">
+                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                </div>
                 <div class="project__logo">
                     <img src="/Photo/DesignWeek.svg" alt="Design Week">
                 </div>
@@ -127,7 +183,10 @@
         </li>
     </ul>
     <!-- /projects__list -->
+    <!-- /projects__list -->
 </section>
+<!-- /Projects -->
+
 <!-- /Projects -->
 
 </body>

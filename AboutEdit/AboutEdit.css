@@ -40,7 +40,7 @@ img {
 
 }
 
-/* About: двухколоночная сетка как на дизайне */
+
 .about {
 }
 
@@ -84,7 +84,7 @@ img {
 }
 
 .slide{
-    min-width: 980px;  /* синхронизировано с viewport */
+    min-width: 980px;  
     height: 654px;
     flex: 0 0 980px;
     position: relative;
@@ -93,8 +93,8 @@ img {
 .slide > img{
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* кадрирование без искажений */
-    object-position: center;/* центр кадра */
+    object-fit: cover;      
+    object-position: center;
     display: block;
 }
 .slide > img {
@@ -150,7 +150,6 @@ img {
     outline-offset: -2px
 }
 
-/* Точки под фото по центру */
 .slider__dots {
     display: flex;
     gap: 8px;
@@ -174,7 +173,7 @@ img {
     box-shadow: 0 0 0 3px rgba(180, 0, 0, .12)
 }
 
-/* Projects — две колонки карточек */
+
 .projects {
     margin: 36px auto 80px
 }
@@ -272,7 +271,6 @@ img {
 
     .title{ font-size: 40px; margin: 22px 0; }
 
-    /* About: одна колонка — фото сверху, текст ниже */
     .about__grid{ display:block; }
     .work_slider{
         width:100%;
@@ -286,13 +284,13 @@ img {
     .about__text{ font-size:18px; line-height:1.4; }
     .about__text p{ margin:0 0 10px; }
 
-    /* Проекты: две колонки */
+
     .projects{ margin-top: 24px; margin-bottom: 10px; }
     .projects__list{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        column-gap:20px;  /* между столбцами */
-        row-gap:10px;     /* базовый вертикальный */
+        column-gap:20px;  
+        row-gap:10px;     
         margin:0; padding:0; list-style:none;
     }
     .project{ margin:0; }
