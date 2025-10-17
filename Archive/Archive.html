@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Базовая конфигурация документа -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Все журналы — каталог</title>
+
+    <!-- Стили проекта -->
+    <link rel="stylesheet" href="Archive.css" />
+
+    <!-- Скрипты: переключение активного года и мобильный дропдаун -->
+    <script src="year-toggle.js" defer></script>
+    <script src="filter-panel.js" defer></script>
+</head>
+<body>
+
+<!-- Шапка: заголовок + фильтры годов -->
+<header class="page_head">
+    <div class="container">
+        <h1 class="title">Все журналы</h1>
+
+        <!-- Мобильный триггер и дропдаун годов -->
+        <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Годы" hidden>
+            <img class="filter_trigger_icon__img" src="/Photo/FilterIcon.svg" alt="" />
+        </button>
+        <div class="years_dropdown" id="years_dropdown" hidden>
+            <div class="years_dropdown__panel" role="menu" aria-label="Выбор года">
+                <ul class="years_dropdown__list" id="years_dropdown_list"></ul>
+            </div>
+        </div>
+
+        <!-- Десктопная панель годов -->
+        <nav class="years" aria-label="Фильтр по годам" id="year_nav">
+            <a class="year" data-year="2025" href="#2025">2025</a>
+            <a class="year is_active" data-year="2024" href="#2024" aria-current="page">2024</a>
+            <a class="year" data-year="2023" href="#2023">2023</a>
+            <a class="year" data-year="2022" href="#2022">2022</a>
+            <a class="year" data-year="archive" href="#archive">архив</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Основной контент -->
+<main class="container">
+    <section class="catalog" aria-labelledby="y2024">
+        <h2 id="y2024" class="visually_hidden">Журналы 2024</h2>
+
+        <ul class="grid">
+            <!-- Карточка года -->
+            <li class="card card__year">
+                <a class="card__link" href="#y2024" aria-label="Текущий год: 2024">
+                    <div class="card__cover__year">
+                        <img src="/Photo/2024.svg" alt="Выбранный год 2024" />
+                    </div>
+                </a>
+            </li>
+
+            <!-- №11 (232) -->
+            <li class="card">
+                <a class="card__link" href="#mag232">
+                    <div class="card__cover">
+                        <img src="/Photo/232.svg" alt="Обложка: Калининградские дома №11 (232), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №11 (232)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №10 (231) -->
+            <li class="card">
+                <a class="card__link" href="#mag231">
+                    <div class="card__cover">
+                        <img src="/Photo/231.svg" alt="Обложка: Калининградские дома №10 (231), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №10 (231)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №9 (230) -->
+            <li class="card">
+                <a class="card__link" href="#mag230">
+                    <div class="card__cover">
+                        <img src="/Photo/230.svg" alt="Обложка: Калининградские дома №9 (230), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №9 (230)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №8 (229) -->
+            <li class="card">
+                <a class="card__link" href="#mag229">
+                    <div class="card__cover">
+                        <img src="/Photo/229.svg" alt="Обложка: Калининградские дома №8 (229), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №8 (229)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №7 (228) -->
+            <li class="card">
+                <a class="card__link" href="#mag228">
+                    <div class="card__cover">
+                        <img src="/Photo/228.svg" alt="Обложка: Калининградские дома №7 (228), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №7 (228)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №6 (227) -->
+            <li class="card">
+                <a class="card__link" href="#mag227">
+                    <div class="card__cover">
+                        <img src="/Photo/227.svg" alt="Обложка: Калининградские дома №6 (227), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №6 (227)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №5 (226) -->
+            <li class="card">
+                <a class="card__link" href="#mag226">
+                    <div class="card__cover">
+                        <img src="/Photo/226.svg" alt="Обложка: Калининградские дома №5 (226), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №5 (226)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №4 (225) -->
+            <li class="card">
+                <a class="card__link" href="#mag225">
+                    <div class="card__cover">
+                        <img src="/Photo/225.svg" alt="Обложка: Калининградские дома №4 (225), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №4 (225)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №3 (224) -->
+            <li class="card">
+                <a class="card__link" href="#mag224">
+                    <div class="card__cover">
+                        <img src="/Photo/224.svg" alt="Обложка: Калининградские дома №3 (224), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №3 (224)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №2 (223) -->
+            <li class="card">
+                <a class="card__link" href="#mag223">
+                    <div class="card__cover">
+                        <img src="/Photo/223.svg" alt="Обложка: Калининградские дома №2 (223), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №2 (223)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+
+            <!-- №1 (222) -->
+            <li class="card">
+                <a class="card__link" href="#mag222">
+                    <div class="card__cover">
+                        <img src="/Photo/222.svg" alt="Обложка: Калининградские дома №1 (222), 2024" />
+                    </div>
+                    <div class="card__meta">
+                        <h3 class="card__title">Калининградские дома №1 (222)</h3>
+                        <p class="card__year">2024</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

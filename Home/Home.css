@@ -50,7 +50,6 @@ section {
     padding-bottom: 76px;
     background: #ddd url('../Photo/BackgroundPhoto.png') center/cover no-repeat;
 }
-
 .hero h1 {
     margin: 0 0 80px;
     color: #fff;
@@ -61,8 +60,10 @@ section {
     text-shadow: 0 2px 8px rgba(0,0,0,.05);
     line-height: 75%;
 }
-
-.hero-btn {
+.card_link { display: block; color: inherit; text-decoration: none; }
+.card_link:focus-visible .card_arrow,
+.card_link:hover .card_arrow { filter: brightness(0) saturate(100%); }
+.hero_btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -78,7 +79,7 @@ section {
     margin-top: auto;
 }
 
-.hero-btn:hover {
+.hero_btn:hover {
     background: #111;
     color: #fff;
 }
@@ -88,7 +89,7 @@ section {
     padding-bottom: 0;
 }
 
-.cards-row {
+.cards_row {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
@@ -107,7 +108,7 @@ section {
     transform: scale(1.03);
 }
 
-.card .card-bg {
+.card .card_bg {
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -127,7 +128,7 @@ section {
     font-family: Geologica;
 }
 
-.card-arrow {
+.card_arrow {
     position: absolute;
     right: 22px;
     bottom: 18px;
@@ -135,59 +136,59 @@ section {
     height: 32px;
 }
 
-.card-tall {
+.card_tall {
     flex: 0 0 389px;
     aspect-ratio: 389/720;
 }
 
-.card-wide {
+.card_wide {
     flex: 0 0 832px;
     aspect-ratio: 832/720;
 }
 
-.card-col {
+.card_col {
     flex: 0 0 389px;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
 }
 
-.card-small {
+.card_small {
     aspect-ratio: 389/229;
 }
 
-.card-banner {
+.card_banner {
     aspect-ratio: 389/447;
 }
 
-.card-designers .card-bg {
+.card_designers .card_bg {
     background-image: url('../Photo/DesignerPhoto.png');
 }
 
-.card-interiors .card-bg {
+.card_interiors .card_bg {
     background-image: url('../Photo/interiorPhoto.png');
 }
 
-.card-companies .card-bg {
+.card_companies .card_bg {
     background-image: url('../Photo/CompanyPhoto.png');
 }
 
-.card-banner .card-bg {
+.card_banner .card_bg {
     background-image: url('../Photo/BannerPhoto.png');
 }
 
-.about-design {
+.about_design {
     padding-top: 100px;
     padding-bottom: 24px;
 }
 
-.about-design h2 {
+.about_design h2 {
     font-size: 50px;
     font-weight: 200;
     margin: 0 0 16px;
 }
 
-.about-design-row {
+.about_design_row {
     display: flex;
     gap: 4px;
     align-items: stretch;
@@ -195,7 +196,7 @@ section {
     cursor: pointer;
 }
 
-.about-design-card {
+.about_design_card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -203,42 +204,42 @@ section {
     margin-left: 0;
 }
 
-.about-design-card.fig-1 {
+.about_design_card.fig_1 {
     flex: 0 0 833px;
 }
 
-.about-design-card.fig-2,
-.about-design-card.fig-3 {
+.about_design_card.fig_2,
+.about_design_card.fig_3 {
     flex: 0 0 388px;
 }
 
-.about-design-card img {
+.about_design_card img {
     width: 100%;
     object-fit: cover;
 }
 
-.about-design-card.fig-1 img {
+.about_design_card.fig_1 img {
     aspect-ratio: 650/413;
 }
 
-.about-design-card.fig-2 img,
-.about-design-card.fig-3 img {
+.about_design_card.fig_2 img,
+.about_design_card.fig_3 img {
     aspect-ratio: 388/530;
 }
 
-.about-design-card figcaption {
+.about_design_card figcaption {
     font-size: 24px;
     font-weight: 300;
     color: black;
 }
 
-.about-design-footer {
+.about_design_footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 24px;
 }
 
-.about-design-all {
+.about_design_all {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -254,23 +255,25 @@ section {
     font-size: 20px;
 }
 
-.about-design-all:hover {
+.about_design_all:hover {
     background: #111;
     color: #fff;
 }
-.about-design-all:hover img{
+
+.about_design_all:hover img{
     filter: invert(1)
     brightness(1.15)
     contrast(1.05);
     mix-blend-mode: normal;
     opacity: 1;
 }
-.design-arrow {
+
+.design_arrow {
     color: black;
     font-size: 20px;
 }
 
-.journal-block {
+.journal_block {
     padding-top: 100px;
     padding-bottom: 0;
     display: flex;
@@ -279,8 +282,8 @@ section {
     flex-wrap: nowrap;
 }
 
-.journal-sidebar {
-    width: 101%;
+.journal_sidebar {
+    width: 101px;
     margin-right: 102px;
     flex: 0 0 240px;
     display: flex;
@@ -288,52 +291,52 @@ section {
     gap: 24px;
 }
 
-.journal-header {
+.journal_header {
     margin-top: -97px;
 }
 
-.journal-header h2 {
+.journal_header h2 {
     font-size: 50px;
     font-weight: 200;
     margin: 0 0 10px;
 }
 
-.journal-numbers {
+.journal_numbers {
 
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.journal-big {
+.journal_big {
     font-size: 120px;
     font-weight: 200;
     line-height: 1;
 }
 
-.journal-note {
+.journal_note {
     font-size: 20px;
     color: black;
     letter-spacing: .08em;
 }
 
-.journal-cover {
+.journal_cover {
     flex: 0 0 444px;
 }
 
-.journal-cover img {
+.journal_cover img {
     width: 444px;
     height: 613px;
     box-shadow: 0 2px 14px rgba(0,0,0,.07);
 }
 
-.journal-content {
+.journal_content {
     min-width: 0;
     display: flex;
     flex-direction: column;
 }
 
-.journal-desc {
+.journal_desc {
     font-size: 30px;
     font-weight: 300;
     margin: 0 0 24px;
@@ -342,14 +345,14 @@ section {
     color: black;
 }
 
-.journal-btns {
+.journal_btns {
     display: flex;
     gap: var(--gap);
     flex-wrap: nowrap;
     margin-top: 145px;
 }
-.journal-btn:hover img,
-.journal-btn-s:hover img {
+.journal_btn:hover img,
+.journal_btn_s:hover img {
     filter: invert(1)
     brightness(1.15)
     contrast(1.05);
@@ -357,8 +360,8 @@ section {
     opacity: 1;
 }
 
-.journal-btn,
-.journal-btn-s {
+.journal_btn,
+.journal_btn_s {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -376,34 +379,34 @@ section {
     line-height: 110%;
 }
 
-.journal-btn {
+.journal_btn {
     width: 388px;
     text-decoration: underline;
     text-underline-offset: 3px ;
 }
 
-.journal-btn-s {
+.journal_btn_s {
     width: 389px;
 }
 
-.journal-btn:hover,
-.journal-btn-s:hover {
+.journal_btn:hover,
+.journal_btn_s:hover {
     background: #111;
     color: #fff;
 }
 
-.events-block {
+.events_block {
     padding-top: 64px;
     padding-bottom: 24px;
 }
 
-.events-block h2 {
+.events_block h2 {
     font-size: 50px;
     font-weight: 200;
     margin: 0 0 18px;
 }
 
-.events-row {
+.events_row {
     display: flex;
     gap: var(--gap);
     align-items: flex-start;
@@ -412,7 +415,7 @@ section {
     cursor: pointer;
 }
 
-.event-card {
+.event_card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -420,29 +423,29 @@ section {
     min-width: 0;
 }
 
-.event-card--small {
+.event_card__small {
     flex: 0 0 389px;
 }
 
-.event-card--wide {
+.event_card__wide {
     flex: 0 0 832px;
 }
 
-.event-card img {
+.event_card img {
     width: 100%;
     object-fit: cover;
     height: 700px;
 }
 
-.event-card--small img {
+.event_card__small img {
     aspect-ratio: 389/292;
 }
 
-.event-card--wide img {
+.event_card__wide img {
     aspect-ratio: 832/520;
 }
 
-.event-caption {
+.event_caption {
     font-size: 24px;
     color: black;
     font-weight: 300;
@@ -450,13 +453,13 @@ section {
     line-height: 1.35;
 }
 
-.events-footer {
+.events_footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.events-btn {
+.events_btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -471,33 +474,34 @@ section {
     transition: all .18s ease;
     font-size: 20px;
 }
-.events-btn:hover img {
+
+.events_btn:hover img {
     filter: invert(1)
     brightness(1.15)
     contrast(1.05);
     mix-blend-mode: normal;
     opacity: 1;
 }
-.events-btn:hover {
+
+.events_btn:hover {
     background: #111;
     color: #fff;
 }
 
-
-.about-editorial {
+.about_editorial {
     padding-top: 56px;
     padding-bottom: 100px;
 }
 
-.about-editorial h2 {
+.about_editorial h2 {
     font-size: 50px;
     font-weight: 200;
     margin: 0 0 20px;
 }
 
-.about-editorial__content {
-    background: #ededed;
+.about_editorial__content {
 
+    background: #ededed;
     padding: 38px;
     display: flex;
     gap: 80px;
@@ -505,7 +509,7 @@ section {
     flex-wrap: nowrap;
 }
 
-.about-editorial__col {
+.about_editorial__col {
     flex: 1 1 0;
     min-width: 0;
     display: flex;
@@ -513,14 +517,14 @@ section {
     gap: 12px;
 }
 
-.about-editorial__title {
+.about_editorial__title {
     font-size: 27px;
     font-weight: 300;
     margin: 0;
     line-height: 110%;
 }
 
-.about-editorial__text {
+.about_editorial__text {
     font-size: 20px;
     margin: 0;
     font-weight: 300;
@@ -531,7 +535,7 @@ section {
     text-decoration: none;
 }
 
-.about-editorial__list {
+.about_editorial__list {
     width: 100%;
     margin: 55px 0 0 18px;
     font-size: 20px;
@@ -545,7 +549,7 @@ section {
     text-decoration: underline;
 }
 
-.about-editorial__btn {
+.about_editorial__btn {
     margin-top: auto;
     align-self: flex-start;
     display: inline-flex;
@@ -560,19 +564,21 @@ section {
     text-decoration: none;
     transition: all .18s ease;
 }
-.about-editorial__btn:hover img {
+
+.about_editorial__btn:hover img {
     filter: invert(1)
     brightness(1.15)
     contrast(1.05);
     mix-blend-mode: normal;
     opacity: 1;
 }
-.about-editorial__btn:hover {
+
+.about_editorial__btn:hover {
     background: #111;
     color: #fff;
 }
 
-.about-editorial__btn--red {
+.about_editorial__btn__red {
     width: 100%;
     margin-top: auto;
     align-self: flex-start;
@@ -589,7 +595,7 @@ section {
     transition: all .18s ease;
 }
 
-.about-editorial__btn--red:hover {
+.about_editorial__btn__red:hover {
     background: #111;
     border-color: #111;
 }
@@ -621,7 +627,7 @@ section {
         padding: 0 12px;
     }
 
-    .hero-btn {
+    .hero_btn {
         padding: 12px 18px;
         font-size: 14px;
 
@@ -631,41 +637,41 @@ section {
         padding-top: 18px;
     }
 
-    .cards-row {
+    .cards_row {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
 
     .card,
-    .card-tall,
-    .card-wide,
-    .card-small,
-    .card-banner,
-    .card-col {
+    .card_tall,
+    .card_wide,
+    .card_small,
+    .card_banner,
+    .card_col {
         flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
         overflow: hidden;
     }
 
-    .card-col {
+    .card_col {
         gap: 12px;
     }
 
-    .card-interiors {
+    .card_interiors {
         aspect-ratio: 1/1.65;
     }
 
-    .card-designers {
+    .card_designers {
         aspect-ratio: 1/.58;
     }
 
-    .card-companies {
+    .card_companies {
         aspect-ratio: 1/.58;
     }
 
-    .card-banner {
+    .card_banner {
         aspect-ratio: 1/.92;
     }
 
@@ -675,61 +681,61 @@ section {
         font-size: 18px;
     }
 
-    .card-arrow {
+    .card_arrow {
         right: 12px;
         bottom: 12px;
         width: 24px;
         height: 24px;
     }
 
-    .about-design {
+    .about_design {
         padding-top: 22px;
         padding-bottom: 10px;
     }
 
-    .about-design h2 {
+    .about_design h2 {
         font-size: 28px;
         margin-bottom: 12px;
     }
 
-    .about-design-row {
+    .about_design_row {
         flex-direction: column;
         gap: 10px;
     }
 
-    .about-design-card.fig-1,
-    .about-design-card.fig-2,
-    .about-design-card.fig-3 {
+    .about_design_card.fig_1,
+    .about_design_card.fig_2,
+    .about_design_card.fig_3 {
         flex: 0 0 auto;
         width: 100%;
     }
 
-    .about-design-card.fig-1 img {
+    .about_design_card.fig_1 img {
         aspect-ratio: 16/10;
     }
 
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-3 img {
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_3 img {
         aspect-ratio: 16/20;
     }
 
-    .about-design-card figcaption {
+    .about_design_card figcaption {
         font-size: 14px;
     }
 
-    .about-design-footer {
+    .about_design_footer {
         justify-content: center;
         margin-top: 14px;
     }
 
-    .about-design-all {
+    .about_design_all {
         width: 100%;
         height: 48px;
         font-size: 14px;
 
     }
 
-    .journal-block {
+    .journal_block {
         margin-top: 48px;
         padding-top: 26px;
         display: grid;
@@ -737,26 +743,26 @@ section {
         gap: 12px;
     }
 
-    .journal-sidebar {
+    .journal_sidebar {
         order: 1;
         display: grid;
         gap: 10px;
     }
 
-    .journal-header h2 {
+    .journal_header h2 {
         font-size: 28px;
         margin: 0;
     }
 
-    .journal-big {
+    .journal_big {
         font-size: 60px;
     }
 
-    .journal-note {
+    .journal_note {
         font-size: 12px;
     }
 
-    .journal-cover {
+    .journal_cover {
         order: 2;
         grid-column: 2/3;
         align-self: start;
@@ -764,14 +770,14 @@ section {
         width: 140px;
     }
 
-    .journal-cover img {
+    .journal_cover img {
         width: 140px;
         height: auto;
         margin-left: -6px;
         box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
 
-    .journal-content {
+    .journal_content {
         order: 3;
         grid-column: 1/-1;
         display: grid;
@@ -779,13 +785,13 @@ section {
         margin: 0;
     }
 
-    .journal-desc {
+    .journal_desc {
         font-size: 15px;
         line-height: 1.35;
         margin: 0;
     }
 
-    .journal-btns {
+    .journal_btns {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
@@ -793,75 +799,75 @@ section {
         width: 100%;
     }
 
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
         width: 100%;
         height: 48px;
         font-size: 14px;
         padding: 0 14px;
     }
 
-    .events-block {
+    .events_block {
         padding-top: 28px;
         padding-bottom: 16px;
     }
 
-    .events-block h2 {
+    .events_block h2 {
         font-size: 28px;
         margin-bottom: 12px;
     }
 
-    .events-row {
+    .events_row {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
 
-    .event-card--small,
-    .event-card--wide {
+    .event_card__small,
+    .event_card__wide {
         flex: none;
         width: 100%;
     }
 
-    .event-card img {
+    .event_card img {
         height: auto;
     }
 
-    .event-card--small img {
+    .event_card__small img {
         aspect-ratio: 16/9;
     }
 
-    .event-card--wide img {
+    .event_card__wide img {
         aspect-ratio: 16/10;
     }
 
-    .event-caption {
+    .event_caption {
         font-size: 14px;
         padding: 10px 8px 12px;
     }
 
-    .events-footer {
+    .events_footer {
         margin-top: 12px;
     }
 
-    .events-btn {
+    .events_btn {
         width: 100%;
         height: 48px;
         font-size: 14px;
 
     }
 
-    .about-editorial {
+    .about_editorial {
         padding-top: 28px;
         padding-bottom: 28px;
     }
 
-    .about-editorial h2 {
+    .about_editorial h2 {
         font-size: 28px;
         margin-bottom: 12px;
     }
 
-    .about-editorial__content {
+    .about_editorial__content {
         padding: 16px;
         gap: 16px;
         flex-direction: column;
@@ -870,16 +876,16 @@ section {
         border: 1px solid rgba(0,0,0,.06);
     }
 
-    .about-editorial__title {
+    .about_editorial__title {
         font-size: 18px;
     }
 
-    .about-editorial__text,
-    .about-editorial__list {
+    .about_editorial__text,
+    .about_editorial__list {
         font-size: 14px;
     }
 
-    .about-editorial__btn {
+    .about_editorial__btn {
         height: 48px;
         padding: 0 92px;
         font-size: 14px;
@@ -887,7 +893,7 @@ section {
 
     }
 
-    .about-editorial__col:last-child {
+    .about_editorial__col:last-child {
         gap: 10px;
     }
 
@@ -897,7 +903,7 @@ section {
         justify-content: center;
     }
 
-    .about-editorial__btn--red {
+    .about_editorial__btn__red {
 
         background: #c2171a;
         border-color: #c2171a;
@@ -933,7 +939,7 @@ section {
         text-align: center;
     }
 
-    .hero-btn {
+    .hero_btn {
         height: 50px;
         padding: 0 122px;
         font-size: 16px;
@@ -945,35 +951,35 @@ section {
         width: 110%;
     }
 
-    .cards-row {
+    .cards_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--gap);
     }
 
-    .card-col {
+    .card_col {
         display: contents;
     }
 
-    .card-interiors {
+    .card_interiors {
         grid-column: 1/2;
         grid-row: 1/3;
         aspect-ratio: 3/4;
     }
 
-    .card-companies {
+    .card_companies {
         grid-column: 2/3;
         grid-row: 1/2;
         aspect-ratio: 16/10;
     }
 
-    .card-banner {
+    .card_banner {
         grid-column: 2/3;
         grid-row: 2/3;
         aspect-ratio: 16/10;
     }
 
-    .card-designers {
+    .card_designers {
         grid-column: 1/-1;
         grid-row: 3/4;
         aspect-ratio: 16/7;
@@ -985,65 +991,65 @@ section {
         left: 14px;
     }
 
-    .card-arrow {
+    .card_arrow {
         width: 26px;
         height: 26px;
         right: 14px;
         bottom: 14px;
     }
 
-    .about-design {
+    .about_design {
         padding-top: 80px;
         width: 110%;
     }
 
-    .about-design h2 {
+    .about_design h2 {
         font-size: 36px;
     }
 
-    .about-design-row {
+    .about_design_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
 
-    .about-design-card.fig-2 {
+    .about_design_card.fig_2 {
         order: 1;
     }
 
-    .about-design-card.fig-1 {
+    .about_design_card.fig_1 {
         order: 2;
     }
 
-    .about-design-card.fig-3 {
+    .about_design_card.fig_3 {
         order: 3;
         grid-column: 1/-1;
     }
 
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-1 img {
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_1 img {
         aspect-ratio: 4/3;
     }
 
-    .about-design-card.fig-3 img {
+    .about_design_card.fig_3 img {
         aspect-ratio: 16/9;
     }
 
-    .about-design-card figcaption {
+    .about_design_card figcaption {
         font-size: 15px;
     }
 
-    .about-design-footer {
+    .about_design_footer {
         margin-top: 16px;
     }
 
-    .about-design-all {
+    .about_design_all {
         width: 320px;
         height: 50px;
         font-size: 15px;
     }
 
-    .journal-block {
+    .journal_block {
         margin-top: 40px;
         display: grid;
         grid-template-columns: 180px 220px 1fr;
@@ -1052,36 +1058,36 @@ section {
         padding-top: 36px;
     }
 
-    .journal-sidebar {
+    .journal_sidebar {
         grid-column: 1/2;
         gap: 12px;
         margin: 0;
     }
 
-    .journal-header h2 {
+    .journal_header h2 {
         font-size: 36px;
         margin: 0 0 6px;
     }
 
-    .journal-big {
+    .journal_big {
         font-size: 72px;
     }
 
-    .journal-note {
+    .journal_note {
         font-size: 12px;
     }
 
-    .journal-cover {
+    .journal_cover {
         grid-column: 2/3;
     }
 
-    .journal-cover img {
+    .journal_cover img {
         width: 220px;
         height: auto;
         box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
 
-    .journal-content {
+    .journal_content {
         grid-column: 3/4;
         display: grid;
         grid-template-columns: 1fr;
@@ -1089,90 +1095,90 @@ section {
         margin: 0;
     }
 
-    .journal-desc {
+    .journal_desc {
         font-size: 16px;
         line-height: 1.45;
         margin: 0;
     }
 
-    .journal-btns {
+    .journal_btns {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
         margin: 0;
     }
 
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
         height: 50px;
         width: auto;
         font-size: 14px;
     }
 
-    .events-block {
+    .events_block {
         padding-top: 32px;
         width: 110%;
     }
 
-    .events-block h2 {
+    .events_block h2 {
         font-size: 36px;
         margin-bottom: 14px;
     }
 
-    .events-row {
+    .events_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
 
-    .event-card--small:nth-of-type(1) {
+    .event_card__small:nth-of-type(1) {
         grid-column: 1/2;
     }
 
-    .event-card--wide {
+    .event_card__wide {
         grid-column: 1/-1;
     }
 
-    .event-card--small:nth-of-type(3) {
+    .event_card__small:nth-of-type(3) {
         grid-column: 2/3;
     }
 
-    .event-card--small img {
+    .event_card__small img {
         aspect-ratio: 4/3;
         height: auto;
     }
 
-    .event-card--wide img {
+    .event_card__wide img {
         aspect-ratio: 16/9;
         height: auto;
     }
 
-    .event-caption {
+    .event_caption {
         font-size: 15px;
         padding: 10px 8px 12px;
     }
 
-    .events-footer {
+    .events_footer {
         margin-top: 14px;
     }
 
-    .events-btn {
+    .events_btn {
         width: 320px;
         height: 50px;
         font-size: 15px;
     }
 
-    .about-editorial {
+    .about_editorial {
         padding-top: 32px;
         padding-bottom: 40px;
         width: 110%;
     }
 
-    .about-editorial h2 {
+    .about_editorial h2 {
         font-size: 36px;
     }
 
-    .about-editorial__content {
+    .about_editorial__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
@@ -1182,38 +1188,38 @@ section {
 
     }
 
-    .about-editorial__col:nth-child(1) {
+    .about_editorial__col:nth-child(1) {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    .about-editorial__col:nth-child(2) {
+    .about_editorial__col:nth-child(2) {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 
-    .about-editorial__col:nth-child(3) {
+    .about_editorial__col:nth-child(3) {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    .about-editorial__col:nth-child(4) {
+    .about_editorial__col:nth-child(4) {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    .about-editorial__title {
+    .about_editorial__title {
         font-size: 20px;
         font-weight: 300;
     }
 
-    .about-editorial__text,
-    .about-editorial__list {
+    .about_editorial__text,
+    .about_editorial__list {
         font-size: 15px;
         line-height: 1.4;
     }
 
-    .about-editorial__list {
+    .about_editorial__list {
         margin: 6px 0 0 18px;
     }
 
@@ -1221,7 +1227,7 @@ section {
         font-size: 14px;
     }
 
-    .about-editorial__btn {
+    .about_editorial__btn {
         margin-top: auto;
         height: 48px;
         padding: 0 18px;
@@ -1229,7 +1235,7 @@ section {
         align-self: start;
     }
 
-    .about-editorial__btn--red {
+    .about_editorial__btn__red {
         background: #c2171a;
         border-color: #c2171a;
         color: #fff;
@@ -1267,7 +1273,7 @@ section {
         font-weight: 300;
         padding: 0 12px;                /* небольшой внутренний отступ, чтобы не лип к краям */
     }
-    .hero-btn {
+    .hero_btn {
 
 
         padding: 5px 90px;
@@ -1277,54 +1283,54 @@ section {
 
     /* Карточки: порядок как в SVG — сначала Интерьеры (высокая), потом Дизайнеры, Компании, затем Баннер, всё в одну колонку */
     .cards { padding-top: 60px; }
-    .cards-row {
+    .cards_row {
         flex-direction: column;
         gap: 12px;
     }
     .card,
-    .card-tall,
-    .card-wide,
-    .card-small,
-    .card-banner,
-    .card-col {
+    .card_tall,
+    .card_wide,
+    .card_small,
+    .card_banner,
+    .card_col {
         flex: 0 0 auto;
         width: 100%;
     }
-    .card-col { gap: 12px; }
+    .card_col { gap: 12px; }
     /* высоты под макет */
-    .card-tall { aspect-ratio: 1 / 1.65; }          /* Интерьеры — высокая */
-    .card-small { aspect-ratio: 1 / .58; }          /* Две малые */
-    .card-banner { aspect-ratio: 1 / .92; }         /* Баннер */
+    .card_tall { aspect-ratio: 1 / 1.65; }          /* Интерьеры — высокая */
+    .card_small { aspect-ratio: 1 / .58; }          /* Две малые */
+    .card_banner { aspect-ratio: 1 / .92; }         /* Баннер */
     .card h2 {
         top: 12px;
         left: 12px;
         font-size: 18px;
     }
-    .card-arrow {
+    .card_arrow {
         right: 12px;
         bottom: 12px;
         width: 24px;
         height: 24px;
     }
     /* Убираем среднюю «широкую» заглушку, если она только фон */
-    .card.card-wide { display: none; }
+    .card.card_wide { display: none; }
 
     /* Про дизайн */
-    .about-design { padding-top: 22px; padding-bottom: 10px; }
-    .about-design h2 { font-size: 28px; margin-bottom: 12px; }
-    .about-design-row {
+    .about_design { padding-top: 22px; padding-bottom: 10px; }
+    .about_design h2 { font-size: 28px; margin-bottom: 12px; }
+    .about_design_row {
         flex-direction: column;
         gap: 10px;
     }
-    .about-design-card.fig-1,
-    .about-design-card.fig-2,
-    .about-design-card.fig-3 { flex: 0 0 auto; width: 100%; }
-    .about-design-card.fig-1 img { aspect-ratio: 16 / 10; }
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-3 img { aspect-ratio: 16 / 20; }
-    .about-design-card figcaption { font-size: 14px; }
-    .about-design-footer { justify-content: center; margin-top: 14px; }
-    .about-design-all {
+    .about_design_card.fig_1,
+    .about_design_card.fig_2,
+    .about_design_card.fig_3 { flex: 0 0 auto; width: 100%; }
+    .about_design_card.fig_1 img { aspect-ratio: 16 / 10; }
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_3 img { aspect-ratio: 16 / 20; }
+    .about_design_card figcaption { font-size: 14px; }
+    .about_design_footer { justify-content: center; margin-top: 14px; }
+    .about_design_all {
         width: 100%;
         height: 48px;
         font-size: 16px;
@@ -1332,32 +1338,32 @@ section {
     }
 
     /* Журнал: колонку превращаем в столбец и переносим «кнопки» сразу под описанием */
-    .journal-block {
+    .journal_block {
         margin-top: 48px;
         padding-top: 60px;
         flex-direction: column;
         gap: 16px;
 
     }
-    .journal-sidebar { order: 1; flex: none; gap: 12px; }
-    .journal-header h2 { font-size: 28px; margin: 0; }
-    .journal-big { font-size: 62px; }
-    .journal-note { font-size: 11px; }
-    .journal-cover { order: 2; flex: none; }
-    .journal-cover img { width: 100%; height: auto; }
-    .journal-content { order: 3; flex: none; }
-    .journal-desc {
+    .journal_sidebar { order: 1; flex: none; gap: 12px; }
+    .journal_header h2 { font-size: 28px; margin: 0; }
+    .journal_big { font-size: 62px; }
+    .journal_note { font-size: 11px; }
+    .journal_cover { order: 2; flex: none; }
+    .journal_cover img { width: 100%; height: auto; }
+    .journal_content { order: 3; flex: none; }
+    .journal_desc {
         font-size: 16px;
         line-height: 1.35;
         margin: 0 0 12px;
     }
-    .journal-btns {
+    .journal_btns {
         margin-top: 0;
         flex-direction: column;
         gap: 10px;
     }
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
         width: 150%;
         height: 48px;
         font-size: 14px;
@@ -1365,21 +1371,21 @@ section {
     }
 
     /* События: одна колонка в порядке «маленькая — широкая — маленькая» */
-    .events-block { padding-top: 28px; padding-bottom: 16px; }
-    .events-block h2 { font-size: 28px; margin-bottom: 12px; }
-    .events-row {
+    .events_block { padding-top: 28px; padding-bottom: 16px; }
+    .events_block h2 { font-size: 28px; margin-bottom: 12px; }
+    .events_row {
         flex-direction: column;
         gap: 12px;
     }
 
-    .event-card--small,
-    .event-card--wide { flex: none; width: 100%; }
-    .event-card img { height: auto; }
-    .event-card--small img { aspect-ratio: 16 / 9; }
-    .event-card--wide img { aspect-ratio: 16 / 10; }
-    .event-caption { font-size: 14px; padding: 10px 8px 12px; }
-    .events-footer { margin-top: 12px; }
-    .events-btn {
+    .event_card__small,
+    .event_card__wide { flex: none; width: 100%; }
+    .event_card img { height: auto; }
+    .event_card__small img { aspect-ratio: 16 / 9; }
+    .event_card__wide img { aspect-ratio: 16 / 10; }
+    .event_caption { font-size: 14px; padding: 10px 8px 12px; }
+    .events_footer { margin-top: 12px; }
+    .events_btn {
         width: 100%;
         height: 48px;
         font-size: 14px;
@@ -1387,23 +1393,23 @@ section {
     }
 
     /* О редакции: колонки в столбец, кнопки — вверх колонки справа по макету */
-    .about-editorial { padding-top: 28px; padding-bottom: 28px; }
-    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
-    .about-editorial__content {
+    .about_editorial { padding-top: 28px; padding-bottom: 28px; }
+    .about_editorial h2 { font-size: 28px; margin-bottom: 12px; }
+    .about_editorial__content {
         padding: 16px;
         gap: 16px;
         flex-direction: column;
 
     }
-    .about-editorial__title { font-size: 18px; }
-    .about-editorial__text,
-    .about-editorial__list { font-size: 14px; }
-    .about-editorial__btn {
+    .about_editorial__title { font-size: 18px; }
+    .about_editorial__text,
+    .about_editorial__list { font-size: 14px; }
+    .about_editorial__btn {
         height: 44px;
         padding: 0 92px;
         font-size: 14px;
     }
-    .about-editorial__col:last-child { gap: 10px; }
+    .about_editorial__col:last-child { gap: 10px; }
     .readmore { font-size: 14px; }
 }
 
@@ -1413,29 +1419,29 @@ section {
     :root { --gap: 12px; --edge: 10px; }
 
     .cards { padding-top: 60px; }
-    .cards-row {
+    .cards_row {
         display: flex;
         flex-direction: column;   /* одна колонка */
         gap: 12px;
     }
 
     /* Разгруппируем правую колонку, чтобы дети стали на один уровень */
-    .card-col { display: contents; }
+    .card_col { display: contents; }
 
     /* НИЧЕГО не скрываем: «Интерьеры» (бывшая wide) остаётся */
-    .card-wide { display: block !important; width: 100% !important; flex: 0 0 auto !important; }
+    .card_wide { display: block !important; width: 100% !important; flex: 0 0 auto !important; }
 
     /* Точный порядок как в SVG */
-    .card-interiors { order: 1; }  /* Интерьеры — сверху, высокая */
-    .card-designers { order: 2; }  /* Дизайнеры */
-    .card-companies { order: 3; }  /* Компании */
-    .card-banner   { order: 4; }  /* Баннер — последним */
+    .card_interiors { order: 1; }  /* Интерьеры — сверху, высокая */
+    .card_designers { order: 2; }  /* Дизайнеры */
+    .card_companies { order: 3; }  /* Компании */
+    .card_banner   { order: 4; }  /* Баннер — последним */
 
     /* Единая ширина и скругление для всех карточек */
     .card,
-    .card-tall,
-    .card-small,
-    .card-banner {
+    .card_tall,
+    .card_small,
+    .card_banner {
         width: 100% !important;
         max-width: 100%;
 
@@ -1444,20 +1450,20 @@ section {
     }
 
     /* Соотношения сторон — как в макете */
-    .card-interiors { aspect-ratio: 1 / 1.65; } /* высокая */
-    .card-designers { aspect-ratio: 1 / .58; }  /* малая */
-    .card-companies { aspect-ratio: 1 / .58; }  /* малая */
-    .card-banner   { aspect-ratio: 1 / .92; }   /* средняя */
+    .card_interiors { aspect-ratio: 1 / 1.65; } /* высокая */
+    .card_designers { aspect-ratio: 1 / .58; }  /* малая */
+    .card_companies { aspect-ratio: 1 / .58; }  /* малая */
+    .card_banner   { aspect-ratio: 1 / .92; }   /* средняя */
 
     /* Текст и стрелки — ровно у краёв */
     .card h2 { top: 12px; left: 12px; font-size: 18px; }
-    .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
+    .card_arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
 }
 @media (min-width: 360px) and (max-width: 430px) {
     :root { --gap: 12px; --edge: 10px; }
 
     .cards { padding-top: 60px; }
-    .cards-row {
+    .cards_row {
         display: grid;
         grid-template-columns: 1fr 1fr;  /* две равные колонки */
         grid-auto-rows: auto;
@@ -1465,13 +1471,13 @@ section {
     }
 
     /* «Разгруппировать» правую колонку из HTML */
-    .card-col { display: contents; }
+    .card_col { display: contents; }
 
     /* Ничего не скрываем */
-    .card-wide { display: block !important; }
+    .card_wide { display: block !important; }
 
     /* Базовые размеры */
-    .card, .card-tall, .card-small, .card-banner {
+    .card, .card_tall, .card_small, .card_banner {
         width: 100% !important;
         max-width: 100%;
 
@@ -1479,26 +1485,26 @@ section {
     }
 
     /* Верхний блок — на две колонки */
-    .card-interiors {
+    .card_interiors {
         grid-column: 1 / -1;
         aspect-ratio: 16 / 11;
     }
 
     /* Левая высокая колонка — «Дизайнеры» растягивается на две строки */
-    .card-designers {
+    .card_designers {
         grid-column: 1 / 2;   /* левая колонка */
         grid-row: span 2;     /* занимает две строки по высоте */
         aspect-ratio: 3 / 4;  /* вертикальная пропорция; высота доберётся за счёт span 2 */
     }
 
     /* Правая колонка: сверху «Компании», ниже «Баннер» */
-    .card-companies {
+    .card_companies {
         grid-column: 2 / 3;   /* правая колонка */
         grid-row: auto;
         aspect-ratio: 16 / 10;
     }
 
-    .card-banner {
+    .card_banner {
         grid-column: 2 / 3;   /* правая колонка */
         grid-row: auto;
         aspect-ratio: 16 / 10;
@@ -1506,43 +1512,43 @@ section {
 
     /* Заголовки/стрелки */
     .card h2 { top: 12px; left: 12px; font-size: 18px; }
-    .card-arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
+    .card_arrow { right: 12px; bottom: 12px; width: 24px; height: 24px; }
 }
 @media (min-width: 360px) and (max-width: 430px) {
-    .about-design { padding-top: 60px; padding-bottom: 60px; }
-    .about-design h2 { font-size: 28px; margin-bottom: 12px; }
+    .about_design { padding-top: 60px; padding-bottom: 60px; }
+    .about_design h2 { font-size: 28px; margin-bottom: 12px; }
 
     /* Переключаем ряд на grid из двух колонок */
-    .about-design-row {
+    .about_design_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
 
     /* Сбрасываем фиксированные flex-основы */
-    .about-design-card { flex: none; width: 100%; }
+    .about_design_card { flex: none; width: 100%; }
 
     /* Верхний ряд: fig-2 слева, fig-1 справа */
-    .about-design-card.fig-2 { order: 1; grid-column: 1 / 2; }
-    .about-design-card.fig-1 { order: 2; grid-column: 2 / 3; }
+    .about_design_card.fig_2 { order: 1; grid-column: 1 / 2; }
+    .about_design_card.fig_1 { order: 2; grid-column: 2 / 3; }
 
     /* Нижняя широкая: fig-3 на две колонки */
-    .about-design-card.fig-3 { order: 3; grid-column: 1 / -1; }
+    .about_design_card.fig_3 { order: 3; grid-column: 1 / -1; }
 
     /* Пропорции изображений под мобильный макет */
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-1 img { aspect-ratio: 1 / 1; height: 224px; }   /* квадраты в верхнем ряду */
-    .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }  /* широкая нижняя */
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_1 img { aspect-ratio: 1 / 1; height: 224px; }   /* квадраты в верхнем ряду */
+    .about_design_card.fig_3 img { aspect-ratio: 16 / 9; }  /* широкая нижняя */
 
     /* Подписи компактнее */
-    .about-design-card figcaption { font-size: 14px; margin-top: 6px; }
+    .about_design_card figcaption { font-size: 14px; margin-top: 6px; }
 
     /* Кнопка — на всю ширину под сеткой */
-    .about-design-footer { margin-top: 14px; justify-content: center; }
-    .about-design-all { width: 100%; height: 48px; font-size: 16px; }
+    .about_design_footer { margin-top: 14px; justify-content: center; }
+    .about_design_all { width: 100%; height: 48px; font-size: 16px; }
 }
 @media (min-width: 360px) and (max-width: 430px) {
-    .journal-block {
+    .journal_block {
         display: grid;                 /* используем grid для верхнего ряда */
         grid-template-columns: 1fr 140px; /* слева текстовая колонка, справа узкая под обложку */
         grid-auto-rows: auto;
@@ -1551,7 +1557,7 @@ section {
     }
 
     /* Левая колонка с цифрами (как на скрине) */
-    .journal-sidebar {
+    .journal_sidebar {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         display: grid;
@@ -1559,23 +1565,23 @@ section {
         gap: 10px;
         flex: none;
     }
-    .journal-header h2 { font-size: 28px; margin: 0; }
-    .journal-numbers { display: grid; margin-top: -5px }
-    .journal-big { font-size: 60px; line-height: 1; }
-    .journal-note { font-size: 12px; }
+    .journal_header h2 { font-size: 28px; margin: 0; }
+    .journal_numbers { display: grid; margin-top: -5px }
+    .journal_big { font-size: 60px; line-height: 1; }
+    .journal_note { font-size: 12px; }
     .icon{
         width: 24px;
         height: 24px;
     }
     /* Обложка справа в первом ряду */
-    .journal-cover {
+    .journal_cover {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         align-self: start;
         justify-self: end;
         width: 140px;                  /* фиксируем ширину как на макете */
     }
-    .journal-cover img {
+    .journal_cover img {
         width: 140px;
         height: 196px;
         margin-left: -6px;
@@ -1583,7 +1589,7 @@ section {
     }
 
     /* Длинный абзац — во второй строке на всю ширину */
-    .journal-content {
+    .journal_content {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
         display: grid;
@@ -1591,21 +1597,21 @@ section {
         gap: 12px;
         margin: 0;
     }
-    .journal-desc {
+    .journal_desc {
         font-size: 15px;
         line-height: 1.35;
         margin: 0;
     }
 
     /* Кнопки — стэк на всю ширину, одинаковая высота */
-    .journal-btns {
+    .journal_btns {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         margin: 0;
     }
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
         width: 150%;
         height: 48px;
         font-size: 14px;
@@ -1613,11 +1619,11 @@ section {
     }
 }
 @media (min-width: 360px) and (max-width: 430px) {
-    .events-block { padding-top: 60px; padding-bottom: 16px; }
-    .events-block h2 { font-size: 28px; margin-bottom: 12px; }
+    .events_block { padding-top: 60px; padding-bottom: 16px; }
+    .events_block h2 { font-size: 28px; margin-bottom: 12px; }
 
     /* Сетка 2 колонки для верхнего ряда */
-    .events-row {
+    .events_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -1625,32 +1631,32 @@ section {
     }
 
     /* Малые — один ряд слева и справа */
-    .event-card--small {
+    .event_card__small {
         grid-column: auto;       /* займут 1 ячейку каждая */
     }
 
     /* Широкая карточка — на всю ширину ниже */
-    .event-card--wide {
+    .event_card__wide {
         grid-column: 1 / -1;     /* растянуть на две колонки */
         order: 3;
     }
 
     /* Пропорции изображений под макет */
-    .event-card--small img { aspect-ratio: 1 / 1; height: 224px; }
-    .event-card--wide img  { aspect-ratio: 16 / 9; height: auto; }
+    .event_card__small img { aspect-ratio: 1 / 1; height: 224px; }
+    .event_card__wide img  { aspect-ratio: 16 / 9; height: auto; }
 
     /* Подписи компактнее */
-    .event-caption { font-size: 14px; line-height: 1.35; padding: 8px 6px 10px; }
+    .event_caption { font-size: 14px; line-height: 1.35; padding: 8px 6px 10px; }
 
     /* Кнопка — на всю ширину ниже сетки */
-    .events-footer { margin-top: 12px; }
-    .events-btn { width: 100%; height: 48px; font-size: 16px; }
+    .events_footer { margin-top: 12px; }
+    .events_btn { width: 100%; height: 48px; font-size: 16px; }
 }
 @media (min-width: 360px) and (max-width: 430px) {
-    .about-editorial { padding-top: 60px; padding-bottom: 22px; }
-    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
+    .about_editorial { padding-top: 60px; padding-bottom: 22px; }
+    .about_editorial h2 { font-size: 28px; margin-bottom: 12px; }
 
-    .about-editorial__content {
+    .about_editorial__content {
         display: grid;
         grid-template-columns: 1fr;
         gap: 18px;
@@ -1661,31 +1667,31 @@ section {
     }
 
     /* Общие тексты */
-    .about-editorial__title { font-size: 20px; font-weight: 300; }
-    .about-editorial__text { font-size: 16px; line-height: 1.4; }
-    .about-editorial__list { font-size: 16px; margin: 0 0 0 -20px; }
+    .about_editorial__title { font-size: 20px; font-weight: 300; }
+    .about_editorial__text { font-size: 16px; line-height: 1.4; }
+    .about_editorial__list { font-size: 16px; margin: 0 0 0 -20px; }
     .readmore { font-size: 14px; display: flex; justify-content: center; }
 
     /* Разделители между блоками */
-    .about-editorial__col {
+    .about_editorial__col {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
-    .about-editorial__col + .about-editorial__col {
+    .about_editorial__col + .about_editorial__col {
         padding-top: 16px;
         border-top: 1px solid rgba(0,0,0,.18);
     }
 
     /* Кнопки — на всю ширину, одинаковая высота */
-    .about-editorial__btn {
+    .about_editorial__btn {
         align-self: center;
         height: 48px;
         padding: 0 52px;
         font-size: 16px;
 
     }
-    .about-editorial__btn--red {
+    .about_editorial__btn__red {
         background: #c2171a;
         border-color: #c2171a;
         color: #fff;
@@ -1710,47 +1716,47 @@ section {
         background-position: center;
     }
     .hero h1 { margin: 100px; font-size: 70px; line-height: 85%; text-align: center; }
-    .hero-btn { height: 50px; padding: 0 122px; font-size: 16px; margin-bottom: -55px; }
+    .hero_btn { height: 50px; padding: 0 122px; font-size: 16px; margin-bottom: -55px; }
 
 
     .cards { padding-top: 28px; width: 110% }
-    .cards-row {
+    .cards_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--gap);
     }
-    .card-col { display: contents; }
-    .card-wide { display: block; }           /* не скрываем */
-    .card-interiors { grid-column: 1 / 2; grid-row: 1 / 3; aspect-ratio: 3 / 4; } /* высокая слева */
-    .card-companies { grid-column: 2 / 3; grid-row: 1 / 2; aspect-ratio: 16 / 10; }
-    .card-banner   { grid-column: 2 / 3; grid-row: 2 / 3; aspect-ratio: 16 / 10; }
-    .card-designers{ grid-column: 1 / -1; grid-row: 3 / 4; aspect-ratio: 16 / 7; } /* низом на всю ширину */
+    .card_col { display: contents; }
+    .card_wide { display: block; }           /* не скрываем */
+    .card_interiors { grid-column: 1 / 2; grid-row: 1 / 3; aspect-ratio: 3 / 4; } /* высокая слева */
+    .card_companies { grid-column: 2 / 3; grid-row: 1 / 2; aspect-ratio: 16 / 10; }
+    .card_banner   { grid-column: 2 / 3; grid-row: 2 / 3; aspect-ratio: 16 / 10; }
+    .card_designers{ grid-column: 1 / -1; grid-row: 3 / 4; aspect-ratio: 16 / 7; } /* низом на всю ширину */
     .card h2 { font-size: 22px; top: 14px; left: 14px; }
-    .card-arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
+    .card_arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
 
     /* ПРО ДИЗАЙН:
        верх: два превью в ряд; низ: широкая */
-    .about-design { padding-top: 80px; width: 110% }
-    .about-design h2 { font-size: 36px; }
-    .about-design-row {
+    .about_design { padding-top: 80px; width: 110% }
+    .about_design h2 { font-size: 36px; }
+    .about_design_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
-    .about-design-card.fig-2 { order: 1; } /* левое верхнее */
-    .about-design-card.fig-1 { order: 2; } /* правое верхнее */
-    .about-design-card.fig-3 { order: 3; grid-column: 1 / -1; }
-    .about-design-card img {  }
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-1 img { aspect-ratio: 4 / 3; }
-    .about-design-card.fig-3 img { aspect-ratio: 16 / 9; }
-    .about-design-card figcaption { font-size: 15px; }
-    .about-design-footer { margin-top: 16px; }
-    .about-design-all { width: 320px; height: 50px; font-size: 15px; }
+    .about_design_card.fig_2 { order: 1; } /* левое верхнее */
+    .about_design_card.fig_1 { order: 2; } /* правое верхнее */
+    .about_design_card.fig_3 { order: 3; grid-column: 1 / -1; }
+    .about_design_card img {  }
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_1 img { aspect-ratio: 4 / 3; }
+    .about_design_card.fig_3 img { aspect-ratio: 16 / 9; }
+    .about_design_card figcaption { font-size: 15px; }
+    .about_design_footer { margin-top: 16px; }
+    .about_design_all { width: 320px; height: 50px; font-size: 15px; }
 
     /* ЖУРНАЛ:
        ┌── цифры ┬ обложка ┬ текст/кнопки ┐ */
-    .journal-block {
+    .journal_block {
         margin-top: 40px;
         display: grid;
         grid-template-columns: 180px 200px 1fr;
@@ -1759,39 +1765,39 @@ section {
         padding-top: 36px;
     }
 
-    .journal-sidebar { grid-column: 1 / 2; gap: 12px; }
-    .journal-header h2 { font-size: 36px; margin: 0 0 6px; }
-    .journal-big { font-size: 72px; }
-    .journal-note { font-size: 12px; }
-    .journal-cover { grid-column: 2 / 3; }
-    .journal-cover img { width: 200px;  }
-    .journal-content { grid-column: 3 / 4; display: grid; grid-template-columns: 1fr; gap: 14px; }
-    .journal-desc { font-size: 18px; line-height: 1.4; margin: 0; }
-    .journal-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
-    .journal-btn, .journal-btn-s { height: 50px; width: auto; font-size: 14px; }
+    .journal_sidebar { grid-column: 1 / 2; gap: 12px; }
+    .journal_header h2 { font-size: 36px; margin: 0 0 6px; }
+    .journal_big { font-size: 72px; }
+    .journal_note { font-size: 12px; }
+    .journal_cover { grid-column: 2 / 3; }
+    .journal_cover img { width: 200px;  }
+    .journal_content { grid-column: 3 / 4; display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .journal_desc { font-size: 18px; line-height: 1.4; margin: 0; }
+    .journal_btns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+    .journal_btn, .journal_btn_s { height: 50px; width: auto; font-size: 14px; }
 
     /* СОБЫТИЯ: три карточки, широкая по центру на 2 колонки */
-    .events-block { padding-top: 32px; width: 110% }
-    .events-block h2 { font-size: 36px; margin-bottom: 14px; }
-    .events-row {
+    .events_block { padding-top: 32px; width: 110% }
+    .events_block h2 { font-size: 36px; margin-bottom: 14px; }
+    .events_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
     /* порядок: малое слева, wide на весь ряд, малое справа под ним */
-    .event-card--small:nth-of-type(1) { grid-column: 1 / 2; }
-    .event-card--wide { grid-column: 1 / -1; }
-    .event-card--small:nth-of-type(3) { grid-column: 2 / 3; }
-    .event-card--small img { aspect-ratio: 4 / 3; height: auto; }
-    .event-card--wide img  { aspect-ratio: 16 / 9; height: auto; }
-    .event-caption { font-size: 15px; padding: 10px 8px 12px; }
-    .events-footer { margin-top: 14px; }
-    .events-btn { width: 320px; height: 50px; font-size: 15px; }
+    .event_card__small:nth-of-type(1) { grid-column: 1 / 2; }
+    .event_card__wide { grid-column: 1 / -1; }
+    .event_card__small:nth-of-type(3) { grid-column: 2 / 3; }
+    .event_card__small img { aspect-ratio: 4 / 3; height: auto; }
+    .event_card__wide img  { aspect-ratio: 16 / 9; height: auto; }
+    .event_caption { font-size: 15px; padding: 10px 8px 12px; }
+    .events_footer { margin-top: 14px; }
+    .events_btn { width: 320px; height: 50px; font-size: 15px; }
 
     /* О РЕДАКЦИИ: две колонки */
-    .about-editorial { padding-top: 32px; padding-bottom: 40px; width: 110% }
-    .about-editorial h2 { font-size: 36px; }
-    .about-editorial__content {
+    .about_editorial { padding-top: 32px; padding-bottom: 40px; width: 110% }
+    .about_editorial h2 { font-size: 36px; }
+    .about_editorial__content {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
         gap: 20px;
@@ -1799,20 +1805,20 @@ section {
 
     }
     /* Левая колонка — описание + список */
-    .about-editorial__col:nth-child(1) { grid-column: 1 / 2; }
-    .about-editorial__col:nth-child(2) { grid-column: 1 / 2; }
+    .about_editorial__col:nth-child(1) { grid-column: 1 / 2; }
+    .about_editorial__col:nth-child(2) { grid-column: 1 / 2; }
     /* Правая колонка — два блока с кнопками один под другим */
-    .about-editorial__col:nth-child(3) { grid-column: 2 / 3; }
-    .about-editorial__col:nth-child(4) { grid-column: 2 / 3; }
-    .about-editorial__title { font-size: 18px; }
-    .about-editorial__text, .about-editorial__list { font-size: 15px; }
-    .about-editorial__btn { height: 48px; font-size: 14px; align-self: start; }
+    .about_editorial__col:nth-child(3) { grid-column: 2 / 3; }
+    .about_editorial__col:nth-child(4) { grid-column: 2 / 3; }
+    .about_editorial__title { font-size: 18px; }
+    .about_editorial__text, .about_editorial__list { font-size: 15px; }
+    .about_editorial__btn { height: 48px; font-size: 14px; align-self: start; }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .cards { padding-top: 80px; }
 
-    .cards-row {
+    .cards_row {
         display: grid;
         grid-template-columns: 1fr 1.6fr 1fr; /* левая узкая, центр широкая, правая узкая */
         gap: 20px;
@@ -1820,28 +1826,28 @@ section {
     }
 
     /* Разгруппировать правую колонку, чтобы её дети стали grid-элементами */
-    .card-col { display: contents; }
+    .card_col { display: contents; }
 
     /* Ничего не скрываем */
-    .card-wide { display: block !important; }
+    .card_wide { display: block !important; }
 
     /* Позиции */
-    .card-designers {         /* левая высокая */
+    .card_designers {         /* левая высокая */
         grid-column: 1 / 2;
         grid-row: 1 / 3;        /* на две строки по высоте */
         aspect-ratio: 3 / 4;
     }
-    .card-interiors {         /* центральная широкая */
+    .card_interiors {         /* центральная широкая */
         grid-column: 2 / 3;
         grid-row: 1 / 3;        /* на всю высоту как на макете */
         aspect-ratio: 16 / 10;
     }
-    .card-companies {         /* правая верхняя */
+    .card_companies {         /* правая верхняя */
         grid-column: 3 / 4;
         grid-row: 1 / 2;
         aspect-ratio: 4 / 3;
     }
-    .card-banner {            /* правая нижняя */
+    .card_banner {            /* правая нижняя */
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         aspect-ratio: 4 / 3;
@@ -1849,22 +1855,22 @@ section {
 
     /* Типографика карточек и иконка */
     .card h2 { font-size: 22px; top: 14px; left: 14px; }
-    .card-arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
+    .card_arrow { width: 26px; height: 26px; right: 14px; bottom: 14px; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Гарантированный зазор между всеми карточками */
-    .cards-row {
+    .cards_row {
         gap: 20px !important;        /* межкарточный отступ */
         padding: 0;                  /* на всякий случай убираем внутренние, если мешают */
     }
 
     /* Снимаем фиксированные flex-basis/width от десктопных классов */
     .card,
-    .card-tall,
-    .card-wide,
-    .card-small,
-    .card-banner,
-    .card-col {
+    .card_tall,
+    .card_wide,
+    .card_small,
+    .card_banner,
+    .card_col {
         width: 100% !important;
         max-width: 100% !important;
         flex: 0 0 auto !important;   /* grid управляет размещением */
@@ -1872,19 +1878,19 @@ section {
 
     /* Для безопасности убираем высоту по пикселям, оставляем aspect-ratio */
     .card img,
-    .event-card img {
+    .event_card img {
         height: auto !important;
     }
 
     /* Небольшие внутренние скругления, чтобы визуально не «сливались» */
     .card { overflow: hidden; }
 
-    /* Если у .cards-row остался display:flex откуда‑то, насильно включаем grid */
-    .cards-row { display: grid !important; }
+    /* Если у .cards_row остался display:flex откуда‑то, насильно включаем grid */
+    .cards_row { display: grid !important; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     /* 1) Сетка: три равные колонки */
-    .about-design-row {
+    .about_design_row {
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 20px !important;
@@ -1892,7 +1898,7 @@ section {
     }
 
     /* 2) Сброс жёстких десктопных размеров */
-    .about-design-card {
+    .about_design_card {
         flex: none !important;
         width: 100% !important;
         min-width: 0 !important;
@@ -1902,12 +1908,12 @@ section {
     }
 
     /* 3) Порядок слева→направо: Анна(fig-1), Юлия(fig-2), Успех(fig-3) — у тебя именно так в HTML */
-    .about-design-card.fig-1 { order: 1 !important; grid-column: 1 / 2 !important; }
-    .about-design-card.fig-2 { order: 2 !important; grid-column: 2 / 3 !important; }
-    .about-design-card.fig-3 { order: 3 !important; grid-column: 3 / 4 !important; }
+    .about_design_card.fig_1 { order: 1 !important; grid-column: 1 / 2 !important; }
+    .about_design_card.fig_2 { order: 2 !important; grid-column: 2 / 3 !important; }
+    .about_design_card.fig_3 { order: 3 !important; grid-column: 3 / 4 !important; }
 
     /* 4) Единая высота превью и отключение старых пропорций */
-    .about-design-card img {
+    .about_design_card img {
         width: 100% !important;
         height: 365px !important;           /* можно 200–220px */
         aspect-ratio: auto !important;      /* критично: убрать 650/413 и 388/530 */
@@ -1918,9 +1924,9 @@ section {
     }
 
     /* 5) Подписи и кнопка */
-    .about-design-card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
-    .about-design-footer { margin-top: 18px !important; display: flex !important; justify-content: center !important; }
-    .about-design-all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
+    .about_design_card figcaption { font-size: 15px !important; margin-top: 8px !important; line-height: 1.35 !important; }
+    .about_design_footer { margin-top: 18px !important; display: flex !important; justify-content: center !important; }
+    .about_design_all { width: 340px !important; height: 50px !important; font-size: 15px !important; }
 
 }
 
@@ -1929,7 +1935,7 @@ section {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Сетка: три колонки */
-    .about-design .about-design-row {
+    .about_design .about_design_row {
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 20px !important;
@@ -1938,7 +1944,7 @@ section {
     }
 
     /* Сброс десктопных flex-баз */
-    .about-design .about-design-card {
+    .about_design .about_design_card {
         flex: none !important;
         width: 100% !important;
         min-width: 0 !important;
@@ -1948,12 +1954,12 @@ section {
     }
 
     /* Порядок по твоему HTML: fig-1 Анна, fig-2 Юлия, fig-3 Успех */
-    .about-design .about-design-card.fig-1 { order: 1 !important; grid-column: 1 / 2 !important; }
-    .about-design .about-design-card.fig-2 { order: 2 !important; grid-column: 2 / 3 !important; }
-    .about-design .about-design-card.fig-3 { order: 3 !important; grid-column: 3 / 4 !important; }
+    .about_design .about_design_card.fig_1 { order: 1 !important; grid-column: 1 / 2 !important; }
+    .about_design .about_design_card.fig_2 { order: 2 !important; grid-column: 2 / 3 !important; }
+    .about_design .about_design_card.fig_3 { order: 3 !important; grid-column: 3 / 4 !important; }
 
     /* Единая высота превью и отключение старых пропорций */
-    .about-design .about-design-card img {
+    .about_design .about_design_card img {
         display: block !important;
         width: 100% !important;
         height: 365px !important;           /* при необходимости 200–220px */
@@ -1964,13 +1970,13 @@ section {
     }
 
     /* Подписи и кнопка */
-    .about-design .about-design-card figcaption { font-size: 18px !important; margin-top: 8px !important; line-height: 1.35 !important; }
-    .about-design .about-design-footer { display: flex !important; justify-content: end !important; margin-top: 18px !important; }
-    .about-design .about-design-all { width: 340px !important; height: 50px !important; font-size: 16px !important; }
+    .about_design .about_design_card figcaption { font-size: 18px !important; margin-top: 8px !important; line-height: 1.35 !important; }
+    .about_design .about_design_footer { display: flex !important; justify-content: end !important; margin-top: 18px !important; }
+    .about_design .about_design_all { width: 340px !important; height: 50px !important; font-size: 16px !important; }
 }
 /* === TABLET JOURNAL — FINAL OVERRIDE (768–1024px) === */
 @media (min-width: 768px) and (max-width: 1024px) {
-    header .journal-block {
+    header .journal_block {
         display: grid !important;
         grid-template-columns: 180px 220px 1fr !important; /* цифры • обложка • текст */
         gap: 16px 20px !important;
@@ -1979,24 +1985,24 @@ section {
     }
 
     /* Левая колонка (цифры) */
-    header .journal-block .journal-sidebar {
+    header .journal_block .journal_sidebar {
         grid-column: 1 / 2 !important;
         grid-row: 1 / 2 !important;
         display: grid !important;
         gap: 14px !important;
     }
-    header .journal-block .journal-header h2 { font-size: 36px !important; margin: 0 0 6px !important; }
-    header .journal-block .journal-big { font-size: 72px !important; line-height: 1 !important; }
-    header .journal-block .journal-note { font-size: 12px !important; }
+    header .journal_block .journal_header h2 { font-size: 36px !important; margin: 0 0 6px !important; }
+    header .journal_block .journal_big { font-size: 72px !important; line-height: 1 !important; }
+    header .journal_block .journal_note { font-size: 12px !important; }
 
     /* Обложка по центру */
-    header .journal-block .journal-cover {
+    header .journal_block .journal_cover {
         grid-column: 2 / 3 !important;
         grid-row: 1 / 2 !important;
         align-self: start !important;
         justify-self: start !important;
     }
-    header .journal-block .journal-cover img {
+    header .journal_block .journal_cover img {
         width: 220px !important;
         height: auto !important;
 
@@ -2004,7 +2010,7 @@ section {
     }
 
     /* Текст справа */
-    header .journal-block .journal-content {
+    header .journal_block .journal_content {
         grid-column: 3 / 4 !important;
         grid-row: 1 / 2 !important;
         display: grid !important;
@@ -2012,21 +2018,21 @@ section {
         gap: 16px !important;
         margin: 0 !important;
     }
-    header .journal-block .journal-desc {
+    header .journal_block .journal_desc {
         font-size: 20px !important;
         line-height: 1.45 !important;
         margin: 0 !important;
     }
 
     /* Кнопки — одна строка, 50/50 */
-    header .journal-block .journal-btns {
+    header .journal_block .journal_btns {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         gap: 14px !important;
         margin: 0 !important;
     }
-    header .journal-block .journal-btn,
-    header .journal-block .journal-btn-s {
+    header .journal_block .journal_btn,
+    header .journal_block .journal_btn_s {
         width: 100% !important;
         height: 48px !important;
         font-size: 14px !important;
@@ -2037,11 +2043,11 @@ section {
 
 /* TABLET 768–1024px — «События»: 3 в ряд, равная высота, кнопка по центру */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .events-block { padding-top: 80px !important; padding-bottom: 20px !important; }
-    .events-block h2 { font-size: 36px !important; margin-bottom: 14px !important; }
+    .events_block { padding-top: 80px !important; padding-bottom: 20px !important; }
+    .events_block h2 { font-size: 36px !important; margin-bottom: 14px !important; }
 
     /* Сетка: три равные колонки (перебиваем прежние 2) */
-    .events-row {
+    .events_row {
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 20px !important;
@@ -2049,12 +2055,12 @@ section {
     }
 
     /* Все карточки — «малые» по сетке, без растягивания на всю ширину */
-    .event-card { width: 100% !important; min-width: 0 !important; }
-    .event-card--small,
-    .event-card--wide { grid-column: auto !important; }
+    .event_card { width: 100% !important; min-width: 0 !important; }
+    .event_card__small,
+    .event_card__wide { grid-column: auto !important; }
 
     /* Ровная высота превью ~220px для всех трёх */
-    .event-card img {
+    .event_card img {
         width: 100% !important;
         height: 365px !important;            /* выстави 200–240 по макету */
         aspect-ratio: auto !important;       /* выключаем десктопные пропорции */
@@ -2064,18 +2070,18 @@ section {
         display: block !important;
     }
 
-    .event-caption { font-size: 18px !important; line-height: 1.35 !important; padding: 10px 6px 12px !important; }
+    .event_caption { font-size: 18px !important; line-height: 1.35 !important; padding: 10px 6px 12px !important; }
 
     /* Кнопка — по центру под сеткой */
-    .events-footer { margin-top: 16px !important; display: flex !important; justify-content: end !important; }
-    .events-btn { width: 340px !important; height: 50px !important; font-size: 16px !important; }
+    .events_footer { margin-top: 16px !important; display: flex !important; justify-content: end !important; }
+    .events_btn { width: 340px !important; height: 50px !important; font-size: 16px !important; }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .about-editorial { padding-top: 32px !important; padding-bottom: 40px !important; width: 110% !important; }
-    .about-editorial h2 { font-size: 36px !important; margin-bottom: 14px !important; }
+    .about_editorial { padding-top: 32px !important; padding-bottom: 40px !important; width: 110% !important; }
+    .about_editorial h2 { font-size: 36px !important; margin-bottom: 14px !important; }
 
     /* Серый контейнер в две строки, четыре области 2x2 */
-    .about-editorial__content {
+    .about_editorial__content {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;   /* левая/правая */
         grid-template-rows: auto auto !important;    /* верх/низ */
@@ -2087,7 +2093,7 @@ section {
     }
 
     /* Тонкий разделитель между верхом и низом */
-    .about-editorial__content::after {
+    .about_editorial__content::after {
         content: "" !important;
         grid-column: 1 / -1 !important;
         height: 1px !important;
@@ -2099,21 +2105,21 @@ section {
     }
 
     /* Верхний ряд: описание слева, список справа */
-    .about-editorial__col:nth-child(1) { grid-column: 1 / 2 !important; grid-row: 1 / 2 !important; }
-    .about-editorial__col:nth-child(2) { grid-column: 2 / 3 !important; grid-row: 1 / 2 !important; }
+    .about_editorial__col:nth-child(1) { grid-column: 1 / 2 !important; grid-row: 1 / 2 !important; }
+    .about_editorial__col:nth-child(2) { grid-column: 2 / 3 !important; grid-row: 1 / 2 !important; }
 
     /* Нижний ряд: две карточки с кнопками */
-    .about-editorial__col:nth-child(3) { grid-column: 1 / 2 !important; grid-row: 2 / 3 !important; }
-    .about-editorial__col:nth-child(4) { grid-column: 2 / 3 !important; grid-row: 2 / 3 !important; }
+    .about_editorial__col:nth-child(3) { grid-column: 1 / 2 !important; grid-row: 2 / 3 !important; }
+    .about_editorial__col:nth-child(4) { grid-column: 2 / 3 !important; grid-row: 2 / 3 !important; }
 
     /* Типографика и интервалы */
-    .about-editorial__title { font-size: 22px !important; font-weight: 300 !important; }
-    .about-editorial__text, .about-editorial__list { font-size: 16px !important; line-height: 1.4 !important; }
-    .about-editorial__list { margin: 6px 0 0 18px !important; }
+    .about_editorial__title { font-size: 22px !important; font-weight: 300 !important; }
+    .about_editorial__text, .about_editorial__list { font-size: 16px !important; line-height: 1.4 !important; }
+    .about_editorial__list { margin: 6px 0 0 18px !important; }
     .readmore { font-size: 14px !important; }
 
     /* Кнопки одинаковой высоты, прижаты к низу своей колонки */
-    .about-editorial__btn {
+    .about_editorial__btn {
         width: 100%;
         margin-top: auto !important;
         height: 48px !important;
@@ -2121,22 +2127,22 @@ section {
         font-size: 16px !important;
         align-self: start !important;
     }
-    .about-editorial__btn--red { background: #c2171a !important; border-color: #c2171a !important; color: #fff !important; }
+    .about_editorial__btn__red { background: #c2171a !important; border-color: #c2171a !important; color: #fff !important; }
 }
 
 @media (max-width: 1024px) {
     /* Убедимся, что блок контента — грид со стэком: [текст] над [кнопками] */
-    .journal-content {
+    .journal_content {
         display: grid !important;
         grid-template-columns: 1fr !important;
         grid-auto-rows: auto !important;
         gap: 14px !important;
     }
 
-    .journal-desc { grid-column: 1 / -1 !important; grid-row: 1 !important; margin: 0 !important; }
+    .journal_desc { grid-column: 1 / -1 !important; grid-row: 1 !important; margin: 0 !important; }
 
     /* Кнопки сразу под текстом отдельной строкой */
-    .journal-btns {
+    .journal_btns {
         grid-column: 1 / -1 !important;
         grid-row: 2 !important;
         display: grid !important;
@@ -2144,11 +2150,11 @@ section {
         gap: 10px !important;
         margin: 0 !important;
     }
-    .journal-header{
+    .journal_header{
         margin-top: -28px ;
     }
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
 
         height: 48px !important;
         font-size: 14px !important;
@@ -2162,7 +2168,7 @@ section {
 /* ===== TABLET 768–1024: ЖУРНАЛ — ЖЁСТКИЙ ОВЕРРАЙД ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* 1) Секция-журнал: только grid с 3 колонками */
-    header .journal-block{
+    header .journal_block{
         width: 108% !important;
         display: grid !important;
         grid-template-columns: 180px 220px 1fr !important; /* цифры • обложка • текст */
@@ -2176,7 +2182,7 @@ section {
     }
 
     /* 2) Левая колонка: заголовок + метрики в столбик */
-    header .journal-sidebar{
+    header .journal_sidebar{
         grid-column: 1 / 2 !important;
         grid-row: 1 !important;
         display: grid !important;
@@ -2185,18 +2191,18 @@ section {
         width: auto !important;
         min-width: 0 !important;
     }
-    header .journal-header h2{
+    header .journal_header h2{
         font-size: 36px !important;
         margin: 0 0 6px !important;
         line-height: 1.1 !important;
         font-weight: 200 !important;
     }
-    header .journal-numbers{ display: grid !important; gap: 14px !important; margin-top: -20px !important;}
-    header .journal-big{ font-size: 72px !important; line-height: 1 !important; }
-    header .journal-note{ font-size: 12px !important; letter-spacing: .02em !important; }
+    header .journal_numbers{ display: grid !important; gap: 14px !important; margin-top: -20px !important;}
+    header .journal_big{ font-size: 72px !important; line-height: 1 !important; }
+    header .journal_note{ font-size: 12px !important; letter-spacing: .02em !important; }
 
     /* 3) Обложка по центру, строго 220px шириной */
-    header .journal-cover{
+    header .journal_cover{
         grid-column: 2 / 3 !important;
         grid-row: 1 !important;
         align-self: start !important;
@@ -2204,7 +2210,7 @@ section {
         margin: 0 !important;
         width: auto !important;
     }
-    header .journal-cover img{
+    header .journal_cover img{
         width: 220px !important;
         height: auto !important;
         display: block !important;
@@ -2212,7 +2218,7 @@ section {
     }
 
     /* 4) Текст справа в столбик: абзац + блок кнопок */
-    header .journal-content{
+    header .journal_content{
         grid-column: 3 / 4 !important;
         grid-row: 1 !important;
         display: grid !important;
@@ -2221,21 +2227,21 @@ section {
         margin: 0 !important;
         min-width: 0 !important;
     }
-    header .journal-desc{
+    header .journal_desc{
         font-size: 16px !important;
         line-height: 1.45 !important;
         margin: 0 !important;
     }
 
     /* 5) Кнопки — одна строка 50/50 */
-    header .journal-btns{
+    header .journal_btns{
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         gap: 14px !important;
         margin: 0 !important;
     }
-    header .journal-btn,
-    header .journal-btn-s{
+    header .journal_btn,
+    header .journal_btn_s{
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -2248,12 +2254,12 @@ section {
     }
 
     /* 6) Сброс конфликтов с десктопом и мобильной версией */
-    header .journal-header{ margin-top: -60px !important; }
-    header .journal-btns .icon,
-    header .journal-btns .arrow{ max-height: 18px !important; }
+    header .journal_header{ margin-top: -60px !important; }
+    header .journal_btns .icon,
+    header .journal_btns .arrow{ max-height: 18px !important; }
 
     /* На всякий случай убираем любые flex/width из старых стилей */
-    header .journal-block > *{
+    header .journal_block > *{
         flex: none !important;
         width: auto !important;
         max-width: none !important;
@@ -2262,14 +2268,14 @@ section {
 /* TABLET 768–1024: кнопки «Журнала» ровно как на макете */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Правая колонка — текст + кнопки */
-    header .journal-content{
+    header .journal_content{
         display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 16px !important;                 /* отступ между абзацем и блоком кнопок */
     }
 
     /* Блок кнопок — строго 2 равные колонки в одну строку */
-    header .journal-btns{
+    header .journal_btns{
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;  /* 50 / 50 */
         gap: 20px !important;                        /* как на макете между кнопками */
@@ -2279,8 +2285,8 @@ section {
     }
 
     /* Сами кнопки заполняют свою ячейку, одинаковая высота */
-    header .journal-btn,
-    header .journal-btn-s{
+    header .journal_btn,
+    header .journal_btn_s{
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -2294,11 +2300,11 @@ section {
     }
 
     /* Иконки не раздувают высоту и не смещают текст */
-    header .journal-btn .icon{ width: 18px !important; height: 18px !important; margin-right: 10px !important; }
-    header .journal-btn-s .arrow{ width: 18px !important; height: 18px !important; margin-left: 10px !important; }
+    header .journal_btn .icon{ width: 18px !important; height: 18px !important; margin-right: 10px !important; }
+    header .journal_btn_s .arrow{ width: 18px !important; height: 18px !important; margin-left: 10px !important; }
 }
 @media (min-width:768px) and (max-width:1024px){
-    .journal-block{
+    .journal_block{
         display:grid !important;
         grid-template-columns:180px 220px minmax(420px,1fr) !important;
         grid-template-rows:auto auto !important;
@@ -2310,11 +2316,11 @@ section {
         padding-top:80px !important;
     }
 
-    .journal-sidebar{ grid-area: side !important; }
-    .journal-cover{   grid-area: cover !important; }
-    .journal-cover img{ width:220px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
+    .journal_sidebar{ grid-area: side !important; }
+    .journal_cover{   grid-area: cover !important; }
+    .journal_cover img{ width:220px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
 
-    .journal-content{
+    .journal_content{
         grid-area: text !important;
         display:grid !important;
         grid-template-columns:1fr !important;
@@ -2322,19 +2328,19 @@ section {
         margin:0 !important;
         min-width:0 !important;
     }
-    .journal-desc{ font-size:20px !important; line-height:1.45 !important; margin:0 !important; }
+    .journal_desc{ font-size:20px !important; line-height:1.45 !important; margin:0 !important; }
 
     /* Кнопки вынесены в отдельный контейнер и растянуты на всю ширину */
-    .journal-actions{ grid-area: buttons !important; }
-    .journal-actions .journal-btns{
+    .journal_actions{ grid-area: buttons !important; }
+    .journal_actions .journal_btns{
         display:grid !important;
         grid-template-columns:1fr 1fr !important;
         gap:20px !important;
         margin:6px 0 0 0 !important;
         align-items:stretch !important;
     }
-    .journal-actions .journal-btn,
-    .journal-actions .journal-btn-s{
+    .journal_actions .journal_btn,
+    .journal_actions .journal_btn_s{
         height:50px !important;
         width:100% !important;
         display:inline-flex !important;
@@ -2348,9 +2354,9 @@ section {
     }
 
     /* Типографика слева */
-    .journal-header h2{ font-size:36px !important; margin:0 0 6px !important; }
-    .journal-big{ font-size:80px !important; line-height:1 !important; }
-    .journal-note{ font-size:18px !important; }
+    .journal_header h2{ font-size:36px !important; margin:0 0 6px !important; }
+    .journal_big{ font-size:80px !important; line-height:1 !important; }
+    .journal_note{ font-size:18px !important; }
 }
 
 /* === DESKTOP ≥1025px: вернуть исходную раскладку как на дизайне (скрин 2) === */
@@ -2361,7 +2367,7 @@ section {
 
 
     /* Секция: одна строка, три колонки без нижней полосы */
-    .journal-block{
+    .journal_block{
         display:grid !important;
         grid-template-columns: 180px 388px 1fr !important; /* цифры • обложка • текст+кнопки */
         grid-auto-rows:auto !important;
@@ -2370,16 +2376,16 @@ section {
 
     }
 
-    .journal-sidebar{ grid-area: side !important; }
-    .journal-cover{   grid-area: cover !important; }
-    .journal-cover img{
+    .journal_sidebar{ grid-area: side !important; }
+    .journal_cover{   grid-area: cover !important; }
+    .journal_cover img{
         width: 388px !important;            /* как в макете для десктопа */
         height: auto !important;
         box-shadow: none !important;
     }
 
     /* Правая колонка: текст + кнопки под ним в одну строку */
-    .journal-content{
+    .journal_content{
         width: 100%;
         grid-area: text !important;
         display:grid !important;
@@ -2391,37 +2397,37 @@ section {
         align-content: start !important;
 
     }
-    .journal-desc{
+    .journal_desc{
         font-size: 30px !important;
         line-height: 1.45 !important;
         margin: 0 !important;
     }
 
     /* Перемещаем вынесенный блок с кнопками внутрь правой колонки визуально */
-    .journal-actions{
+    .journal_actions{
         grid-area: text !important;          /* тот же столбец, ниже текста */
     }
-    .journal-actions .journal-btns{
+    .journal_actions .journal_btns{
         display:flex !important;
         gap: var(--gap, 44px) !important;
         margin-top: 438px !important;
     }
-    .journal-actions .journal-btn{
+    .journal_actions .journal_btn{
         margin-right: 103px !important;
         width: 457px !important;
         height: 60px !important;
 
     }
-    .journal-actions .journal-btn-s{
+    .journal_actions .journal_btn_s{
         width: 458px !important;
         height: 60px !important;
 
     }
 
     /* Типографика слева */
-    .journal-header h2{ font-size: 42px !important; margin: 0 0 10px !important; }
-    .journal-big{ font-size: 96px !important; line-height: 1 !important; }
-    .journal-note{ font-size: 13px !important; }
+    .journal_header h2{ font-size: 42px !important; margin: 0 0 10px !important; }
+    .journal_big{ font-size: 96px !important; line-height: 1 !important; }
+    .journal_note{ font-size: 13px !important; }
 }
 
 @media (min-width: 431px) and (max-width: 767px) {
@@ -2449,7 +2455,7 @@ section {
         text-align: center;
     }
 
-    .hero-btn {
+    .hero_btn {
         height: 50px;
         padding: 0 122px;
         font-size: 16px;
@@ -2461,39 +2467,39 @@ section {
         width: 110%;
     }
 
-    .cards-row {
+    .cards_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--gap);
     }
 
-    .card-col {
+    .card_col {
         display: contents;
     }
 
-    .card-wide {
+    .card_wide {
         display: block;
     }
 
-    .card-interiors {
+    .card_interiors {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
         aspect-ratio: 3 / 4;
     }
 
-    .card-companies {
+    .card_companies {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         aspect-ratio: 16 / 10;
     }
 
-    .card-banner {
+    .card_banner {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         aspect-ratio: 16 / 10;
     }
 
-    .card-designers {
+    .card_designers {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
         aspect-ratio: 16 / 7;
@@ -2505,65 +2511,65 @@ section {
         left: 14px;
     }
 
-    .card-arrow {
+    .card_arrow {
         width: 26px;
         height: 26px;
         right: 14px;
         bottom: 14px;
     }
 
-    .about-design {
+    .about_design {
         padding-top: 80px;
         width: 110%;
     }
 
-    .about-design h2 {
+    .about_design h2 {
         font-size: 36px;
     }
 
-    .about-design-row {
+    .about_design_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
 
-    .about-design-card.fig-2 {
+    .about_design_card.fig_2 {
         order: 1;
     }
 
-    .about-design-card.fig-1 {
+    .about_design_card.fig_1 {
         order: 2;
     }
 
-    .about-design-card.fig-3 {
+    .about_design_card.fig_3 {
         order: 3;
         grid-column: 1 / -1;
     }
 
-    .about-design-card.fig-2 img,
-    .about-design-card.fig-1 img {
+    .about_design_card.fig_2 img,
+    .about_design_card.fig_1 img {
         aspect-ratio: 4 / 3;
     }
 
-    .about-design-card.fig-3 img {
+    .about_design_card.fig_3 img {
         aspect-ratio: 16 / 9;
     }
 
-    .about-design-card figcaption {
+    .about_design_card figcaption {
         font-size: 15px;
     }
 
-    .about-design-footer {
+    .about_design_footer {
         margin-top: 16px;
     }
 
-    .about-design-all {
+    .about_design_all {
         width: 320px;
         height: 50px;
         font-size: 15px;
     }
 
-    .journal-block {
+    .journal_block {
         margin-top: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2573,38 +2579,38 @@ section {
         padding-top: 36px;
     }
 
-    .journal-sidebar {
+    .journal_sidebar {
         grid-column: 1 / 2;
         gap: 12px;
         margin: 0;
     }
 
-    .journal-header h2 {
+    .journal_header h2 {
         font-size: 36px;
         margin: 0 0 6px;
     }
 
-    .journal-big {
+    .journal_big {
         font-size: 72px;
     }
 
-    .journal-note {
+    .journal_note {
         font-size: 12px;
     }
 
-    .journal-cover {
+    .journal_cover {
         grid-column: 2 / 3;
     }
-    .journal-actions{
+    .journal_actions{
         grid-column: 1 / 3;
     }
-    .journal-cover img {
+    .journal_cover img {
         width: 220px;
         height: auto;
         box-shadow: 0 2px 10px rgba(0,0,0,.08);
     }
 
-    .journal-content {
+    .journal_content {
         grid-column: 1 / 3;
         grid-row: 2;
         display: grid;
@@ -2613,86 +2619,86 @@ section {
         margin: 0;
     }
 
-    .journal-desc {
+    .journal_desc {
         font-size: 18px;
         line-height: 1.45;
         margin: 0;
     }
 
-    .journal-btns {
+    .journal_btns {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
         margin: 0;
     }
 
-    .journal-btn,
-    .journal-btn-s {
+    .journal_btn,
+    .journal_btn_s {
         height: 50px;
         width: auto;
         font-size: 14px;
     }
 
-    .events-block {
+    .events_block {
         padding-top: 32px;
         width: 110%;
     }
 
-    .events-block h2 {
+    .events_block h2 {
         font-size: 36px;
         margin-bottom: 14px;
     }
 
-    .events-row {
+    .events_row {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr ;
         gap: 14px;
     }
 
-    .event-card--small:nth-of-type(1) {
+    .event_card__small:nth-of-type(1) {
         grid-column: 1 / 1;
         grid-row: 1 / 1;
     }
 
-    .event-card--wide {
+    .event_card__wide {
         grid-column: 1 / 3;
     }
 
-    .event-card--small:nth-of-type(3) {
+    .event_card__small:nth-of-type(3) {
         grid-row: 1 / 1;
     }
 
-    .event-card--small img {
+    .event_card__small img {
         aspect-ratio: 4 / 3;
         height: auto;
     }
 
-    .event-card--wide img {
+    .event_card__wide img {
         aspect-ratio: 16 / 9;
         height: auto;
     }
 
-    .event-caption {
+    .event_caption {
         font-size: 15px;
         padding: 10px 8px 12px;
     }
 
-    .events-footer {
+    .events_footer {
         justify-content: center;
         margin-top: 14px;
     }
 
-    .events-btn {
+    .events_btn {
         width: 320px;
         height: 50px;
         font-size: 18px;
     }
 
-    .about-editorial { padding-top: 60px; padding-bottom: 22px; }
-    .about-editorial h2 { font-size: 28px; margin-bottom: 12px; }
+    .about_editorial { padding-top: 60px; padding-bottom: 22px; }
+    .about_editorial h2 { font-size: 28px; margin-bottom: 12px; }
 
-    .about-editorial__content {
+    .about_editorial__content {
         width: 111%;
         display: grid;
         grid-template-columns: 1fr;
@@ -2704,31 +2710,31 @@ section {
     }
 
     /* Общие тексты */
-    .about-editorial__title { font-size: 20px; font-weight: 300; }
-    .about-editorial__text { font-size: 16px; line-height: 1.4; }
-    .about-editorial__list { font-size: 16px; margin: 0 0 0 -20px; }
+    .about_editorial__title { font-size: 20px; font-weight: 300; }
+    .about_editorial__text { font-size: 16px; line-height: 1.4; }
+    .about_editorial__list { font-size: 16px; margin: 0 0 0 -20px; }
     .readmore { font-size: 14px; display: flex; justify-content: center; }
 
     /* Разделители между блоками */
-    .about-editorial__col {
+    .about_editorial__col {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
-    .about-editorial__col + .about-editorial__col {
+    .about_editorial__col + .about_editorial__col {
         padding-top: 16px;
         border-top: 1px solid rgba(0,0,0,.18);
     }
 
     /* Кнопки — на всю ширину, одинаковая высота */
-    .about-editorial__btn {
+    .about_editorial__btn {
         align-self: center;
         height: 48px;
         padding: 0 93px;
         font-size: 14px;
 
     }
-    .about-editorial__btn--red {
+    .about_editorial__btn__red {
         background: #c2171a;
         border-color: #c2171a;
         color: #fff;
@@ -2741,7 +2747,7 @@ section {
 
 /* MOBILE 360–430: фикс переполнения и резиновая сетка */
 @media (min-width:360px) and (max-width:430px){
-    .journal-block{
+    .journal_block{
         display:grid !important;
         grid-template-columns: minmax(0,1fr) 140px !important; /* левая — тянется, правая — фикс */
         grid-auto-rows:auto !important;
@@ -2750,16 +2756,16 @@ section {
         overflow:hidden !important;         /* страховка от вытекания */
     }
 
-    .journal-sidebar{ grid-column:1 / 2 !important; grid-row:1 !important; }
-    .journal-header h2{ font-size:28px !important; margin:0 !important; }
-    .journal-numbers{ display:grid !important; margin-top:-5px !important; }
-    .journal-big{ font-size:60px !important; line-height:1 !important; }
-    .journal-note{ font-size:12px !important; }
+    .journal_sidebar{ grid-column:1 / 2 !important; grid-row:1 !important; }
+    .journal_header h2{ font-size:28px !important; margin:0 !important; }
+    .journal_numbers{ display:grid !important; margin-top:-5px !important; }
+    .journal_big{ font-size:60px !important; line-height:1 !important; }
+    .journal_note{ font-size:12px !important; }
 
-    .journal-cover{ grid-column:2 / 3 !important; grid-row:1 !important; width:140px !important; }
-    .journal-cover img{ width:140px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
+    .journal_cover{ grid-column:2 / 3 !important; grid-row:1 !important; width:140px !important; }
+    .journal_cover img{ width:140px !important; height:auto !important; box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
 
-    .journal-content{
+    .journal_content{
         grid-column:1 / -1 !important;
         grid-row:2 !important;
         display:grid !important;
@@ -2768,17 +2774,17 @@ section {
         margin:0 !important;
         min-width:0 !important;             /* текст не расширяет контейнер */
     }F
-    .journal-desc{ font-size:16px !important; line-height:1.35 !important; margin:0 !important; }
+     .journal_desc{ font-size:16px !important; line-height:1.35 !important; margin:0 !important; }
 
-    .journal-btns{
+    .journal_btns{
         display:grid !important;
         grid-template-columns:1fr !important;
         gap:10px !important;
         margin:0 !important;
         width:100% !important;
     }
-    .journal-btn,
-    .journal-btn-s{
+    .journal_btn,
+    .journal_btn_s{
         width:85% !important;
         height:48px !important;
         font-size:14px !important;
@@ -2789,13 +2795,13 @@ section {
 
 /* Сброс глобальных «широких» правил, влияющих на мобилку */
 @media (max-width:430px){
-    .journal-cover img{ max-width:140px !important; }
-    .journal-block, .journal-content, .journal-btns{ max-width:100% !important; }
+    .journal_cover img{ max-width:140px !important; }
+    .journal_block, .journal_content, .journal_btns{ max-width:100% !important; }
 }
 /* MOBILE 360–430: кнопки на ширину блока [текст + обложка], с пропорциональным сжатием */
 @media (min-width:360px) and (max-width:430px){
     /* Строка 1: [цифры] [обложка], Строка 2: [текст] на всю ширину; Строка 3: [кнопки] на всю ширину */
-    .journal-block{
+    .journal_block{
         display:grid !important;
         grid-template-columns: minmax(0,1fr) 140px !important;  /* левая колонка тянется, обложка фикс 140 */
         grid-template-rows: auto auto auto !important;
@@ -2804,21 +2810,21 @@ section {
     }
 
     /* 1-я строка */
-    .journal-sidebar{ grid-column:1 / 2 !important; grid-row:1 !important; }
-    .journal-cover{   grid-column:2 / 3 !important; grid-row:1 !important; width:140px !important; }
-    .journal-cover img{ width:140px !important; height:auto !important; }
+    .journal_sidebar{ grid-column:1 / 2 !important; grid-row:1 !important; }
+    .journal_cover{   grid-column:2 / 3 !important; grid-row:1 !important; width:140px !important; }
+    .journal_cover img{ width:140px !important; height:auto !important; }
 
     /* 2-я строка: текст на всю ширину (обеспечивает общий «мастер»-контейнер) */
-    .journal-content{
+    .journal_content{
         grid-column:1 / -1 !important;
         grid-row:2 !important;
         min-width:0 !important;
     }
-    .journal-desc{ font-size:15px !important; line-height:1.35 !important; margin:0 !important; }
+    .journal_desc{ font-size:15px !important; line-height:1.35 !important; margin:0 !important; }
 
     /* 3-я строка: кнопки занимают обе колонки (ровно ширина [текст + обложка]) */
-    .journal-actions{ grid-column:1 / -1 !important; grid-row:3 !important; width:100% !important; }
-    .journal-actions .journal-btns{
+    .journal_actions{ grid-column:1 / -1 !important; grid-row:3 !important; width:100% !important; }
+    .journal_actions .journal_btns{
         display:grid !important;
         grid-template-columns: 1fr !important;     /* стэк из двух кнопок под друг другом или 1fr 1fr — если нужно в ряд */
         gap:10px !important;
@@ -2827,8 +2833,8 @@ section {
     }
 
     /* Кнопки растягиваются ровно на ширину сетки, сжимаются вместе с ней */
-    .journal-actions .journal-btn,
-    .journal-actions .journal-btn-s{
+    .journal_actions .journal_btn,
+    .journal_actions .journal_btn_s{
         width:100% !important;
         max-width:100% !important;
         height:48px !important;
@@ -2841,5 +2847,4 @@ section {
         white-space:nowrap !important;
     }
 }
-
 

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="Header.css">
 </head>
 <body>
-<header class="site-header">
-    <div class="header-inner">
+<header class="site_header">
+    <div class="header_inner">
         <a class="logo" href="/" aria-label="Home">
             <img src="/Photo/LogoKD.svg" alt="Logo">
         </a>
@@ -17,10 +17,10 @@
         <label for="nav-toggle"
                class="burger_btn"
                aria-label="Открыть меню"
-               aria-controls="mobile-drawer"
+               aria-controls="mobile_drawer"
                aria-expanded="false"></label>
-//
-        <aside id="mobile-drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
             <div class="mobile_drawer__head">
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
                         onclick="document.getElementById('nav-toggle').checked=false"></button>
@@ -31,7 +31,7 @@
 
             <nav class="mobile_nav" aria-label="Основные разделы">
                 <ul class="mobile_nav__list">
-                    <li><a href="#">Интерьеры</a></li>
+                    <li><a href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">Интерьеры</a></li>
                     <li><a href="#">Дизайнеры</a></li>
                     <li><a href="#">Компании</a></li>
                     <li><a href="#">Про дизайн</a></li>
@@ -59,9 +59,9 @@
 
         <div class="mobile_overlay"></div>
 
-        <nav class="main-nav" aria-label="Главное меню">
+        <nav class="main_nav" aria-label="Главное меню">
             <ul>
-                <li><a href="#">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">ИНТЕРЬЕРЫ</a></li>
                 <li><a href="#">ДИЗАЙНЕРЫ</a></li>
                 <li><a href="#">КОМПАНИИ</a></li>
                 <li><a href="#">ПРО ДИЗАЙН</a></li>
@@ -73,11 +73,11 @@
         </nav>
 
         <div class="utils">
-            <a class="icon-btn" href="#" aria-label="VK">
+            <a class="icon_btn" href="#" aria-label="VK">
                 <img src="/Photo/vk.svg" alt="VK">
             </a>
-            <a class="icon-btn" href="#" aria-label="Telegram">
-               <img src="/Photo/TelegramLogo.svg" alt="Telegram">
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="/Photo/TelegramLogo.svg" alt="Telegram">
             </a>
             <form class="search" role="search">
                 <input type="search" placeholder="Поиск" aria-label="Поиск" />
@@ -93,101 +93,103 @@
     <!-- Hero -->
     <section class="hero" aria-label="Подписка на телеграм канал">
         <h1>Подпишись на наш<br>телеграм канал</h1>
-        <a href="#" class="hero-btn">
+        <a href="#" class="hero_btn">
             ПОДПИСАТЬСЯ
-            <img src="../Photo/TelegramLogo.png" class="hero-icon" alt="telegram" loading="lazy">
+            <img src="../Photo/TelegramLogo.png" class="hero_icon" alt="telegram" loading="lazy">
         </a>
     </section>
 
     <!-- Карточки -->
     <section class="cards" aria-label="Разделы сайта">
-        <div class="cards-row">
-            <article class="card card-tall card-designers">
-                <div class="card-bg" aria-hidden="true"></div>
+        <div class="cards_row">
+            <article class="card card_tall card_designers">
+                <div class="card_bg" aria-hidden="true"></div>
                 <h2>ДИЗАЙНЕРЫ</h2>
-                <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
+                <img src="../Photo/Pointer.png" alt="перейти" class="card_arrow" loading="lazy">
             </article>
 
-            <article class="card card-wide card-interiors">
-                <div class="card-bg" aria-hidden="true"></div>
-                <h2>ИНТЕРЬЕРЫ</h2>
-                <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
+            <article class="card card_wide card_interiors">
+                <a href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">
+                    <div class="card_bg" aria-hidden="true"></div>
+                    <h2>ИНТЕРЬЕРЫ</h2>
+                    <img src="../Photo/Pointer.png" alt="перейти" class="card_arrow" loading="lazy">
+                </a>
             </article>
 
-            <div class="card-col">
-                <article class="card card-small card-companies">
-                    <div class="card-bg" aria-hidden="true"></div>
+            <div class="card_col">
+                <article class="card card_small card_companies">
+                    <div class="card_bg" aria-hidden="true"></div>
                     <h2>КОМПАНИИ</h2>
-                    <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
+                    <img src="../Photo/Pointer.png" alt="перейти" class="card_arrow" loading="lazy">
                 </article>
 
-                <article class="card card-small card-banner">
-                    <div class="card-bg" aria-hidden="true"></div>
+                <article class="card card_small card_banner">
+                    <div class="card_bg" aria-hidden="true"></div>
                     <h2>(БАННЕР)</h2>
-                    <img src="../Photo/Pointer.png" alt="перейти" class="card-arrow" loading="lazy">
+                    <img src="../Photo/Pointer.png" alt="перейти" class="card_arrow" loading="lazy">
                 </article>
             </div>
         </div>
     </section>
 
     <!-- Про дизайн -->
-    <section class="about-design" aria-labelledby="about-design-title">
-        <h2 id="about-design-title">Про дизайн</h2>
-        <div class="about-design-row">
-            <figure class="about-design-card fig-1">
+    <section class="about_design" aria-labelledby="about_design_title">
+        <h2 id="about_design_title">Про дизайн</h2>
+        <div class="about_design_row">
+            <figure class="about_design_card fig_1">
                 <img src="../Photo/AnyaPhoto.png" alt="Интерьер 1" loading="lazy">
                 <figcaption>Мысли вслух: Анна Кичигина</figcaption>
             </figure>
-            <figure class="about-design-card fig-2">
+            <figure class="about_design_card fig_2">
                 <img src="../Photo/YuliaPhoto.png" alt="Интерьер 2" loading="lazy">
                 <figcaption>Мысли вслух: Юлия Березуцкая</figcaption>
             </figure>
-            <figure class="about-design-card fig-3">
+            <figure class="about_design_card fig_3">
                 <img src="../Photo/SuccessPhoto.png" alt="Интерьер 3" loading="lazy">
                 <figcaption>В рамках успеха</figcaption>
             </figure>
         </div>
-        <div class="about-design-footer">
-            <a href="#" class="about-design-all">
-                СМОТРЕТЬ ВСЕ <img src="../Photo/SecondPointer.png" alt="перейти" class="design-arrow" loading="lazy">
+        <div class="about_design_footer">
+            <a href="#" class="about_design_all">
+                СМОТРЕТЬ ВСЕ <img src="../Photo/SecondPointer.png" alt="перейти" class="design_arrow" loading="lazy">
             </a>
         </div>
     </section>
 
     <!-- Журнал -->
-    <section class="journal-block" aria-labelledby="journal-title">
-        <div class="journal-sidebar">
-            <div class="journal-header">
-                <h2 id="journal-title">Журнал</h2>
+    <section class="journal_block" aria-labelledby="journal_title">
+        <div class="journal_sidebar">
+            <div class="journal_header">
+                <h2 id="journal_title">Журнал</h2>
             </div>
-            <div class="journal-numbers">
+            <div class="journal_numbers">
                 <div>
-                    <span class="journal-big">233</span>
-                    <div class="journal-note">КОЛИЧЕСТВО НОМЕРОВ</div>
+                    <span class="journal_big">233</span>
+                    <div class="journal_note">КОЛИЧЕСТВО НОМЕРОВ</div>
                 </div>
                 <div>
-                    <span class="journal-big">20</span>
-                    <div class="journal-note">ЛЕТ ИЗДАНИЮ</div>
+                    <span class="journal_big">20</span>
+                    <div class="journal_note">ЛЕТ ИЗДАНИЮ</div>
                 </div>
             </div>
         </div>
 
-        <div class="journal-cover">
+        <div class="journal_cover">
             <img src="../Photo/KDomaLogo.png" alt="Обложка журнала" loading="lazy">
         </div>
 
-        <div class="journal-content">
-            <div class="journal-desc">
+        <div class="journal_content">
+            <div class="journal_desc">
                 В Калининграде сформировалось понятие «локальный дизайн». Не могу сказать, что этого не было раньше, но сейчас можно уже точно описать, что такое балтийский стиль. И не только на уровне ощущений, а классифицировать в цветах, фактурах, формах. И за это стоит сказать спасибо туристам. Именно для того, чтобы овладеть их вниманием и благосклонностью, калининградские дизайнеры стали активно привносить в интерьеры.
             </div>
         </div>
 
-        <div class="journal-actions">
-            <div class="journal-btns">
-                <a href="#" class="journal-btn">
+        <div class="journal_actions">
+            <div class="journal_btns">
+                <a href="#" class="journal_btn">
                     <img src="../Photo/Document.png" alt="перейти" class="icon" loading="lazy"> СКАЧАТЬ АКТУАЛЬНЫЙ ЖУРНАЛ
                 </a>
-                <a href="#" class="journal-btn-s journal-btn--border">
+                <a href="#" class="journal_btn_s journal_btn__border">
                     СМОТРЕТЬ АРХИВ <img src="../Photo/SecondPointer.png" alt="перейти" class="arrow" loading="lazy">
                 </a>
             </div>
@@ -195,29 +197,29 @@
     </section>
 
     <!-- События -->
-    <section class="events-block" aria-labelledby="events-title">
-        <h2 id="events-title">События</h2>
-        <div class="events-row">
-            <article class="event-card event-card--small">
+    <section class="events_block" aria-labelledby="events_title">
+        <h2 id="events_title">События</h2>
+        <div class="events_row">
+            <article class="event_card event_card__small">
                 <img src="../Photo/SofiDeMarkoPhoto.png" alt="Событие 1" loading="lazy">
-                <div class="event-caption">
+                <div class="event_caption">
                     Открытие салона домашнего текстиля Sofi de marko,<br>
                     25 апреля 2025 г.
                 </div>
             </article>
 
-            <article class="event-card event-card--wide">
+            <article class="event_card event_card__wide">
                 <img src="../Photo/MebelGradPhoto.png" alt="Событие 2" loading="lazy">
-                <div class="event-caption">
+                <div class="event_caption">
                     Открытие нового салона «Мебельград» и семинар<br>
                     «Квартира для посуточной аренды».<br>
                     23 апреля 2025 г.
                 </div>
             </article>
 
-            <article class="event-card event-card--small">
+            <article class="event_card event_card__small">
                 <img src="../Photo/WipartPhoto.png" alt="Событие 3" loading="lazy">
-                <div class="event-caption">
+                <div class="event_caption">
                     Занятие школы Ступени<br>
                     Корпусная мебель, салон Випарт<br>
                     11 марта 2025 г
@@ -225,49 +227,49 @@
             </article>
         </div>
 
-        <div class="events-footer">
-            <a href="#" class="events-btn">
-                СМОТРЕТЬ ВСЕ <img src="../Photo/SecondPointer.png" alt="перейти" class="events-arrow" loading="lazy">
+        <div class="events_footer">
+            <a href="#" class="events_btn">
+                СМОТРЕТЬ ВСЕ <img src="../Photo/SecondPointer.png" alt="перейти" class="events_arrow" loading="lazy">
             </a>
         </div>
     </section>
 
     <!-- О редакции -->
-    <section class="about-editorial" aria-labelledby="about-editorial-title">
-        <h2 id="about-editorial-title">О редакции</h2>
-        <div class="about-editorial__content">
-            <div class="about-editorial__col">
-                <div class="about-editorial__title">Калининградские дома</div>
-                <div class="about-editorial__text">
+    <section class="about_editorial" aria-labelledby="about_editorial_title">
+        <h2 id="about_editorial_title">О редакции</h2>
+        <div class="about_editorial__content">
+            <div class="about_editorial__col">
+                <div class="about_editorial__title">Калининградские дома</div>
+                <div class="about_editorial__text">
                     <p>KDoma.ru — ваш дом начинается здесь. Находите проверенных специалистов, вдохновляйтесь реализованными проектами и получайте актуальные советы по созданию идеального пространства.</p>
                 </div>
             </div>
 
-            <div class="about-editorial__col">
-                <ul class="about-editorial__list">
+            <div class="about_editorial__col">
+                <ul class="about_editorial__list">
                     <li>Каталог топовых архитекторов и дизайнеров</li>
                     <li>Реальные кейсы и тренды интерьерных решений <br/> <a href="#" class="readmore">Читать далее</a></li>
                 </ul>
             </div>
 
-            <div class="about-editorial__col">
-                <div class="about-editorial__title">Желаете разместить рекламу на нашем сайте?</div>
-                <div class="about-editorial__text">
+            <div class="about_editorial__col">
+                <div class="about_editorial__title">Желаете разместить рекламу на нашем сайте?</div>
+                <div class="about_editorial__text">
                     Свяжитесь с нашим менеджером по рекламе:
                     <a class="mail" href="mailto:project@kdoma.ru">project@kdoma.ru</a>
                 </div>
-                <a href="#" class="about-editorial__btn">
-                    АКТУАЛЬНЫЙ ПРАЙС <img src="../Photo/SecondPointer.png" alt="перейти" class="about-editorial__arrow" loading="lazy">
+                <a href="#" class="about_editorial__btn">
+                    АКТУАЛЬНЫЙ ПРАЙС <img src="../Photo/SecondPointer.png" alt="перейти" class="about_editorial__arrow" loading="lazy">
                 </a>
             </div>
 
-            <div class="about-editorial__col">
-                <div class="about-editorial__title">Хотите опубликовать реализованный проект?</div>
-                <div class="about-editorial__text">
+            <div class="about_editorial__col">
+                <div class="about_editorial__title">Хотите опубликовать реализованный проект?</div>
+                <div class="about_editorial__text">
                     Заполните заявку перейдя по данной ссылке
                 </div>
-                <a href="#" class="about-editorial__btn--red ">
-                    РАЗМЕСТИТЬ ИНТЕРЬЕР <img src="../Photo/WhitePointer.png" alt="перейти" class="about-editorial__arrow" loading="lazy">
+                <a href="#" class="about_editorial__btn--red ">
+                    РАЗМЕСТИТЬ ИНТЕРЬЕР <img src="../Photo/WhitePointer.png" alt="перейти" class="about_editorial__arrow" loading="lazy">
                 </a>
             </div>
         </div>
@@ -277,7 +279,7 @@
 <footer class="site_footer" role="contentinfo">
     <div class="site_footer__inner">
         <!-- Колонка: бренд и реквизиты -->
-        <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer-brand">
+        <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer_brand">
 
             <a class="site_footer__logo" href="/" aria-label="На главную">
                 <img src="/Photo/LogoKD.svg" width="75" height="50" alt="Логотип КД">
@@ -288,14 +290,14 @@
         </section>
 
         <!-- Колонка: соцсети -->
-        <nav class="site_footer__col footer_social" aria-labelledby="footer-social">
+        <nav class="site_footer__col footer_social" aria-labelledby="footer_social">
             <div class="site_footer__col footer_social" aria-label="Соцсети">
-                <ul class="site_footer__list-media">
-                    <li class="site_footer__list-TG">
+                <ul class="site_footer__list_media">
+                    <li class="site_footer__list_TG">
                         <img src="/Photo/TgLogo.png" width="30" height="30" alt="<UNK> <UNK>">
                         <a class="site_footer__link" href="https://t.me/">Telegram</a>
                     </li>
-                    <li class="site_footer__list-VK">
+                    <li class="site_footer__list_VK">
                         <img src="/Photo/VkLogo.png" width="30" height="30" alt="<UNK> <UNK>"/>
                         <a class="site_footer__link" href="https://vk.com/">ВКонтакте</a>
                     </li>
@@ -304,10 +306,10 @@
         </nav>
 
         <!-- Колонка: разделы 1 -->
-        <nav class="site_footer__col footer_sections" aria-labelledby="footer-sections-1">
-            <h2 id="footer-sections-1" class="site_footer__title">Разделы сайта:</h2>
+        <nav class="site_footer__col footer_sections" aria-labelledby="footer_sections_1">
+            <h2 id="footer_sections_1" class="site_footer__title">Разделы сайта:</h2>
             <ul class="site_footer__list">
-                <li><a class="site_footer__link" href="/interiors">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">Интерьеры</a></li>
                 <li><a class="site_footer__link" href="/designers">Дизайнеры</a></li>
                 <li><a class="site_footer__link" href="/companies">Компании</a></li>
                 <li><a class="site_footer__link" href="/about-design">Про дизайн</a></li>
@@ -316,20 +318,20 @@
         </nav>
 
         <!-- Колонка: разделы 2 -->
-        <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer-sections-2">
+        <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer_sections_2">
 
-            <ul class="site_footer__list-second">
+            <ul class="site_footer__list_second">
                 <li><a class="site_footer__link" href="/archive">Архив номеров</a></li>
                 <li><a class="site_footer__link" href="/about">О редакции</a></li>
-                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
-                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
-                <li class="red-marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
             </ul>
         </nav>
 
         <!-- Колонка: контакты -->
-        <section class="site_footer__col footer_contacts" aria-labelledby="footer-contacts">
-            <h2 id="footer-contacts" class="site_footer__title">Контакты</h2>
+        <section class="site_footer__col footer_contacts" aria-labelledby="footer_contacts">
+            <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
             <address class="site_footer__address">
                 г. Калининград,<br>
                 ул. Рокоссовского, д. 16/18<br>
@@ -341,7 +343,7 @@
 
     <div class="site_footer__bottom">
         <a class="site_footer__policy" href="/privacy">Политика ОПД</a>
-        <div class="site_footer__dev-container">
+        <div class="site_footer__dev_container">
             <p class="site_footer__dev">Сайт разработан</p>
             <img src="/Photo/LogoKant.svg" width="138" height="14" alt="<UNK> <UNK>">
         </div>

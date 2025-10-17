@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Компании — Каталог</title>
+    <link rel="stylesheet" href="Company.css"/>
+    <script src="filters-panel.js" defer></script>
+</head>
+<body>
+<main class="page">
+
+    <!-- Заголовок + фильтры -->
+    <section class="section section__header">
+        <div class="container header">
+            <h1 class="header__title">Компании</h1>
+
+            <div class="header__filters">
+                <!-- Десктопный триггер -->
+                <button id="filter_trigger_desktop" class="filter_trigger" aria-haspopup="dialog" aria-expanded="false"
+                        aria-controls="filter_dropdown">
+                    <span class="filter_trigger__label">Тип деятельности</span>
+                    <img src="/Photo/Galochka.svg" alt="">
+                </button>
+
+                <!-- Мобильный триггер -->
+                <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Фильтры">
+                    <img class="filter_trigger_icon__img" src="/Photo/FilterIcon.svg" alt="">
+                </button>
+
+                <!-- Компактная плашка-дропдаун прямо под кнопкой -->
+                <div class="filter_dropdown" id="filter_dropdown" hidden>
+                    <div class="filter_dropdown__panel" role="dialog" aria-modal="false"
+                         aria-labelledby="filter_panel_title">
+
+                        <div class="filter_dropdown__body">
+                            <!-- Строительство и ремонт -->
+                            <details class="filter_acc" open>
+                                <summary class="filter_acc__sum">Строительство и ремонт <img src="/Photo/Galochka.svg" alt=""></summary>
+                                <div class="filter_acc__body">
+                                    <label class="filter_check"><input type="checkbox" name="work[]"
+                                                                       value="gencontract"> Генподряд</label>
+                                    <label class="filter_check"><input type="checkbox" name="work[]" value="materials">
+                                        Строительные материалы</label>
+                                    <label class="filter_check"><input type="checkbox" name="work[]" value="finishing">
+                                        Отделочные работы</label>
+                                </div>
+                            </details>
+
+                            <!-- Мебель и интерьер -->
+                            <details class="filter_acc">
+                                <summary class="filter_acc__sum">Мебель и интерьер <img src="/Photo/Galochka.svg" alt=""></summary>
+                                <div class="filter_acc__body">
+                                    <label class="filter_check"><input type="checkbox" name="furniture[]"
+                                                                       value="kitchen"> Кухни</label>
+                                    <label class="filter_check"><input type="checkbox" name="furniture[]" value="soft">
+                                        Мягкая мебель</label>
+                                    <label class="filter_check"><input type="checkbox" name="furniture[]" value="light">
+                                        Освещение</label>
+                                </div>
+                            </details>
+
+                            <!-- Сантехника и оборудование -->
+                            <details class="filter_acc">
+                                <summary class="filter_acc__sum">Сантехника и оборудование <img src="/Photo/Galochka.svg" alt=""></summary>
+                                <div class="filter_acc__body">
+                                    <label class="filter_check"><input type="checkbox" name="plumb[]" value="radiators">
+                                        Радиаторы</label>
+                                    <label class="filter_check"><input type="checkbox" name="plumb[]" value="towel">
+                                        Полотенцесушители</label>
+                                    <label class="filter_check"><input type="checkbox" name="plumb[]" value="mixers">
+                                        Смесители</label>
+                                </div>
+                            </details>
+
+                            <!-- Бытовая техника и электроника -->
+                            <details class="filter_acc" open>
+                                <summary class="filter_acc__sum">Бытовая техника и электроника <img src="/Photo/Galochka.svg" alt=""></summary>
+                                <div class="filter_acc__body">
+                                    <label class="filter_check filter_check__all">
+                                        <input type="checkbox" data-filter-all="electronics"> Выбрать все пункты
+                                    </label>
+                                    <label class="filter_check">
+                                        <input type="checkbox" name="electronics[]" value="appliances"
+                                               data-filter-group="electronics"> Бытовая техника
+                                    </label>
+                                    <label class="filter_check">
+                                        <input type="checkbox" name="electronics[]" value="components"
+                                               data-filter-group="electronics"> Комплектующие
+                                    </label>
+                                </div>
+                            </details>
+
+                            <!-- Торговля и услуги -->
+                            <details class="filter_acc">
+                                <summary class="filter_acc__sum">Торговля и услуги <img src="/Photo/Galochka.svg" alt=""></summary>
+                                <div class="filter_acc__body">
+                                    <label class="filter_check"><input type="checkbox" name="trade[]" value="retail">
+                                        Розница</label>
+                                    <label class="filter_check"><input type="checkbox" name="trade[]" value="b2b">
+                                        Опт/B2B</label>
+                                    <label class="filter_check"><input type="checkbox" name="trade[]" value="service">
+                                        Сервисные услуги</label>
+                                </div>
+                            </details>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Оверлей для клика вне панели -->
+    <div id="filter_overlay" class="filter_overlay" hidden></div>
+
+    <!-- Каталог компаний -->
+    <section class="section section__catalog">
+        <div class="container">
+            <div class="catalog">
+                <!-- 9 карточек -->
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/Design-set.svg" alt="Дизайн Комплект" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/Paradise-Dekor.svg" alt="Арх Халл" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/IntelHome.svg" alt="Intelhome" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/Marze.svg" alt="Marze" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/Variy.svg" alt="Вариу" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/DesignerRadiator.svg" alt="Designer Radiator" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/KontyrTerm.svg" alt="КонтурТерм" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/Finn.svg" alt="FINN" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__top"><h3 class="card__title">Полотенцесушители<br>Радиаторы</h3></div>
+                    <div class="card__row">
+                        <div class="card__logo"><img src="/Photo/TopTopDekor.svg" alt="TopTopDekor" loading="lazy"></div>
+                        <a class="card__link" href="#">Где купить <img src="/Photo/SecondPointer.png" alt=""></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="catalog__more">
+                <button class="btn btn__outline" type="button">Показать еще</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
