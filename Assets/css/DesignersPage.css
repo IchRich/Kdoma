@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
+
+
+:root {
+    --container: 1720px;
+    --gap: 28px;
+    --col-gap: 32px;
+    --text: #111;
+    --muted: #666;
+    --border: #e6e6e6;
+    --bg-tile: #f6f6f6;
+    --title: 70px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Geologica, system-ui, Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+.designer {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 0 60px;
+}
+
+/* Head */
+.designer__head {
+    padding: 18px 0 12px;
+}
+
+.designer__title {
+    font-size: var(--title);
+    font-weight: 200;
+    margin: 0 0 60px;
+
+}
+.profile {
+    display: flex;
+
+    align-items: start;
+    gap: 24px 168px;
+}
+
+.profile__photo img {
+    width: 270px;
+    height: 348px;
+    object-fit: cover;
+    display: block;
+}
+.profile__photo p{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    margin-top: 10px;
+
+}
+.info__services{
+    width: 30%;
+}
+/* Инфо-сетка 4 колонки */
+.profile__grid {
+    display: flex;
+
+    gap: 18px 71px;
+}
+
+.info__title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.info__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info__item_grey{
+    font-size: 20px;
+    color: var(--muted);
+    margin-top: 22px;
+}
+.info__list {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.45;
+    color: black;
+    font-weight: 300;
+}
+.info__title_price{
+    margin: 20px 0 20px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.info__list_prices{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.45;
+    color: black;
+    font-weight: 300;
+
+}
+.info__list_prices span{
+
+    color: var(--muted);
+}
+.info__list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info__list a:hover {
+    text-decoration: underline;
+}
+
+/* Секции */
+.section {
+    padding: 26px 0 10px;
+}
+.section_public{
+    position: relative;               /* якорь для псевдоэлемента */
+    z-index: 0;
+    background: rgba(230, 230, 230, 1);
+}
+.section_public:before {
+    content: "";
+    position: absolute;
+    inset: 0;                         /* перекрыть всю секцию по высоте */
+    left: 50%;
+    right: 50%;
+    margin-left: calc(-50vw + 0px);   /* тянем от левого края окна */
+    margin-right: calc(-49vw + 0px);  /* тянем до правого края окна */
+    background: #ededed;              /* ваш цвет фона */
+    z-index: -1;
+}
+.section__head {
+    margin: 8px 0 16px;
+}
+
+.section__title {
+    margin: 0 0 50px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+/* Карточки */
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 22px 29px;
+}
+
+
+.card__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card__figure {
+    margin: 0;
+}
+
+.card__figure img {
+
+    object-fit: cover;
+    display: block;
+    background: #eee;
+}
+
+.card__caption {
+    margin: 10px 0 30px;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    text-align: right;
+}
+.card__lg{
+    margin-top: 48px;
+}
+
+/* Кнопки */
+.actions-portfolio {
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0 0;
+}
+.actions{
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px 0 0;
+}
+
+
+.btn_outline {
+    gap: 10px;
+    width: 23.7%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 18px;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #111;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .18s ease;
+
+}
+
+.btn_outline:hover {
+    background: #111;
+    color: #fff;
+}
+.btn_outline:hover img {
+    filter: invert(1) brightness(1.15) contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.btn__outline {
+    gap: 10px;
+    width: 23.7%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 18px;
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #111;
+
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .18s ease;
+
+}
+
+.btn__outline:hover {
+    background: #111;
+    color: #fff;
+}
+.btn__outline:hover img {
+    filter: invert(1) brightness(1.15) contrast(1.05);
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+
+.mprofile{ display:none; }
+@media (min-width:360px) and (max-width:767px){
+    /* Прячем десктопный профиль на мобилке (безопасно, только внешний контейнер) */
+    .profile {
+        display: none !important;
+    }
+
+    /* Включаем мобильную версию */
+    .mprofile {
+        display: block;
+    }
+
+    .muted {
+        color: #666;
+    }
+
+    .mprofile__top {
+        display: grid;
+
+        gap: 0;
+        align-items: start;
+    }
+    .mprofile__photo {
+        max-width: 150px;
+    }
+
+    .mprofile__photo img {
+        width: 100%;
+        height: 214px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .mprofile__role {
+        margin: 0 0 20px;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .mprofile__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 5px;
+    }
+
+    .mprofile__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .mprofile__item img {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    .mprofile__item a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .mprofile__item a:hover {
+        text-decoration: underline;
+    }
+
+    .mprofile__morebtn
+    {
+        grid-column: 1/3;
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #111;
+        background: #fff;
+        font-size: 16px;
+        font-family: Geologica, system-ui, Arial, sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        transition: .18s;
+    }
+
+    .mprofile__morebtn:hover {
+        background: #111;
+        color: #fff;
+    }
+
+    .mprofile__more {
+        overflow: hidden;
+    }
+
+    .mprofile__more[hidden] {
+        display: block;
+        max-height: 0;
+    }
+
+    .mprofile__more--open {
+        max-height: 2000px;
+        transition: max-height .35s ease;
+    }
+
+    .mprofile__grid {
+        display: grid;
+
+        gap: 20px;
+        padding-top: 12px;
+    }
+    .mprofile__more{
+        grid-column: 2/1;
+        grid-row: 1/22;
+    }
+    .minfo_price{
+        grid-column: 2;
+    }
+    .minfo_services{
+        grid-column: 3/1;
+    }
+    .minfo__title {
+        margin: 0 0 6px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .minfo__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .minfo__list--legal {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+    /* Общие отступы страницы */
+    .designer{
+        padding: 0 12px 40px;
+        max-width: 767px;
+    }
+
+    /* Заголовки секций */
+    .designer__title{
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 1.05;
+        margin: 0 0 16px;
+    }
+    .section__title{
+        font-size: 26px;
+        font-weight: 300;
+        margin: 0 0 16px;
+    }
+
+    /* Профиль: одна колонка */
+    .profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        align-items: start;
+    }
+    .profile__photo{
+        order: -1;               /* фото сверху */
+    }
+    .profile__photo img{
+        width: 150px;
+        height: 190px;
+        object-fit: cover;
+        display: block;
+    }
+    .profile__photo p{
+        font-size: 18px;
+        font-weight: 300;
+        margin: 8px 0 0;
+    }
+
+    /* Информационные блоки: последовательно, читаемо */
+    .profile__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .info__title{ font-size: 18px; margin: 0 0 8px; }
+    .info__title_price{ font-size: 18px; margin: 12px 0 8px; }
+    .info__list,
+    .info__list_prices{
+        font-size: 14px;
+        line-height: 1.45;
+        gap: 6px;
+    }
+    .info__item{ gap: 8px; }
+    .info__item img{ width: 18px; height: 18px; }
+    .info__item_grey{
+        font-size: 12px;
+        color: var(--muted);
+        margin-top: 8px;
+    }
+    .info__services{ width: 100%; }
+
+    /* Портфолио */
+    .cards{ gap: 12px; }
+    .cards_portfolio{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 16px;
+    }
+    .cards_portfolio .card:nth-child(1) .card__figure img,
+    .cards_portfolio .card:nth-child(2) .card__figure img{
+        width: 100%;
+        height: 225px;         /* как в референсе */
+        object-fit: cover;
+        display: block;
+    }
+    .cards_portfolio .card:nth-child(1) .card__caption,
+    .cards_portfolio .card:nth-child(2) .card__caption{
+        margin: 8px 8px 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: right;
+    }
+    .cards_portfolio .card:nth-child(3){
+        grid-column: 1 / -1;   /* растянуть на 2 колонки */
+    }
+    .cards_portfolio .card:nth-child(3) .card__figure img{
+        width: 100%;
+        height: 213px;         /* как в референсе: крупнее, чем верхние */
+        object-fit: cover;
+        display: block;
+    }
+    .cards_portfolio .card:nth-child(3) .card__caption{
+        margin: 10px 0 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: right;
+    }
+
+    .card__lg{ margin-top: 12px; }
+
+    /* Кнопка "Все проекты" на всю ширину */
+    .btn_outline{
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+    }
+    .actions{
+        margin: 8px 0 0;
+        justify-content: center;
+    }
+
+    /* Публикации */
+    .section_public{
+        padding: 18px 0 16px;
+    }
+    .section_public::before{
+        margin-left: calc(-50vw + 0px);
+        margin-right: calc(-50vw + 0px);
+        background: #ededed;
+    }
+    .cards--posts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .cards--posts .card__figure img{
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+    }
+    .cards--posts .card__caption{
+        margin: 10px 0 0;
+        font-size: 16px;
+        text-align: right;
+    }
+    /* Кнопка "Все публикации" — как в макете */
+    .btn__outline{
+        margin: 20px 0 0;
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+        border: 1px solid #111;
+        background: #fff;
+    }
+
+    /* Мелкие правки отступов секций */
+    .section{ padding: 18px 0 10px; }
+    .section__head{ margin: 0 0 12px; }
+    .cards__portfolio .card{
+        display: none;
+    }
+    .actions-portfolio{
+        display: flex;
+    }
+    .card__lg{
+        display:none;
+    }
+}
+/* 768–1024: планшет. Меняем ТОЛЬКО профиль. Остальные секции — как на десктопе */
+/* Планшет 768–1024: профиль в точности как на макете */
+/* Планшет 768–1024: профиль на CSS Grid (только профиль) */
+@media (min-width:768px) and (max-width:1024px) {
+    .designer{
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 12px 60px;
+    }
+    .designer__title {
+        font-size: 56px;
+        margin: 0 0 22px;
+        line-height: 1.05;
+    }
+
+    /* Вся зона профиля — грид: фото слева, правая колонка справа */
+    .profile {
+        display: grid;
+        grid-template-columns: 235px 1fr; /* фото | правая часть */
+        gap: 24px 32px;
+        align-items: start;
+    }
+
+    /* Фото */
+    .profile__photo img {
+        width: 235px;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .profile__photo p {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 6px;
+    }
+
+    /* Правая часть — тоже грид на 2 столбца и 2 строки */
+    .profile__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Контакты | Услуги */
+        grid-auto-rows: min-content;
+        gap: 18px 32px;
+    }
+
+    /* Раскладываем блоки по явным ячейкам */
+    .info__contacts {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .info__services {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .info__about {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .info__price {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* У услуг на планшете не фиксируем ширину */
+    .info__services {
+        width: auto;
+    }
+
+    /* Типографика и интервалы компактнее */
+    .info__title {
+        font-size: 20px;
+        margin: 0 0 10px;
+        font-weight: 400;
+    }
+
+    .info__title_price {
+        font-size: 20px;
+        margin: 10px 0 8px;
+        font-weight: 400;
+    }
+
+    .info__list {
+        font-size: 16px;
+        line-height: 1.4;
+        gap: 6px;
+    }
+
+    .info__list_prices {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .info__item {
+        gap: 8px;
+    }
+
+    .info__item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info__item_grey {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 8px;
+    }
+
+    .designer__head {
+        padding: 16px 0 8px;
+    }
+
+    /* Вся зона профиля — 2 колонки: фото | правая часть */
+    .profile {
+        display: grid;
+        grid-template-columns: 235px 1fr;
+        gap: 24px 32px;
+        align-items: start;
+    }
+
+    .profile__photo img {
+        width: 235px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .profile__photo p {
+        font-size: 18px;
+        margin-top: 6px;
+        font-weight: 300;
+    }
+
+    /* Правая часть — 2x2: (Контакты | Услуги) / (О себе + Прайс) */
+    .profile__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* левый | правый столбец */
+        grid-auto-rows: min-content;
+        gap: 18px 32px;
+    }
+
+    .info__contacts {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .info__services {
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
+    }
+
+    /* Фокус: .info__about занимает всю нижнюю строку и внутри сама становится гридом */
+    .info__about {
+        grid-column: 1 / -1; /* тянем на обе колонки снизу */
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* "О себе" слева | "Прайс" справа */
+        gap: 18px 32px;
+        align-items: start;
+    }
+
+    /* Левая половина .info__about — реальный блок "О себе" (имеет классы .info__title и .info__list) */
+    .info__about > .info__title {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+
+    .info__about > .info__list {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 16px;
+        line-height: 1.4;
+        gap: 6px;
+    }
+
+    /* Правая половина .info__about — "Прайс" (заголовок/список внутри того же контейнера) */
+    .info__about > .info__title_price {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 20px;
+        margin: 0 0 10px;
+        font-weight: 400;
+    }
+
+    .info__about > .info__list_prices {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* Общие мелочи */
+    .info__item img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info__item {
+        gap: 8px;
+    }
+
+    .info__item_grey {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 8px;
+    }
+
+    .section__title {
+        font-size: 44px;
+        margin: 0 0 26px;
+    }
+
+    /* Портфолио: 3 колонки. Используем твои списки */
+    .cards_portfolio,
+    .cards__portfolio{
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 24px;
+    }
+
+    /* Большая карточка: пропорция 354×266 => aspect-ratio: 354/266 */
+    .cards_portfolio .card:not(.card__sm) .card__figure,
+    .cards__portfolio .card:not(.card__sm) .card__figure{
+        aspect-ratio: 354 / 266;
+        width: 100%;
+    }
+    .cards_portfolio .card:not(.card__sm) .card__figure img,
+    .cards__portfolio .card:not(.card__sm) .card__figure img{
+
+        height: 236px;
+        object-fit: cover;   /* безопасная обрезка */
+        display: block;
+    }
+
+    /* Маленькая карточка: пропорция 167×300 => aspect-ratio: 167/300 */
+    .cards_portfolio .card.card__sm .card__figure,
+    .cards__portfolio .card.card__sm .card__figure{
+        aspect-ratio: 167 / 300;
+        width: 100%;
+    }
+    .cards_portfolio .card.card__sm .card__figure img,
+    .cards__portfolio .card.card__sm .card__figure img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Подписи */
+    .card__caption{
+        margin: 8px 0 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center; /* или right, если нужно как на десктопе */
+    }
+
+    /* Кнопка "Все проекты" — по центру */
+    .actions-portfolio{
+        margin-top: 16px;
+        justify-content: end;
+    }
+    .actions-portfolio .btn_outline{
+        width: 360px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    /* Публикации: три фото всегда видимы и в один ряд */
+    .cards--posts{
+        display: flex;
+
+        gap: 20px 24px;
+    }
+    .cards--posts .card{ display: block !important; }       /* показать все 3 */
+    .cards--posts .card__figure{
+        aspect-ratio: 4 / 3;     /* единая пропорция для выравнивания плитки */
+        width: 100%;
+    }
+    .cards--posts .card__figure img{
+        width: 100%;
+
+        object-fit: cover;
+        display: block;
+    }
+    .card__figure_lg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .cards--posts .card__caption{
+        margin: 8px 0 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .actions{
+        margin-top: 18px;
+        justify-content: end;
+    }
+    .actions .btn__outline{
+        width: 360px;
+        height: 48px;
+        font-size: 16px;
+    }
+    .card__lg{
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
