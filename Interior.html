@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Интерьеры — главная</title>
+  <link rel="stylesheet" href="Assets/css/Interior.css">
+  <link rel="stylesheet" href="Assets/css/Header.css" />
+
+</head>
+<body>
+<!-- Основной контент страницы без реального хедера/футера -->
+<header class="site_header">
+    <div class="header_inner">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="Assets/image/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile_drawer"
+               aria-expanded="false"></label>
+
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
+                <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form>
+            </div>
+
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="interior.html">Интерьеры</a></li>
+                    <li><a href="Designers.html">Дизайнеры</a></li>
+                    <li><a href="Company.html">Компании</a></li>
+                    <li><a href="AboutDesign.html">Про дизайн</a></li>
+                    <li><a href="Events.html">События</a></li>
+                    <li><a href="AboutEdit.html">О редакции</a></li>
+                    <li><a class="accent" href="">Школа дизайна</a></li>
+                    <li><a class="accent" href="#">Неделя дизайна</a></li>
+                    <li><a class="accent" href="#">Премия</a></li>
+                </ul>
+            </nav>
+
+            <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li>
+                        <img src="Assets/image/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <img src="Assets/image/TelegramLogo.svg">
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="mobile_overlay"></div>
+
+        <nav class="main_nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="interior.html">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="Company.html">КОМПАНИИ</a></li>
+                <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
+                <li><a href="Events.html">СОБЫТИЯ</a></li>
+                <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
+                <li><a class="accent" href="#">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
+
+        <div class="utils">
+            <a class="icon_btn" href="#" aria-label="VK">
+                <img src="Assets/image/vk.svg" alt="VK">
+            </a>
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="Assets/image/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main class="page" id="main-content">
+  <!-- Блок: заголовок страницы -->
+  <section class="section section_header" aria-labelledby="page-title">
+    <div class="container">
+      <h1 id="page-title" class="title">Интерьеры</h1>
+    </div>
+  </section>
+
+  <!-- Блок: галерея карточек -->
+  <section class="section section_gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <h2 id="gallery-title" class="visually_hidden">Галерея интерьеров</h2>
+
+      <!-- Сетка карточек -->
+      <div class="cards_grid" role="list">
+        <!-- Первая строка: 2 крупных материала -->
+        <article class="card card_size_lg" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorSixth.png"
+                   alt="Светлая гостиная с лестницей и столовой зоной" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">
+              Дизайнер Ольга Зайцева добавила в двухуровневую квартиру
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="card card_size_lg" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorFirst.png"
+                   alt="Современный spa-интерьер с подсветкой и бассейном" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">
+              Дизайнер Ольга Зайцева добавила в двухуровневую квартиру
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Вторая строка: 4 обычные карточки -->
+        <article class="card" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorFifth.png"
+                   alt="Интерьер с декоративной подсветкой у бассейна" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">Дизайнер Ольга Зайцева добавила в двух-уровневую квартиру</figcaption>
+          </figure>
+        </article>
+
+        <article class="card" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorThird.png"
+                   alt="Терраса с круглым столом и зеленью" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">Дизайнер Ольга Зайцева добавила в двух-уровневую квартиру</figcaption>
+          </figure>
+        </article>
+
+        <article class="card" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorFourth.png"
+                   alt="Фасад дома с колонной и каменной отделкой" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">Дизайнер Ольга Зайцева добавила в двух-уровневую квартиру</figcaption>
+          </figure>
+        </article>
+        <article class="card" role="listitem">
+          <figure class="card_media">
+            <picture>
+
+              <img class="card_image" src="Assets/image/interiorFifth.png"
+                   alt="Бассейн с вертикальными декоративными панелями" loading="lazy" />
+            </picture>
+            <figcaption class="card_caption">Дизайнер Ольга Зайцева добавила в двух-уровневую квартиру</figcaption>
+          </figure>
+        </article>
+      </div>
+
+      <!-- Действие -->
+      <div class="actions">
+        <button class="btn" type="button" aria-label="Показать ещё материалы">ПОКАЗАТЬ ЕЩЕ</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site_footer" role="contentinfo">
+    <div class="site_footer__inner">
+        <!-- Колонка: бренд и реквизиты -->
+        <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer_brand">
+
+            <a class="site_footer__logo" href="/" aria-label="На главную">
+                <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+            </a>
+            <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+            <p class="site_footer__text">ООО «Стартап»</p>
+            <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+        </section>
+
+        <!-- Колонка: соцсети -->
+        <nav class="site_footer__col footer_social" aria-labelledby="footer_social">
+            <div class="site_footer__col footer_social" aria-label="Соцсети">
+                <h2 class="site_footer__col_header footer_social">Соцсети</h2>
+                <ul class="site_footer__list_media">
+                    <li class="site_footer__list_TG">
+                        <img src="Assets/image/TgLogo.png" width="30" height="30" alt="<UNK> <UNK>">
+                        <a class="site_footer__link" href="https://t.me/">Telegram</a>
+                    </li>
+                    <li class="site_footer__list_VK">
+                        <img src="Assets/image/VkLogo.png" width="30" height="30" alt="<UNK> <UNK>"/>
+                        <a class="site_footer__link" href="https://vk.com/">ВКонтакте</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Колонка: разделы 1 -->
+        <nav class="site_footer__col footer_sections" aria-labelledby="footer_sections_1">
+            <h2 id="footer_sections_1" class="site_footer__title">Разделы сайта:</h2>
+            <ul class="site_footer__list">
+                <li><a class="site_footer__link" href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="/designers">Дизайнеры</a></li>
+                <li><a class="site_footer__link" href="/companies">Компании</a></li>
+                <li><a class="site_footer__link" href="/about-design">Про дизайн</a></li>
+                <li><a class="site_footer__link" href="/events">События</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: разделы 2 -->
+        <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer_sections_2">
+
+            <ul class="site_footer__list_second">
+                <li><a class="site_footer__link" href="/archive">Архив номеров</a></li>
+                <li><a class="site_footer__link" href="/about">О редакции</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: контакты -->
+        <section class="site_footer__col footer_contacts" aria-labelledby="footer_contacts">
+            <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
+            <address class="site_footer__address">
+                г. Калининград,<br>
+                ул. Рокоссовского, д. 16/18<br>
+                Телефон редакции:<br>
+                <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+            </address>
+        </section>
+    </div>
+
+    <div class="site_footer__bottom">
+        <a class="site_footer__policy" href="/privacy">Политика ОПД</a>
+        <div class="site_footer__dev_container">
+            <p class="site_footer__dev">Сайт разработан</p>
+            <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="<UNK> <UNK>">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
