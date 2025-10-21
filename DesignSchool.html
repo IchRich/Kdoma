@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа дизайна</title>
+    <link rel="stylesheet" href="./Assets/css/DesignSchool.css">
+    <link rel="stylesheet" href="./Assets/css/Header.css">
+</head>
+<body>
+<header class="site_header">
+    <div class="header_inner">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="Assets/image/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile_drawer"
+               aria-expanded="false"></label>
+
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
+                <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form>
+            </div>
+
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="interior.html">Интерьеры</a></li>
+                    <li><a href="Designers.html">Дизайнеры</a></li>
+                    <li><a href="Company.html">Компании</a></li>
+                    <li><a href="AboutDesign.html">Про дизайн</a></li>
+                    <li><a href="Events.html">События</a></li>
+                    <li><a href="AboutEdit.html">О редакции</a></li>
+                    <li><a class="accent" href="DesignSchool.html">Школа дизайна</a></li>
+                    <li><a class="accent" href="#">Неделя дизайна</a></li>
+                    <li><a class="accent" href="#">Премия</a></li>
+                </ul>
+            </nav>
+
+            <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li>
+                        <img src="Assets/image/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <img src="Assets/image/TelegramLogo.svg">
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="mobile_overlay"></div>
+
+        <nav class="main_nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="Interior.html">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="Company.html">КОМПАНИИ</a></li>
+                <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
+                <li><a href="Events.html">СОБЫТИЯ</a></li>
+                <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
+                <li><a href="DesignSchool.html">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="#">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
+
+        <div class="utils">
+            <a class="icon_btn" href="#" aria-label="VK">
+                <img src="Assets/image/vk.svg" alt="VK">
+            </a>
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="Assets/image/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+<main class="school">
+    <!-- Герой-секция -->
+    <section class="hero">
+        <h2 class="hero__header">Школа дизайна</h2>
+        <div class="hero__grid">
+
+            <!-- Левая колонка: логотип -->
+            <div class="hero__logo">
+
+                <img src="Assets/image/StupeniLogo.svg" alt="Ступени">
+            </div>
+
+            <!-- Центральная колонка: старт + кнопки -->
+            <div class="hero__center">
+                <h2 class="hero__subtitle">Старт программы<br>август 2025</h2>
+                <div class="hero__actions">
+                    <a class="btn btn--outline" href="#" download>
+                        <img src="Assets/image/Document.png" alt="" class="btn__icon">
+                        СКАЧАТЬ ПРОГРАММУ
+                    </a>
+                    <a class="btn btn--outline" href="#" download>
+                        <img src="Assets/image/Document.png" alt="" class="btn__icon">
+                        СКАЧАТЬ ПОЛОЖЕНИЕ
+                    </a>
+                    <a class="btn btn--primary" href="#register">ЗАПИСАТЬСЯ</a>
+                </div>
+            </div>
+
+            <!-- Правая колонка: описание -->
+            <div class="hero__right">
+                <h1 class="hero__title">"Ступени" — проект журнала "Калининградские дома".</h1>
+                <p class="hero__desc">
+                    <strong>Для кого:</strong> начинающих дизайнеров, архитекторов, специалистов интерьерной сферы,
+                    всех, кто в поиске новой профессии, делает ремонт дома.
+                </p>
+                <p class="hero__desc"><strong>Когда:</strong> по вторникам и четвергам в 17:30.</p>
+                <p class="hero__desc"><strong>Где:</strong> в интерьерных салонах города.</p>
+                <p class="hero__desc">
+                    <strong>Что получим:</strong> проект реальной квартиры и сертификат о прохождении программы.
+                </p>
+
+                <h3 class="hero__program_title">В программе:</h3>
+                <ul class="hero__program_list">
+                    <li>Эргономика, планировка, чертежи</li>
+                    <li>Практикум по обмерам</li>
+                    <li>Авторский надзор, комплектация</li>
+                    <li>Дизайн кухни, гостиной, спальни, ванной</li>
+                    <li>Колористика</li>
+                    <li>Коллаж в CorelDraw, чертеж+визуализация в SketchUp</li>
+                    <li>История дизайна</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Спикеры (слайдер) -->
+    <section class="speakers">
+        <h2 class="section__title">Спикеры</h2>
+        <div class="speakers__slider">
+            <div class="speakers__track">
+                <article class="speaker">
+                    <img src="Assets/image/VeraKiruxina.svg" alt="Вера Кирюхина">
+                    <h3 class="speaker__name">Вера Кирюхина</h3>
+                    <p class="speaker__role">Архитектор, дизайнер</p>
+                </article>
+                <article class="speaker">
+                    <img src="Assets/image/AnnaGerashenko.svg" alt="Анна Геращенко">
+                    <h3 class="speaker__name">Анна Геращенко</h3>
+                    <p class="speaker__role">Дизайнер</p>
+                </article>
+                <article class="speaker">
+                    <img src="Assets/image/AnnaSemenova.svg" alt="Анна Семенова">
+                    <h3 class="speaker__name">Анна Семенова</h3>
+                    <p class="speaker__role">Дизайнер, студия по истории дизайна</p>
+                </article>
+                <article class="speaker">
+                    <img src="Assets/image/PolinaYmanskaya.svg" alt="Полина Уханская">
+                    <h3 class="speaker__name">Полина Уханская</h3>
+                    <p class="speaker__role">Дизайнер, спикер по дизайну мусора</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма регистрации -->
+    <section class="register" id="register">
+        <div class="register__grid">
+            <div class="register__info">
+                <h3>Стоимость участия</h3>
+                <p class="price">Единовременный платеж<br><strong>45 000 руб.</strong></p>
+                <p class="price">Рассрочка на 5 месяцев<br><strong>10 000 руб./мес.</strong></p>
+            </div>
+
+            <form class="register__form">
+                <h2 class="section__title">Оставьте заявку и мы с вами свяжемся</h2>
+                <div class="form__row">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form__row">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="message" placeholder="Сообщение" rows="3"></textarea>
+                    <label class="checkbox">
+
+                        <input type="checkbox" class="component" required>
+                        <span>Принимаю условия обработки персональных данных.</span>
+                    </label>
+                    <button type="submit" class="btn btn--primary">ОТПРАВИТЬ</button>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+        <h2 class="section__title">Отзывы</h2>
+        <div class="reviews__grid">
+            <article class="review">
+                <h4 class="review__author">Вера Кирюхина</h4>
+                <p class="review__date">Выпускник ступеней 2025 года</p>
+                <p class="review__text">
+                    Наши программы будут полезны: начинающим дизайнерам и архитекторам, сотрудникам интерьерных
+                    салонов и всех, кто работает в этой сфере, а также всем, кто занимается интерьером дома
+                    своей квартиры или дома.
+                </p>
+            </article>
+
+            <article class="review">
+                <h4 class="review__author">Вера Кирюхина</h4>
+                <p class="review__date">Выпускник ступеней 2025 года</p>
+                <p class="review__text">
+                    Наши программы будут полезны: начинающим дизайнерам и архитекторам, сотрудникам интерьерных
+                    салонов и всех, кто работает в этой сфере, а также всем, кто занимается интерьером дома
+                    своей квартиры или дома.
+                </p>
+            </article>
+
+            <article class="review">
+                <h4 class="review__author">Вера Кирюхина</h4>
+                <p class="review__date">Выпускник ступеней 2025 года</p>
+                <p class="review__text">
+                    Наши программы будут полезны: начинающим дизайнерам и архитекторам, сотрудникам интерьерных
+                    салонов и всех, кто работает в этой сфере, а также всем, кто занимается интерьером дома
+                    своей квартиры или дома.
+                </p>
+            </article>
+
+            <article class="review">
+                <h4 class="review__author">Вера Кирюхина</h4>
+                <p class="review__date">Выпускник ступеней 2025 года</p>
+                <p class="review__text">
+                    Наши программы будут полезны: начинающим дизайнерам и архитекторам, сотрудникам интерьерных
+                    салонов и всех, кто работает в этой сфере, а также всем, кто занимается интерьером дома
+                    своей квартиры или дома.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Архив воркшопов -->
+    <section class="archive">
+        <h2 class="section__title">Архив воркшопов</h2>
+        <div class="archive__grid">
+            <article class="workshop">
+                <img src="Assets/image/SchoolDesigneStupeni.svg" alt="Защита проектов">
+                <h4 class="workshop__title">Защита проектов "Школы дизайна "Ступени" в салоне "Стильные линии"</h4>
+                <p class="workshop__date">2 августа 2022 г.</p>
+            </article>
+
+            <article class="workshop">
+                <img src="Assets/image/SeminarArNuvo.svg" alt="Авторский надзор">
+                <h4 class="workshop__title">Авторский надзор и комплектация. Семинар Анны Геращенко в салоне "Ар Нуво"</h4>
+                <p class="workshop__date">29 июня 2022 г.</p>
+            </article>
+
+            <article class="workshop">
+                <img src="Assets/image/PoliSteniPotolki.svg" alt="История дизайна">
+                <h4 class="workshop__title">История дизайна. Встреча с Анной Семеновой в салоне "ПолиСтейл&Потолки"</h4>
+                <p class="workshop__date">26 июня 2022 г.</p>
+            </article>
+        </div>
+
+        <div class="archive__actions">
+            <a class="btn btn--outline" href="#">СМОТРЕТЬ ВСЕ
+                <img src="Assets/image/SecondPointer.png">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts">
+        <h2 class="section__title">Контакты</h2>
+        <div class="contacts__grid">
+            <ul class="contacts__list">
+                <li class="contact__item">
+                    <img src="Assets/image/PhoneLogo.svg" alt="" class="contact__icon">
+                    <div class="contact__row">
+                        <span class="contact__label">Телефон</span>
+                        <div class="contact__data">
+                            <a href="tel:+74012677706">+7 (4012) 67 77 06</a>,<br>
+                            <a href="tel:+79097889665">+7 909 788 96 65</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="contact__item">
+                    <img src="Assets/image/AdressLogo.svg" alt="" class="contact__icon">
+                    <div class="contact__row">
+                        <span class="contact__label">Адрес</span>
+                        <div class="contact__data">
+                            г. Калининград,<br>
+                            ул. Рокоссовского,<br>
+                            16/18.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="contact__item">
+                    <img src="Assets/image/EmailLogo.svg" alt="" class="contact__icon">
+                    <div class="contact__row">
+                        <span class="contact__label">E-mail</span>
+                        <div class="contact__data">
+                            <a href="mailto:stupeni@kdoma.ru">stupeni@kdoma.ru</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="contact__item">
+                    <img src="Assets/image/TgLogo.png" alt="" class="contact__icon">
+                    <div class="contact__row">
+                        <span class="contact__label">Telegram</span>
+                        <div class="contact__data">
+                            <a href="https://t.me/stupeni" target="_blank">@stupeni</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="contact__item">
+                    <img src="Assets/image/VkLogo.png" alt="" class="contact__icon">
+                    <div class="contact__row">
+                        <span class="contact__label">Вконтакте</span>
+                        <div class="contact__data">
+                            <a href="https://vk.com/stupeni" target="_blank">@stupeni</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="contacts__map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A103bfbd4915dee0b7aa9485b9116511aeb71509643a21abf546d379516ddfb20&amp;source=constructor" width="1276" height="468" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="site_footer" role="contentinfo">
+    <div class="site_footer__inner">
+        <!-- Колонка: бренд и реквизиты -->
+        <section class="site_footer__col site_footer__col_brand" aria-labelledby="footer_brand">
+
+            <a class="site_footer__logo" href="/" aria-label="На главную">
+                <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+            </a>
+            <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+            <p class="site_footer__text">ООО «Стартап»</p>
+            <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+        </section>
+
+        <!-- Колонка: соцсети -->
+        <nav class="site_footer__col footer_social" aria-labelledby="footer_social">
+            <div class="site_footer__col footer_social" aria-label="Соцсети">
+                <h2 class="site_footer__col_header footer_social">Соцсети</h2>
+                <ul class="site_footer__list_media">
+                    <li class="site_footer__list_TG">
+                        <img src="Assets/image/TgLogo.png" width="30" height="30" alt="<UNK> <UNK>">
+                        <a class="site_footer__link" href="https://t.me/">Telegram</a>
+                    </li>
+                    <li class="site_footer__list_VK">
+                        <img src="Assets/image/VkLogo.png" width="30" height="30" alt="<UNK> <UNK>"/>
+                        <a class="site_footer__link" href="https://vk.com/">ВКонтакте</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Колонка: разделы 1 -->
+        <nav class="site_footer__col footer_sections" aria-labelledby="footer_sections_1">
+            <h2 id="footer_sections_1" class="site_footer__title">Разделы сайта:</h2>
+            <ul class="site_footer__list">
+                <li><a class="site_footer__link" href="/untitled1/Interior/Interior.html?_ijt=8k7vbo5cm8n2nu4cjlbbs8obsm">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="/designers">Дизайнеры</a></li>
+                <li><a class="site_footer__link" href="/companies">Компании</a></li>
+                <li><a class="site_footer__link" href="/about-design">Про дизайн</a></li>
+                <li><a class="site_footer__link" href="/events">События</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: разделы 2 -->
+        <nav class="site_footer__col footer_sections footer_sections_extra" aria-labelledby="footer_sections_2">
+
+            <ul class="site_footer__list_second">
+                <li><a class="site_footer__link" href="/archive">Архив номеров</a></li>
+                <li><a class="site_footer__link" href="/about">О редакции</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/school">Школа дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/week">Неделя дизайна</a></li>
+                <li class="red_marker"><a class="site_footer__link site_footer__link_accent" href="/award">Премия</a></li>
+            </ul>
+        </nav>
+
+        <!-- Колонка: контакты -->
+        <section class="site_footer__col footer_contacts" aria-labelledby="footer_contacts">
+            <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
+            <address class="site_footer__address">
+                г. Калининград,<br>
+                ул. Рокоссовского, д. 16/18<br>
+                Телефон редакции:<br>
+                <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+            </address>
+        </section>
+    </div>
+
+    <div class="site_footer__bottom">
+        <a class="site_footer__policy" href="/privacy">Политика ОПД</a>
+        <div class="site_footer__dev_container">
+            <p class="site_footer__dev">Сайт разработан</p>
+            <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="<UNK> <UNK>">
+        </div>
+    </div>
+</footer>
+
+
