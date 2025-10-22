@@ -193,7 +193,7 @@ img {
     align-items: center;
     gap: 106px;
     background: var(--card);
-    padding: 22px 0;
+    padding: 22px 20px;
 }
 
 .project__logo {
@@ -259,7 +259,7 @@ img {
     }
 
     .projects__list .project:nth-child(3){ margin-top: -2px; }
-    .project__item{ padding:14px 0; gap:16px; }
+    .project__item{ padding:14px 14px; gap:16px; }
 
     .project__text{ font-size:16px; line-height:1.3; }
 }

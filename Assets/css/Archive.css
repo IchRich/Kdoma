@@ -300,6 +300,10 @@ body {
         aspect-ratio: 150 / 257;
         width: 100%;
     }
+    .catalog
+    {
+        margin-bottom: 60px;
+    }
 
     .card__year img {
         width: 100%;
