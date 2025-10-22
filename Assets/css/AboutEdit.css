@@ -193,7 +193,7 @@ img {
     align-items: center;
     gap: 106px;
     background: var(--card);
-    padding: 22px 0;
+    padding: 22px 20px;
 }
 
 .project__logo {
