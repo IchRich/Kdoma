@@ -654,6 +654,10 @@
     .site_footer__col_brand p {
         display: none;
     }
+    .site_footer__col_header{
+        display:none;
+    }
+
 }
 /* Десктоп 768+ */
 @media (min-width: 768px) {
@@ -687,9 +691,7 @@
         display: block;
     }
 
-    .header_inner {
-        justify-content: flex-start;
-    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
