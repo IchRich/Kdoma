@@ -706,7 +706,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .site_footer__inner {
         width: 100%;
-
+        padding: 0;
         display: flex;
         flex-wrap: nowrap;
         align-items: flex-start;
@@ -715,7 +715,7 @@
         display: none;
     }
     .site_footer__col_brand {
-        flex: 0 0 260px;
+        flex: 0 0 270px;
     }
 
     .site_footer__col_nav {
@@ -725,7 +725,10 @@
     .site_footer__list_TG a {
         font-size: 14px;
     }
-
+    .site_footer__link{
+        font-size: 14px;
+        font-weight: 300;
+    }
     .footer_sections {
         margin-left: -390px;
     }
@@ -802,5 +805,8 @@
 
     .site_footer__dev_container img {
         width: 83px;
+    }
+    .header_inner{
+        width: 94%;
     }
 }
