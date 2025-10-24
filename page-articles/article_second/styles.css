@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+:root {
+  --font-family: "Geologica", sans-serif;
+  --font-color: #000;
+  --font-size-mobile-h1: 30px;
+  --font-size-tablet-h1: 50px;
+  --font-size-pc-h1: 70px;
+  --font-weight-light: 200;
+  --line-height-h1: 100%;
+  --letter-spacing-mobile-h1: -5%;
+  --container-width-desktop: 89.58%;
+  --margin-h1-mobile: 30px;
+  --margin-h1-tablet: 40px;
+  --margin-h1-pc: 60px;
+  --margin-section-mobile: 40px;
+  --margin-section-tablet: 50px;
+  --padding-container-mobile: 20px;
+  --padding-container-pc: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--font-color, #000);
+  font-family: var(--font-family);
+  font-style: normal;
+  line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-mobile-h1);
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 360px;
+  padding: var(--padding-container-mobile);
+  box-sizing: border-box;
+}
+
+section {
+  margin-bottom: var(--margin-section-mobile);
+}
+
+h1 {
+  margin-bottom: var(--margin-h1-mobile);
+}
+
+img {
+  width: 100%;
+}
+
+.emtpy {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: var(--margin-section-tablet);
+  }
+  h1 {
+    margin-bottom: var(--margin-h1-tablet);
+    font-size: var(--font-size-tablet-h1);
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--padding-container-pc);
+  }
+  h1 {
+    font-size: var(--font-size-pc-h1);
+  }
+  section {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    margin: 0;
+  }
+  section > img {
+    margin-top: auto;
+  }
+  .second_h1 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

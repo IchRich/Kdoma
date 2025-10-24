@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Заявка на участие интерьера в премии "Калининградский дизайн 2025"</title>
+</head>
+<body>
+ <main class="container">
+  <!-- Начало хедера -->
+  <header class="page_header">
+   <h1 class="page_header__title">Заявка на участие интерьера в премии "Калининградский дизайн 2025"</h1>
+   <h2 class="page_header__subtitle">
+    Уважаемые архитекторы и дизайнеры, присылайте ваш интерьер для участия в премии «Калининградский дизайн-2025»
+   </h2>
+   <p class="page_header__description">
+    К рассмотрению принимается готовая съемка реализованного в Калининграде или области интерьера (кроме номинации «Проект, который предстоит реализовать»).
+   </p>
+   <p class="page_header__description">Для каждого интерьера создается отдельная заявка.</p>
+  </header>
+  <!-- Конец хедера -->
+
+
+  <!-- Номинации -->
+  <section class="nominations" aria-label="Номинации 2025">
+   <h2 class="nominations__title">Номинации 2025</h2>
+   <div class="nominations__input_container input_container">
+    <label for="nomination-select" class="input_container__label">Номинация</label>
+    <select id="nomination-select" class="input_container__select"></select>
+   </div>
+  </section>
+  <!-- Конец номинаций -->
+
+
+  <div class="about_container">
+   <!-- Информация о дизайнере -->
+   <section class="about_designer" aria-label="Информация о дизайнере">
+    <h2 class="about_designer__title">О дизайнере</h2>
+    <div class="input_container">
+     <label for="fio-input" class="input_container__label">ФИО</label>
+     <input id="fio-input" class="input_container__input" type="text">
+    </div>
+    <div class="input_container">
+     <label for="email-input" class="input_container__label">E-mail</label>
+     <input id="email-input" class="input_container__input" type="email">
+    </div>
+    <div class="input_container">
+     <label for="phone-input" class="input_container__label">Телефон</label>
+     <input id="phone-input" class="input_container__input" type="tel">
+    </div>
+    <div class="input_container">
+     <label for="reference-input" class="input_container__label">Ссылки на ваши социальные сети</label>
+     <input id="reference-input" class="input_container__input" type="text">
+    </div>
+   </section>
+   <!-- Конец информации о дизайнере -->
+
+
+   <!-- Информация об объекте -->
+   <section class="about_object" aria-label="Информация об объекте">
+    <h2 class="about_object__title">Об объекте</h2>
+    <div class="input_container">
+     <label for="category-select" class="input_container__label">Категория объекта</label>
+     <select id="category-select" class="input_container__select category_select_tablet_width"></select>
+    </div>
+    <div class="input_container">
+     <label for="geo-input" class="input_container__label">Местоположение объекта</label>
+     <input id="geo-input" class="input_container__input" type="text">
+    </div>
+    <div class="input_container">
+     <label for="name-jk-input" class="input_container__label">Название ЖК/серия дома</label>
+     <input id="name-jk-input" class="input_container__input" type="text">
+    </div>
+    <div class="input_container">
+     <label for="area-object-input" class="input_container__label">Площадь объекта</label>
+     <input id="area-object-input" class="input_container__input" type="number">
+    </div>
+   </section>
+   <!-- Конец информации об объекте -->
+  </div>
+
+
+  <!-- Дополнительная информация -->
+  <section class="additional_information" aria-label="Дополнительная информация">
+   <h2 class="additional_information__title">Дополнительная информация</h2>
+   <div class="additional_information__container">
+    <article class="additional_information__item">
+     <div class="input_container tablet_width_input_container pc_width_input_container">
+      <label for="desc-object-input" class="input_container__label">
+       Описание объекта (напишите несколько предложений, но не более 12-15, о стиле, основной идее, средствах достижения, производителей мебели и декора):
+      </label>
+      <input id="desc-object-input" class="input_container__input" type="text">
+     </div>
+     <div class="input_container tablet_width_input_container">
+      <label for="reference-photo-input" class="input_container__label">
+       Ссылка на фото (загрузите фотографии объекта на любой файлообменник и приложите ссылку, также необходимо загрузить планы До и После перепланировки):
+      </label>
+      <input id="reference-photo-input" class="input_container__input" type="url">
+     </div>
+    </article>
+    <article class="additional_information__item">
+     <div class="input_container tablet_width_input_container">
+      <label for="autor-input" class="input_container__label">Автор фотосъемки</label>
+      <input id="autor-input" class="input_container__input" type="text">
+     </div>
+     <div class="input_container tablet_width_input_container last_child_input_container">
+      <label for="year-input" class="input_container__label">Годы начала/окончания работ</label>
+      <input id="year-input" class="input_container__input" type="text">
+     </div>
+    </article>
+   </div>
+
+
+   <!-- Согласия пользователя -->
+   <section class="agreements" aria-label="Согласия пользователя">
+    <div class="checkbox_container">
+     <input id="personal-data-input" class="checkbox_container__input" type="checkbox">
+     <label for="personal-data-input" class="checkbox_container__label">Принимаю условия <a href="#">обработки персональных данных.</a></label>
+    </div>
+    <div class="checkbox_container">
+     <input id="privacy-policy-input" class="checkbox_container__input" type="checkbox">
+     <label for="privacy-policy-input" class="checkbox_container__label">Принимаю условия <a href="#">Политики конфиденциальности.</a></label>
+    </div>
+    <div class="checkbox_container last_child_checkbox_container">
+     <input id="garant-input" class="checkbox_container__input" type="checkbox">
+     <label for="garant-input" class="checkbox_container__label">
+      Присылая фотографии интерьеров для участия в Премии "Калининградский дизайн" заявитель гарантирует наличие у него исключительного права на фотографии и дает согласие для размещения их на сайте
+      <a href="#">kdoma.ru</a>, а также подтверждает достоверность заявленных в заявке сведений.
+     </label>
+    </div>
+   </section>
+   <!-- Конец согласий пользователя -->
+
+
+   <button class="btn_submit" type="submit">Отправить</button>
+  </section>
+  <!-- Конец дополнительной информации -->
+ </main>
+</body>
+</html>
