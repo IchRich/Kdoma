@@ -477,14 +477,16 @@
     }
 
     .header_inner {
+        width: clamp(88%, 88%, 95%);
         justify-content: space-between;
     }
+
     .site_footer {
         overflow-x: hidden;
     }
 
     .site_footer__inner {
-        max-width: 340px;
+        max-width: clamp(340px, 90vw, 680px);
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -492,27 +494,28 @@
           "brand socials nav"
           "brand socials contacts"
           "footer footer footer";
-        gap: 32px 40px;
-        padding: 24px 90px;
+        gap: clamp(24px, 6vw, 40px) clamp(32px, 8vw, 50px);
+        padding: clamp(16px, 4vw, 32px) clamp(60px, 15vw, 120px);
     }
 
     .site_footer__bottom {
-        max-width: 340px;
+        max-width: clamp(340px, 90vw, 680px);
         margin: 0 auto;
-        padding: 12px 10px;
+        padding: clamp(12px, 2.5vw, 18px) clamp(10px, 2vw, 16px);
     }
 
     .site_footer__policy {
         display: flex;
-        font-size: 9px;
+        font-size: clamp(9px, 2vw, 12px);
     }
 
     .site_footer__dev_container p {
-        font-size: 9px;
+        font-size: clamp(9px, 2vw, 12px);
     }
 
     .site_footer__dev_container img {
-        width: 74px;
+        width: clamp(60px, 15vw, 90px);
+        height: auto;
     }
 
     .site_footer__col_brand {
@@ -520,30 +523,30 @@
     }
 
     .site_footer__address {
-        font-size: 12px;
+        font-size: clamp(12px, 2.8vw, 15px);
     }
 
     .site_footer__link {
-        font-size: 12px;
+        font-size: clamp(12px, 2.8vw, 15px);
     }
 
     .site_footer__col_socials {
         grid-area: socials;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: clamp(6px, 1.5vw, 10px);
     }
 
     .site_footer__col_nav {
         grid-area: nav;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: clamp(6px, 1.5vw, 10px);
     }
 
     .site_footer__col_contacts {
         grid-area: contacts;
-        font-size: 18px;
+        font-size: clamp(14px, 3.5vw, 18px);
         font-weight: 300;
         line-height: 1.4;
     }
@@ -551,8 +554,8 @@
     .site_footer__bottom {
         grid-area: footer;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
-        padding-top: 20px;
-        font-size: 14px;
+        padding-top: clamp(12px, 2.5vw, 20px);
+        font-size: clamp(10px, 2.5vw, 14px);
         color: #666;
         display: flex;
         justify-content: space-between;
@@ -560,11 +563,11 @@
     }
 
     .site_footer__list {
-        font-size: 12px;
+        font-size: clamp(12px, 2.8vw, 15px);
     }
 
     .site_footer__list_second {
-        font-size: 12px;
+        font-size: clamp(12px, 2.8vw, 15px);
     }
 
     .site_footer__inner {
@@ -575,12 +578,12 @@
           "nav"
           "contacts"
           "footer";
-        gap: 16px 0;
-        padding: 16px 10px;
+        gap: clamp(16px, 3vw, 24px) 0;
+        padding: clamp(16px, 4vw, 32px);
     }
 
     .site_footer__title {
-        font-size: 16px;
+        font-size: clamp(14px, 3.5vw, 18px);
     }
 
     .site_footer__col_brand {
@@ -588,13 +591,13 @@
     }
 
     .site_footer__list_TG img {
-        width: 24px;
-        height: 24px;
+        width: clamp(20px, 5vw, 28px);
+        height: clamp(20px, 5vw, 28px);
     }
 
     .site_footer__list_VK img {
-        width: 24px;
-        height: 24px;
+        width: clamp(20px, 5vw, 28px);
+        height: clamp(20px, 5vw, 28px);
     }
 
     .site_footer__list_media {
@@ -603,8 +606,8 @@
     }
 
     .footer_social {
-        margin-left: -20px;
-        margin-top: 10px;
+        margin-left: clamp(-20px, -4vw, -10px);
+        margin-top: clamp(10px, 2vw, 14px);
         grid-column: 2/2;
         grid-row: 3/3;
     }
@@ -614,12 +617,12 @@
     }
 
     .footer_sections_extra {
-        margin-top: -62px;
+        margin-top: clamp(-62px, -12vw, -40px);
         grid-column: 2/1;
     }
 
     .footer_contacts {
-        margin-left: -50px;
+        margin-left: clamp(-50px, -10vw, -30px);
         grid-column: 2/2;
         grid-row: 2/2;
     }
@@ -635,30 +638,36 @@
     .site_footer__col_socials,
     .site_footer__col_nav {
         flex-direction: column;
-        gap: 6px;
+        gap: clamp(6px, 1.5vw, 10px);
     }
 
     .site_footer__col_contacts {
-        font-size: 16px;
-        margin-top: 8px;
+        font-size: clamp(14px, 3.5vw, 18px);
+        margin-top: clamp(8px, 2vw, 12px);
     }
 
     .site_footer__bottom {
         justify-content: space-between;
         flex-direction: row;
-        gap: 6px;
-        padding-top: 12px;
-        font-size: 12px;
+        gap: clamp(6px, 1.5vw, 10px);
+        padding-top: clamp(12px, 2.5vw, 18px);
+        font-size: clamp(10px, 2.5vw, 14px);
     }
 
     .site_footer__col_brand p {
         display: none;
     }
-    .site_footer__col_header{
-        display:none;
+
+    .site_footer__col_header {
+        display: none;
     }
 
+    .site_footer__logo {
+        width: clamp(38px, 10vw, 52px);
+        height: auto;
+    }
 }
+
 /* Десктоп 768+ */
 @media (min-width: 768px) {
     .burger_btn,
