@@ -371,7 +371,7 @@
 }
 
 /* Мобильная адаптация */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .main_nav,
     .utils {
         display: none;
