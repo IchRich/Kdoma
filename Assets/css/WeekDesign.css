@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+:root {
+  --font-family: "Geologica", sans-serif;
+  --font-color: #000;
+  --font-weight-light: 200;
+  --font-weight-regular: 300;
+  --line-height-base: 110%;
+  --padding-container-mobile: 20px;
+  --padding-container-pc: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--font-color, #000);
+  font-family: var(--font-family);
+  font-style: normal;
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-mobile-p);
+  letter-spacing: -3%;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-width: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 360px;
+  padding: var(--padding-container-mobile);
+  box-sizing: border-box;
+}
+
+.tablet {
+  display: none;
+}
+
+.img-header {
+  background-color: gray;
+  width: 100%;
+  height: 711px;
+}
+
+.date {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: var(--font-weight-light);
+  background-color: #ad0c0c;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 22px;
+  word-break: break-all;
+}
+
+.card {
+  margin-bottom: 60px;
+}
+.card .body_card {
+  margin-bottom: 40px;
+}
+.card .body_card img {
+  background-color: gray;
+  width: 100%;
+  height: 231px;
+  margin-bottom: 20px;
+}
+.card .body_card div .time_name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ad0c0c;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.card .body_card div .desc_name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.card .body_card div .desc {
+  margin-bottom: 15px;
+  color: #403f3c;
+}
+.card .body_card div .address {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.card .body_card div .phone {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.card .body_card div .ad_container p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.card .body_card div .ad_container img {
+  height: 160px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .img-header {
+    height: 957px;
+  }
+  .date {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin-bottom: 50px;
+  }
+  .card .body_card img {
+    height: 491px;
+    margin-bottom: 30px;
+  }
+  .card .body_card div .time_name {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .card .body_card div .desc_name {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .card .body_card div .desc_container {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .body_card div .desc_container .desc {
+    font-size: 18px;
+    width: 541px;
+    margin-bottom: 0;
+  }
+  .card .body_card div .desc_container img {
+    height: 108px;
+    width: 167px;
+    margin: 0;
+  }
+  .card .body_card div .contact_container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .card .body_card div .contact_container .address {
+    font-size: 20px;
+    width: 482px;
+    margin: 0;
+  }
+  .card .body_card div .contact_container .phone {
+    font-size: 20px;
+    margin: 0;
+  }
+  .card .body_card div .ad_container p {
+    margin-bottom: 0;
+  }
+  .card .body_card div .ad_container img {
+    height: 108px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    padding: var(--padding-container-pc);
+  }
+  .img-header {
+    height: 870px;
+  }
+  .date {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .card {
+    margin-bottom: 62px;
+  }
+  .card .body_card {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .card .body_card img {
+    height: -webkit-fill-available;
+    width: 845px;
+    margin-bottom: 0;
+  }
+  .card .body_card div .time_name {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .card .body_card div .desc_name {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 845px;
+  }
+  .card .body_card div .desc_container {
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  .card .body_card div .desc_container .desc {
+    font-size: 20px;
+    width: 553px;
+  }
+  .card .body_card div .desc_container img {
+    height: 176px;
+    width: 262px;
+  }
+  .card .body_card div .contact_container {
+    gap: 30px;
+  }
+  .card .body_card div .contact_container .address {
+    font-size: 22px;
+    width: 408px;
+  }
+  .card .body_card div .contact_container .phone {
+    font-size: 22px;
+  }
+  .card .body_card div .ad_container p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

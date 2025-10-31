@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неделя дизайна</title>
+    <link rel="stylesheet" href="Assets/css/WeekDesign.css">
+    <link rel="stylesheet" href="Assets/css/Header.css">
+</head>
+<body>
+<header class="site_header">
+    <div class="header_inner">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="Assets/image/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile_drawer"
+               aria-expanded="false"></label>
+
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
+                <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form>
+            </div>
+
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="Interior.html">Интерьеры</a></li>
+                    <li><a href="Designers.html">Дизайнеры</a></li>
+                    <li><a href="Company.html">Компании</a></li>
+                    <li><a href="AboutDesign.html">Про дизайн</a></li>
+                    <li><a href="Events.html">События</a></li>
+                    <li><a href="AboutEdit.html">О редакции</a></li>
+                    <li><a class="accent" href="DesignSchool.html">Школа дизайна</a></li>
+                    <li><a class="accent" href="WeekDesign.html">Неделя дизайна</a></li>
+                    <li><a class="accent" href="Premia.html">Премия</a></li>
+                </ul>
+            </nav>
+
+            <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li>
+                        <img src="Assets/image/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <img src="Assets/image/TelegramLogo.svg">
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="mobile_overlay"></div>
+
+        <nav class="main_nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="Interior.html">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="Company.html">КОМПАНИИ</a></li>
+                <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
+                <li><a href="Events.html">СОБЫТИЯ</a></li>
+                <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
+                <li><a class="accent" href="DesignSchool.html">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="WeekDesign.html">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="Premia.html">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
+
+        <div class="utils">
+            <a class="icon_btn" href="#" aria-label="VK">
+                <img src="Assets/image/vk.svg" alt="VK">
+            </a>
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="Assets/image/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <img src="" alt="" class="img-header"/>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="date">
+                Дата/день недели
+            </div>
+
+            <div class="body_card">
+                <img src="" alt=""/>
+
+                <div>
+                    <p class="time_name">
+                        Время/название
+                    </p>
+
+                    <p class="desc_name">
+                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    </p>
+
+                    <div class="desc_container">
+                        <p class="desc">
+                            Ведущий спикер — известный питерский дизайнер и сооснователь бренда Полина Афонская.
+                            Гостей ждет знакомство с новой коллекцией, экскурсия по залам производства с 25-летней историей, познание традиций и секретов создания мебели премиального качества от директора фабрики и сооснователя бренда Марины Рыжаковой. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.  А также гастрономические комплименты, иммерсивноепогружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.
+                        </p>
+
+                        <img class="tablet" src="" alt=""/>
+                    </div>
+                    
+                    <div class="contact_container">
+                        <p class="address">
+                            Адрес место условия адрес место условия адрес место условия адрес условия адрес место
+                        </p>
+
+                        <p class="phone">
+                            Телефон телефон телефон
+                        </p>
+                    </div>
+
+                    <div class="ad_container">
+                        <p>
+                            Реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама
+                        </p>
+
+                        <img class="mobile" src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+             <div class="body_card">
+                <img src="" alt=""/>
+
+                <div>
+                    <p class="time_name">
+                        Время/название
+                    </p>
+
+                    <p class="desc_name">
+                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    </p>
+
+                    <div class="desc_container">
+                        <p class="desc">
+                            Ведущий спикер — известный питерский дизайнер и сооснователь бренда Полина Афонская.
+                            Гостей ждет знакомство с новой коллекцией, экскурсия по залам производства с 25-летней историей, познание традиций и секретов создания мебели премиального качества от директора фабрики и сооснователя бренда Марины Рыжаковой. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.  А также гастрономические комплименты, иммерсивноепогружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.
+                        </p>
+
+                        <img class="tablet" src="" alt=""/>
+                    </div>
+                    
+                    <div class="contact_container">
+                        <p class="address">
+                            Адрес место условия адрес место условия адрес место условия адрес условия адрес место
+                        </p>
+
+                        <p class="phone">
+                            Телефон телефон телефон
+                        </p>
+                    </div>
+
+                    <div class="ad_container">
+                        <p>
+                            Реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама
+                        </p>
+
+                        <img class="mobile" src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="date">
+                Дата/день недели
+            </div>
+
+            <div class="body_card">
+                <img src="" alt=""/>
+
+                <div>
+                    <p class="time_name">
+                        Время/название
+                    </p>
+
+                    <p class="desc_name">
+                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    </p>
+
+                    <div class="desc_container">
+                        <p class="desc">
+                            Ведущий спикер — известный питерский дизайнер и сооснователь бренда Полина Афонская.
+                            Гостей ждет знакомство с новой коллекцией, экскурсия по залам производства с 25-летней историей, познание традиций и секретов создания мебели премиального качества от директора фабрики и сооснователя бренда Марины Рыжаковой. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.  А также гастрономические комплименты, иммерсивноепогружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.
+                        </p>
+
+                        <img class="tablet" src="" alt=""/>
+                    </div>
+                    
+                    <div class="contact_container">
+                        <p class="address">
+                            Адрес место условия адрес место условия адрес место условия адрес условия адрес место
+                        </p>
+
+                        <p class="phone">
+                            Телефон телефон телефон
+                        </p>
+                    </div>
+
+                    <div class="ad_container">
+                        <p>
+                            Реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама
+                        </p>
+
+                        <img class="mobile" src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+             <div class="body_card">
+                <img src="" alt=""/>
+
+                <div>
+                    <p class="time_name">
+                        Время/название
+                    </p>
+
+                    <p class="desc_name">
+                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
+                    </p>
+
+                    <div class="desc_container">
+                        <p class="desc">
+                            Ведущий спикер — известный питерский дизайнер и сооснователь бренда Полина Афонская.
+                            Гостей ждет знакомство с новой коллекцией, экскурсия по залам производства с 25-летней историей, познание традиций и секретов создания мебели премиального качества от директора фабрики и сооснователя бренда Марины Рыжаковой. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.  А также гастрономические комплименты, иммерсивноепогружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет. А также гастрономические комплименты, иммерсивное погружение, DJ-сет.
+                        </p>
+
+                        <img class="tablet" src="" alt=""/>
+                    </div>
+                    
+                    <div class="contact_container">
+                        <p class="address">
+                            Адрес место условия адрес место условия адрес место условия адрес условия адрес место
+                        </p>
+
+                        <p class="phone">
+                            Телефон телефон телефон
+                        </p>
+                    </div>
+
+                    <div class="ad_container">
+                        <p>
+                            Реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама реклама
+                        </p>
+
+                        <img class="mobile" src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</main>
+
+<footer class="site_footer" role="contentinfo">
+  <div class="site_footer__inner">
+
+    <section class="site_footer__col site_footer__brand" aria-labelledby="footer_brand">
+      <a class="site_footer__logo" href="index.html" aria-label="На главную">
+        <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+      </a>
+      <div class="site_footer_text_content">
+        <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+        <p class="site_footer__text">ООО «Стартап»</p>
+        <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+      </div>
+    </section>
+
+    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+      <h2 id="footer_sections" class="site_footer__title">Разделы сайта:</h2>
+      <ul class="site_footer__list site_footer__list_sections">
+        <li><a class="site_footer__link" href="Interior.html">Интерьеры</a></li>
+        <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
+        <li><a class="site_footer__link" href="Company.html">Компании</a></li>
+        <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
+        <li><a class="site_footer__link" href="Events.html">События</a></li>
+
+        <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
+        <li><a class="site_footer__link" href="AboutEdit.html">О редакции</a></li>
+        <li><a class="site_footer__link site_footer__link_accent" href="DesignSchool.html">Школа дизайна</a></li>
+        <li><a class="site_footer__link site_footer__link_accent" href="WeekDesign.html">Неделя дизайна</a></li>
+        <li><a class="site_footer__link site_footer__link_accent" href="Premia.html">Премия</a></li>
+      </ul>
+    </nav>
+
+    <section class="site_footer__col site_footer__contacts" aria-labelledby="footer_contacts">
+      <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
+      <p class="site_footer__address">
+        г. Калининград,<br>
+        ул. Рокоссовского, д. 16/18<br>
+        Телефон редакции:<br>
+        <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+      </p>
+    </section>
+
+  </div>
+
+  <div class="site_footer__bottom">
+    <a class="site_footer__policy" href="Policy.html">Политика ОПД</a>
+    <div class="site_footer__dev_container">
+      <p class="site_footer__dev">Сайт разработан</p>
+      <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="Логотип Kant">
+    </div>
+  </div>
+</footer>
+</body>
+</html>
