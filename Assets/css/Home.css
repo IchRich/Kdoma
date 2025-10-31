@@ -359,7 +359,7 @@ justify-content: space-between;
 @media (max-width: 767px) {
 
   :root{
-    --container: 88.89vw;
+    --container: 90%;
     --gap: 3.0vw;        
     --edge: 5.56vw;      
   }
@@ -371,7 +371,7 @@ justify-content: space-between;
 
   .hero{
     min-width: 320px;
-    width:88%;
+    width:90%;
     height: 90vw;
     padding-top: 6vw;
     padding-bottom: 4vw;
