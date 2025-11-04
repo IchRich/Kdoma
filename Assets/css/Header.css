@@ -379,7 +379,7 @@
 }
 
 /* Мобильная адаптация */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     :root {
         --container: 90%;
         --gap: 3.0vw;
