@@ -533,6 +533,7 @@ justify-content: space-between;
     padding-top: 4.17vw;
     padding-bottom: 3.13vw;
     background-position:center;
+    width: calc(100% - 40px);
   }
   .hero h1{ font-size:8vw; margin-top:25vw; padding:0 2vw; line-height:1.1; font-weight:300; }
 
