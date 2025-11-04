@@ -24,7 +24,7 @@ img{ display:block; max-width:100%; height:auto; }
 
 section{
   width: 100%;
-  /* max-width: var(--container); */
+  max-width: var(--container);
   margin-left: auto;
   margin-right: auto;
 }
@@ -455,14 +455,13 @@ justify-content: space-between;
   .about_design_card figcaption{ font-size:3.5vw; margin-top:1vw; }
 
   .about_design_footer{ margin-top:3vw; display:flex; justify-content:center; }
-  .about_design_all{ width:100%; max-width:var(--container); height:8vw; font-size:4vw; }
+  .about_design_all{ width:100%; height:8vw; font-size:4vw; }
 
-  .journal_block{ display:grid; grid-template-columns: 1fr; gap:2.5vw; padding-top:8vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); }
+  .journal_block{ display:grid; grid-template-columns: 1fr 1fr; gap:2.5vw; padding-top:8vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); }
   .journal_block h2{ font-size:6vw; margin-bottom:2vw; }
   .journal_numbers{ gap:3vw; }
   .journal_big{ font-size: 20vw; }
   .journal_note{ font-size:3.5vw; }
-  .journal_block h2{ grid-column:1 / -1; font-size:4vw; margin-bottom:1vw; }
 
   .journal_sidebar{ grid-column:1 / 2; grid-row:2; align-self:start; }
   .journal_numbers{ gap:1.5vw; }
@@ -488,12 +487,11 @@ justify-content: space-between;
 
   .events_block h2
   {
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .events_row{ display:grid;
     grid-template-columns: 1fr 1fr; 
     gap: var(--gap); 
-    max-width:var(--container);
     margin:0 auto;
     padding:0; 
 }
@@ -506,11 +504,20 @@ justify-content: space-between;
   {
     width: 100%;
   }
-  .events_btn{ width:100%; max-width:var(--container); height:10vw; font-size:4vw; }
+  .events_btn{ width:100%; height:10vw; font-size:4vw; }
 
   .about_editorial{ padding-top:8vw; padding-bottom:6vw; width:100%; }
   .about_editorial h2{ font-size:6vw; margin-bottom:2vw; }
-  .about_editorial__content{ display:grid; grid-template-columns:1fr; gap:3vw; padding:4vw; background:#e9e9e9; border:1px solid rgba(0,0,0,.06); max-width:var(--container); margin:0 auto; }
+  .about_editorial__content
+  { 
+    display:grid; 
+    grid-template-columns:1fr; 
+    gap:3vw; 
+    padding:4vw; 
+    background:#e9e9e9; 
+    border:1px solid rgba(0,0,0,.06); 
+    margin:0 auto; 
+  }
   .about_editorial__title{ font-size:4vw; }
   .about_editorial__text{ font-size:3.5vw; line-height:1.4; }
   .about_editorial__list{ font-size:3.5vw; margin:0 0 0 -5vw; }
@@ -530,6 +537,7 @@ justify-content: space-between;
   body{ max-width:100%; overflow-x:hidden; }
   section{
     width: calc(100% - 40px);
+    max-width: none;
   }
 
   .hero{
@@ -559,7 +567,6 @@ justify-content: space-between;
     padding-bottom:4vw; 
     width: calc(100% - 40px); 
 }
-  .about_design h2{ font-size:4vw; margin-bottom:1.04vw; text-align:left; }
   .about_design_card{ width:100%; flex:none; }
 
   .about_design_card.fig_2{ order:1; grid-column:1/2; grid-row:1; }
@@ -574,7 +581,7 @@ justify-content: space-between;
 
 
 
-  .events_btn{ width:100%; max-width:min(var(--container),94vw); height:4.5vw; font-size:1.2vw; }
+  .events_btn{ width:100%; height:4.5vw; font-size:1.2vw; }
 
 
 

@@ -24,9 +24,10 @@
             <div class="mobile_drawer__head">
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
                         onclick="document.getElementById('nav-toggle').checked=false"></button>
-                <form class="mobile_search" role="search" action="/search">
+                <!-- <form class="mobile_search" role="search" action="/search">
                     <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
-                </form>
+                </form> -->
+                <img src="Assets/image/SearchIcon.png" alt="">
             </div>
 
             <nav class="mobile_nav" aria-label="Основные разделы">
@@ -43,7 +44,7 @@
                 </ul>
             </nav>
 
-            <section class="mobile_social" aria-label="Наши соцсети">
+            <!-- <section class="mobile_social" aria-label="Наши соцсети">
                 <h3>Наши соцсети</h3>
                 <ul>
                     <li>
@@ -55,7 +56,7 @@
                         <a href="#">Telegram</a>
                     </li>
                 </ul>
-            </section>
+            </section> -->
         </aside>
 
         <div class="mobile_overlay"></div>
@@ -299,13 +300,24 @@
       <h2 id="footer_sections" class="site_footer__title">Разделы сайта:</h2>
       <ul class="site_footer__list site_footer__list_sections">
         <li><a class="site_footer__link" href="Interior.html">Интерьеры</a></li>
-        <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
         <li><a class="site_footer__link" href="Company.html">Компании</a></li>
-        <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
-        <li><a class="site_footer__link" href="Events.html">События</a></li>
-
-        <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
+        <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
         <li><a class="site_footer__link" href="AboutEdit.html">О редакции</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+      <h2 id="footer_sections" class="site_footer__title">Публикации:</h2>
+      <ul class="site_footer__list site_footer__list_sections">
+        <li><a class="site_footer__link" href="Events.html">События</a></li>
+        <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
+        <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+      <h2 id="footer_sections" class="site_footer__title">Наши проекты:</h2>
+      <ul class="site_footer__list site_footer__list_sections">
         <li><a class="site_footer__link site_footer__link_accent" href="DesignSchool.html">Школа дизайна</a></li>
         <li><a class="site_footer__link site_footer__link_accent" href="WeekDesign.html">Неделя дизайна</a></li>
         <li><a class="site_footer__link site_footer__link_accent" href="Premia.html">Премия</a></li>
