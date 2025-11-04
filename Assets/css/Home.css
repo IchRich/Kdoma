@@ -524,7 +524,9 @@ justify-content: space-between;
   }
 
   body{ max-width:100%; overflow-x:hidden; }
-  section{ padding-left:var(--edge); padding-right:var(--edge); max-width:100%; }
+  section{
+    width: calc(100% - 40px);
+  }
 
   .hero{
     min-width: 36vw;
