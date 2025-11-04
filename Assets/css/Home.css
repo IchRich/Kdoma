@@ -27,18 +27,20 @@ section{
   max-width: var(--container);
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;  
 }
 
 .hero{
-  margin-top: 1.04vw;              
+  margin-top: 1vh;              
   position: relative;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 4.17vw;              
-  padding-bottom: 3.96vw;           
+  padding-top: 5vh;              
+  padding-bottom: 2vh;           
   background: #ddd url('../image/BackgroundPhoto.png') center/cover no-repeat;
 }
 
@@ -66,7 +68,7 @@ section{
   transition: background .18s ease, color .18s ease;
   margin-top: auto;
 }
-.hero_btn:hover{ background:#111; color:#fff; }
+.hero_btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
 
 .card_link{ display:block; color:inherit; text-decoration:none; }
 
@@ -74,9 +76,8 @@ section{
 .card_link:hover .card_arrow{ filter: brightness(0) saturate(100%); }
 
 .cards{
-  padding: 0;
-  padding-top: 5.2vw;
-  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .cards_row{
@@ -100,7 +101,7 @@ section{
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(.68);
+  filter: brightness(.80);
 }
 
 .card h2{
@@ -110,7 +111,7 @@ section{
   margin:0;
   color:#fff;
   font-size: 1.82vw;
-  font-weight:500;
+  font-weight:400;
   letter-spacing:.01em;
   font-family: Geologica;
 }
@@ -137,8 +138,6 @@ section{
 /* ===== О ДИЗАЙНЕ ===== */
 .about_design{
   padding: 0;
-  padding-top: 5.2vw;
-  padding-bottom: 1.25vw;
 }
 
 .about_design h2{
@@ -189,7 +188,7 @@ section{
   border:1px solid #111; font-weight:300; color:#111; background:#fff; text-decoration:none;
   transition: all .18s ease; font-size:1.04vw;
 }
-.about_design_all:hover{ background:#111; color:#fff; }
+.about_design_all:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
 .about_design_all:hover img{
   filter: invert(1) brightness(1.15) contrast(1.05);
   mix-blend-mode: normal; opacity:1;
@@ -201,7 +200,6 @@ section{
   display:flex;
   flex-wrap:wrap;
   gap:0;
-  padding-top:3.13vw;
 }
 
 .journal_block h2{
@@ -261,7 +259,7 @@ justify-content: space-between;
 
 .journal_actions .journal_btn,
 .journal_actions .journal_btn_s{
-  height:3.13vw;
+  height:4vw;
   display:inline-flex; align-items:center; justify-content:center;
   width:48%;
   flex-shrink:0;
@@ -279,7 +277,6 @@ justify-content: space-between;
 .journal_btn_s{ width:20.26vw; }
 
 /* ===== СОБЫТИЯ ===== */
-.events_block{ padding-top:3.33vw; padding-bottom:1.25vw; }
 .events_block h2{ font-size:2.6vw; font-weight:200; margin:0 0 0.94vw; }
 
 .events_row{
@@ -316,7 +313,7 @@ justify-content: space-between;
   width:20.26vw; height:3.13vw; border:0.08vw solid #000; font-weight:300; color:#111;
   text-decoration:none; transition: all .18s ease; font-size:1.04vw;
 }
-.events_btn:hover{ background:#111; color:#fff; }
+.events_btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
 .events_btn:hover img{ filter: invert(1) brightness(1.15) contrast(1.05); mix-blend-mode:normal; opacity:1; }
 
 /* ===== О РЕДАКЦИИ ===== */
@@ -344,7 +341,7 @@ justify-content: space-between;
   border:1px solid #222; justify-content:center; font-size:1.04vw; text-decoration:none; transition:all .18s ease;
 }
 .about_editorial__btn:hover img{ filter: invert(1) brightness(1.15) contrast(1.05); mix-blend-mode:normal; opacity:1; }
-.about_editorial__btn:hover{ background:#111; color:#fff; }
+.about_editorial__btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
 
 .about_editorial__btn__red{
   height:3.13vw; width:100%; margin-top:auto; align-self:flex-start;
@@ -352,7 +349,7 @@ justify-content: space-between;
   font-weight:300; color:#fff; border:1px solid #a21411; font-size:1.04vw; background:#a21411; text-decoration:none;
   transition: all .18s ease;
 }
-.about_editorial__btn__red:hover{ background:#111; border-color:#111; }
+.about_editorial__btn__red:hover{ background:rgba(153, 0, 0, 1); border-color:rgba(153, 0, 0, 1); }
 
 
 /* ===== МОБИЛЬНЫЙ <= 767px ===== */
@@ -369,6 +366,8 @@ justify-content: space-between;
     padding-left: var(--edge);
     padding-right: var(--edge);
     max-width: 100%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;  
   }
 
 
@@ -392,10 +391,10 @@ justify-content: space-between;
   .hero_btn{
     padding: 3vw 20vw;
     font-size:4vw;
-    height:9vw;
+    height:11vw;
   }
 
-  .cards{ padding-top: 8vw; width:100%; }
+  .cards{ width:100%; }
   .cards_row{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -418,17 +417,17 @@ justify-content: space-between;
   .card_companies{ grid-column:2 / 3; grid-row:2; aspect-ratio:150/109; width:100%; }
   .card_banner{ grid-column:2 / 3; grid-row:3; aspect-ratio:150/168; width:100%; }
 
-  .card h2{ top: 2vw; left: 2vw; font-size:4vw; }
+  .card h2{ top: 2vw; left: 2vw; font-size:5vw; }
   .card_arrow{ right:2vw; bottom:2vw; width:5vw; height:5vw; }
 
   .about_design{ 
-    padding-top: 8vw; 
-    padding-bottom: 6vw; 
+    padding-top: 2vh; 
+    padding-bottom: 2vh; 
     width:100%;
     max-width: var(--container);
     margin: 0 auto;
 }
-  .about_design h2{ font-size:6vw; margin-bottom: 2vw; text-align:left; }
+  .about_design h2{ font-size:7vw; margin-bottom: 5.5vw; text-align:left; }
   .about_design_row{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -452,13 +451,18 @@ justify-content: space-between;
     aspect-ratio: 2 / 1;
   }
 
-  .about_design_card figcaption{ font-size:3.5vw; margin-top:1vw; }
+  .about_editorial__col
+  {
+    gap: 1.3vh;
+  }
+
+  .about_design_card figcaption{ font-size:4.5vw; margin-top:1vw; }
 
   .about_design_footer{ margin-top:3vw; display:flex; justify-content:center; }
-  .about_design_all{ width:100%; height:8vw; font-size:4vw; }
+  .about_design_all{ width:100%; height:11vw; font-size:4vw; }
 
-  .journal_block{ display:grid; grid-template-columns: 1fr 1fr; gap:2.5vw; padding-top:8vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); }
-  .journal_block h2{ font-size:6vw; margin-bottom:2vw; }
+  .journal_block{ display:grid; grid-template-columns: 1fr 1fr; gap:2.5vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); padding-top: 2vh;}
+  .journal_block h2{ font-size:7vw; margin-bottom:5.5vw; }
   .journal_numbers{ gap:3vw; }
   .journal_big{ font-size: 20vw; }
   .journal_note{ font-size:3.5vw; }
@@ -487,7 +491,8 @@ justify-content: space-between;
 
   .events_block h2
   {
-    font-size: 6vw;
+    font-size: 7vw;
+    margin-bottom: 5.5vw;
   }
   .events_row{ display:grid;
     grid-template-columns: 1fr 1fr; 
@@ -504,25 +509,25 @@ justify-content: space-between;
   {
     width: 100%;
   }
-  .events_btn{ width:100%; height:10vw; font-size:4vw; }
+  .events_btn{ width:100%; height:11vw; font-size:4vw; }
 
-  .about_editorial{ padding-top:8vw; padding-bottom:6vw; width:100%; }
-  .about_editorial h2{ font-size:6vw; margin-bottom:2vw; }
+  .about_editorial{ padding-top:2vh; padding-bottom:2vh; width:100%; }
+  .about_editorial h2{ font-size:7vw; margin-bottom:2vw; }
   .about_editorial__content
   { 
     display:grid; 
     grid-template-columns:1fr; 
     gap:3vw; 
-    padding:4vw; 
+    padding:5.5vw; 
     background:#e9e9e9; 
     border:1px solid rgba(0,0,0,.06); 
     margin:0 auto; 
   }
-  .about_editorial__title{ font-size:4vw; }
-  .about_editorial__text{ font-size:3.5vw; line-height:1.4; }
+  .about_editorial__title{ font-size:5.5vw; }
+  .about_editorial__text{ font-size:4.5vw; line-height:1.1; }
   .about_editorial__list{ font-size:3.5vw; margin:0 0 0 -5vw; }
 
-  .about_editorial__btn, .about_editorial__btn__red{ height:10vw; font-size:4vw; padding:0 6vw; }
+  .about_editorial__btn, .about_editorial__btn__red{ height:11vw; font-size:4vw; padding:0 6vw; }
 }
 
 /* ===== ПЛАНШЕТ 768-1024px ===== */
