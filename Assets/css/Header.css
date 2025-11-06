@@ -354,7 +354,7 @@ main
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     main
     {
         margin-top: 7vh;
@@ -543,11 +543,11 @@ main
     .site_footer__text,
     .site_footer__address,
     .site_footer__link {
-        font-size: 1.4vw;
+        font-size: 1.3vw;
     }
 
     .site_footer__bottom {
-        font-size: 1vw;
+        font-size: 0.9vw;
     }
 
     .site_footer__logo img {
@@ -572,6 +572,10 @@ main
 
 @media (max-width: 460px) 
 {
+    .site_footer__title
+    {
+      margin-bottom: 2vw;
+    }
     .site_footer__list_sections {
         grid-template-columns: 1fr;
         gap: 0.1em;
