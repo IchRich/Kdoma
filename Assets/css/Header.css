@@ -1,11 +1,11 @@
 /* Базовые стили */
-:root {
-    --container: 90%;
-    --gap: 2.3vw;
-    --edge: 0.57vw;
-    --text: #111;
-    --muted: #444;
-    --brand: #c2171a;
+:root{
+  --container: 90%;       
+  --gap: 2.3vw;           
+  --edge: 0.57vw;          
+  --text: #111;
+  --muted: #444;
+  --brand: rgba(173, 12, 12, 1);
 }
 main
 {

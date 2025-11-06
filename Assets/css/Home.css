@@ -7,7 +7,7 @@
   --edge: 0.57vw;          
   --text: #111;
   --muted: #444;
-  --brand: #c2171a;
+  --brand: rgba(173, 12, 12, 1);
 }
 
 *{ box-sizing: border-box; }
