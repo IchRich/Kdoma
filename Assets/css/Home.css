@@ -61,14 +61,19 @@ section{
   background: var(--brand);
   color: #fff;
   text-decoration: none;
-  padding: 0.73vw 1.98vw;    
-  font-size: 0.94vw;         
+  padding: 0 2.1vw;
+  font-size: 1vw;         
   font-weight: 300;
-  box-shadow: 0 0.16vw 0.83vw rgba(0,0,0,.10);
   transition: background .18s ease, color .18s ease;
   margin-top: auto;
+  height: 6.3vh;
 }
 .hero_btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
+
+.hero_icon
+{
+  height: 50%;
+}
 
 .card_link{ display:block; color:inherit; text-decoration:none; }
 
@@ -124,9 +129,9 @@ section{
   height: 1.67vw;
 }
 
-.card_tall{ flex: 0 0 20.26vw; aspect-ratio: 389/720; }
-.card_wide{ flex: 0 0 43.33vw; aspect-ratio: 832/720; }
-.card_col { flex: 0 0 21.41vw; display:flex; flex-direction:column; gap: var(--gap); }
+.card_tall{ flex: 0 0 23%;}
+.card_wide{ flex: 1;}
+.card_col { flex: 0 0 23%; display:flex; flex-direction:column; gap: var(--gap); }
 .card_small{ aspect-ratio: 389/229; }
 .card_banner{ aspect-ratio: 389/447; }
 
@@ -148,7 +153,7 @@ section{
 
 .about_design_row{
   display:flex;
-  gap: 0.78vw;
+  gap: var(--gap);
   align-items:stretch;
   justify-content: space-between;
   cursor:pointer;
@@ -162,11 +167,16 @@ section{
   margin:0;
 }
 
-.about_design_card.fig_1{ flex: 0 0 43.44vw; }
+.about_design_card.fig_1{ flex: 1; }
 .about_design_card.fig_2,
-.about_design_card.fig_3{ flex: 0 0 20.21vw; }
+.about_design_card.fig_3{ flex: 0 0 23%; }
 
-.about_design_card img{ width:100%; object-fit:cover; }
+.about_design_card img
+{ 
+  width:100%;
+  object-fit:cover;
+  height: 100%;
+}
 .about_design_card.fig_1 img{ 
     aspect-ratio: 2 / 1.24; 
 }
@@ -181,14 +191,31 @@ section{
   color: black;
 }
 
-.about_design_footer{ display:flex; justify-content:flex-end; margin-top:1.25vw; }
-.about_design_all{
-  display:inline-flex; align-items:center; justify-content:center; gap:0.62vw;
-  width:20.26vw; height:3.13vw;
-  border:1px solid #111; font-weight:300; color:#111; background:#fff; text-decoration:none;
-  transition: all .18s ease; font-size:1.04vw;
+.about_design_footer
+{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:1.25vw;
+  width: 23%;
+  margin-left: auto;
 }
-.about_design_all:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
+.about_design_all{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.62vw;
+  width: 100%;
+  height: 6.3vh;
+  margin-left: auto;
+  border:1px solid #111;
+  font-weight:300;
+  color:#111;
+  background:#fff;
+  text-decoration:none;
+  transition: all .18s ease;
+  font-size:1.04vw;
+}
+.about_design_all:hover{ background:rgba(153, 0, 0, 1); color:#fff; border-color: rgba(153, 0, 0, 1);}
 .about_design_all:hover img{
   filter: invert(1) brightness(1.15) contrast(1.05);
   mix-blend-mode: normal; opacity:1;
@@ -197,19 +224,27 @@ section{
 
 /* ===== ЖУРНАЛ ===== */
 .journal_block{
-  display:flex;
+  display:grid;
   flex-wrap:wrap;
-  gap:0;
+  column-gap: var(--gap);
+  grid-template-columns: 1fr 26% calc((46% + var(--gap)));
 }
 
 .journal_block h2{
   width:100%;
   font-weight:200;
   font-size:2.6vw;
-  margin:0 0 0.52vw;
+  margin:0 0 4vh;
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
-.journal_sidebar{ flex-shrink:0; margin-right:2.29vw; }
+.journal_sidebar
+{
+  flex: 1;
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
 .journal_header h2{ font-size:2.6vw; margin:0 0 0.52vw; }
 
 .journal_numbers{ display:flex; flex-direction:column; gap:1.04vw; }
@@ -219,32 +254,60 @@ section{
   font-weight:200;
   line-height:1;
   display:block;
+  letter-spacing: -0.07em;
 }
 
-.journal_note{ font-size:1.04vw; margin-top:0.26vw; line-height:1.1; }
+.journal_note
+{
+  font-size: 1.04vw;
+  margin-top: 0.26vw;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
 
-.journal_cover{ width:20.21vw; flex-shrink:0; margin-right:2.29vw; }
+.journal_cover
+{
+  flex: 0 0 26%;
+  grid-column: 2 / 3;
+  grid-row: 2;
+  width: 100%;
+  align-self: start;
+}
 
-.journal_cover img{ height:auto; box-shadow:none; display:block; }
+.journal_cover img
+{
+  height:auto;
+  box-shadow:none;
+  display:block;
+  width: 100%;
+}
 
-.journal_content{
-  flex:1; 
+/* .journal_content{
+  flex: 0 0 calc(46% + var(--gap));
   min-width:0; 
   display:flex; 
   flex-direction:column; 
   margin:0;
-justify-content: space-between;
-}
+  justify-content: space-between;
+} */
 
 .journal_desc{
   font-size:1.56vw;
   font-weight:300;
   line-height:1.1;
   margin:0;
+  grid-column: 3 / 4;
+  grid-row: 2;
+  min-width: 0;
 }
 
 .journal_actions{
-  width:100%; margin-top:auto; padding-top:8.44vw;
+  width:100%;
+  margin-top:auto;
+  padding-top:8.44vw;
+  grid-column: 3 / 4;
+  grid-row: 2;
+  min-width: 0;
 }
 .journal_btn_s img, .journal_btn img, .about_editorial__btn img, .about_editorial__btn__red img, .events_btn img, .about_design_all img
 {
@@ -259,7 +322,7 @@ justify-content: space-between;
 
 .journal_actions .journal_btn,
 .journal_actions .journal_btn_s{
-  height:3.13vw;
+  height: 6.3vh;
   display:inline-flex; align-items:center; justify-content:center;
   width:48%;
   flex-shrink:0;
@@ -269,11 +332,11 @@ justify-content: space-between;
 
 .journal_btn, .journal_btn_s{
   display:inline-flex; align-items:center; justify-content:center; gap:0.52vw;
-  height:3.13vw; padding:0 1.25vw; border:1px solid #222; font-weight:300;
+  height: 6.3vh; padding:0 1.25vw; border:1px solid #222; font-weight:300;
   background:#fff; color:#111; text-decoration:none; transition: all .18s ease;
   white-space:nowrap; font-size:1.04vw; line-height:1.1;
 }
-.journal_btn{ width:20.26vw; text-decoration: underline; text-underline-offset:0.16vw; }
+.journal_btn{ width:20.26vw; text-decoration: underline; text-underline-offset:0.2vw; }
 .journal_btn_s{ width:20.26vw; }
 
 /* ===== СОБЫТИЯ ===== */
@@ -288,8 +351,8 @@ justify-content: space-between;
 }
 
 .event_card{ display:flex; flex-direction:column; overflow:hidden; background:#fff; min-width:0; }
-.event_card__small{ flex:1; }
-.event_card__wide{ flex:0 0 43.33vw; } 
+.event_card__small{ flex: 0 0 23%; }
+.event_card__wide{ flex:1; } 
 
 .event_card img{ width:100%; object-fit:cover; height:36.46vw; }
 
@@ -305,12 +368,12 @@ justify-content: space-between;
     display:flex; 
     justify-content:flex-end; 
     margin-top:1.04vw; 
-    width: 40%;
+    width: 23%;
     margin-left: auto;
 }
 .events_btn{
   display:inline-flex; align-items:center; justify-content:center; gap:1.2vw;
-  width:20.26vw; height:3.13vw; border:0.08vw solid #000; font-weight:300; color:#111;
+  width:100%; height: 6.3vh; border:0.08vw solid #000; font-weight:300; color:#111;
   text-decoration:none; transition: all .18s ease; font-size:1.04vw;
 }
 .events_btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
@@ -320,9 +383,14 @@ justify-content: space-between;
 .about_editorial{ padding-top:2.92vw; padding-bottom:5.21vw; }
 .about_editorial h2{ font-size:2.6vw; font-weight:200; margin:0 0 1.04vw; }
 
-.about_editorial__content{
-  background:#ededed; padding:1.98vw;
-  display:flex; gap:4.17vw; align-items:stretch; flex-wrap:nowrap;
+.about_editorial__content
+{
+  background:#ededed;
+  padding:1.98vw;
+  display:flex;
+  gap:3vw;
+  align-items:stretch;
+  flex-wrap:nowrap;
 }
 
 .about_editorial__col{ flex:1 1 0; min-width:0; display:flex; flex-direction:column; gap:0.63vw; }
@@ -336,7 +404,7 @@ justify-content: space-between;
 .readmore{ margin-left:-1.04vw; color:#be2a21; text-decoration:underline; }
 
 .about_editorial__btn{
-  height:3.13vw; width:100%; margin-top:auto; align-self:flex-start;
+  height: 6.3vh; width:100%; margin-top:auto; align-self:flex-start;
   display:inline-flex; align-items:center; gap:0.63vw; padding:0 1.87vw; font-weight:300; color:#111;
   border:1px solid #222; justify-content:center; font-size:1.04vw; text-decoration:none; transition:all .18s ease;
 }
@@ -344,7 +412,7 @@ justify-content: space-between;
 .about_editorial__btn:hover{ background:rgba(153, 0, 0, 1); color:#fff; }
 
 .about_editorial__btn__red{
-  height:3.13vw; width:100%; margin-top:auto; align-self:flex-start;
+  height: 6.3vh; width:100%; margin-top:auto; align-self:flex-start;
   display:inline-flex; align-items:center; justify-content:center; gap:0.63vw;
   font-weight:300; color:#fff; border:1px solid #a21411; font-size:1.04vw; background:#a21411; text-decoration:none;
   transition: all .18s ease;
@@ -392,6 +460,10 @@ justify-content: space-between;
     padding: 3vw 20vw;
     font-size:4vw;
     height:11vw;
+  }
+  .hero_icon
+  {
+    height: 100%;
   }
 
   .cards{ width:100%; }
@@ -458,7 +530,12 @@ justify-content: space-between;
 
   .about_design_card figcaption{ font-size:4.5vw; margin-top:1vw; }
 
-  .about_design_footer{ margin-top:3vw; display:flex; justify-content:center; }
+  .about_design_footer{ 
+    margin-top:3vw; 
+    display:flex;
+    justify-content:center;
+    width: 100%;
+  }
   .about_design_all{ width:100%; height:11vw; font-size:4vw; }
 
   .journal_block{ display:grid; grid-template-columns: 1fr 1fr; gap:2.5vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); padding-top: 2vh;}
@@ -467,27 +544,58 @@ justify-content: space-between;
   .journal_big{ font-size: 20vw; }
   .journal_note{ font-size:3.5vw; }
 
-  .journal_sidebar{ grid-column:1 / 2; grid-row:2; align-self:start; }
+  .journal_sidebar{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    align-self:start;
+  }
   .journal_numbers{ gap:1.5vw; }
 
-  .journal_big{ font-size:11vw; line-height:1; }
-  .journal_note{ font-size:2.5vw; margin-top:0.26vw; }
+  .journal_big{
+    font-size:14vw;
+    line-height:1;
+  }
+  .journal_note
+  {
+    font-size:3.3vw;
+    margin-top:0.26vw;
+  }
 
-  .journal_cover{ grid-column:2 / 3; grid-row:2; width:100%; align-self:start; }
+  .journal_cover{
+    grid-column: 2 / 2;
+    grid-row: 2;
+    width:100%;
+    align-self:start;
+  }
   .journal_cover img{ box-shadow:0 0.21vw 0.83vw rgba(0,0,0,.08); }
 
   .journal_content{ grid-column:1 / 3; grid-row:3; display:flex; flex-direction:column; gap:1.25vw; }
-  .journal_desc{ font-size:2.2vw; line-height:1.4; }
+  .journal_desc{ 
+    font-size:4vw;
+    line-height:1.4;
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
 
-  .journal_actions{ grid-column:1 / 3; grid-row:3; width:100%; margin-top:1.5vw; padding-top:1.25vw; }
+  .journal_actions{
+    grid-column: 1 / 3;
+    grid-row: 5;
+    width:100%;
+    margin-top:1.5vw;
+    padding-top:1.25vw;
+  }
   .journal_cover{ width:100%; margin-right:0; }
   .journal_content{ display:flex; flex-direction:column; gap:2.5vw; }
 
-  .journal_desc{ font-size:4vw; }
   .journal_actions{ padding-top:3vw; }
   .journal_actions .journal_btns{ display:flex; flex-direction:column; gap:3vw; }
   .journal_actions .journal_btn,
-  .journal_actions .journal_btn_s{ width:100%; height:10vw; font-size:4vw; }
+  .journal_actions .journal_btn_s{
+    width:100%;
+    height:10vw;
+    font-size:4vw;
+    text-underline-offset: 0.7vw;
+  }
 
   .events_block h2
   {
@@ -557,9 +665,22 @@ justify-content: space-between;
     background-position:center;
     width: calc(100% - 40px);
   }
-  .hero h1{ font-size:8vw; margin-top:25vw; padding:0 2vw; line-height:1.1; font-weight:300; }
+  .hero h1{
+    font-size:8vw;
+    margin-top:25vw;
+    padding:0 2vw;
+    line-height:1.1;
+    font-weight:300;
+  }
 
-  .hero_btn{ padding:1.04vw 5.21vw; font-size:1.04vw; height:3.52vw; }
+  .hero_btn{
+    height:4.6vw;
+    padding: 0 10vw;
+  }
+
+  .hero_icon {
+    height: 40%;
+  }
 
   .cards{ 
     padding-top:4vw;
@@ -577,18 +698,51 @@ justify-content: space-between;
 }
   .about_design_card{ width:100%; flex:none; }
 
-  .about_design_card.fig_2{ order:1; grid-column:1/2; grid-row:1; }
-  .about_design_card.fig_1{ order:2; grid-column:2/3; grid-row:1; }
+  .about_design_card.fig_1{ order:1; grid-column:2/3; grid-row:1; }
+  .about_design_card.fig_2{ order:2; grid-column:1/2; grid-row:1; }
   .about_design_card.fig_3{ order:3; grid-column:1 / -1; grid-row:2; }
 
   .about_design_card figcaption{ font-size:1.5vw; margin-top:0.6vw; }
 
-  .about_design_footer{ margin-top:1.5vw; display:flex; justify-content:center; }
-  .about_design_all{ max-width: clamp(20vw, 50%, 30vw); height:3.5vw; font-size:1.04vw; }
-
-
-
-
+  .about_design_footer{
+    margin-top:1.5vw;
+    display:flex;
+    justify-content:center;
+  }
+  .about_design_all, .journal_actions .journal_btn, .journal_actions .journal_btn_s, .hero_btn{
+    height:3.5vh;
+    font-size:1.04vw;
+  }
+  .journal_btns .journal_btn
+  {
+    width: calc((46% + (var(--gap)) / 2));
+  }
+  .journal_btns .journal_btn_s
+  {
+    flex: 1;
+  }
+  .journal_desc
+  {
+    font-size: 2.5vw;
+  }
+  .journal_block h2
+  {
+    margin: 0 0 2vh;
+  }
+  .journal_block
+  {
+    grid-template-columns: calc(23% - (var(--gap))/2) 23% 1fr;
+  }
+  .journal_actions .journal_btns
+  {
+    gap: var(--gap);
+  }
+  .journal_actions
+  {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    padding-top: 2vh;
+  }
   .events_btn{ width:100%; height:4.5vw; font-size:1.2vw; }
 
 
@@ -597,21 +751,14 @@ justify-content: space-between;
 
 /* ===== ДЕСКТОП >= 1025px (резиновая область до 1920+) ===== */
 @media (min-width: 1025px) {
-  :root{
-    --container: 90%;
-    --gap: 2.29vw;
-    --edge: 0.57vw;
-  }
+
 
   section{
     width: calc(100% - 40px); 
-}
-
+  }
 
   body{ max-width: 100%; }
 
-  .card_tall{ flex: 0 0 20.26vw; }
-  .card_wide{ flex: 0 0 43.33vw; }
   .journal_big{ font-size: 6.25vw; }
 }
 
