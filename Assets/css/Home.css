@@ -309,7 +309,7 @@ justify-content: space-between;
     margin-left: auto;
 }
 .events_btn{
-  display:inline-flex; align-items:center; justify-content:center; gap:0.62vw;
+  display:inline-flex; align-items:center; justify-content:center; gap:1.2vw;
   width:20.26vw; height:3.13vw; border:0.08vw solid #000; font-weight:300; color:#111;
   text-decoration:none; transition: all .18s ease; font-size:1.04vw;
 }
@@ -503,7 +503,7 @@ justify-content: space-between;
   .event_card__small{ grid-column:auto; width:100%; }
   .event_card__wide{ grid-column:1 / -1; order:3; width:100%; }
   .event_card img{ height: 30vh; }
-  .event_caption{ font-size:4vw; padding:2vw; }
+  .event_caption{ font-size:4vw; padding:2vw 0; }
 
   .events_footer
   {

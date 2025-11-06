@@ -10,86 +10,89 @@
 </head>
 <body>
 <header class="site_header">
-  <div class="header_inner">
-    <a class="logo" href="index.html" aria-label="Home">
-      <img src="Assets/image/LogoKD.svg" alt="Logo">
-    </a>
-    <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
-    <label for="nav-toggle"
-           class="burger_btn"
-           aria-label="Открыть меню"
-           aria-controls="mobile_drawer"
-           aria-expanded="false"></label>
+    <div class="header_inner">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="Assets/image/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile_drawer"
+               aria-expanded="false">
+                <span></span>
+            </label>
 
-    <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
-      <div class="mobile_drawer__head">
-        <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <img src="Assets/image/SearchIcon.png" alt="">
+                <!-- <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form> -->
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
                 onclick="document.getElementById('nav-toggle').checked=false"></button>
-        <form class="mobile_search" role="search" action="/search">
-          <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
-        </form>
-      </div>
+            </div>
 
-      <nav class="mobile_nav" aria-label="Основные разделы">
-        <ul class="mobile_nav__list">
-          <li><a href="Interior.html">Интерьеры</a></li>
-          <li><a href="Designers.html">Дизайнеры</a></li>
-          <li><a href="Company.html">Компании</a></li>
-          <li><a href="AboutDesign.html">Про дизайн</a></li>
-          <li><a href="Events.html">События</a></li>
-          <li><a href="AboutEdit.html">О редакции</a></li>
-          <li><a class="accent" href="DesignSchool.html">Школа дизайна</a></li>
-          <li><a class="accent" href="WeekDesign.html">Неделя дизайна</a></li>
-          <li><a class="accent" href="Premia.html">Премия</a></li>
-        </ul>
-      </nav>
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="Interior.html">Интерьеры</a></li>
+                    <li><a href="Designers.html">Дизайнеры</a></li>
+                    <li><a href="Company.html">Компании</a></li>
+                    <li><a href="AboutDesign.html">Про дизайн</a></li>
+                    <li><a href="Events.html">События</a></li>
+                    <li><a href="AboutEdit.html">О редакции</a></li>
+                    <li><a class="accent" href="DesignSchool.html">Школа дизайна</a></li>
+                    <li><a class="accent" href="WeekDesign.html">Неделя дизайна</a></li>
+                    <li><a class="accent" href="Premia.html">Премия</a></li>
+                </ul>
+            </nav>
 
-      <section class="mobile_social" aria-label="Наши соцсети">
-        <h3>Наши соцсети</h3>
-        <ul>
-          <li>
-            <img src="Assets/image/vk.svg" alt="VK">
-            <a href="#">ВКонтакте</a>
-          </li>
-          <li>
-            <img src="Assets/image/TelegramLogo.svg">
-            <a href="#">Telegram</a>
-          </li>
-        </ul>
-      </section>
-    </aside>
+            <!-- <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li>
+                        <img src="Assets/image/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <img src="Assets/image/TelegramLogo.svg">
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </section> -->
+        </aside>
 
-    <div class="mobile_overlay"></div>
+        <div class="mobile_overlay"></div>
 
-    <nav class="main_nav" aria-label="Главное меню">
-      <ul>
-        <li><a href="Interior.html">ИНТЕРЬЕРЫ</a></li>
-        <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
-        <li><a href="Company.html">КОМПАНИИ</a></li>
-        <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
-        <li><a href="Events.html">СОБЫТИЯ</a></li>
-        <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
-        <li><a class="accent" href="DesignSchool.html">ШКОЛА ДИЗАЙНА</a></li>
-        <li><a class="accent" href="WeekDesign.html">НЕДЕЛЯ ДИЗАЙНА</a></li>
-        <li><a class="accent" href="Premia.html">ПРЕМИЯ</a></li>
-      </ul>
-    </nav>
+        <nav class="main_nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="Interior.html">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="Company.html">КОМПАНИИ</a></li>
+                <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
+                <li><a href="Events.html">СОБЫТИЯ</a></li>
+                <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
+                <li><a class="accent" href="DesignSchool.html">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="WeekDesign.html">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="Premia.html">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
 
-    <div class="utils">
-      <a class="icon_btn" href="#" aria-label="VK">
-        <img src="Assets/image/vk.svg" alt="VK">
-      </a>
-      <a class="icon_btn" href="#" aria-label="Telegram">
-        <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
-      </a>
-      <form class="search" role="search">
-        <input type="search" placeholder="Поиск" aria-label="Поиск" />
-        <button type="submit" aria-label="Найти">
-          <img src="Assets/image/SearchIcon.png" alt="<UNK>">
-        </button>
-      </form>
+        <div class="utils">
+            <a class="icon_btn" href="#" aria-label="VK">
+                <img src="Assets/image/vk.svg" alt="VK">
+            </a>
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="Assets/image/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
     </div>
-  </div>
 </header>
 
 
@@ -425,12 +428,18 @@
 
     <section class="site_footer__col site_footer__contacts" aria-labelledby="footer_contacts">
       <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
-      <p class="site_footer__address">
+      <!-- <p class="site_footer__address">
         г. Калининград,<br>
         ул. Рокоссовского, д. 16/18<br>
         Телефон редакции:<br>
         <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
-      </p>
+      </p> -->
+    <ul class="site_footer__list_sections">
+        <li><p class="site_footer__link">г. Калининград,</p></li>
+        <li><p class="site_footer__link">ул. Рокоссовского, д. 16/18</p></li>
+        <li><p class="site_footer__link">Телефон редакции:</p></li>
+        <li><p class="site_footer__link">+7 (4012) 677-706</p></li>
+    </ul>
     </section>
 
   </div>
