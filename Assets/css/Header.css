@@ -129,7 +129,7 @@ main
 .burger_btn {
     display: none;
     width: 36px;
-    height: 36px;
+    height: 24px;
     cursor: pointer;
     position: relative;
 }
@@ -152,7 +152,7 @@ main
 }
 .burger_btn span
 {
-  top: 16px;
+  top: 11px;
 }
 .burger_btn::after {
     bottom: 0px;
