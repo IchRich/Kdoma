@@ -20,8 +20,8 @@
                aria-label="Открыть меню"
                aria-controls="mobile_drawer"
                aria-expanded="false">
-                <span></span>
-            </label>
+            <span></span>
+        </label>
 
         <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
             <div class="mobile_drawer__head">
@@ -30,7 +30,7 @@
                     <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
                 </form> -->
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
-                onclick="document.getElementById('nav-toggle').checked=false"></button>
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
             </div>
 
             <nav class="mobile_nav" aria-label="Основные разделы">
@@ -94,12 +94,20 @@
         </div>
     </div>
 </header>
+
 <main class="page">
 
     <!-- Заголовок + фильтры -->
     <section class="section section__header">
         <div class="container header">
-            <h1 class="header__title">Компании</h1>
+
+            <div>
+                <div class="title-min">
+
+                    <a href="index.html" class="title-glav">Главная /</a> <p>Компании</p>
+                </div>
+                <h1 class="header__title">Компании</h1>
+            </div>
 
             <div class="header__filters">
                 <!-- Десктопный триггер -->

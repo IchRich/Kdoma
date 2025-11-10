@@ -367,7 +367,18 @@ body {
         font-family: Geologica, Arial, sans-serif;
     }
 }
+.title-min{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Geologica', serif;
 
+}
+
+.title-glav{
+    color: #6B6B6B;
+    text-decoration: none;
+}
 /* Tablet 768–1024 */
 @media (min-width: 768px) and (max-width: 1024px) {
     .header__title {

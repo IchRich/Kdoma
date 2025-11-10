@@ -125,6 +125,18 @@ html, body {
     background: black;
     color: white;
 }
+.title-min{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Geologica', serif;
+
+}
+
+.title-glav{
+    color: #6B6B6B;
+    text-decoration: none;
+}
 
 @media (min-width: 360px) and (max-width: 767px) {
     .events {

@@ -19,8 +19,8 @@
                aria-label="Открыть меню"
                aria-controls="mobile_drawer"
                aria-expanded="false">
-                <span></span>
-            </label>
+            <span></span>
+        </label>
 
         <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
             <div class="mobile_drawer__head">
@@ -29,7 +29,7 @@
                     <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
                 </form> -->
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
-                onclick="document.getElementById('nav-toggle').checked=false"></button>
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
             </div>
 
             <nav class="mobile_nav" aria-label="Основные разделы">
@@ -93,95 +93,103 @@
         </div>
     </div>
 </header>
-<section class="events">
-    <div class="events__head">
-        <h2 class="events__title">События</h2>
-    </div>
 
-    <ul class="events__list">
-        <!-- 1. Большая (845×567) -->
-        <li class="event event__lg">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/MebelGrad.svg" alt="Открытие нового салона «Мебельград» и семинар «Квартира для посуточной аренды»" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">Открытие нового салона «Мебельград» и семинар «Квартира для посуточной аренды»</h3>
-                    <p class="event__meta">23 апреля 2025 г.</p>
-                </div>
-            </article>
-        </li>
+<main>
 
-        <!-- 2. Малая (408×567) -->
-        <li class="event event__sm">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/Vipart.svg" alt="Занятие школы Ступени Корпусная мебель, салон Випарт" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">Занятие школы Ступени Корпусная мебель, салон Випарт</h3>
-                    <p class="event__meta">11 марта 2025</p>
-                </div>
-            </article>
-        </li>
+    <section class="events">
+        <div class="events__head">
+            <div class="title-min">
 
-        <!-- 3. Малая -->
-        <li class="event event__sm">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/Semenova.svg" alt="«Ступени» и спикер Анна Семенова" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">«Ступени» и спикер Анна Семенова</h3>
-                    <p class="event__meta">6 марта 2025</p>
-                </div>
-            </article>
-        </li>
+                <a href="index.html" class="title-glav">Главная /</a> <p>События</p>
+            </div>
+            <h2 class="events__title">События</h2>
+        </div>
 
-        <!-- 4. Малая -->
-        <li class="event event__sm">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/Ananina.svg" alt="Практикум по колористике с декоратором Еленой Ананиной" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">Практикум по колористике с декоратором Еленой Ананиной</h3>
-                    <p class="event__meta">25 февраля 2025</p>
-                </div>
-            </article>
-        </li>
+        <ul class="events__list">
+            <!-- 1. Большая (845×567) -->
+            <li class="event event__lg">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/MebelGrad.svg" alt="Открытие нового салона «Мебельград» и семинар «Квартира для посуточной аренды»" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">Открытие нового салона «Мебельград» и семинар «Квартира для посуточной аренды»</h3>
+                        <p class="event__meta">23 апреля 2025 г.</p>
+                    </div>
+                </article>
+            </li>
 
-        <!-- 5. Малая -->
-        <li class="event event__sm">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/ArtDom.svg" alt="Лекция Анны Семеновой по итогам выставки ARTDOM, салон Academy" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">Лекция Анны Семеновой по итогам выставки ARTDOM, салон Academy</h3>
-                    <p class="event__meta">5 марта 2025</p>
-                </div>
-            </article>
-        </li>
+            <!-- 2. Малая (408×567) -->
+            <li class="event event__sm">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/Vipart.svg" alt="Занятие школы Ступени Корпусная мебель, салон Випарт" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">Занятие школы Ступени Корпусная мебель, салон Випарт</h3>
+                        <p class="event__meta">11 марта 2025</p>
+                    </div>
+                </article>
+            </li>
 
-        <!-- 6. Большая -->
-        <li class="event event__lg">
-            <article class="event__inner">
-                <a class="event__media" href="#">
-                    <img src="Assets/image/TopTop.svg" alt="Первая встреча с дизайнером Анной Семеновой из блока по интерьерным стилям, TorTor flooring" loading="lazy">
-                </a>
-                <div class="event__content">
-                    <h3 class="event__title">Первая встреча с дизайнером Анной Семеновой из блока по интерьерным стилям, TorTor flooring</h3>
-                    <p class="event__meta">13 февраля 2025</p>
-                </div>
-            </article>
-        </li>
-    </ul>
+            <!-- 3. Малая -->
+            <li class="event event__sm">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/Semenova.svg" alt="«Ступени» и спикер Анна Семенова" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">«Ступени» и спикер Анна Семенова</h3>
+                        <p class="event__meta">6 марта 2025</p>
+                    </div>
+                </article>
+            </li>
 
-    <div class="events__more">
-        <button class="btn_more" type="button">Показать ещё</button>
-    </div>
-</section>
+            <!-- 4. Малая -->
+            <li class="event event__sm">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/Ananina.svg" alt="Практикум по колористике с декоратором Еленой Ананиной" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">Практикум по колористике с декоратором Еленой Ананиной</h3>
+                        <p class="event__meta">25 февраля 2025</p>
+                    </div>
+                </article>
+            </li>
+
+            <!-- 5. Малая -->
+            <li class="event event__sm">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/ArtDom.svg" alt="Лекция Анны Семеновой по итогам выставки ARTDOM, салон Academy" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">Лекция Анны Семеновой по итогам выставки ARTDOM, салон Academy</h3>
+                        <p class="event__meta">5 марта 2025</p>
+                    </div>
+                </article>
+            </li>
+
+            <!-- 6. Большая -->
+            <li class="event event__lg">
+                <article class="event__inner">
+                    <a class="event__media" href="#">
+                        <img src="Assets/image/TopTop.svg" alt="Первая встреча с дизайнером Анной Семеновой из блока по интерьерным стилям, TorTor flooring" loading="lazy">
+                    </a>
+                    <div class="event__content">
+                        <h3 class="event__title">Первая встреча с дизайнером Анной Семеновой из блока по интерьерным стилям, TorTor flooring</h3>
+                        <p class="event__meta">13 февраля 2025</p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+
+        <div class="events__more">
+            <button class="btn_more" type="button">Показать ещё</button>
+        </div>
+    </section>
+</main>
 
 
 <footer class="site_footer" role="contentinfo">

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
 
 :root {
-    --bg: #ffffff;
+    --bg: rgba(255, 255, 255, 0);
     --text: #111111;
     --muted: #666666;
     --accent: #7f0d0d;

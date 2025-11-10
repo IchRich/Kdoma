@@ -24,8 +24,8 @@
                aria-label="Открыть меню"
                aria-controls="mobile_drawer"
                aria-expanded="false">
-                <span></span>
-            </label>
+            <span></span>
+        </label>
 
         <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
             <div class="mobile_drawer__head">
@@ -34,7 +34,7 @@
                     <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
                 </form> -->
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
-                onclick="document.getElementById('nav-toggle').checked=false"></button>
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
             </div>
 
             <nav class="mobile_nav" aria-label="Основные разделы">
@@ -98,176 +98,183 @@
         </div>
     </div>
 </header>
-<main class="container">
-    <!-- Добавить сразу после <body> -->
-    <aside class="brand_stack" id="brandStack">
-        <a class="brand_stack__logo" href="/" aria-label="Перейти на главную">
-            <img src="Assets/image/KDomaLogo.png" alt="">
-        </a>
-        <a class="brand_stack__cta" href="/magazine" aria-label="Читать актуальный номер">
-            <span class="cta__text">Читать актуальный номер</span>
-            <img class="cta__arrow" src="Assets/image/Pointer.png" alt="">
-        </a>
-    </aside>
 
-    <h1 class="page_title">Дизайнеры</h1>
+<main>
+    <search class="container">
+        <!-- Добавить сразу после <body> -->
+        <aside class="brand_stack" id="brandStack">
+            <a class="brand_stack__logo" href="/" aria-label="Перейти на главную">
+                <img src="Assets/image/KDomaLogo.png" alt="">
+            </a>
+            <a class="brand_stack__cta" href="/magazine" aria-label="Читать актуальный номер">
+                <span class="cta__text">Читать актуальный номер</span>
+                <img class="cta__arrow" src="Assets/image/Pointer.png" alt="">
+            </a>
+        </aside>
+        <div class="title-min">
 
-    <ul class="cards">
-        <!-- Карточка -->
-        <li class="row">
-            <div class="about">
-                <img class="about__avatar" src="Assets/image/Ekaterina.png" alt="Екатерина Дозорец">
-                <div class="about__info">
-                    <h3 class="about__name">Екатерина Дозорец</h3>
-                    <p class="about__roles">Дизайнер</p>
-                    <a class="about__cta" href="DesignersPage.html">
-                        СМОТРЕТЬ ПОРТФОЛИО
-                        <img src="Assets/image/Pointer.svg" alt="">
-                    </a>
-                </div>
-            </div>
+            <a href="index.html" class="title-glav">Главная /</a> <p>Дизайнеры</p>
+        </div>
+        <h1 class="page_title">Дизайнеры</h1>
 
-            <div class="work">
-                <div class="work_slider" data-slider>
-                    <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
-                    <button class="nav next" type="button" aria-label="Следующий слайд"></button>
-                    <div class="work_slider__track">
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 1">
-                        </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 2">
-                        </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 3">
-                        </div>
-                    </div>
-                    <div class="work_slider__dots">
-                        <button class="dot is_active"></button>
-                        <button class="dot"></button>
-                        <button class="dot"></button>
+        <ul class="cards">
+            <!-- Карточка -->
+            <li class="row">
+                <div class="about">
+                    <img class="about__avatar" src="Assets/image/Ekaterina.png" alt="Екатерина Дозорец">
+                    <div class="about__info">
+                        <h3 class="about__name">Екатерина Дозорец</h3>
+                        <p class="about__roles">Дизайнер</p>
+                        <a class="about__cta" href="DesignersPage.html">
+                            СМОТРЕТЬ ПОРТФОЛИО
+                            <img src="Assets/image/Pointer.svg" alt="">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </li>
 
-        <!-- Орлова Асия -->
-        <li class="row">
-            <div class="about">
-                <img class="about__avatar" src="Assets/image/Asia.png" alt="Орлова Асия">
-                <div class="about__info">
-                    <h3 class="about__name">Орлова Асия</h3>
-                    <p class="about__roles">Дизайнер, Архитектор</p>
-                    <a class="about__cta" href="DesignersPage.html">
-                        СМОТРЕТЬ ПОРТФОЛИО
-                        <img src="Assets/image/Pointer.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="work_slider" data-slider>
-                    <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
-                    <button class="nav next" type="button" aria-label="Следующий слайд"></button>
-                    <div class="work_slider__track">
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 1">
+                <div class="work">
+                    <div class="work_slider" data-slider>
+                        <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+                        <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+                        <div class="work_slider__track">
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 1">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 2">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/EkaterinaPhoto.png" alt="Интерьер 3">
+                            </div>
                         </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 2">
-                        </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 3">
+                        <div class="work_slider__dots">
+                            <button class="dot is_active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
                         </div>
                     </div>
-                    <div class="work_slider__dots">
-                        <button class="dot is_active"></button>
-                        <button class="dot"></button>
-                        <button class="dot"></button>
+                </div>
+            </li>
+
+            <!-- Орлова Асия -->
+            <li class="row">
+                <div class="about">
+                    <img class="about__avatar" src="Assets/image/Asia.png" alt="Орлова Асия">
+                    <div class="about__info">
+                        <h3 class="about__name">Орлова Асия</h3>
+                        <p class="about__roles">Дизайнер, Архитектор</p>
+                        <a class="about__cta" href="DesignersPage.html">
+                            СМОТРЕТЬ ПОРТФОЛИО
+                            <img src="Assets/image/Pointer.svg" alt="">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </li>
 
-        <!-- Чигирева Елена -->
-        <li class="row">
-            <div class="about">
-                <img class="about__avatar" src="Assets/image/Elena%20Ch.png" alt="Чигирева Елена">
-                <div class="about__info">
-                    <h3 class="about__name">Чигирева Елена</h3>
-                    <p class="about__roles">Дизайнер, Декоратор</p>
-                    <a class="about__cta" href="DesignersPage.html">
-                        СМОТРЕТЬ ПОРТФОЛИО
-                        <img src="Assets/image/Pointer.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="work_slider" data-slider>
-                    <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
-                    <button class="nav next" type="button" aria-label="Следующий слайд"></button>
-                    <div class="work_slider__track">
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 1">
+                <div class="work">
+                    <div class="work_slider" data-slider>
+                        <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+                        <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+                        <div class="work_slider__track">
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 1">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 2">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/AsiaPhoto.svg" alt="Интерьер 3">
+                            </div>
                         </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 2">
-                        </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 3">
+                        <div class="work_slider__dots">
+                            <button class="dot is_active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
                         </div>
                     </div>
-                    <div class="work_slider__dots">
-                        <button class="dot is_active"></button>
-                        <button class="dot"></button>
-                        <button class="dot"></button>
+                </div>
+            </li>
+
+            <!-- Чигирева Елена -->
+            <li class="row">
+                <div class="about">
+                    <img class="about__avatar" src="Assets/image/Elena%20Ch.png" alt="Чигирева Елена">
+                    <div class="about__info">
+                        <h3 class="about__name">Чигирева Елена</h3>
+                        <p class="about__roles">Дизайнер, Декоратор</p>
+                        <a class="about__cta" href="DesignersPage.html">
+                            СМОТРЕТЬ ПОРТФОЛИО
+                            <img src="Assets/image/Pointer.svg" alt="">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </li>
 
-        <!-- Безсмолова Елена -->
-        <li class="row">
-            <div class="about">
-                <img class="about__avatar" src="Assets/image/Elena%20B.png" alt="Безсмолова Елена">
-                <div class="about__info">
-                    <h3 class="about__name">Безсмолова Елена</h3>
-                    <p class="about__roles">Дизайнер</p>
-                    <a class="about__cta" href="DesignersPage.html">
-                        СМОТРЕТЬ ПОРТФОЛИО
-                        <img src="Assets/image/Pointer.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="work">
-                <div class="work_slider" data-slider>
-                    <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
-                    <button class="nav next" type="button" aria-label="Следующий слайд"></button>
-                    <div class="work_slider__track">
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 1">
+                <div class="work">
+                    <div class="work_slider" data-slider>
+                        <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+                        <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+                        <div class="work_slider__track">
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 1">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 2">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/ElenaChPhoto.svg" alt="Интерьер 3">
+                            </div>
                         </div>
-                        <div class="work_slider__slide">
-                            <img src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 2">
-                        </div>
-                        <div class="work_slider__slide">
-                            <img id="bezsmolova_elena" src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 3">
+                        <div class="work_slider__dots">
+                            <button class="dot is_active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
                         </div>
                     </div>
-                    <div class="work_slider__dots">
-                        <button class="dot is_active"></button>
-                        <button class="dot"></button>
-                        <button class="dot"></button>
+                </div>
+            </li>
+
+            <!-- Безсмолова Елена -->
+            <li class="row">
+                <div class="about">
+                    <img class="about__avatar" src="Assets/image/Elena%20B.png" alt="Безсмолова Елена">
+                    <div class="about__info">
+                        <h3 class="about__name">Безсмолова Елена</h3>
+                        <p class="about__roles">Дизайнер</p>
+                        <a class="about__cta" href="DesignersPage.html">
+                            СМОТРЕТЬ ПОРТФОЛИО
+                            <img src="Assets/image/Pointer.svg" alt="">
+                        </a>
                     </div>
                 </div>
-            </div>
-        </li>
-    </ul>
 
-    <button class="more">ПОКАЗАТЬ ЕЩЕ</button>
+                <div class="work">
+                    <div class="work_slider" data-slider>
+                        <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+                        <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+                        <div class="work_slider__track">
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 1">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 2">
+                            </div>
+                            <div class="work_slider__slide">
+                                <img id="bezsmolova_elena" src="Assets/image/ElenaBPhoto.svg" alt="Интерьер 3">
+                            </div>
+                        </div>
+                        <div class="work_slider__dots">
+                            <button class="dot is_active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="more">ПОКАЗАТЬ ЕЩЕ</button>
+    </search>
 </main>
+
 
 <footer class="site_footer" role="contentinfo">
   <div class="site_footer__inner">
