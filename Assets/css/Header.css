@@ -289,7 +289,7 @@ main
 }
 
 .site_footer__logo { display: inline-flex; margin-bottom: 1vw; }
-.site_footer__logo img { width: 100%; max-width: 5vw; height: auto; }
+.site_footer__logo img, .logo img { width: 4vw; height: auto; }
 
 .site_footer__title {
     margin: 0 0 1vw;
@@ -305,6 +305,11 @@ main
     margin: 0;
     text-decoration: none;
     transition: opacity 0.2s ease;
+}
+.site_footer__link a
+{
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 .site_footer__text
 {
@@ -433,7 +438,7 @@ main
   {
     font-size: 2.3vw;
   }
-  .site_footer__logo img, .logo
+  .site_footer__logo img, .logo img
   {
     min-width: 11vw;
     width: 11vw;
@@ -510,10 +515,14 @@ main
     /* .site_footer__sections { grid-column: 1 / span 1; }
     .site_footer__contacts  { grid-column: 2 / span 1; }
     .site_footer__brand     { grid-column: 1 / span 2; } */
-
+    main
+    {
+      margin-top: 7vh;
+    }
     .header_inner {
         gap: 1.5%;
         width: calc(100% - 40px);
+        padding: 1.5vh 0;
     }
     .site_footer
     {
@@ -551,8 +560,12 @@ main
         font-size: 0.9vw;
     }
 
-    .site_footer__logo img {
-        max-width: 6vw;
+    .site_footer__logo img, .logo img {
+        width: 6vw;
+    }
+    .site_footer_text_content
+    {
+      display: none;
     }
 }
 /* Общий стиль списка */
@@ -576,6 +589,10 @@ main
     .site_footer__title
     {
       margin-bottom: 2vw;
+    }
+    .header_inner
+    {
+      padding-right: 0px;
     }
     .site_footer__list_sections {
         grid-template-columns: 1fr;

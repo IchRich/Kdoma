@@ -90,6 +90,7 @@ h2 {
 .cards{
   padding-left: 0;
   padding-right: 0;
+  padding-top: 10vh;
 }
 
 .cards_row{
@@ -322,7 +323,7 @@ h2 {
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:48%;
+  width:47.5%;
   flex-shrink:0;
 }
 
@@ -401,7 +402,7 @@ h2 {
   gap:1.2vw;
   width:100%;
   height: 3.1vw;
-  border:0.08vw solid #000;
+  border: 1px solid #000;
   font-weight:300;
   color:#111;
   text-decoration:none;
@@ -432,7 +433,17 @@ h2 {
   flex-wrap:nowrap;
 }
 
-.about_editorial__col{ flex:1 1 0; min-width:0; display:flex; flex-direction:column; gap:0.63vw; }
+.about_editorial__col{
+  flex:1 1 0;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:0.63vw;
+}
+.about_editorial__col:nth-of-type(2)
+{
+  justify-content: center;
+}
 .about_editorial__title{ font-size:1.41vw; font-weight:300; margin:0; line-height:1.10; }
 .about_editorial__text{ font-size:1.04vw; margin:0; font-weight:300; }
 .mail{ color:black; text-decoration:none; }
@@ -557,8 +568,6 @@ h2 {
   .card_arrow{ right:2vw; bottom:2vw; width:5vw; height:5vw; }
 
   .about_design{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
     width:100%;
     margin: 0 auto;
   }
@@ -605,7 +614,14 @@ h2 {
   }
   .about_design_all{ width:100%; height:11vw; font-size:4vw; }
 
-  .journal_block{ display:grid; grid-template-columns: 1fr 1fr; gap:2.5vw; margin:0 auto; padding-left:var(--edge); padding-right:var(--edge); padding-top: 2vh;}
+  .journal_block{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2.5vw;
+    margin:0 auto;
+    padding-left:var(--edge);
+    padding-right:var(--edge);
+  }
   .journal_block h2{
     font-size:7vw;
     margin-bottom:5.5vw;
@@ -686,7 +702,7 @@ h2 {
   .events_btn{ width:100%; height:11vw; font-size:4vw; }
 
   .about_editorial{
-    padding: 2vh 0;
+    padding: 4vw 0 8vw 0;
     width:90%;
   }
   .about_editorial h2{ font-size:7vw; margin-bottom:2vw; }
@@ -741,7 +757,6 @@ h2 {
     --gap: 2.5vw;
     --edge: 2.5vw;
   }
-
   body{ max-width:100%; overflow-x:hidden; }
   section{
     width: calc(100% - 40px);
@@ -863,6 +878,11 @@ h2 {
   {
     margin-bottom: 1.3vw;
   }
+  .readmore {
+    margin-left: -2.6vw;
+    text-underline-offset: 0.5vw;
+  }
+
   .journal_btns .journal_btn
   {
     width: calc((46% + (var(--gap)) / 2));
