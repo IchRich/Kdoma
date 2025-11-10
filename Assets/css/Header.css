@@ -305,6 +305,10 @@ main
     margin: 0;
     text-decoration: none;
     transition: opacity 0.2s ease;
+    color: inherit;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
 .site_footer__link a
 {
