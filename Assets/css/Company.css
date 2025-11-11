@@ -38,8 +38,7 @@ body {
 }
 
 .section__header {
-    padding-top: 40px;
-    padding-bottom: 12px;
++    padding-bottom: 12px;
 }
 
 /* Header */
@@ -342,7 +341,7 @@ body {
         font-size: 16px;
     }
     .card__link{
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1;
         white-space: nowrap;
         display: inline-flex;
