@@ -337,9 +337,9 @@ body {
         margin-bottom: 8px;
     }
 
-    .card__title {
-        font-size: 16px;
-    }
+    /*.card__title {*/
+    /*    font-size: 16px;*/
+    /*}*/
     .card__link{
         font-size: 20px;
         line-height: 1;
@@ -405,9 +405,10 @@ body {
         max-height: 114px;
     }
 
-    .card__title {
-        font-size: 18px;
-    }
+    /*.card__title {*/
+    /*    font-size: 18px;*/
+    /*}*/
+
 
     .catalog .card {
         display: none;
