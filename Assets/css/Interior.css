@@ -36,11 +36,11 @@ body {
 }
 
 .section {
-  /*padding-block: 22px;*/
+  padding-block: 22px;
 }
 
 .title {
-  margin: 16px 0 10px;
+  margin: 0;
   font-weight: 200;
   font-family: 'Geologica', serif;
   font-size: 70px;
@@ -125,14 +125,11 @@ body {
   grid-column: span 1;
 }
 
-/* Адаптив 360–767 */
 @media (max-width: 767px) {
   .container {
     width: 90%;
   }
-    .section_header{
-    padding: 0;
-    }
+
     .cards_grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
@@ -169,7 +166,6 @@ body {
   }
 }
 
-/* Адаптив 768–1024 */
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: calc(100% - 40px);

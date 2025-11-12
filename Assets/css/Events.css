@@ -43,11 +43,9 @@ img {
 .title-min {
     display: flex;
     align-items: center;
-    gap: 0.26vw;
-    font-size: 1.04vw;
-    font-weight: 300;
-    margin-bottom: 1.04vw;
-    font-family: Geologica, sans-serif;
+    gap: 0.2vw;
+    font-family: 'Geologica', serif;
+    font-size: 0.9vw;
 }
 
 .title-glav {
@@ -60,7 +58,8 @@ img {
 
 .events__title {
     margin: 0;
-    font-size: 2.6vw;
+    /*font-size: 2.6vw;*/
+    font-size: 4.5vw;
     font-weight: 200;
     font-family: Geologica, sans-serif;
     line-height: 1;
@@ -218,7 +217,7 @@ img {
     }
 
     .title-min {
-        font-size: 4vw;
+        font-size: 1.04vw;
         padding: 0;
         margin: 0 0 3vw;
         display: flex;
@@ -309,6 +308,11 @@ img {
         height: 40px;
         font-size: 16px;
     }
+    .title-min {
+        font-size: 4.5vw;
+        gap: 1vw;
+        margin-bottom: 2vw;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
@@ -331,14 +335,13 @@ img {
     }
 
     .events__title {
-        font-size: 3.5vw;
+        font-size: 4.55vw;
         margin-bottom: 3.1vw;
         font-weight: 200;
     }
 
     .title-min {
-        font-size: 1.5vw;
-        margin-bottom: 1.5vw;
+        font-size: 1.4vw;
         gap: 0.5vw;
     }
 
@@ -472,7 +475,7 @@ img {
     }
 
     .events__title {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .event__title {
