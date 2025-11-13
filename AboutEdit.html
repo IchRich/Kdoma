@@ -27,8 +27,8 @@
                aria-label="Открыть меню"
                aria-controls="mobile_drawer"
                aria-expanded="false">
-                <span></span>
-            </label>
+            <span></span>
+        </label>
 
         <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
             <div class="mobile_drawer__head">
@@ -37,7 +37,7 @@
                     <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
                 </form> -->
                 <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
-                onclick="document.getElementById('nav-toggle').checked=false"></button>
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
             </div>
 
             <nav class="mobile_nav" aria-label="Основные разделы">
@@ -104,225 +104,227 @@
 <!-- Header: заголовок страницы -->
 
 <!-- Header: заголовок страницы -->
-<header class="container">
-    <h1 class="title">О редакции</h1>
-</header>
+<main>
+    <section class="container">
+        <h1 class="title">О редакции</h1>
+    </section>
 
-<!-- About: общий блок слайдера и текстового описания -->
-<!-- About: общий блок слайдера и текстового описания -->
-<section class="container about">
-    <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
-    <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
-    <div class="about__grid">
+    <!-- About: общий блок слайдера и текстового описания -->
+    <!-- About: общий блок слайдера и текстового описания -->
+    <section class="container about">
+        <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
+        <!-- Двухколоночная обертка: слева слайдер, справа текст (на мобильных — одна колонка) -->
+        <div class="about__grid">
 
-        <!-- Slider: фотогалерея команды; стрелки .nav, трек .slider__track, точки .slider__dots -->
-        <div class="work_slider" data-slider>
-            <!-- Стрелка «назад» -->
-            <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+            <!-- Slider: фотогалерея команды; стрелки .nav, трек .slider__track, точки .slider__dots -->
+            <div class="work_slider" data-slider>
+                <!-- Стрелка «назад» -->
+                <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
 
-            <!-- Viewport: окно просмотра; внутри — трек слайдов -->
-            <!-- Viewport: окно просмотра; внутри — трек слайдов -->
-            <div class="slider__viewport">
-                <!-- Track: лента слайдов, которую двигает JS -->
-                <!-- Track: лента слайдов, которую двигает JS -->
-                <div class="slider__track">
-                    <!-- Slide #1: изображение команды -->
-                    <!-- Slide #1: изображение команды -->
-                    <div class="slide">
-                        <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 1" />
-                    </div>
-                    <!-- Slide #2 -->
-                    <!-- Slide #2 -->
-                    <div class="slide">
-                        <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 2" />
-                    </div>
-                    <!-- Slide #3 -->
-                    <!-- Slide #3 -->
-                    <div class="slide">
-                        <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 3" />
+                <!-- Viewport: окно просмотра; внутри — трек слайдов -->
+                <!-- Viewport: окно просмотра; внутри — трек слайдов -->
+                <div class="slider__viewport">
+                    <!-- Track: лента слайдов, которую двигает JS -->
+                    <!-- Track: лента слайдов, которую двигает JS -->
+                    <div class="slider__track">
+                        <!-- Slide #1: изображение команды -->
+                        <!-- Slide #1: изображение команды -->
+                        <div class="slide">
+                            <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 1" />
+                        </div>
+                        <!-- Slide #2 -->
+                        <!-- Slide #2 -->
+                        <div class="slide">
+                            <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 2" />
+                        </div>
+                        <!-- Slide #3 -->
+                        <!-- Slide #3 -->
+                        <div class="slide">
+                            <img src="Assets/image/EditTeam.jpg" alt="Команда редакции, фото 3" />
+                        </div>
                     </div>
                 </div>
+
+                <!-- Стрелка «вперед» -->
+                <!-- Стрелка «вперед» -->
+                <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+
+                <!-- Dots: контейнер для пагинации (точки создаются JS) -->
+                <!-- Dots: контейнер для пагинации (точки создаются JS) -->
+                <div class="slider__dots" aria-label="Пагинация"></div>
             </div>
+            <!-- /Slider -->
+            <!-- /Slider -->
 
-            <!-- Стрелка «вперед» -->
-            <!-- Стрелка «вперед» -->
-            <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+            <!-- Text: статический контент о редакции -->
+            <!-- Text: статический контент о редакции -->
+            <article class="about__text">
+                <p>Как воплотить эту мечту в жизнь? Где почерпнуть идеи? С кем можно разработать концепцию и обсудить детали? Кто подскажет, предложит и сделает? Где купить, заказать, получить скидку? Именно для тех, кто задает вопросы и тех, кто знает на них ответы, журнал «Калининградские дома» создал сайт KDoma.ru KDoma.ru собрал профессионалов города Калининграда на одной интернет-площадке с единственной целью – помочь каждому мечтателю создать свой комфортный дом. Именно такой, который ему нужен. Ведущие дизайнеры, архитекторы, декораторы, флористы, продавцы мебели, отделочных материалов, света, сантехники, декора, мастера-отделочники, строители — творческая, профессиональная, создающая команда, на опыт и мастерство которой вы можете положиться. Ищите экспертов, вдохновляйтесь идеями, выбирайте товары на KDoma.ru , создавайте уют и красоту в вашем доме! Кому нужен KDoma.ru</p>
+                <p>— Всем тем, кто хочет создать уютный, красивый и комфортный дом, кто заинтересован в качественном ремонте и дизайнерских продуктах. KDoma.ru предлагает множество вариантов интерьеров и помогает в поиске новых идей. Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                <!-- Ссылка на СОУТ -->
+                <!-- Ссылка на СОУТ -->
+                <a class="about__link" href="#">Информация о результатах проведения СОУТ</a>
+            </article>
+            <!-- /Text -->
 
-            <!-- Dots: контейнер для пагинации (точки создаются JS) -->
-            <!-- Dots: контейнер для пагинации (точки создаются JS) -->
-            <div class="slider__dots" aria-label="Пагинация"></div>
+            <!-- /Text -->
+
         </div>
-        <!-- /Slider -->
-        <!-- /Slider -->
+        <!-- AboutEdit.html__grid -->
+        <!-- AboutEdit.html__grid -->
 
-        <!-- Text: статический контент о редакции -->
-        <!-- Text: статический контент о редакции -->
-        <article class="about__text">
-            <p>Как воплотить эту мечту в жизнь? Где почерпнуть идеи? С кем можно разработать концепцию и обсудить детали? Кто подскажет, предложит и сделает? Где купить, заказать, получить скидку? Именно для тех, кто задает вопросы и тех, кто знает на них ответы, журнал «Калининградские дома» создал сайт KDoma.ru KDoma.ru собрал профессионалов города Калининграда на одной интернет-площадке с единственной целью – помочь каждому мечтателю создать свой комфортный дом. Именно такой, который ему нужен. Ведущие дизайнеры, архитекторы, декораторы, флористы, продавцы мебели, отделочных материалов, света, сантехники, декора, мастера-отделочники, строители — творческая, профессиональная, создающая команда, на опыт и мастерство которой вы можете положиться. Ищите экспертов, вдохновляйтесь идеями, выбирайте товары на KDoma.ru , создавайте уют и красоту в вашем доме! Кому нужен KDoma.ru</p>
-            <p>— Всем тем, кто хочет создать уютный, красивый и комфортный дом, кто заинтересован в качественном ремонте и дизайнерских продуктах. KDoma.ru предлагает множество вариантов интерьеров и помогает в поиске новых идей. Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
-            <!-- Ссылка на СОУТ -->
-            <!-- Ссылка на СОУТ -->
-            <a class="about__link" href="#">Информация о результатах проведения СОУТ</a>
-        </article>
-        <!-- /Text -->
+        <!-- Внешние точки (если нужно выводить пагинацию ниже всего блока) -->
+        <div class="slider__dots__outer" aria-hidden="true"></div>
+    </section>
+    <!-- AboutEdit.html -->
+    <!-- AboutEdit.html -->
 
-        <!-- /Text -->
+    <!-- Projects: список карточек проектов -->
+    <!-- Projects: список карточек проектов -->
+    <section class="container projects">
+        <!-- Заголовок секции проектов -->
+        <!-- Заголовок секции проектов -->
+        <h2 class="title">Проекты</h2>
 
-    </div>
-    <!-- AboutEdit.html__grid -->
-    <!-- AboutEdit.html__grid -->
+        <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
 
-    <!-- Внешние точки (если нужно выводить пагинацию ниже всего блока) -->
-    <div class="slider__dots__outer" aria-hidden="true"></div>
-</section>
-<!-- AboutEdit.html -->
-<!-- AboutEdit.html -->
+        <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
+        <ul class="projects__list">
+            <!-- Card: Ступени -->
+            <!-- Card: Ступени -->
+            <li class="project">
+                <div class="project__item">
+                    <div class="project__logo">
+                        <img src="Assets/image/Stupeni.svg" alt="Ступени">
+                    </div>
+                    <div class="project__text">
+                        <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                    </div>
 
-<!-- Projects: список карточек проектов -->
-<!-- Projects: список карточек проектов -->
-<section class="container projects">
-    <!-- Заголовок секции проектов -->
-    <!-- Заголовок секции проектов -->
-    <h2 class="title">Проекты</h2>
-
-    <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
-
-    <!-- Сетка карточек: две колонки на десктопе, одна — на планшете/мобиле -->
-    <ul class="projects__list">
-        <!-- Card: Ступени -->
-        <!-- Card: Ступени -->
-        <li class="project">
-            <div class="project__item">
-                <div class="project__logo">
-                    <img src="Assets/image/Stupeni.svg" alt="Ступени">
                 </div>
-                <div class="project__text">
-                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+            </li>
+
+            <!-- Card: KD -->
+
+            <!-- Card: KD -->
+            <li class="project">
+                <div class="project__item">
+                    <div class="project__logo">
+                        <img src="Assets/image/KDdoma.svg" alt="KD">
+                    </div>
+                    <div class="project__text">
+                        <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                    </div>
+
                 </div>
+            </li>
 
-            </div>
-        </li>
+            <!-- Card: Премия -->
 
-        <!-- Card: KD -->
+            <!-- Card: Премия -->
+            <li class="project">
+                <div class="project__item">
+                    <div class="project__logo">
+                        <img src="Assets/image/Premia.svg" alt="Премия">
+                    </div>
+                    <div class="project__text">
+                        <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                    </div>
 
-        <!-- Card: KD -->
-        <li class="project">
-            <div class="project__item">
-                <div class="project__logo">
-                    <img src="Assets/image/KDdoma.svg" alt="KD">
                 </div>
-                <div class="project__text">
-                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+            </li>
+
+            <!-- Card: Design Week -->
+
+            <!-- Card: Design Week -->
+            <li class="project">
+                <div class="project__item">
+                    <div class="project__logo">
+                        <img src="Assets/image/DesignWeek.svg" alt="Design Week">
+                    </div>
+                    <div class="project__text">
+                        <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
+                    </div>
+
                 </div>
+            </li>
+        </ul>
+        <!-- /projects__list -->
+        <!-- /projects__list -->
+    </section>
+    <!-- /Projects -->
 
-            </div>
-        </li>
+    <!-- /Projects -->
 
-        <!-- Card: Премия -->
-
-        <!-- Card: Премия -->
-        <li class="project">
-            <div class="project__item">
-                <div class="project__logo">
-                    <img src="Assets/image/Premia.svg" alt="Премия">
-                </div>
-                <div class="project__text">
-                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
-                </div>
-
-            </div>
-        </li>
-
-        <!-- Card: Design Week -->
-
-        <!-- Card: Design Week -->
-        <li class="project">
-            <div class="project__item">
-                <div class="project__logo">
-                    <img src="Assets/image/DesignWeek.svg" alt="Design Week">
-                </div>
-                <div class="project__text">
-                    <p>Понравившиеся интерьеры, идеи можно добавлять в альбомы личного кабинета.</p>
-                </div>
-
-            </div>
-        </li>
-    </ul>
-    <!-- /projects__list -->
-    <!-- /projects__list -->
-</section>
-<!-- /Projects -->
-
-<!-- /Projects -->
-
+</main>
 
 <footer class="site_footer" role="contentinfo">
-  <div class="site_footer__inner">
+    <div class="site_footer__inner">
 
-    <section class="site_footer__col site_footer__brand" aria-labelledby="footer_brand">
-      <a class="site_footer__logo" href="/" aria-label="На главную">
-        <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
-      </a>
-      <div class="site_footer_text_content">
-        <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
-        <p class="site_footer__text">ООО «Стартап»</p>
-        <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
-      </div>
-    </section>
+        <section class="site_footer__col site_footer__brand" aria-labelledby="footer_brand">
+            <a class="site_footer__logo" href="/" aria-label="На главную">
+                <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+            </a>
+            <div class="site_footer_text_content">
+                <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+                <p class="site_footer__text">ООО «Стартап»</p>
+                <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+            </div>
+        </section>
 
-    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
-      <h2 id="footer_sections" class="site_footer__title">Разделы сайта</h2>
-      <ul class="site_footer__list site_footer__list_sections">
-        <li><a class="site_footer__link" href="Interior.html">Интерьеры</a></li>
-        <li><a class="site_footer__link" href="Company.html">Компании</a></li>
-        <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
-        <li><a class="site_footer__link" href="AboutEdit.html">О редакции</a></li>
-      </ul>
-    </nav>
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Разделы сайта</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link" href="Interior.html">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="Company.html">Компании</a></li>
+                <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
+                <li><a class="site_footer__link" href="AboutEdit.html">О редакции</a></li>
+            </ul>
+        </nav>
 
-    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
-      <h2 id="footer_sections" class="site_footer__title">Публикации</h2>
-      <ul class="site_footer__list site_footer__list_sections">
-        <li><a class="site_footer__link" href="Events.html">События</a></li>
-        <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
-        <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
-      </ul>
-    </nav>
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Публикации</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link" href="Events.html">События</a></li>
+                <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
+                <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
+            </ul>
+        </nav>
 
-    <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
-      <h2 id="footer_sections" class="site_footer__title">Наши проекты</h2>
-      <ul class="site_footer__list site_footer__list_sections">
-        <li><a class="site_footer__link site_footer__link_accent" href="DesignSchool.html">Школа дизайна</a></li>
-        <li><a class="site_footer__link site_footer__link_accent" href="WeekDesign.html">Неделя дизайна</a></li>
-        <li><a class="site_footer__link site_footer__link_accent" href="Premia.html">Премия</a></li>
-      </ul>
-    </nav>
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Наши проекты</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link site_footer__link_accent" href="DesignSchool.html">Школа дизайна</a></li>
+                <li><a class="site_footer__link site_footer__link_accent" href="WeekDesign.html">Неделя дизайна</a></li>
+                <li><a class="site_footer__link site_footer__link_accent" href="Premia.html">Премия</a></li>
+            </ul>
+        </nav>
 
-    <section class="site_footer__col site_footer__contacts" aria-labelledby="footer_contacts">
-      <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
-      <!-- <p class="site_footer__address">
-        г. Калининград,<br>
-        ул. Рокоссовского, д. 16/18<br>
-        Телефон редакции:<br>
-        <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
-      </p> -->
-    <ul class="site_footer__list_sections">
-        <li><p class="site_footer__link">г. Калининград,</p></li>
-        <li><p class="site_footer__link">ул. Рокоссовского, д. 16/18</p></li>
-        <li><p class="site_footer__link">Телефон редакции:</p></li>
-        <li><p class="site_footer__link">+7 (4012) 677-706</p></li>
-    </ul>
-    </section>
+        <section class="site_footer__col site_footer__contacts" aria-labelledby="footer_contacts">
+            <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
+            <!-- <p class="site_footer__address">
+              г. Калининград,<br>
+              ул. Рокоссовского, д. 16/18<br>
+              Телефон редакции:<br>
+              <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+            </p> -->
+            <ul class="site_footer__list_sections">
+                <li><p class="site_footer__link">г. Калининград,</p></li>
+                <li><p class="site_footer__link">ул. Рокоссовского, д. 16/18</p></li>
+                <li><p class="site_footer__link">Телефон редакции:</p></li>
+                <li><p class="site_footer__link">+7 (4012) 677-706</p></li>
+            </ul>
+        </section>
 
-  </div>
-
-  <div class="site_footer__bottom">
-    <a class="site_footer__policy" href="Policy.html">Политика ОПД</a>
-    <div class="site_footer__dev_container">
-      <p class="site_footer__dev">Сайт разработан</p>
-      <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="Логотип Kant">
     </div>
-  </div>
+
+    <div class="site_footer__bottom">
+        <a class="site_footer__policy" href="Policy.html">Политика ОПД</a>
+        <div class="site_footer__dev_container">
+            <p class="site_footer__dev">Сайт разработан</p>
+            <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="Логотип Kant">
+        </div>
+    </div>
 </footer>
 </body>
 </html>
