@@ -358,6 +358,13 @@ main
     gap: 0.5vw;
 }
 .site_footer__dev_container img { width: auto; height: 1em; }
+.title-min {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    font-family: 'Geologica', serif;
+    font-size: 1vw;
+}
 
 /* === Адаптив: на планшет/мобилка === */
 @media (max-width: 1024px) {
@@ -480,6 +487,11 @@ main
   {
     height: 20px;
   }
+    .title-min {
+        font-size: 4.5vw;
+        gap: 1vw;
+        margin-bottom: 2vw;
+    }
 }
 
 /* Мобильная адаптация */
@@ -543,6 +555,10 @@ main
 
     .utils {
         gap: 1%;
+    }
+    .title-min {
+        font-size: 2.4vw;
+        gap: 0.7vw;
     }
 
     .site_footer__title {

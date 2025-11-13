@@ -30,7 +30,7 @@ body {
 
 .company {
     width: var(--container);
-    max-width: 1720px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .header__title {
     margin: 0;
-    font-size: 4.5vw;
+    font-size: 4.8vw;
     font-weight: 200;
     line-height: 1;
 }
@@ -70,7 +70,7 @@ body {
     align-items: center;
     gap: 0.5vw;
     padding: 0.8vw 1.2vw;
-    border: 1px solid var(--border);
+    border: none;
     background: #fff;
     cursor: pointer;
     font-size: 1.1vw;
@@ -295,6 +295,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 3vw;
+    margin-bottom: 5.2vw;
 }
 
 .btn {
@@ -314,14 +315,6 @@ body {
     color: #fff;
 }
 
-.title-min {
-    display: flex;
-    align-items: center;
-    gap: 0.2vw;
-    font-family: 'Geologica', serif;
-    font-size: 0.9vw;
-    margin-bottom: 0.8vw;
-}
 
 .title-glav {
     color: #6B6B6B;
@@ -342,11 +335,14 @@ body {
 
     .company {
         width: var(--container);
-        padding: 4vw 0;
+        padding-top: 0;
+    }
+    .pages {
+        padding-top: 0;
     }
 
     .section {
-        padding: 5vw 0;
+        padding-top: 0;
     }
 
     .section__header {
@@ -361,7 +357,7 @@ body {
     }
 
     .header__title {
-        font-size: 7vw;
+        font-size: 8vw;
         font-weight: 200;
     }
 
@@ -377,252 +373,199 @@ body {
         justify-content: center;
         width: 10vw;
         height: 10vw;
-        border: 1px solid var(--border);
+        border: none;
         border-radius: 6px;
         background: #fff;
     }
+    .page{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     .filter_trigger_icon__img {
-        width: 5vw;
-        height: 5vw;
+    width: 5vw;
+    height: 5vw;
     }
 
     .filter_dropdown {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1000;
-        margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin: 0;
     }
 
     .filter_dropdown__panel {
-        width: 100%;
-        height: 100%;
-        max-height: none;
-        border-radius: 0;
-        border: none;
-        padding: 5vw;
-        box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+    padding: 5vw;
+    box-sizing: border-box;
     }
 
     .filter_dropdown__title {
-        font-size: 5vw;
+    font-size: 5vw;
     }
 
     .filter_dropdown__count {
-        font-size: 4vw;
+    font-size: 4vw;
     }
 
     .filter_dropdown__close {
-        width: 8vw;
-        height: 8vw;
+    width: 8vw;
+    height: 8vw;
     }
 
     .filter_acc__sum {
-        font-size: 4.5vw;
-        padding: 2vw 0;
+    font-size: 4.5vw;
+    padding: 2vw 0;
     }
 
     .filter_acc__sum img {
-        width: 3vw;
-        height: 3vw;
+    width: 3vw;
+    height: 3vw;
     }
 
     .filter_acc__body {
-        padding: 2vw 0 1vw;
+    padding: 2vw 0 1vw;
     }
 
     .filter_check {
-        font-size: 4vw;
-        margin: 2vw 0;
+    font-size: 4vw;
+    margin: 2vw 0;
     }
 
     .catalog {
-        grid-template-columns: 1fr;
-        gap: 3vw;
-        margin-top: 4vw;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+    margin-top: 4vw;
     }
 
     .card {
-        min-height: 50vw;
-        padding: 4vw;
+    min-height: 50vw;
+    padding: 4vw;
     }
 
     .card__top {
-        min-height: 12vw;
-        margin-bottom: 3vw;
+    min-height: 12vw;
+    margin-bottom: 3vw;
     }
 
     .card__title {
-        font-size: 5vw;
-        line-height: 1.3;
+    font-size: 5vw;
+    line-height: 1.3;
     }
 
     .card__row {
-        gap: 4vw;
-        padding: 3vw 0 0;
+    gap: 4vw;
+    padding: 3vw 0 0;
     }
 
     .card__logo img {
-        max-height: 15vw;
+    max-height: 15vw;
     }
 
     .card__link {
-        font-size: 4vw;
-        gap: 1vw;
+    font-size: 4.8vw;
+    gap: 1vw;
     }
 
     .catalog__more {
-        margin-top: 6vw;
-        justify-content: center;
+    margin-top: 6vw;
+    justify-content: center;
     }
 
     .btn {
-        width: 100%;
-        height: 12vw;
-        font-size: 4vw;
+    width: 100%;
+    height: 12vw;
+    font-size: 4vw;
     }
 
-    .title-min {
-        font-size: 3.5vw;
-        margin-bottom: 2vw;
+
+    .filter_trigger__label {
+        font-size: 2.4vw;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
-        --container: 92%;
-        --gap: 3vw;
-        --edge: 3vw;
+    --container: 92%;
+    --gap: 3vw;
+    --edge: 3vw;
     }
 
     .company {
-        width: var(--container);
-        padding: 4vw 0;
+    width: var(--container);
     }
 
     .header__title {
-        font-size: 4.55vw;
+    font-size: 4.55vw;
     }
 
     .filter_trigger__label {
-        font-size: 1.8vw;
+    font-size: 2.4vw;
     }
 
     .filter_trigger {
-        padding: 1.2vw 1.6vw;
-        gap: 0.8vw;
+    padding: 1.2vw 1.6vw;
+    gap: 0.8vw;
     }
 
     .filter_dropdown__panel {
-        width: 35vw;
-        padding: 2vw;
+    width: 35vw;
+    padding: 2vw;
     }
 
     .filter_dropdown__title {
-        font-size: 1.8vw;
+    font-size: 1.8vw;
     }
 
     .filter_acc__sum {
-        font-size: 1.6vw;
+    font-size: 1.6vw;
     }
 
     .filter_check {
-        font-size: 1.4vw;
+    font-size: 1.4vw;
     }
 
     .catalog {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3vw;
-        margin-top: 3vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    margin-top: 3vw;
     }
 
     .card {
-        min-height: 25vw;
-        padding: 2.5vw;
+    min-height: 25vw;
+    padding: 2.5vw;
     }
 
     .card__title {
-        font-size: clamp(16px, 1.8vw, 22px);
+    font-size: 2.4vw;
     }
 
     .card__logo img {
-        max-height: 8vw;
+    max-height: 8vw;
     }
 
     .card__link {
-        font-size: 1.6vw;
+    font-size: 2.4vw;
     }
 
     .btn {
-        width: 48%;
-        height: 5vw;
-        font-size: 1.6vw;
-    }
-
-    .title-min {
-        font-size: 1.4vw;
-    }
-}
-
-@media (min-width: 1440px) {
-    .company {
-        max-width: 1400px;
+    width: 48%;
+    height: 5vw;
+    font-size: 1.6vw;
     }
 
 
-    .filter_trigger__label {
-        font-size: 16px;
+
+    .catalog__more {
+    margin-bottom: 80px;
+
     }
 
-    .filter_dropdown__panel {
-        width: 360px;
-    }
-
-    .card {
-        min-height: 277px;
-    }
-
-    .btn {
-        height: 60px;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 360px) {
-    :root {
-        --container: 94%;
-        --gap: 3vw;
-        --edge: 3vw;
-    }
-
-    .header__title {
-        font-size: 8.6vw;
-    }
-
-    .card__title {
-        font-size: 5.5vw;
-    }
-
-    .card__link {
-        font-size: 4.5vw;
-    }
-}
-
-.filter_acc__sum:focus,
-.filter_check:focus,
-.btn:focus,
-.card__link:focus {
-    outline: 2px solid var(--text-main);
-    outline-offset: 2px;
-}
-
-
-.card,
-.filter_trigger,
-.btn,
-.card__link {
-    transition: all 0.25s ease;
 }

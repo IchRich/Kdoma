@@ -36,22 +36,16 @@ body {
 }
 
 .section {
-  padding-block: 22px;
+  padding-block: 2vw    ;
 }
 
 .title {
   margin: 0;
   font-weight: 200;
   font-family: 'Geologica', serif;
-  font-size: 70px;
+  font-size: 3.6vw;
 }
-.title-min{
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    font-family: 'Geologica', serif;
 
-}
 
 .title-glav{
     color: #6B6B6B;
@@ -79,7 +73,7 @@ body {
 
 .card_image {
   width: 100%;
-  height: 584px;
+  height: 30vw;
   object-fit: cover;
   background: #eee;
   cursor: pointer;
@@ -88,7 +82,7 @@ body {
 .card_caption {
   font-weight: 300;
   font-family: Geologica, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 1.4vw;
   color: black;
 }
 
@@ -132,11 +126,11 @@ body {
 
     .cards_grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 5.5vw;
     }
 
     .card_image {
-        height: 275px;
+        height: 15vw;
     }
 
   .card_image {
@@ -145,7 +139,7 @@ body {
   }
 
   .card_caption {
-    font-size: 16px;
+    font-size: 4vw;
     line-height: 1.25;
     margin-top: 6px;
   }
@@ -160,9 +154,11 @@ body {
     height: 48px;
     font-size: 16px;
   }
-
+    .page{
+        padding-top: 0;
+    }
   .title {
-    font-size: 30px;
+      font-size: 8vw;
   }
 }
 
@@ -173,7 +169,7 @@ body {
   }
 
   .title {
-    font-size: 50px;
+    font-size: 6.5vw;
   }
 
   .cards_grid {
@@ -183,11 +179,14 @@ body {
   }
 
   .card_image {
-    height: 275px;
+    height: 30vw;
   }
+    .card_image {
+        height: 33vw;
+    }
 
   .card_caption {
-    font-size: 18px;
+      font-size: 1.8vw;
   }
 
   .btn {
