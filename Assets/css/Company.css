@@ -328,7 +328,7 @@ body {
 
 @media (max-width: 767px) {
     :root {
-        --container: 92%;
+        --container: 90%;
         --gap: 4vw;
         --edge: 4vw;
         --container1: 96%;
