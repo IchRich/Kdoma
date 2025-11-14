@@ -355,7 +355,6 @@ body {
         flex-direction: inherit;
         align-items: end;
         gap: 43%;
-    +
     }
 
     .header__title {
@@ -501,7 +500,7 @@ body {
     }
 
     .company {
-    width: var(--container1);
+    width: calc(100% - 40px);
     }
 
     .header__title {
@@ -568,6 +567,10 @@ body {
     .catalog__more {
     margin-bottom: 80px;
 
+    }
+    .title-min
+    {
+        margin-top: 0;
     }
 
 }

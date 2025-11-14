@@ -7,9 +7,18 @@
   --muted: #444;
   --brand: rgba(173, 12, 12, 1);
 }
+html, body
+{
+  overflow-x: hidden
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 main
 {
-    margin-top: 7vh;
+  margin-top: 5.2vw;
 }
 .site_header {
   position: fixed;
@@ -373,7 +382,7 @@ main
     gap: 0.3vw;
     font-family: 'Geologica', serif;
     font-size: 0.8vw;
-    margin-top: 4.5vw;
+    margin-top: 0vw;
     margin-left: -0.05vw;
 }
 .title-min a
@@ -384,6 +393,19 @@ main
   letter-spacing: -0.03rem;
 }
 
+.title {
+  margin: 0;
+  font-weight: 200;
+  font-family: 'Geologica', serif;
+  font-size: 2.6vw;
+  margin-left: -0.26vw;
+}
+
+.breadcrumbs
+{
+  margin-bottom: 1.7vw;
+}
+
 /* === Адаптив: на планшет/мобилка === */
 @media (max-width: 1024px) {
 
@@ -392,7 +414,7 @@ main
 @media (max-width: 767px) {
     main
     {
-        margin-top: 7vh;
+        margin-top: 14.5vw;
     }
   .site_footer__inner {
     display: grid;
@@ -471,6 +493,7 @@ main
   {
     min-width: 11vw;
     width: 11vw;
+    margin-left: -0.16vw;
   }
   .site_footer__list_sections {
     grid-template-columns: 1fr;
@@ -505,11 +528,21 @@ main
   {
     height: 20px;
   }
-    .title-min {
-        font-size: 2.3vw;
-        gap: 1vw;
-        margin-bottom: 0;
-    }
+  .title {
+    font-size: 8vw;
+    margin-top: 2vw;
+    margin-left: -0.8vw;
+  }
+  .title-min {
+    font-size: 2.3vw;
+    gap: 1vw;
+    margin-bottom: 0;
+    margin-left: -0.25vw;
+  }
+  .breadcrumbs
+  {
+    padding-bottom: 3vw;
+  }
 
 }
 
@@ -552,7 +585,7 @@ main
     .site_footer__brand     { grid-column: 1 / span 2; } */
     main
     {
-      margin-top: 6vh;
+      margin-top: 8.5vw;
     }
     .header_inner {
         gap: 1.5%;
@@ -578,7 +611,8 @@ main
     .title-min {
         font-size: 1.35vw;
         gap: 0.4vw;
-        margin-top: 0vw;
+        margin-top: 7vw;
+        margin-left: -0.10vw;
     }
 
     .site_footer__title {
@@ -606,6 +640,10 @@ main
     .site_footer_text_content
     {
       display: none;
+    }
+    .title {
+      font-size: 4.55vw;
+      margin-left: -0.45vw;
     }
 }
 /* Общий стиль списка */
@@ -646,10 +684,6 @@ main
     .burger_btn span 
     {
       top: 11px;
-    }
-    .cards
-    {
-      padding-top: 7vh;
     }
     section, .about_design, .journal_block, .about_editorial
     {
