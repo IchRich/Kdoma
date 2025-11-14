@@ -488,10 +488,11 @@ main
     height: 20px;
   }
     .title-min {
-        font-size: 4.5vw;
+        font-size: 2.3vw;
         gap: 1vw;
-        margin-bottom: 2vw;
+        margin-bottom: 0;
     }
+
 }
 
 /* Мобильная адаптация */
@@ -557,7 +558,7 @@ main
         gap: 1%;
     }
     .title-min {
-        font-size: 2.4vw;
+        font-size: 1.6vw;
         gap: 0.7vw;
     }
 

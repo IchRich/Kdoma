@@ -331,6 +331,8 @@ body {
         --container: 92%;
         --gap: 4vw;
         --edge: 4vw;
+        --container1: 96%;
+
     }
 
     .company {
@@ -372,7 +374,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 10vw;
-        height: 10vw;
+        height: 7vw;
         border: none;
         border-radius: 6px;
         background: #fff;
@@ -493,17 +495,17 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
-    --container: 92%;
     --gap: 3vw;
     --edge: 3vw;
+        --container1: 95%;
     }
 
     .company {
-    width: var(--container);
+    width: var(--container1);
     }
 
     .header__title {
-    font-size: 4.55vw;
+        font-size: 6.5vw;
     }
 
     .filter_trigger__label {

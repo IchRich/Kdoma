@@ -194,10 +194,12 @@ img {
     }
 
     .events__title {
-        font-size: 13.5vw;
+        font-size: 8vw;
         padding: 0;
-        margin: 0 0 5.5vw;
         font-weight: 200;
+    }
+    .events__head {
+        margin-bottom: 8vw;
     }
 
 
@@ -281,7 +283,7 @@ img {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
-        --container: 90%;
+        --container1: 96%;
         --gap: 2.3vw;
         --edge: 2.5vw;
         --image-height: 25vw;
@@ -293,15 +295,15 @@ img {
     }
 
     .events {
-        width: calc(100% - 40px);
-        max-width: var(--container);
+        width: initial;;
+        max-width: var(--container1);
         margin-left: auto;
         margin-right: auto;
     }
 
     .events__title {
         font-size: 9.30vw;
-        margin-bottom: 3.1vw;
+        margin-bottom: 4vw;
         font-weight: 200;
     }
 

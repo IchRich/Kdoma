@@ -33,17 +33,17 @@ body {
 .container {
   width: 90%;
   margin-inline: auto;
+    margin-top: 2vw;
 }
 
-.section {
-  padding-block: 2vw    ;
-}
+
 
 .title {
   margin: 0;
   font-weight: 200;
   font-family: 'Geologica', serif;
-  font-size: 3.6vw;
+    /*font-size: 4.8vw;*/
+    font-size: 3.6vw;
 }
 
 
@@ -160,6 +160,11 @@ body {
   .title {
       font-size: 8vw;
   }
+  .section{
+      padding-top: 0;
+      padding-bottom: 3vw;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -169,7 +174,8 @@ body {
   }
 
   .title {
-    font-size: 6.5vw;
+    /*font-size: 6.5vw;*/
+      font-size: 5.5vw;
   }
 
   .cards_grid {
