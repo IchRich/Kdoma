@@ -407,8 +407,15 @@ main
 }
 
 /* === Адаптив: на планшет/мобилка === */
-@media (max-width: 1024px) {
-
+@media (max-width: 1400px) {
+    .main_nav ul
+    {
+      gap: 1.2vw;
+    }
+    main
+    {
+      margin-top: 6.2vw;
+    }
 }
 
 @media (max-width: 767px) {

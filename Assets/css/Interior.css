@@ -85,7 +85,7 @@ body {
   border: 1px solid black;
   background: var(--btn-bg);
   color: black;
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: 300;
   font-family: 'Geologica', serif;
   width: calc((100% - (var(--gap) * 3)) / 4);
