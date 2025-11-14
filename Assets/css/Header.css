@@ -9,7 +9,7 @@
 }
 main
 {
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 .site_header {
   position: fixed;
@@ -289,7 +289,11 @@ main
 }
 
 .site_footer__logo { display: inline-flex; margin-bottom: 1vw; }
-.site_footer__logo img, .logo img { width: 4vw; height: auto; }
+.site_footer__logo img, .logo img {
+  width: 4vw;
+  height: auto;
+  margin-left: -0.05vw;
+}
 
 .site_footer__title {
     margin: 0 0 1vw;
@@ -358,12 +362,26 @@ main
     gap: 0.5vw;
 }
 .site_footer__dev_container img { width: auto; height: 1em; }
+
+.title-glav{
+    color: #6B6B6B;
+    text-decoration: none;
+}
 .title-min {
     display: flex;
     align-items: center;
     gap: 0.3vw;
     font-family: 'Geologica', serif;
-    font-size: 1vw;
+    font-size: 0.8vw;
+    margin-top: 4.5vw;
+    margin-left: -0.05vw;
+}
+.title-min a
+{
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.03rem;
 }
 
 /* === Адаптив: на планшет/мобилка === */
@@ -534,12 +552,12 @@ main
     .site_footer__brand     { grid-column: 1 / span 2; } */
     main
     {
-      margin-top: 7vh;
+      margin-top: 6vh;
     }
     .header_inner {
         gap: 1.5%;
         width: calc(100% - 40px);
-        padding: 1.5vh 0;
+        padding: 1.5vh 0 1.2vh 0;
     }
     .site_footer
     {
@@ -558,8 +576,9 @@ main
         gap: 1%;
     }
     .title-min {
-        font-size: 1.6vw;
-        gap: 0.7vw;
+        font-size: 1.35vw;
+        gap: 0.4vw;
+        margin-top: 0vw;
     }
 
     .site_footer__title {

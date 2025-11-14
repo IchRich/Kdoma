@@ -33,7 +33,7 @@ body {
 .container {
   width: 90%;
   margin-inline: auto;
-    margin-top: 2vw;
+  margin-top: 1.7vw;
 }
 
 
@@ -42,15 +42,12 @@ body {
   margin: 0;
   font-weight: 200;
   font-family: 'Geologica', serif;
-    /*font-size: 4.8vw;*/
-    font-size: 3.6vw;
+  font-size: 2.6vw;
+  margin-left: -0.26vw;
 }
 
 
-.title-glav{
-    color: #6B6B6B;
-    text-decoration: none;
-}
+
 .cards_grid {
     display: grid;
     gap: var(--gap);
@@ -100,8 +97,8 @@ body {
   font-size: 20px;
   font-weight: 300;
   font-family: 'Geologica', serif;
-  width: 22.8%;
-  height: 60px;
+  width: calc((100% - (var(--gap) * 3)) / 4);
+  height: 3.1vw;
   cursor: pointer;
   transition: color 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
 }
@@ -151,7 +148,7 @@ body {
   .btn {
     width: 100%;
     min-width: 0;
-    height: 48px;
+    height: 10vw;
     font-size: 16px;
   }
     .page{
@@ -174,8 +171,7 @@ body {
   }
 
   .title {
-    /*font-size: 6.5vw;*/
-      font-size: 5.5vw;
+      font-size: 4.55vw;
   }
 
   .cards_grid {
@@ -196,8 +192,8 @@ body {
   }
 
   .btn {
-    width: 47.3%;
-    height: 45px;
+    width: calc(50% - (var(--gap) / 2));
+    height: 5.9vw;
     font-size: 16px;
   }
 }

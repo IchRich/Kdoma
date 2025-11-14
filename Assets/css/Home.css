@@ -43,12 +43,12 @@ h2 {
 .hero{
   margin-top: 1vh;
   position: relative;
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 5vh;
+  padding-top: 10vh;
   padding-bottom: 2vh;
   background: #ddd url('../image/BackgroundPhoto.png') center/cover no-repeat;
 }
