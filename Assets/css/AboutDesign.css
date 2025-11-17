@@ -130,6 +130,7 @@ body{
         display: block;
     }
 
+
     .pd_left_pair {
         display: grid;
         grid-template-columns: 1fr 1fr;
