@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
 :root {
-    --container: 1720px;
     --text: #121212;
     --muted: #c7c7c7;
     --accent: #b40000;
@@ -178,8 +177,8 @@ img {
     padding: 0;
     display: grid;
     grid-template-columns:1fr 1fr;
-    row-gap: 10px;
-    column-gap: 55px;
+    row-gap: 0.5vw;
+    column-gap: 2.6vw;
 }
 
 .project__item {
@@ -219,7 +218,7 @@ img {
     }
     .work_slider{
         width:100%;
-        margin: 0 0 12px 0;
+        margin: 0px 0 3vw 0;
     }
     .slider__viewport{
         width:100%;
@@ -272,7 +271,10 @@ img {
         width:100%;
         margin: 0 0 16px 0;
     }
-    .slider__viewport{ width:100%; height:auto; aspect-ratio:980 / 654; }
+    .slider__viewport{
+        width:100%;
+        height:auto;
+        aspect-ratio:980 / 654; }
     .slide{
         min-width:100%; flex:0 0 100%;
         height:auto; aspect-ratio:980 / 654;
@@ -291,8 +293,8 @@ img {
     .projects__list{
         display:grid;
         grid-template-columns: 1fr 1fr;
-        column-gap:20px;  
-        row-gap:10px;     
+        column-gap:2.7vw;
+        row-gap:1.3vw;
         margin:0; padding:0; list-style:none;
     }
     .project{ margin:0; }

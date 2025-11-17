@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    --gap: 28px;
-    --caption-mt: 8px;
-    --text: #0d0d0d;
-    --border: #e5e5e5;
-}
 
 *{ box-sizing: border-box; }
 html,body{ height:100%; }
@@ -170,6 +164,9 @@ body{
         border: 1px solid #111;
         background: #fff;
     }
+    .page{
+        width: 100%;
+    }
 }
 
 @media (min-width:768px) and (max-width:1024px){
@@ -182,7 +179,6 @@ body{
         box-sizing: border-box;
     }
 
-    :root{ --gap: clamp(16px, 2vw, 24px); }
 
     .pd_card__interior .pd_card__media img,
     .pd_card__kitchen  .pd_card__media img,

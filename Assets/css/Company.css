@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
 
 :root {
-    --container: 90%;
-    --gap: 2.3vw;
-    --edge: 0.57vw;
+    /*--container: 90%;*/
+    /*--gap: 2.3vw;*/
+    /*--edge: 0.57vw;*/
     --bg-page: #fff;
     --bg-card: #e9e9e9;
     --text-main: #111;
@@ -328,13 +328,13 @@ body {
 }
 
 @media (max-width: 767px) {
-    :root {
-        --container: 90%;
-        --gap: 4vw;
-        --edge: 4vw;
-        --container1: 96%;
+    /*:root {*/
+    /*    --container: 90%;*/
+    /*    --gap: 4vw;*/
+    /*    --edge: 4vw;*/
+    /*    --container1: 96%;*/
 
-    }
+    /*}*/
 
     .company {
         width: var(--container);
@@ -494,11 +494,11 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    :root {
-    --gap: 3vw;
-    --edge: 3vw;
-        --container1: 95%;
-    }
+    /*:root {*/
+    /*--gap: 3vw;*/
+    /*--edge: 3vw;*/
+    /*    --container1: 95%;*/
+    /*}*/
 
     .company {
     width: calc(100% - 40px);
