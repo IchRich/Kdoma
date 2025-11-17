@@ -414,7 +414,7 @@ main
     }
     main
     {
-      margin-top: 6.2vw;
+      margin-top: 5.2vw;
     }
 }
 
@@ -696,6 +696,8 @@ main
     {
       padding-top: 3.5vh;
       padding-bottom: 3.5vh;
+      width: 90%;
+      padding-inline: 0;
     }
     .about_editorial h2, .events_block h2, .journal_block h2, .about_design h2
     {
