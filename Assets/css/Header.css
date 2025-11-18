@@ -537,7 +537,6 @@ main
   }
   .title {
     font-size: 8vw;
-      margin-bottom: 2.5vh;
     margin-top: 2vw;
     margin-left: -0.8vw;
   }
@@ -699,6 +698,7 @@ main
       padding-bottom: 3.5vh;
       width: 90%;
       padding-inline: 0;
+      margin: auto;
     }
     .about_editorial h2, .events_block h2, .journal_block h2, .about_design h2
     {
