@@ -45,10 +45,9 @@ html, body {
   justify-content: center;
 }
 
+
 .container {
   width: 100%;
-  max-width: 1920px;
-  min-width: 360px;
   padding: var(--padding-container-mobile);
   box-sizing: border-box;
 }

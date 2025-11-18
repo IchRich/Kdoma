@@ -6,7 +6,6 @@
     --muted: #666;
     --border: #ddd;
     --bg-light: #f6f6f6;
-    --container: 1720px;
 }
 
 /* Базовые стили */
@@ -28,8 +27,17 @@ body {
 }
 
 /* Главный контейнер */
+
+.page{
+    padding-top: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 .school {
-    max-width: var(--container);
     margin: 0 auto;
     padding: 0 0 80px;
 }
@@ -50,7 +58,7 @@ body {
     gap: 8px;
     height: 50px;
     padding: 0 24px;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 300;
     text-decoration: none;
 
@@ -105,7 +113,7 @@ body {
 
 /* ============= ГЕРОЙ-СЕКЦИЯ ============= */
 .hero {
-    padding: 0 0 80px;
+    padding: 40px 0 80px;
 }
 .hero__header {
     font-size: 70px;
@@ -113,8 +121,8 @@ body {
 }
 .hero__grid {
     display: grid;
-    grid-template-columns: 300px 400px 1fr; /* лого | центр | описание */
-    gap: 40px 80px;
+    grid-template-columns: 15.6vw 21vw 1fr; /* лого | центр | описание */
+    gap: 2.1vw  4.2vw;
     align-items: start;
 
 }
@@ -125,7 +133,6 @@ body {
 .hero__logo img {
     margin-top: 50px;
     width: 100%;
-    max-width: 300px;
     height: auto;
     display: block;
 }
@@ -134,11 +141,11 @@ body {
 .hero__center {
     display: flex;
     flex-direction: column;
-    gap: 206px;
+    gap: 10.5vw;
 }
 
 .hero__subtitle {
-    font-size: 40px;
+    font-size: 2.1vw;
     font-weight: 300;
     margin: 0;
 }
@@ -152,16 +159,16 @@ body {
 /* Правая колонка — описание */
 .hero__title {
     line-height: 110%;
-    font-size: 40px;
+    font-size: 2.1vw;
     font-weight: 300;
-    margin: 0 0 20px;
+    margin: 0 0 1.1vw;
 
 }
 
 .hero__desc {
     line-height: 110%;
-    margin: 0 0 12px;
-    font-size: 20px;
+    margin: 0 0 0.7vw;
+    font-size: 1vw;
 
 }
 
@@ -170,8 +177,8 @@ body {
 }
 
 .hero__program_title {
-    margin: 24px 0 12px;
-    font-size: 40px;
+    margin: 1.2vw 0 0.6vw;
+    font-size:  2.1vw;
     font-weight: 300;
 }
 
@@ -180,10 +187,12 @@ body {
     margin: 0;
     padding-left: 20px;
     list-style: disc;
-    font-size: 20px;
-
+    font-size: 1vw;
 }
-
+.hero__right{
+    display: flex;
+    flex-direction: column;
+}
 
 /* ============= СПИКЕРЫ ============= */
 .speakers {
@@ -843,10 +852,31 @@ body {
 @media (min-width:768px) and (max-width:1024px){
 
     /* Общий контейнер — от 720px до 100% */
+
+    .container{
+        min-width: 36vw;
+        width: 100%;
+        background-position: center;
+        width: calc(100% - 40px);
+    }
+    .hero__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: clamp(30px, 5vw, 40px);
+        align-items: start;
+    }
     .school{
         max-width: min(100%, 1024px);
 
         margin: 0 auto;
+    }
+    .hero__center{
+        gap: 17.5vw;
+    }
+
+    .hero{
+        padding: 40px 0 0;
     }
 
     /* Заголовки секций */
@@ -881,11 +911,9 @@ body {
         max-width: 77%;
     }
     .hero__logo{
-        margin: -80px 0 0;
+        margin: -42px 0 0;
     }
-    .hero__center{
-        gap: clamp(18px, 3vw, 24px);
-    }
+
     .hero__right{
         grid-column: 1/3;
     }
