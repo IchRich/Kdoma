@@ -282,10 +282,11 @@
            <div class="register__grid">
                <div class="register__info">
                    <h3>Стоимость участия</h3>
-                   <p class="price">Единовременный платеж<br><strong>45 000 руб.</strong></p>
-                   <p class="price">Рассрочка на 5 месяцев<br><strong>10 000 руб./мес.</strong></p>
+                   <div class="prices-grid">
+                       <p class="price">Единовременный платеж<br>45 000 руб.</p>
+                       <p class="price">Рассрочка на 5 месяцев<br>10 000 руб./мес.</p>
+                   </div>
                </div>
-
                <form class="register__form">
                    <h2 class="section__title">Оставьте заявку и мы с вами свяжемся</h2>
                    <div class="form__row">
@@ -294,7 +295,7 @@
                    </div>
                    <div class="form__row_second">
                        <input type="email" name="email" placeholder="E-mail" required>
-                       <textarea name="message" placeholder="Сообщение" rows="3"></textarea>
+                       <input name="message" placeholder="Сообщение" rows="3">
                    </div>
                    <div class="form__row_thirdy">
                        <label class="checkbox">
@@ -394,9 +395,13 @@
            <div class="contacts__grid">
                <ul class="contacts__list">
                    <li class="contact__item">
-                       <img src="Assets/image/PhoneLogo.svg" alt="" class="contact__icon">
                        <div class="contact__row">
-                           <span class="contact__label">Телефон</span>
+                           <div class="contact__info">
+                               <img src="Assets/image/PhoneLogo.svg" alt="" class="contact__icon">
+                               <span class="contact__label">Телефон</span>
+
+
+                           </div>
                            <div class="contact__data">
                                <a href="tel:+74012677706">+7 (4012) 67 77 06</a>,<br>
                                <a href="tel:+79097889665">+7 909 788 96 65</a>
@@ -405,9 +410,12 @@
                    </li>
 
                    <li class="contact__item">
-                       <img src="Assets/image/AdressLogo.svg" alt="" class="contact__icon">
                        <div class="contact__row">
-                           <span class="contact__label">Адрес</span>
+                           <div class="contact__info">
+                               <img src="Assets/image/AdressLogo.svg" alt="" class="contact__icon">
+                               <span class="contact__label">Адрес</span>
+
+                           </div>
                            <div class="contact__data">
                                г. Калининград,<br>
                                ул. Рокоссовского,<br>
@@ -417,9 +425,13 @@
                    </li>
 
                    <li class="contact__item">
-                       <img src="Assets/image/EmailLogo.svg" alt="" class="contact__icon">
                        <div class="contact__row">
-                           <span class="contact__label">E-mail</span>
+                           <div class="contact__info">
+                               <img src="Assets/image/EmailLogo.svg" alt="" class="contact__icon">
+
+                               <span class="contact__label">E-mail</span>
+
+                           </div>
                            <div class="contact__data">
                                <a href="mailto:stupeni@kdoma.ru">stupeni@kdoma.ru</a>
                            </div>
@@ -427,9 +439,11 @@
                    </li>
 
                    <li class="contact__item">
-                       <img src="Assets/image/TgLogo.png" alt="" class="contact__icon">
                        <div class="contact__row">
-                           <span class="contact__label">Telegram</span>
+                           <div class="contact__info">
+                               <img src="Assets/image/TgLogo.png" alt="" class="contact__icon">
+                               <span class="contact__label">Telegram</span>
+                           </div>
                            <div class="contact__data">
                                <a href="https://t.me/stupeni" target="_blank">@stupeni</a>
                            </div>
@@ -437,9 +451,12 @@
                    </li>
 
                    <li class="contact__item">
-                       <img src="Assets/image/VkLogo.png" alt="" class="contact__icon">
                        <div class="contact__row">
-                           <span class="contact__label">Вконтакте</span>
+                           <div class="contact__info">
+                               <img src="Assets/image/VkLogo.png" alt="" class="contact__icon">
+                               <span class="contact__label">Вконтакте</span>
+
+                           </div>
                            <div class="contact__data">
                                <a href="https://vk.com/stupeni" target="_blank">@stupeni</a>
                            </div>

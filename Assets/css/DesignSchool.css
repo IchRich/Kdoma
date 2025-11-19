@@ -44,9 +44,9 @@ body {
 
 /* Общие заголовки секций */
 .section__title {
-    font-size: 50px;
+    font-size: 2.7vw;
     font-weight: 300;
-    margin: 0 0 40px;
+    margin: 0 0 2.7vw;
     line-height: 1.1;
 }
 
@@ -56,7 +56,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    height: 50px;
+    height: 3.2vw;
     padding: 0 24px;
     font-size: 1vw;
     font-weight: 300;
@@ -69,10 +69,12 @@ body {
 }
 
 .btn__icon {
-    width: 20px;
-    height: 20px;
+    width: 2.1vw;
+    height: 2.1vw;
 }
-
+.contact__info{
+    display: flex;
+}
 .btn--primary {
     background: var(--primary);
     color: #fff;
@@ -113,7 +115,7 @@ body {
 
 /* ============= ГЕРОЙ-СЕКЦИЯ ============= */
 .hero {
-    padding: 40px 0 80px;
+    padding: 2.1vw 0 6.4vw;
 }
 .hero__header {
     font-size: 70px;
@@ -127,13 +129,14 @@ body {
 
 }
 .hero__logo{
-    margin: 38px 0 0;
+    /*margin: 38px 0 0;*/
+    margin: auto 0;
+
 }
 /* Левая колонка — логотип */
 .hero__logo img {
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
+    width: 16.2vw;
+    height: 20.5vw;
     display: block;
 }
 
@@ -153,7 +156,7 @@ body {
 .hero__actions {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 0.7vw;
 }
 
 /* Правая колонка — описание */
@@ -196,7 +199,7 @@ body {
 
 /* ============= СПИКЕРЫ ============= */
 .speakers {
-    padding: 60px 0;
+    padding-bottom: 60px;
 }
 
 .speakers__slider {
@@ -206,81 +209,82 @@ body {
 .speakers__track {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    gap:2.9vw;
 }
 
 
 .speaker img {
 
-    height: auto;
+    width: 20.2vw;
+    height: 21.8vw;
     object-fit: cover;
     display: block;
 
 }
 
 .speaker__name {
-    margin: 12px 0 4px;
-    font-size: 30px;
+    margin: 0.6vw 0 0.2vw;
+    font-size: 1.6vw;
     font-weight: 400;
 }
 
 .speaker__role {
     margin: 0;
-    font-size: 20px;
+    font-size: 1vw;
     color: black;
     line-height: 1.4;
 }
 
 /* ============= ФОРМА РЕГИСТРАЦИИ ============= */
 .register {
-    padding: 50px 60px;
+    padding: 2.7vw 3.1vw;
     background: var(--bg-light);
+    margin: 3.1vw 0;
 
-    margin: 60px 0;
 }
 
 .register__grid {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 60px;
+    grid-template-columns: 18.5vw 1fr;
+    gap: 3.1vw;
 }
 
 .register__info h3 {
-    margin: 0 0 20px;
-    font-size: 30px;
+    margin: 0 0 1.1vw;
+    font-size: 1.6vw;
     font-weight: 400;
 }
 
 .price {
     font-weight: 400;
-    margin: 0 0 16px;
-    font-size: 24px;
+    margin: 0 0 0.8vw;
+    font-size: 1.2vw;
     line-height: 1.5;
 }
 
 .price strong {
     display: block;
-    font-size: 30px;
+    font-size: 1.6vw;
     color: var(--text);
-    margin-top: 4px;
+    margin-top: 0.2vw;
 }
 
 .register__form {
     display: grid;
-    gap: 18px;
+    gap: 0.9vw;
 }
 
 .register__form .section__title {
-    font-size: 32px;
-    margin: 0 0 20px;
+    font-size: 1.7vw;
+    margin: 0 0 1vw;
 }
 
 .register__form input,
 .register__form textarea {
-    height: 60px;
+    height: 3.2vw;
     width: 100%;
-    padding: 14px 16px;
-    font-size: 20px;
+    padding: 0.7vw 0.8vw;
+    font-size: 1vw;
 
 
     font-family: inherit;
@@ -289,40 +293,40 @@ body {
 .form__row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: 0.9vw;
 }
 .form__row_second {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: 0.9vw;
 }
 .checkbox {
     width: 64%;
-    margin-top: -10px;
+    margin-top: -0.5vw;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
-    font-size: 18px;
+    gap: 0.5vw;
+    font-size: 0.9vw;
     line-height: 1.4;
     font-weight: 300;
 }
 
 .checkbox input[type="checkbox"] {
     cursor: pointer;
-    width: 18px;
-    height: 18px;
-    margin-top: 3px;
+    width: 0.9vw;
+    height: 0.9vw;
+    margin-top: 0.2vw;
 }
 
 /* ============= ОТЗЫВЫ ============= */
 .reviews {
-    padding: 60px 0;
+    padding: 3vw 0;
 }
 
 .reviews__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px 40px;
+    gap: 1.7vw 2.1vw;
 }
 .form__row_thirdy{
 
@@ -343,7 +347,7 @@ body {
     border-color: #991515;
 }
 .review {
-    padding: 24px 24px 24px 30px;  /* увеличили левый паддинг под полоску */
+    padding: 1.2vw 1.2vw  1.2vw  1.6vw;  /* увеличили левый паддинг под полоску */
 
     border-left: 1px solid var(--text);  /* жирная левая полоска */
 
@@ -354,31 +358,31 @@ body {
 
 .review__author {
     margin: 0 0 4px;
-    font-size: 30px;
+    font-size: 1.6vw;
     font-weight: 400;
 }
 
 .review__date {
-    margin: 0 0 14px;
-    font-size: 16px;
+    margin: 0 0 0.7vw;
+    font-size: 0.8vw;
     color: black;
 }
 
 .review__text {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.2vw;
 
 }
 
 /* ============= АРХИВ ВОРКШОПОВ ============= */
 .archive {
-    padding: 60px 0;
+    padding: 3.1vw 0;
 }
 
 .archive__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    gap: 1.7vw;
 }
 
 .workshop {
@@ -387,34 +391,35 @@ body {
 }
 
 .workshop img {
-    height: 581px;
+    height: 30.5vw;
+    width: 100%;
     object-fit: cover;
     display: block;
 
 }
 
 .workshop__title {
-    margin: 14px 0 6px;
-    font-size: 24px;
+    margin: 0.7vw 0 0.4vw;
+    font-size: 1.2vw;
     font-weight: 300;
     line-height: 1.4;
 }
 
 .workshop__date {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.2vw;
     color: black;
     font-weight: 300;
 }
 
 .archive__actions {
-    margin-top: 32px;
+    margin-top: 1.8vw;
     text-align: end;
 }
 
 .archive__actions .btn {
-    width: 412px;
-    height: 60px;
+    width: 21.5vw;
+    height: 3.1vw;
 }
 
 .btn--outline:hover img {
@@ -424,12 +429,12 @@ body {
 }
 /* ============= КОНТАКТЫ ============= */
 .contacts{
-    padding: 60px 0;
+    padding: 3.1vw 0;
 }
 .contacts__grid{
     display: grid;
-    grid-template-columns: 450px 1fr;
-    gap: 60px;
+    grid-template-columns: 23.5vw 1fr;
+    gap: 3.2vw;
 }
 
 /* Список контактов */
@@ -438,23 +443,23 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 16px;
+    gap: 0.8vw;
 }
 
 /* Отдельный контакт-блок */
 .contact__item{
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    padding: 18px 20px;
+    gap:  0.8vw;
+    padding: 0.9vw 1vw;
     background: var(--bg-light);
 
 }
 
 .contact__icon{
-    margin-top: 5px;
-    width: 21px;
-    height: 24px;
+    margin-top:0.3vw;
+    width: 1.1vw;
+    height: 1.2vw;
     flex-shrink: 0;
     display: block;
 }
@@ -463,21 +468,21 @@ body {
 .contact__row{
     flex: 1;
     display: flex;
-    gap: 40px;
+    gap: 2.1vw;
     align-items: flex-start;
 }
 
 .contact__label{
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.2vw;
     color: black;
     white-space: nowrap;
-    min-width: 120px;
+    min-width: 6.2vw;
 }
 
 .contact__data{
     flex: 1;
-    font-size: 20px;
+    font-size: 1vw;
     line-height: 1.5;
     color: var(--text);
     font-weight: 300;
@@ -528,22 +533,22 @@ body {
 
     /* Заголовки секций */
     .section__title{
-        font-size: clamp(25px, 5.5vw, 30px);
+        font-size: 6.5vw;
         font-weight: 300;
-        margin: 0 0 clamp(16px, 4vw, 24px);
+        margin: 0 0 5.5vw;
         line-height: 1.1;
     }
 
     /* Кнопки */
     .btn{
-        height: clamp(40px, 10vw, 48px);
-        font-size: clamp(16px, 3.2vw, 16px);
-        padding: 0 clamp(14px, 3.5vw, 20px);
+        height: 11vw;
+        font-size: 4.3vw;
+        padding: 0 16vw;
     }
 
     /* ===== ГЕРОЙ-СЕКЦИЯ ===== */
     .hero{
-        padding: clamp(24px, 6vw, 40px) 0;
+        padding: 16vw 0;
     }
     .hero__header{
         font-size: clamp(30px, 5.5vw, 40px);
@@ -553,50 +558,56 @@ body {
         text-align: center;
     }
     .hero__logo img{
-        max-width: clamp(180px, 45vw, 240px);
+        width: 43vw;
+        height: 55vw;
         margin: 0 auto;
     }
     .hero__grid{
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 4vw, 24px);
+        gap: 5.5vw;
     }
 
     /* Центральная колонка */
     .hero__center{
         width: 100%;
-        gap: clamp(12px, 3vw, 18px);
+        gap: 5.5vw;
     }
     .hero__subtitle{
-        font-size: clamp(24px, 5vw, 26px);
+        font-size: 6.5vw;
         text-align: start;
     }
+    .btn__icon{
+        height:6.5vw;
+        width:6.5vw;
+    }
+
     .hero__actions{
-        gap: clamp(8px, 2vw, 12px);
+        gap: 2.5vw;
     }
 
     /* Правая колонка */
     .hero__title{
-        font-size: clamp(24px, 5vw, 28px);
-        margin: 0 0 clamp(12px, 3vw, 16px);
+        font-size: 6.5vw;
+        margin: 0 0 4vw;
     }
     .hero__desc{
-        font-size: clamp(16px, 3.5vw, 17px);
-        margin: 0 0 clamp(8px, 2vw, 12px);
+        font-size: 4.5vw;
+        margin: 0 0 3vw;
     }
     .hero__program_title{
-        font-size: clamp(24px, 5vw, 26px);
-        margin: clamp(14px, 3.5vw, 20px) 0 clamp(6px, 1.5vw, 10px);
+        font-size: 6.5vw;
+        margin: 8vw 0 4vw;
     }
     .hero__program_list{
-        font-size: clamp(16px, 3.5vw, 17px);
+        font-size: 4.5vw;
         line-height: 1.6;
     }
 
     /* ===== МОБИЛЬНЫЙ СЛАЙДЕР СПИКЕРОВ ===== */
     .mobile_speakers{
         display: block;
-        padding: clamp(32px, 8vw, 50px) 0;
+        padding:  0;
         position: relative;
         overflow: hidden;
     }
@@ -608,10 +619,10 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: clamp(16px, 4vw, 24px);
+        margin-bottom: 4.5vw;
     }
     .mobile_speakers__header .section__title{
-        font-size: clamp(24px, 6vw, 30px);
+        font-size:6.5vw;
         margin: 0;
     }
 
@@ -655,13 +666,13 @@ body {
         display: block;
     }
     .mobile_speaker__name{
-        font-size: clamp(20px, 4.5vw, 22px);
+        font-size: 5.5vw;
         font-weight: 400;
-        margin: clamp(10px, 2.5vw, 14px) 0 clamp(3px, 0.8vw, 6px);
+        margin: 2.5vw 0 0;
     }
     .mobile_speaker__role{
         font-weight: 300;
-        font-size: clamp(16px, 3.5vw, 17px);
+        font-size: 4.5vw;
         color: black;
         margin: 0;
         line-height: 1.4;
@@ -669,8 +680,8 @@ body {
 
     /* ===== ФОРМА РЕГИСТРАЦИИ ===== */
     .register{
-        padding: clamp(20px, 5vw, 28px) clamp(12px, 3vw, 18px);
-        margin: clamp(32px, 8vw, 50px) 0;
+        padding: 2.5vw ;
+        margin: 13.5vw 0 16vw;
     }
     .register__grid{
         display: flex;
@@ -678,31 +689,35 @@ body {
         gap: clamp(16px, 4vw, 24px);
     }
     .register__info h3{
-        font-size: clamp(20px, 4.5vw, 24px);
-        margin: 0 0 clamp(12px, 3vw, 16px);
+        font-size: 5.5vw;
+        margin: 0 0 5.5vw;
     }
     .price{
-        font-size: clamp(18px, 4vw, 20px);
-        margin: 0 0 clamp(10px, 2.5vw, 14px);
+        font-size: 5vw;
+        margin: 0 0 4vw;
     }
     .price strong{
         font-size: clamp(18px, 4.5vw, 22px);
     }
 
     .register__form .section__title{
-        font-size: clamp(18px, 4.5vw, 24px);
+        font-size: 5.5vw;
         font-weight: 400;
-        margin: 0 0 clamp(14px, 3.5vw, 20px);
+        margin: 0 0 5.5vw;
     }
     .register__form input,
     .register__form textarea{
-        height: clamp(38px, 9.5vw, 44px);
-        padding: clamp(10px, 2.5vw, 14px);
-        font-size: clamp(13px, 3.2vw, 16px);
+        height: 10.5vw;
+        padding: 5.5vw;
+        font-size: 4.5vw;
+    }
+    .checkbox input[type="checkbox"]{
+        width: 5vw;
+        height: 5vw;
     }
     .form__row{
         grid-template-columns: 1fr;
-        gap: clamp(10px, 2.5vw, 14px);
+        gap: 2.5vw;
     }
     .checkbox{
         width: 100%;
@@ -713,6 +728,7 @@ body {
     .form__row_second{
         display: flex;
         flex-direction: column;
+        gap: 2.5vw;
 
     }
     .form__row_thirdy{
@@ -722,7 +738,8 @@ body {
         flex-direction: column;
     }
     .checkbox{
-        font-size: clamp(14px, 3.5vw, 16px);
+        font-size: 4.5vw;
+        margin-top: 3vw;
     }
     .checkbox input[type="checkbox"]{
         margin-top: 0;
@@ -730,16 +747,16 @@ body {
 
     /* ===== ОТЗЫВЫ (ТОЛЬКО ПЕРВЫЕ 2) ===== */
     .reviews{
-        padding: clamp(32px, 8vw, 50px) 0;
+        padding:  0;
     }
     .reviews__grid{
         display: flex;
         flex-direction: column;
-        gap: clamp(14px, 3.5vw, 20px);
+        gap:5.5vw;
     }
 
     .review{
-        padding: clamp(14px, 3.5vw, 18px) clamp(14px, 3.5vw, 18px) clamp(14px, 3.5vw, 18px) clamp(18px, 4.5vw, 24px);
+        padding: 0 0 0 4vw;
         border-left: 1px solid var(--text);
     }
     .review:nth-child(n+3){
@@ -747,26 +764,26 @@ body {
     }
 
     .review__author{
-        font-size: clamp(20px, 4.5vw, 22px);
+        font-size: 6vw;
     }
     .review__date{
-        font-size: clamp(16px, 3.5vw, 17px);
-        margin: 0 0 clamp(8px, 2vw, 12px);
+        font-size: 4.5vw;
+        margin: 0 0 5.5vw;
     }
     .review__text{
-        font-size: clamp(18px, 4vw, 19px);
+        font-size: 5vw;
         line-height: 1.5;
     }
 
     /* ===== АРХИВ ВОРКШОПОВ ===== */
     .archive{
-        padding: clamp(32px, 8vw, 50px) 0;
+        padding: 16vw 0;
     }
 
     .archive__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(8px, 2vw, 12px);
+        gap: 5.5vw;
     }
 
     .workshop:nth-child(1),
@@ -775,8 +792,8 @@ body {
     }
     .workshop:nth-child(1) img,
     .workshop:nth-child(2) img{
-        width: 100%;
-        height: clamp(200px, 50vw, 240px);
+        width: 40vw;
+        height: 59vw;
         aspect-ratio: 150 / 222;
         object-fit: cover;
     }
@@ -786,50 +803,53 @@ body {
     }
     .workshop:nth-child(3) img{
         width: 100%;
-        height: clamp(180px, 45vw, 230px);
+        height: 81vw;
         aspect-ratio: 320 / 220;
         object-fit: cover;
     }
 
     .workshop__title{
-        font-size: clamp(16px, 3.5vw, 17px);
-        margin: clamp(6px, 1.5vw, 10px) 0 0;
+        font-size: 4.5vw;
+        margin: 3vw 0 0;
         line-height: 1.3;
     }
     .workshop__date{
-        font-size: clamp(16px, 3.5vw, 17px);
+        font-size: 4.5vw;
     }
 
     .archive__actions{
-        margin-top: clamp(16px, 4vw, 24px);
+        margin-top: 5.5vw;
     }
     .archive__actions .btn{
-        font-size: clamp(16px, 3.5vw, 17px);
-        height: clamp(38px, 9.5vw, 44px);
+        font-size: 4.5vw;
+        height: 11vw;
         width: 100%;
     }
     .archive__actions .btn img{
-        width: clamp(12px, 3vw, 16px);
-        height: clamp(12px, 3vw, 16px);
+        width: 4vw;
+        height:  4vw;
     }
 
     /* ===== КОНТАКТЫ ===== */
     .contacts{
-        padding: clamp(32px, 8vw, 50px) 0;
+        padding:  0;
     }
     .contacts__grid{
         display: flex;
         flex-direction: column;
-        gap: clamp(16px, 4vw, 24px);
+        gap: 5.5vw;
     }
 
     .contact__item{
-        padding: clamp(0px, 3vw, 16px);
+        padding:3vw;
         gap: clamp(10px, 2.5vw, 14px);
     }
     .contact__icon{
-        width: clamp(22px, 5.5vw, 28px);
-        height: clamp(22px, 5.5vw, 28px);
+        width: 6.5vw;
+        height: 5.5vw;
+    }
+    .contact__info{
+        align-items: center;
     }
     .contact__row{
         flex-direction: column;
@@ -838,15 +858,15 @@ body {
     .contact__label{
         font-weight: 300;
         min-width: auto;
-        font-size: clamp(20px, 3.5vw, 17px);
+        font-size: 6vw;
     }
     .contact__data{
-        font-size: clamp(16px, 3.2vw, 16px);
+        font-size:4.5vw;
     }
 
     .contacts__map{
         width: 100%;
-        height: clamp(220px, 55vw, 280px);
+        height: 61.5vw;
     }
 }
 @media (min-width:768px) and (max-width:1024px){
@@ -882,17 +902,17 @@ body {
 
     /* Заголовки секций */
     .section__title{
-        font-size: clamp(36px, 5vw, 50px);
+        font-size: 5.2vw;
         font-weight: 300;
-        margin: 0 0 clamp(30px, 5vw, 40px);
+        margin: 0 0 4vw;
         line-height: 1.1;
     }
 
     /* Кнопки */
     .btn{
-        height: clamp(45px, 6vw, 50px);
-        font-size: clamp(16px, 1.8vw, 18px);
-        padding: 0 clamp(18px, 3vw, 24px);
+        height: 6vw;
+        font-size: 2vw;
+        padding: 1vw 9vw;
     }
 
     /* ===== ГЕРОЙ-СЕКЦИЯ ===== */
@@ -908,34 +928,34 @@ body {
         font-size: clamp(50px, 5vw, 55px);
     }
     .hero__logo img{
-        margin-left: 50px;
-        max-width: 77%;
+        width: 30vw;
+        height: 38vw;
     }
     .hero__logo{
-        margin: -42px 0 0;
+        margin: auto;
     }
 
     .hero__right{
         grid-column: 1/3;
     }
     .hero__subtitle{
-        font-size: clamp(30px, 3vw, 32px);
+        font-size: 4vw;
     }
     .hero__actions{
-        gap: clamp(10px, 1.5vw, 14px);
+        gap: 2.8vw;
     }
 
     .hero__title{
-        font-size: clamp(30px, 3.5vw, 35px);
-        margin: 0 0 clamp(16px, 2.5vw, 20px);
+        font-size: 4vw ;
+        margin: 0 0 2.5vw;
     }
     .hero__desc{
-        font-size: clamp(18px, 2vw, 20px);
-        margin: 0 0 clamp(10px, 1.5vw, 12px);
+        font-size: 2.3vw;
+        margin: 0 0 1.5vw;
     }
     .hero__program_title{
-        font-size: clamp(30px, 3vw, 35px);
-        margin: clamp(20px, 3vw, 24px) 0 clamp(10px, 1.5vw, 12px);
+        font-size: 4vw;
+        margin: 3vw 0  1.5vw;
     }
     .hero__program_list{
         font-size: clamp(18px, 2vw, 20px);
@@ -945,7 +965,7 @@ body {
     /* ===== ПЛАНШЕТНЫЙ СЛАЙДЕР СПИКЕРОВ (2 ФОТО) ===== */
     .tablet_speakers{
         display: block;
-        padding: clamp(50px, 8vw, 70px) 0;
+        padding: 8vw 0;
         position: relative;
         overflow: hidden;
     }
@@ -958,7 +978,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: clamp(24px, 4vw, 32px);
+        margin-bottom: 4vw;
     }
     .tablet_speakers__header .section__title{
         margin: 0;
@@ -966,11 +986,11 @@ body {
 
     .tablet_speakers__dots{
         display: flex;
-        gap: clamp(8px, 1.2vw, 12px);
+        gap:  1.2vw;
     }
     .tablet_speakers__dots .dot{
-        width: clamp(10px, 1.5vw, 14px);
-        height: clamp(10px, 1.5vw, 14px);
+        width:  1.5vw;
+        height:  1.5vw;
         border-radius: 50%;
         background: #ddd;
         cursor: pointer;
@@ -992,8 +1012,8 @@ body {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(20px, 3vw, 32px);
-        padding: 0 clamp(10px, 1.5vw, 16px);
+        gap:  3vw;
+        padding: 0 1.5vw;
         box-sizing: border-box;
     }
 
@@ -1001,20 +1021,19 @@ body {
         text-align: start;
     }
     .tablet_speaker img{
-        width: 100%;
-        height: clamp(250px, 35vw, 296px);
-        aspect-ratio: 354 / 296;
+        width: 46vw;
+        height: 38.5vw;
         object-fit: cover;
         display: block;
     }
     .tablet_speaker__name{
-        font-size: clamp(24px, 2.5vw, 26px);
+        font-size: 3vw;
         font-weight: 400;
-        margin: clamp(10px, 1.5vw, 14px) 0 clamp(4px, 0.6vw, 6px);
+        margin: 1.5vw 0 0.6vw;
     }
     .tablet_speaker__role{
         font-weight: 300;
-        font-size: clamp(18px, 2vw, 20px);
+        font-size:2.4vw;
         color: black;
         margin: 0;
         line-height: 110.00000000000001%;
@@ -1022,33 +1041,44 @@ body {
 
     /* ===== ФОРМА РЕГИСТРАЦИИ ===== */
     .register{
-        padding: clamp(20px, 2vw, 50px) clamp(20px, 2vw, 60px);
-        margin: clamp(50px, 8vw, 70px) 0;
+        padding: 2.8vw 2.8vw;
+        margin: 8vw 0;
     }
 
     /* Вертикальная раскладка: всё в одну колонку */
     .register__grid{
         display: flex;
         flex-direction: column;
-        gap: clamp(30px, 5vw, 40px);
+        gap: 6.8vw;
     }
 
     /* Блок стоимости: горизонтально две колонки */
-    .register__info{
-        display: grid;
-        gap: clamp(20px, 4vw, 30px);
+    .register__info {
+        display: block;
     }
-
     .register__info h3{
-        font-size: clamp(30px, 3.5vw, 35px);
-        margin: 0 0 clamp(16px, 3vw, 20px);
+        font-size: 4vw;
+        margin: 0;
+    }
+    .prices-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6vw;
+        margin-top:4vw;
+
+    }
+    .prices-grid p {
+        font-size: 3.2vw;
     }
 
+    .price {
+        margin: 0;
+    }
     /* Цены в одну строку */
     .register__pricing{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(30px, 5vw, 40px);
+        gap: 50px;
     }
 
     .price{
@@ -1067,9 +1097,9 @@ body {
 
     /* Форма */
     .register__form .section__title{
-        font-size: clamp(30px, 3vw, 35px);
+        font-size: 4vw;
         font-weight: 400;
-        margin: 0 0 clamp(18px, 3vw, 22px);
+
     }
     .register__form{
         display: grid;
@@ -1081,6 +1111,11 @@ body {
         font-size: clamp(18px, 1.8vw, 20px);
     }
 
+    .register__form input,
+    .register__form textarea {
+        height: 6vw;
+        width: 100%;
+    }
     .form__row{
         display: flex;
         flex-direction: row;
@@ -1103,7 +1138,7 @@ body {
     }
     .checkbox{
         margin-top: 0;
-        font-size: clamp(16px, 1.6vw, 18px);
+        font-size:2vw;
     }
 
     .checkbox input[type="checkbox"]{
@@ -1111,13 +1146,12 @@ body {
     }
 
     /* ===== ОТЗЫВЫ (2 КОЛОНКИ) ===== */
-    .reviews{
-        padding: clamp(50px, 8vw, 70px) 0;
-    }
+
+
     .reviews__grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(24px, 4vw, 32px) clamp(30px, 5vw, 40px);
+        gap: 4vw 5vw;
     }
 
     .review{
@@ -1128,42 +1162,43 @@ body {
     }
 
     .review__author{
-        font-size: clamp(24px, 2.5vw, 30px);
+        font-size: 3.2vw;
     }
     .review__date{
-        font-size: clamp(16px, 1.8vw, 18px);
-        margin: 0 0 clamp(12px, 2vw, 14px);
+        font-size: 2.4vw;
+        margin: 0 0 2.8vw;
     }
     .review__text{
-        font-size: clamp(18px, 2vw, 20px);
+        font-size: 2.4vw;
         line-height: 1.6;
     }
 
     /* ===== АРХИВ ВОРКШОПОВ (3 КОЛОНКИ) ===== */
     .archive{
-        padding: clamp(50px, 8vw, 70px) 0;
+        padding: 10.8vw 0;
     }
 
     .archive__grid{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: clamp(20px, 3vw, 32px);
+        grid-template-columns: 1fr 1.5fr 1fr;
+        gap: 2.8vw;
+        align-items: start;
     }
 
     .workshop img{
-
-        height: clamp(250px, 28vw, 400px);
+        width: 100%;
         object-fit: cover;
-
+        display: block;
     }
 
+
     .workshop__title{
-        font-size: clamp(18px, 2vw, 20px);
-        margin: clamp(10px, 1.5vw, 14px) 0 clamp(4px, 0.6vw, 6px);
+        font-size: 2.4vw;
+        margin: 1.5vw 0 0;
         line-height: 1.4;
     }
     .workshop__date{
-        font-size: clamp(18px, 1.8vw, 20px);
+        font-size: 2.4vw;
     }
 
     .archive__actions{
@@ -1177,17 +1212,17 @@ body {
     }
 
     /* ===== КОНТАКТЫ (2 КОЛОНКИ) ===== */
-    .contacts{
-        padding: clamp(50px, 8vw, 70px) 0;
-    }
+
     .contacts__grid{
         display: grid;
         grid-template-columns: clamp(350px, 42vw, 450px) 1fr;
-        gap: clamp(40px, 6vw, 60px);
+        gap: 2.7vw;
     }
 
     .contact__item{
-        padding: clamp(16px, 2.5vw, 18px) clamp(18px, 3vw, 20px);
+        padding: 2.8vw;
+        width: 354px;
+
         gap: clamp(12px, 2vw, 16px);
     }
     .contact__icon{
@@ -1204,13 +1239,14 @@ body {
         min-width: clamp(90px, 12vw, 100px);
     }
     .contact__data{
-        font-size: clamp(18px, 2vw, 20px);
+        font-size: 2.3vw;
+        display: flex;
     }
 
     .contacts__map{
-        height: clamp(380px, 50vw, 450px);
+        height:47vw;
     }
-}
 
+}
 
 
