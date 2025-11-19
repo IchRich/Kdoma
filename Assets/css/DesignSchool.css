@@ -1143,6 +1143,8 @@ body {
 
     .checkbox input[type="checkbox"]{
         margin-top: 0;
+        width: 2.5vw;
+        height: 2.5vw;
     }
 
     /* ===== ОТЗЫВЫ (2 КОЛОНКИ) ===== */
