@@ -98,7 +98,7 @@ img {
 
 /* Стрелки — узкие вертикальные плашки поверх фото, как на дизайне */
 .work_slider .nav {
-    height: 34.1vw;
+    height: 34vw;
     position: absolute;
     top: 0;
     bottom: 0;
