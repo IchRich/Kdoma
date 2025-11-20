@@ -195,6 +195,7 @@ body {
 .hero__right{
     display: flex;
     flex-direction: column;
+    gap: 0.2vw;
 }
 
 /* ============= СПИКЕРЫ ============= */
@@ -237,7 +238,7 @@ body {
 
 /* ============= ФОРМА РЕГИСТРАЦИИ ============= */
 .register {
-    padding: 2.7vw 3.1vw;
+    padding: 1vw;
     background: var(--bg-light);
     margin: 3.1vw 0;
 
@@ -253,11 +254,12 @@ body {
     margin: 0 0 1.1vw;
     font-size: 1.6vw;
     font-weight: 400;
+    line-height: 1;
 }
 
 .price {
     font-weight: 400;
-    margin: 0 0 0.8vw;
+    margin: 0 0 1.7vw;
     font-size: 1.2vw;
     line-height: 1.5;
 }
@@ -794,6 +796,7 @@ body {
     .workshop:nth-child(1),
     .workshop:nth-child(2){
         grid-column: span 1;
+        line-height: 4vw;
     }
     .workshop:nth-child(1) img,
     .workshop:nth-child(2) img{
@@ -805,6 +808,7 @@ body {
 
     .workshop:nth-child(3){
         grid-column: 1 / -1;
+        line-height: 4vw;
     }
     .workshop:nth-child(3) img{
         width: 100%;
@@ -1031,9 +1035,7 @@ body {
         text-align: start;
     }
     .tablet_speaker img{
-        width: 46vw;
-        height: 38.5vw;
-        object-fit: cover;
+        width: 100%;
         display: block;
     }
     .tablet_speaker__name{
