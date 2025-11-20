@@ -581,6 +581,7 @@ body {
     .hero__subtitle{
         font-size: 6.5vw;
         text-align: start;
+        line-height: 7vw;
     }
     .btn__icon{
         height:6.5vw;
@@ -663,7 +664,6 @@ body {
     }
     .mobile_speaker img{
         width: 100%;
-        max-width: clamp(320px, 70vw, 340px);
         margin: 0 auto;
         aspect-ratio: 3 / 4;
         object-fit: cover;
