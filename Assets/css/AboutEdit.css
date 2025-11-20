@@ -179,7 +179,7 @@ img {
     grid-template-columns:1fr 1fr;
     row-gap: 0.5vw;
     column-gap: 2.6vw;
-    margin-top: 2.7vw;
+    margin-top: 5.5vw;
 }
 
 .project__item {
@@ -188,17 +188,18 @@ img {
     gap: 5.5vw;
     background: var(--card);
     padding: 1.2vw 1vw;
+    height: 34.5vw;
 }
 
 .project__logo {
     flex: 0 0 6.2vw;
     display: flex;
-    align-items: center;
-    justify-content: center
+
 }
 .project__logo img {
-    width: 3.7vw;
-    height: 4.2vw;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
 }
 
 
@@ -271,11 +272,11 @@ img {
         line-height:1.1;
     }
     .project__logo img{
-        width:19vw;
-        height:23.9vw;
+        width:auto;
+        height:auto;
     }
     .project__logo{
-        flex: 0 0 19vw;
+        flex: 0 0 21vw;
 
     }
 }
@@ -322,8 +323,8 @@ img {
         margin-top: 4vw;
     }
     .project__logo img{
-        height: 70px;
-        width: 89px;
+        height: auto;
+        width: auto;
     }
     .project__logo{
         flex: 0 0 9.2vw;
