@@ -381,7 +381,7 @@ body {
 
 .archive__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(20.2vw, 1fr) 2fr minmax(20.2vw, 1fr);
     gap: 1.7vw;
 }
 
@@ -431,11 +431,11 @@ body {
 .contacts{
     padding: 3.1vw 0;
 }
-.contacts__grid{
-    display: grid;
-    grid-template-columns: 23.5vw 1fr;
-    gap: 3.2vw;
-}
+/*.contacts__grid{*/
+/*    display: grid;*/
+/*    grid-template-columns: 23.5vw 1fr;*/
+/*    gap: 3.2vw;*/
+/*}*/
 
 /* Список контактов */
 .contacts__list{
@@ -444,6 +444,8 @@ body {
     padding: 0;
     display: grid;
     gap: 0.8vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
 }
 
 /* Отдельный контакт-блок */
@@ -499,8 +501,6 @@ body {
 /* Карта */
 .contacts__map{
     width: 100%;
-    height: 500px;
-
     overflow: hidden;
 }
 .contacts__map iframe{
@@ -513,6 +513,10 @@ body {
 }
 .tablet_speakers{
     display: none;
+}
+.contacts__map{
+    grid-column: 2 / 2;
+    grid-row: 1 / 6;
 }
 
 
@@ -650,7 +654,6 @@ body {
     .mobile_speakers .work_slider__slide{
         flex: 0 0 100%;
         width: 100%;
-        padding: 0 clamp(8px, 2vw, 12px);
         box-sizing: border-box;
     }
 
@@ -832,18 +835,15 @@ body {
 
     /* ===== КОНТАКТЫ ===== */
     .contacts{
-        padding:  0;
+        padding: 8.1vw 0;
     }
-    .contacts__grid{
-        display: flex;
-        flex-direction: column;
-        gap: 5.5vw;
-    }
+    /*.contacts__grid{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    gap: 5.5vw;*/
+    /*}*/
 
-    .contact__item{
-        padding:3vw;
-        gap: clamp(10px, 2.5vw, 14px);
-    }
+
     .contact__icon{
         width: 6.5vw;
         height: 5.5vw;
@@ -867,6 +867,18 @@ body {
     .contacts__map{
         width: 100%;
         height: 61.5vw;
+    }
+    .contact__item{
+        padding:3vw;
+    }
+    .contacts__list{
+        grid-template-rows: 5fr;
+        grid-template-columns: 1fr;
+        gap: 2.8vw;
+    }
+    .contacts__map{
+        grid-column: 1/1;
+        grid-row: 6 / 6;
     }
 }
 @media (min-width:768px) and (max-width:1024px){
@@ -892,11 +904,7 @@ body {
         margin: 0 auto;
     }
     .hero__center{
-        gap: 17.5vw;
-    }
-
-    .hero{
-        padding: 40px 0 0;
+        gap: 7.3vw;
     }
 
 
@@ -907,6 +915,7 @@ body {
         margin: 0 0 4vw;
         line-height: 1.1;
     }
+
 
     /* Кнопки */
     .btn{
@@ -1013,7 +1022,6 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap:  3vw;
-        padding: 0 1.5vw;
         box-sizing: border-box;
     }
 
@@ -1157,7 +1165,7 @@ body {
     }
 
     .review{
-        padding: clamp(0px, 0vw, 0px) clamp(20px, 3vw, 24px) clamp(0px, 0vw, 0px) clamp(24px, 4vw, 30px);
+        padding: 0 0 0 3.5vw;
 
         border-left: clamp(1px, 0.5vw, 1px) solid var(--text);
 
@@ -1182,7 +1190,7 @@ body {
 
     .archive__grid{
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-columns: minmax(21.8vw, 1fr) 2fr minmax(21.8vw, 1fr);
         gap: 2.8vw;
         align-items: start;
     }
@@ -1215,17 +1223,20 @@ body {
 
     /* ===== КОНТАКТЫ (2 КОЛОНКИ) ===== */
 
-    .contacts__grid{
-        display: grid;
-        grid-template-columns: clamp(350px, 42vw, 450px) 1fr;
-        gap: 2.7vw;
-    }
+    /*.contacts__grid{*/
+    /*    display: grid;*/
+    /*    grid-template-columns: clamp(350px, 42vw, 450px) 1fr;*/
+    /*    gap: 2.7vw;*/
+    /*}*/
 
     .contact__item{
-        padding: 2.8vw;
-        width: 354px;
-
-        gap: clamp(12px, 2vw, 16px);
+        padding: 2.7vw;
+        width:100%;
+        gap: 2vw;
+        grid-column: 1/2;
+    }
+    .vk{
+        grid-column: 2/2;
     }
     .contact__icon{
         width: clamp(24px, 3.5vw, 28px);
@@ -1246,7 +1257,8 @@ body {
     }
 
     .contacts__map{
-        height:47vw;
+        grid-column: 2 / 2;
+        grid-row: 1 / 4;
     }
 
 }
