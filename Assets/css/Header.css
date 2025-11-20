@@ -7,6 +7,9 @@
   --muted: #444;
   --brand: rgba(173, 12, 12, 1);
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 html, body
 {
   overflow-x: hidden
