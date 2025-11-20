@@ -79,15 +79,14 @@ body{
 }
 .pd_btn:hover{ background:#111; color:#fff; }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .pd__container {
-        width: min(100%, 767px);
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 20px;
-        box-sizing: border-box;
+        width: 90%;
     }
-
+    #main-content
+    {
+        padding-top: 0;
+    }
     .pd_card__kitchen,
     .pd_card__aledo,
     .pd_card__relax_2 {
@@ -152,7 +151,7 @@ body{
 
     .pd_card__caption {
         margin: 8px 0 0;
-        font-size: 16px;
+        font-size: 4vw;
         line-height: 1.3;
     }
 
@@ -175,10 +174,8 @@ body{
     .pd_card__floor__dup{ display:none !important; }
 
     .pd__container{
-        width: min(100%, 1024px);
-        margin: 0 auto;
-        padding: 0 16px;
-        box-sizing: border-box;
+        width: calc(100% - 40px);
+        margin-inline: auto;
     }
 
 
@@ -216,7 +213,7 @@ body{
 
     .pd_card__caption{
         margin-top: 8px;
-        font-size: 18px;
+        font-size: 1.8vw;
         font-weight: 300;
     }
     .pd__title{
@@ -227,5 +224,10 @@ body{
         width: 354px;
         height: 45px;
         font-size: 16px;
+    }
+}
+@media (max-width: 460px) {
+    .pd__container {
+        width: 100%;
     }
 }
