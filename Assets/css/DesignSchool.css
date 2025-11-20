@@ -714,6 +714,7 @@ body {
         height: 10.5vw;
         padding: 5.5vw;
         font-size: 4.5vw;
+        margin-bottom: 1.5vw ;
     }
     .checkbox input[type="checkbox"]{
         width: 5vw;
@@ -721,7 +722,7 @@ body {
     }
     .form__row{
         grid-template-columns: 1fr;
-        gap: 2.5vw;
+        /*gap: 2.5vw;*/
     }
     .checkbox{
         width: 100%;
@@ -732,7 +733,7 @@ body {
     .form__row_second{
         display: flex;
         flex-direction: column;
-        gap: 2.5vw;
+        /*gap: 2.5vw;*/
 
     }
     .form__row_thirdy{
