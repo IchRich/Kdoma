@@ -74,6 +74,8 @@ body {
 }
 .contact__info{
     display: flex;
+    align-items: center;
+    gap: 0.55vw
 }
 .btn--primary {
     background: var(--primary);
@@ -123,14 +125,13 @@ body {
 }
 .hero__grid {
     display: grid;
-    grid-template-columns: 15.6vw 21vw 1fr; /* лого | центр | описание */
-    gap: 2.1vw  4.2vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--gap);
     align-items: start;
 
 }
 .hero__logo{
-    /*margin: 38px 0 0;*/
-    margin: auto 0;
+    margin: auto;
 
 }
 /* Левая колонка — логотип */
@@ -199,6 +200,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.2vw;
+    grid-column: 3 / 5;
 }
 
 /* ============= СПИКЕРЫ ============= */
@@ -257,14 +259,19 @@ body {
     margin: 0 0 1.1vw;
     font-size: 1.6vw;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .price {
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 1.7vw;
     font-size: 1.2vw;
     line-height: 1.5;
+}
+.price_count
+{
+    font-weight: 400;
+    font-size: 1.55vw;
 }
 
 .price strong {
@@ -371,13 +378,14 @@ body {
     margin: 0 0 0.7vw;
     font-size: 0.8vw;
     color: black;
+    font-weight: 300;
 }
 
 .review__text {
     margin: 0;
     font-size: 1.2vw;
     line-height: 1.1;
-
+    font-weight: 300;
 }
 
 /* ============= АРХИВ ВОРКШОПОВ ============= */
@@ -387,8 +395,8 @@ body {
 
 .archive__grid {
     display: grid;
-    grid-template-columns: minmax(20.2vw, 1fr) 2fr minmax(20.2vw, 1fr);
-    gap: 1.7vw;
+    grid-template-columns: minmax(20.2vw, 1fr) minmax(20.2vw, 1fr) 2fr;
+    gap: var(--gap);
 }
 
 .workshop {
@@ -451,7 +459,7 @@ body {
     padding: 0;
     display: grid;
     gap: 0.8vw;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 25% 1fr;
     grid-template-rows: 4fr;
 }
 
@@ -466,8 +474,7 @@ body {
 }
 
 .contact__icon{
-    margin-top:0.3vw;
-    width: 1.1vw;
+    width: 1.3vw;
     height: 1.2vw;
     flex-shrink: 0;
     display: block;
@@ -487,12 +494,13 @@ body {
     color: black;
     white-space: nowrap;
     min-width: 6.2vw;
+    line-height: 1.1;
 }
 
 .contact__data{
     flex: 1;
     font-size: 1vw;
-    line-height: 1.5;
+    line-height: 1.1;
     color: var(--text);
     font-weight: 300;
 }
@@ -533,7 +541,7 @@ body {
 /* ============= АДАПТИВ ============= */
 
 /* ============= МОБИЛЬНЫЙ АДАПТИВ 360–767 ============= */
-@media (min-width:360px) and (max-width:767px){
+@media (max-width:767px){
 
     /* Общий контейнер */
     .school{
@@ -559,7 +567,7 @@ body {
 
     /* ===== ГЕРОЙ-СЕКЦИЯ ===== */
     .hero{
-        padding: 16vw 0;
+        padding: 4vw 0 16vw 0;
     }
     .hero__header{
         font-size: clamp(30px, 5.5vw, 40px);
@@ -613,7 +621,7 @@ body {
     }
     .hero__program_list{
         font-size: 4.5vw;
-        line-height: 1.6;
+        line-height: 1.1;
     }
 
     /* ===== МОБИЛЬНЫЙ СЛАЙДЕР СПИКЕРОВ ===== */
@@ -690,8 +698,8 @@ body {
 
     /* ===== ФОРМА РЕГИСТРАЦИИ ===== */
     .register{
-        padding: 2.5vw ;
-        margin: 13.5vw 0 16vw;
+        padding: 2.8vw;
+        margin: 16vw 0 16vw;
     }
     .register__grid{
         display: flex;
@@ -703,8 +711,12 @@ body {
         margin: 0 0 5.5vw;
     }
     .price{
-        font-size: 5vw;
+        font-size: 4.4vw;
         margin: 0 0 4vw;
+    }
+    .price_count
+    {
+        font-size: 5vw;
     }
     .price strong{
         font-size: clamp(18px, 4.5vw, 22px);
@@ -753,7 +765,7 @@ body {
         margin-top: 3vw;
     }
     .checkbox input[type="checkbox"]{
-        margin-top: 0;
+        margin-top: 0.7vw;
     }
 
     /* ===== ОТЗЫВЫ (ТОЛЬКО ПЕРВЫЕ 2) ===== */
@@ -855,15 +867,15 @@ body {
 
 
     .contact__icon{
-        width: 6.5vw;
-        height: 5.5vw;
+        width: 7vw;
+        height: 6.8vw;
     }
     .contact__info{
-        align-items: center;
+        gap: 2.8vw;
     }
     .contact__row{
         flex-direction: column;
-        gap: clamp(3px, 0.8vw, 6px);
+        gap: 2.8vw;
     }
     .contact__label{
         font-weight: 300;
@@ -901,13 +913,7 @@ body {
         background-position: center;
         width: calc(100% - 40px);
     }
-    .hero__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: clamp(30px, 5vw, 40px);
-        align-items: start;
-    }
+
     .school{
         max-width: min(100%, 1024px);
 
@@ -936,10 +942,11 @@ body {
 
     /* ===== ГЕРОЙ-СЕКЦИЯ ===== */
 
-    .hero__grid{
+    .hero__grid {
         display: grid;
-
-        gap: clamp(30px, 5vw, 60px) clamp(50px, 8vw, 80px);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 4vw var(--gap);
         align-items: start;
     }
     .hero__header{
@@ -984,7 +991,7 @@ body {
     /* ===== ПЛАНШЕТНЫЙ СЛАЙДЕР СПИКЕРОВ (2 ФОТО) ===== */
     .tablet_speakers{
         display: block;
-        padding: 8vw 0;
+        padding: 5.2vw 0;
         position: relative;
         overflow: hidden;
     }
@@ -1058,7 +1065,7 @@ body {
     /* ===== ФОРМА РЕГИСТРАЦИИ ===== */
     .register{
         padding: 2.8vw 2.8vw;
-        margin: 8vw 0;
+        margin: 5.2vw 0;
     }
 
     /* Вертикальная раскладка: всё в одну колонку */
@@ -1085,6 +1092,11 @@ body {
     }
     .prices-grid p {
         font-size: 3.2vw;
+    }
+    .price_count
+    {
+        font-size: 3.2vw;
+        line-height: 1.1;
     }
 
     .price {
@@ -1164,7 +1176,10 @@ body {
     }
 
     /* ===== ОТЗЫВЫ (2 КОЛОНКИ) ===== */
-
+    .reviews
+    {
+        padding: 5.2vw 0;
+    }
 
     .reviews__grid{
         display: grid;
@@ -1174,7 +1189,6 @@ body {
 
     .review{
         padding: 0 0 0 3.5vw;
-
         border-left: clamp(1px, 0.5vw, 1px) solid var(--text);
 
     }
@@ -1190,15 +1204,18 @@ body {
         font-size: 2.4vw;
         line-height: 1.6;
     }
-
+    .contacts
+    {
+        padding: 5.2vw 0;
+    }
     /* ===== АРХИВ ВОРКШОПОВ (3 КОЛОНКИ) ===== */
     .archive{
-        padding: 10.8vw 0;
+        padding: 5.2vw 0;
     }
 
     .archive__grid{
         display: grid;
-        grid-template-columns: minmax(21.8vw, 1fr) 2fr minmax(21.8vw, 1fr);
+        grid-template-columns: minmax(21.8vw, 1fr) minmax(21.8vw, 1fr) 2fr;
         gap: 2.8vw;
         align-items: start;
     }
@@ -1225,8 +1242,8 @@ body {
 
     }
     .archive__actions .btn{
-        width: clamp(354px, 35vw, 320px);
-        height: clamp(45px, 4vw, 60px);
+        width: calc((100% - (var(--gap))) / 2);
+        height: 5.9vw;
     }
 
     /* ===== КОНТАКТЫ (2 КОЛОНКИ) ===== */
@@ -1237,6 +1254,10 @@ body {
     /*    gap: 2.7vw;*/
     /*}*/
 
+    .contacts__list
+    {
+        grid-template-columns: 1fr 1fr;
+    }
     .contact__item{
         padding: 2.7vw;
         width:100%;
@@ -1251,9 +1272,13 @@ body {
         height: clamp(24px, 3.5vw, 28px);
     }
     .contact__row{
-        gap: 0;
+        gap: 1.4vw;
         display: flex;
         flex-direction: column;
+    }
+    .contact__info
+    {
+        gap: 1.4vw;
     }
     .contact__label{
         font-size: clamp(20px, 2vw, 23px);
