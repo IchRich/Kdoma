@@ -401,6 +401,7 @@ main
   font-family: 'Geologica', serif;
   font-size: 2.6vw;
   margin-left: -0.26vw;
+  line-height: 1;
 }
 
 .breadcrumbs

@@ -115,7 +115,7 @@ body {
 
 /* ============= ГЕРОЙ-СЕКЦИЯ ============= */
 .hero {
-    padding: 2.1vw 0 6.4vw;
+    padding: 0 0 5.2vw;
 }
 .hero__header {
     font-size: 70px;
@@ -145,12 +145,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10.5vw;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .hero__subtitle {
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     font-weight: 300;
     margin: 0;
+    line-height: 1.1;
 }
 
 .hero__actions {
@@ -162,7 +165,7 @@ body {
 /* Правая колонка — описание */
 .hero__title {
     line-height: 110%;
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     font-weight: 300;
     margin: 0 0 1.1vw;
 
@@ -180,7 +183,7 @@ body {
 }
 
 .hero__program_title {
-    margin: 1.2vw 0 0.6vw;
+    margin: 1.6vw 0 0.6vw;
     font-size:  2.1vw;
     font-weight: 300;
 }
@@ -210,13 +213,13 @@ body {
 .speakers__track {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:2.9vw;
+    gap: var(--gap);
 }
 
 
 .speaker img {
 
-    width: 20.2vw;
+    width: 100%;
     height: 21.8vw;
     object-fit: cover;
     display: block;
@@ -287,9 +290,9 @@ body {
     width: 100%;
     padding: 0.7vw 0.8vw;
     font-size: 1vw;
-
-
     font-family: inherit;
+    background-color: var(--bg-light);
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .form__row {
@@ -349,7 +352,7 @@ body {
     border-color: #991515;
 }
 .review {
-    padding: 1.2vw 1.2vw  1.2vw  1.6vw;  /* увеличили левый паддинг под полоску */
+    padding: 0 1.2vw  0 1.6vw;  /* увеличили левый паддинг под полоску */
 
     border-left: 1px solid var(--text);  /* жирная левая полоска */
 
@@ -373,6 +376,7 @@ body {
 .review__text {
     margin: 0;
     font-size: 1.2vw;
+    line-height: 1.1;
 
 }
 
@@ -447,7 +451,7 @@ body {
     padding: 0;
     display: grid;
     gap: 0.8vw;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 1fr;
     grid-template-rows: 4fr;
 }
 

@@ -40,10 +40,6 @@ body {
 }
 
 
-.section__header {
-    padding-bottom: 12px;
-}
-
 .header {
     display: flex;
     align-items: flex-end;
@@ -69,7 +65,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5vw;
-    padding: 0.8vw 1.2vw;
+    padding: 0.8vw 0 0.8vw 1.2vw;
     border: none;
     background: #fff;
     cursor: pointer;
@@ -224,7 +220,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
-    margin-top: 2vw;
 }
 
 .card {
@@ -295,12 +290,12 @@ body {
 .catalog__more {
     display: flex;
     justify-content: flex-end;
-    margin-top: 3vw;
+    margin-top: 2.1vw;
     margin-bottom: 5.2vw;
 }
 
 .btn {
-    width: 32%;
+    width: calc(33% - (var(--gap)/2));
     height: 3.5vw;
     font-size: 1.1vw;
     font-weight: 300;
@@ -309,6 +304,7 @@ body {
     background: #fff;
     transition: all .2s ease;
     font-family: Geologica, Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .btn:hover {
@@ -379,6 +375,7 @@ body {
         border-radius: 6px;
         background: #fff;
         padding: 0 0 1vw 0;
+        margin-right: -0.8vw;
     }
     .page{
         padding-top: 0;
@@ -444,13 +441,17 @@ body {
 
     .catalog {
     grid-template-columns: 1fr;
-    gap: 3vw;
     margin-top: 4vw;
     }
 
     .card {
     min-height: 50vw;
     padding: 4vw;
+    }
+
+    .catalog .card:nth-of-type(n+4)
+    {
+        display: none;
     }
 
     .card__top {
@@ -478,14 +479,15 @@ body {
     }
 
     .catalog__more {
-    margin-top: 6vw;
+    margin-top: 5.6vw;
+    margin-bottom: 16.7vw;
     justify-content: center;
     }
 
     .btn {
     width: 100%;
-    height: 12vw;
-    font-size: 4vw;
+    height: 11vw;
+    font-size: 3.9vw;
     }
 
 
@@ -514,7 +516,7 @@ body {
     }
 
     .filter_trigger {
-    padding: 1.2vw 1.6vw;
+    padding: 1.2vw 0 1.2vw 1.6vw;
     gap: 0.8vw;
     }
 
@@ -537,13 +539,17 @@ body {
 
     .catalog {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3vw;
     margin-top: 3vw;
     }
 
     .card {
     min-height: 25vw;
     padding: 2.5vw;
+    }
+
+    .catalog .card:nth-of-type(n+7)
+    {
+        display: none;
     }
 
     .card__title {
@@ -559,7 +565,7 @@ body {
     }
 
     .btn {
-    width: 48%;
+    width: calc((100% - var(--gap)) /2);
     height: 5vw;
     font-size: 1.6vw;
     }
@@ -567,7 +573,8 @@ body {
 
 
     .catalog__more {
-    margin-bottom: 80px;
+    margin-bottom: 10.5vw;
+    margin-top: 4vw;
 
     }
     .title-min

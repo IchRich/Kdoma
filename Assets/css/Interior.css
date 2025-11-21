@@ -77,7 +77,8 @@ body {
 .actions {
   display: flex;
   justify-content: flex-end;
-  margin: 24px 0 40px;
+  margin-top: 2.1vw;
+  margin-bottom: 5.2vw;
 }
 
 .btn {
@@ -133,7 +134,7 @@ body {
   }
 
   .actions {
-    margin: 16px 0 28px;
+    margin: 5.5vw 0 16.7vw;
   }
 
   .btn {
@@ -143,11 +144,11 @@ body {
     font-size: 3.9vw;
   }
     .page{
-        padding-top: 0;
+        padding: 0;
     }
   .section{
       padding-top: 0;
-      padding-bottom: 3vw;
+      padding-bottom: 0;
   }
 
 }

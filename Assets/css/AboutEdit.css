@@ -51,7 +51,7 @@ img {
 
 .about__link {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 1.3vw;
     text-decoration: underline;
     color: inherit
 }
@@ -147,6 +147,7 @@ img {
     display: flex;
     gap: 8px;
     justify-content: center;
+    align-items: center;
     margin-top: 10px
 }
 
@@ -168,7 +169,7 @@ img {
 
 
 .projects {
-    margin: 1.9vw auto 4.2vw;
+    margin: 2.6vw auto 5.2vw;
 }
 
 .projects__list {
@@ -179,7 +180,7 @@ img {
     grid-template-columns:1fr 1fr;
     row-gap: 0.5vw;
     column-gap: 2.6vw;
-    margin-top: 5.5vw;
+    margin-top: 2.6vw;
 }
 
 .project__item {
@@ -187,8 +188,8 @@ img {
     align-items: center;
     gap: 5.5vw;
     background: var(--card);
-    padding: 1.2vw 1vw;
-    height: 34.5vw;
+    padding: 1vw;
+    height: 100%;
 }
 
 .project__logo {
@@ -264,7 +265,7 @@ img {
     .projects__list .project:nth-child(3){ margin-top: -2px; }
     .project__item{
         padding: 5.7vw 5.7vw;
-        gap:16px;
+        gap:5.6vw;
     }
 
     .project__text{
@@ -307,11 +308,11 @@ img {
         font-size:2.4vw;
         line-height:1.4;
     }
-    .about__text p{ margin:0 0 10px; }
+    .about__text p{ margin: 0 0 1.3vw;}
 
 
     .projects{
-        margin-top: 3vw;
+        margin-top: 10.5vw;
         margin-bottom: 10.5vw;
     }
     .projects__list{
@@ -333,7 +334,7 @@ img {
 
     .project{ margin:0; }
     .project__item{
-        gap:20px;
+        gap:2vw;
     }
     .project__text{
 
