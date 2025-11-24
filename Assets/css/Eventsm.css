@@ -5,7 +5,7 @@
 }
 :root {
     --gap: 1.6vw;
-    --gapm: 20px;
+    --gapm: 5.5vw;
     --edge: 0.57vw;}
 
 
@@ -39,13 +39,13 @@
 }
 .sectionimg img {
     width: 100%;
-    height: auto;
+    height: 29.5vw;
     object-fit: cover;
     cursor: pointer;
 }
 .sectionimgmini img{
     width: 100%;
-    height: auto;
+    height: 32vw;
     object-fit: cover;
     cursor: pointer;
 }
@@ -114,5 +114,7 @@
         height: 11vw;
         font-size: 3.9vw;
     }
-
+    .actions{
+        margin-top:5.5vw;
+    }
 }
