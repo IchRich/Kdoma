@@ -45,6 +45,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     gap: var(--gap);
+    flex-direction: row;
 }
 
 .header__title {
@@ -71,6 +72,7 @@ body {
     cursor: pointer;
     font-size: 1.1vw;
     transition: all .2s ease;
+    color: var(--text-main);
 }
 
 .filter_trigger:hover {
@@ -305,6 +307,7 @@ body {
     transition: all .2s ease;
     font-family: Geologica, Arial, sans-serif;
     text-transform: uppercase;
+    color: var(--text-main);
 }
 
 .btn:hover {

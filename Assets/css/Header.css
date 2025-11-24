@@ -21,7 +21,7 @@ img {
 }
 main
 {
-  margin-top: 5.2vw;
+  margin-top: 4.95vw;
 }
 .site_header {
   position: fixed;
@@ -406,7 +406,10 @@ main
 
 .breadcrumbs
 {
-  margin-bottom: 1.7vw;
+    display: flex;
+    margin-bottom: 1.7vw;
+    gap: 1vw;
+    flex-direction: column;
 }
 
 /* === Адаптив: на планшет/мобилка === */
@@ -414,10 +417,6 @@ main
     .main_nav ul
     {
       gap: 1.2vw;
-    }
-    main
-    {
-      margin-top: 6.2vw;
     }
 }
 
@@ -552,6 +551,7 @@ main
   .breadcrumbs
   {
     padding-bottom: 3vw;
+    gap:0;
   }
 
 }
@@ -595,7 +595,7 @@ main
     .site_footer__brand     { grid-column: 1 / span 2; } */
     main
     {
-      margin-top: 8.5vw;
+      margin-top: 7.8vw;
     }
     .header_inner {
         gap: 1.5%;
@@ -621,7 +621,6 @@ main
     .title-min {
         font-size: 1.35vw;
         gap: 0.4vw;
-        margin-top: 7vw;
         margin-left: -0.10vw;
     }
 

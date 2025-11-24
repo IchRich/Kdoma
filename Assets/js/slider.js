@@ -14,7 +14,7 @@ function initSlider(root) {
     let startX = 0, currentX = 0, touching = false;
 
     const update = () => {
-        track.style.transform = `translateX(${-index * 100}%)`;
+        track.style.transform = `translateX(${-index * 105}%)`;
         dots.forEach((d, i) => d.classList.toggle('is_active', i === index));
     };
 
@@ -42,7 +42,7 @@ function initSlider(root) {
         if (!touching) return;
         currentX = e.touches[0].clientX - startX;
         const percent = currentX / root.clientWidth * 100;
-        track.style.transform = `translateX(${-(index * 100) + percent}%)`;
+        track.style.transform = `translateX(${-(index * 105) + percent}%)`;
     }, { passive: true });
 
     root.addEventListener('touchend', () => {

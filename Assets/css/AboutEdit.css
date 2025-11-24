@@ -152,19 +152,21 @@ img {
 }
 
 .slider__dots .dot {
-    width: 10px;
+    width: 12px;
     height: 12px;
     border-radius: 50%;
     border: 0;
     background: var(--muted);
-    cursor: pointer
+    cursor: pointer;
+    aspect-ratio: 1/1;
 }
 
 .slider__dots .dot.is_active {
     width: 15px;
     height: 15px;
     background: var(--accent);
-    box-shadow: 0 0 0 3px rgba(180, 0, 0, .12)
+    box-shadow: 0 0 0 3px rgba(180, 0, 0, .12);
+    aspect-ratio: 1/1;
 }
 
 
@@ -206,7 +208,7 @@ img {
 
 
 .project__text {
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-weight: 300;
 }
 
@@ -339,7 +341,7 @@ img {
     .project__text{
 
         font-size: 2.4vw;
-        line-height:1.3;
+        line-height:1.1;
     }
 
 
