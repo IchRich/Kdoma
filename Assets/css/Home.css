@@ -174,11 +174,11 @@ h2 {
   height: 100%;
 }
 .about_design_card.fig_1 img{
-  height: 30vw;
+  height: 36.5vw;
 }
 .about_design_card.fig_2 img,
 .about_design_card.fig_3 img{
-  height: 30vw;
+  height: 36.5vw;
 }
 
 .about_design_card figcaption{
@@ -377,7 +377,7 @@ h2 {
 .event_card__small{ flex: 0 0 23%; }
 .event_card__wide{ flex:1; }
 
-.event_card img{ width:100%; object-fit:cover; height:36.46vw; }
+.event_card img{ width:100%; object-fit:cover; height:36.5vw; }
 
 .event_card__small img{ aspect-ratio:389/292; }
 .event_card__wide img{ aspect-ratio:832/520; }
@@ -695,7 +695,7 @@ h2 {
   }
   .event_card__small{ grid-column:auto; width:100%; }
   .event_card__wide{ grid-column:1 / -1; order:3; width:100%; }
-  .event_card img{ height: 30vh; }
+  .event_card img{ height: 36.5vh; }
   .event_caption{ font-size:4vw; padding:2vw 0; }
 
   .events_footer{ width: 100%; }
@@ -746,7 +746,12 @@ h2 {
     padding: 0;
   }
 
-  .about_editorial__btn, .about_editorial__btn__red{ height:11vw; font-size:4vw; padding:0 6vw; }
+  .about_editorial__btn, .about_editorial__btn__red{
+    height:11vw;
+    font-size:4vw;
+    padding:0 6vw;
+    gap: 2vw;
+  }
 }
 
 /* ===== ПЛАНШЕТ 768-1024px ===== */

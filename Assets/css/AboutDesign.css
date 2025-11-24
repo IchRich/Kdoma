@@ -225,8 +225,8 @@ body{
     }
     .pd_btn{
         width: calc(50% - (var(--gap) / 2));
-        height: 5.9vw;
-        font-size: 2.1vw;
+        height: 5.2vw;
+        font-size: 1.85vw;
     }
 }
 @media (max-width: 460px) {

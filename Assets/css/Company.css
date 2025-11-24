@@ -71,6 +71,7 @@ body {
     cursor: pointer;
     font-size: 1.1vw;
     transition: all .2s ease;
+    color: var(--text-main);
 }
 
 .filter_trigger:hover {
