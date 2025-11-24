@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary: #AD0C0C;
+    --gap: 1.6vw;
+    --gapm: 5.5vw;
+    --edge: 0.57vw;
+    --text: 1vw;
+    --textmini: 2.4vw;
+    --textminim:4.9vw;
+    --textgrid: 1.25vw;
+    --textgridmini: 4.5vw;
+    --texttitel: 6.7vw;
+
+}
+body {
+    font-family: Geologica, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.5;
+}
+
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+.Design_Week{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.Design_Week_Project{
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(4, 1fr);
+}
+.Design_Week_Project_Grid{
+    width: 100%;
+    grid-column: 4 / 1;
+}
+
+.Design_Week_Project_Grid{
+    font-size: var(--text);
+    line-height: 110%;
+}
+
+.Design_Week_Project_Grid_Title{
+    font-weight: 200;
+    font-family: 'Geologica', serif;
+    font-size: 2.6vw;
+    line-height: 1;
+    margin-top: 3.6vw;
+    margin-bottom: 3.2vw;
+}
+.Design_Week p{
+    font-size: var(--text);
+    line-height: 110%;
+    margin: 0;
+    font-weight:300;
+
+}
+.Design_Week_Center{
+    display: flex;
+    flex-direction: column;
+    gap: 14vw;
+    height: 100%;
+    justify-content: space-between;
+}
+.Design_Week_Img {
+    height: 34.4vw;
+    width: 100%;
+    grid-column: 4 / 1;
+}
+.btn--primary {
+    background: var(--primary);
+    color: #fff;
+    border: 1px solid var(--primary);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 3.2vw;
+    width: 100%;
+    padding: 0 24px;
+    font-size: 1vw;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s
+    ease;
+    white-space: nowrap;
+    font-family: inherit;
+}
+.Archive_Of_Events_Grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    width: 100%;
+    overflow: hidden;
+    gap: var(--gap);
+}
+.Archive_Of_Events_Grid_Item p{
+    font-size: var(--textgrid);
+    line-height: 135%;
+}
+.Archive_Of_Events_Grid_Item img{
+    width: 100% ;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.1vw;
+    margin-bottom: 5.2vw;
+}
+.btn_Archive{
+    appearance: none;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: 300;
+    font-family: 'Geologica', serif;
+    width: calc((100% - (var(--gap) * 3)) / 4);
+    height: 3.1vw;
+    cursor: pointer;
+    transition: color 0.15s
+    ease, border-color 0.15s
+    ease, transform 0.05s
+    ease;
+    .Design_Week_Project_Grid_Text_Dop{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: calc(100% - 18px);
+        margin-inline: auto;
+    }
+    .btn_Archive {
+        width: calc(50% - (var(--gap) / 2));
+        height: 5.2vw;
+        font-size: 1.85vw;
+    }
+    .Design_Week{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .Design_Week_Img{
+        height: auto;
+    }
+    .Design_Week p{
+        font-size: var(--textmini);
+    }
+    .Design_Week_Center{
+        gap: 4vw;
+    }
+    .Design_Week_Button{
+        display: flex;
+        justify-content: end;
+    }
+    .Design_Week_Button a{
+        width: 46.3vw;
+        height: 6vw;
+        font-size: 2.2vw;
+    }
+    .Design_Week_Project{
+        grid-template-columns: 0;
+    }
+    .Design_Week_Project_Grid_Title{
+        font-size: var(--textgridmini);
+    }
+    .Design_Week_Project_Grid{
+        font-size: var(--textmini);
+    }
+    .Archive_Of_Events_Grid_Item p{
+        font-size: var(--textmini);
+        line-height: 110%;
+        margin: 2.5vw 0;
+    }
+    .Design_Week_Project_Grid_Text_Dop{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .container {
+        width: 96%;
+    }
+    .Design_Week{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Design_Week p{
+        font-size: var(--textminim);
+
+    }
+    .Design_Week_Center{
+        gap: var(--gapm);
+
+    }
+    .btn{
+        width: 100%;
+        min-width: 0;
+        height: 11vw;
+        font-size: 3.9vw;
+    }
+    .Design_Week_Img{
+        width: 100%;
+        height: auto;
+        grid-column: 4 / 1;
+    }
+    .Design_Week_Project{
+        grid-template-columns: 0;
+
+    }
+    .Archive_Of_Events_Grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Design_Week_Project_Grid{
+        font-size: var(--textgridmini);
+        font-weight: 300;
+
+    }
+    .Archive_Of_Events_Grid_Item p {
+        font-size: var(--textminim);
+        margin-top:2.5vw;
+    }
+    .Design_Week_Project_Grid_Text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 13;
+        overflow: hidden;
+
+    }
+
+    .btn_Archive{
+        width: 100%;
+        min-width: 0;
+        height: 11vw;
+        font-size: 3.9vw;
+    }
+    .Design_Week_Project_Grid_Title{
+        font-size: var(--texttitel);
+    }
+    .Design_Week_Project_Grid_Text_Dop{
+     color: var(--primary);
+
+    }
+}
