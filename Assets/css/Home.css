@@ -493,6 +493,10 @@ h2 {
 
 /* ===== МОБИЛЬНЫЙ <= 767px ===== */
 @media (max-width: 767px) {
+  .card:hover
+  {
+    transform: scale(1);
+  }
 
   :root{
     --container: 90%;
@@ -756,7 +760,10 @@ h2 {
 
 /* ===== ПЛАНШЕТ 768-1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
-
+  .card:hover
+  {
+    transform: scale(1);
+  }
   :root{
     --container: 85vw;
     --gap: 2.5vw;

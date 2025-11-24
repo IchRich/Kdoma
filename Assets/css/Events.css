@@ -164,6 +164,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--text-main);
+    text-transform: uppercase;
 }
 
 .btn_more:hover {
