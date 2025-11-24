@@ -137,9 +137,10 @@ body {
     ease, border-color 0.15s
     ease, transform 0.05s
     ease;
-    .Design_Week_Project_Grid_Text_Dop{
-        display: none;
-    }
+
+}
+.Design_Week_Project_Grid_Text_Dop{
+    display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
