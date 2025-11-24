@@ -84,6 +84,15 @@
     }
 }
 @media (max-width: 767px){
+    .title-min {
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+    .container{
+        width: 94%;
+    }
     .events_img{
         gap: var(--gapm);
     }
