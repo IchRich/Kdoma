@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --gap: 1.6vw;
+    --gapm: 20px;
+    --edge: 0.57vw;}
+
+
+.container {
+    width: 91%;
+    margin-inline: auto;
+}
+
+.section{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.events_img{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    gap: var(--gap);
+}
+.sectionimgmini article{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+}
+.sectionimg article{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+}
+.sectionimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+.sectionimgmini img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.1vw;
+    margin-bottom: 5.2vw;
+}
+
+.btn{
+        appearance: none;
+        border: 1px solid black;
+        background: none;
+        color: black;
+        font-size: 1vw;
+        font-weight: 300;
+        font-family: 'Geologica', serif;
+        width: calc((100% - (var(--gap) * 3)) / 4);
+        height: 3.1vw;
+        cursor: pointer;
+        transition: color 0.15s
+        ease, border-color 0.15s
+        ease, transform 0.05s
+        ease;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: calc(100% - 18px);
+        margin-inline: auto;
+    }
+    .btn {
+        width: calc(50% - (var(--gap) / 2));
+        height: 5.2vw;
+        font-size: 1.85vw;
+    }
+}
+@media (max-width: 767px){
+    .events_img{
+        gap: var(--gapm);
+    }
+    .sectionimgmini article {
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: var(--gapm) ;
+    }
+
+    .sectionimgmini img {
+        height: auto ;
+        width: 100% ;
+    }
+
+    .sectionimg article {
+        display: grid ;
+        gap: var(--gapm) ;
+    }
+
+    .sectionimg img {
+        width: 100% ;
+        height: auto;
+
+    }
+    .btn {
+        width: 100%;
+        min-width: 0;
+        height: 11vw;
+        font-size: 3.9vw;
+    }
+
+}
