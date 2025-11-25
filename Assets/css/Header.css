@@ -553,7 +553,12 @@ main
     padding-bottom: 3vw;
     gap:0;
   }
-
+    .title-min a{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
 }
 
 /* Мобильная адаптация */
