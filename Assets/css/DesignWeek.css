@@ -209,6 +209,7 @@ body {
     }
     .Design_Week_Center{
         gap: var(--gapm);
+        margin-top: 5.4vw;
 
     }
     .btn{
@@ -254,6 +255,8 @@ body {
     }
     .Design_Week_Project_Grid_Title{
         font-size: var(--texttitel);
+        margin-top: 16vw;
+        margin-bottom: 5.2vw;
     }
     .Design_Week_Project_Grid_Text_Dop{
      color: var(--primary);
