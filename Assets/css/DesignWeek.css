@@ -229,6 +229,7 @@ body {
     }
     .Archive_Of_Events_Grid{
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--gapm);
     }
     .Design_Week_Project_Grid{
         font-size: var(--textgridmini);
@@ -238,6 +239,8 @@ body {
     .Archive_Of_Events_Grid_Item p {
         font-size: var(--textminim);
         margin-top:2.5vw;
+        line-height: 110%;
+        margin-bottom: -1.3vw;
     }
     .Design_Week_Project_Grid_Text{
         display: -webkit-box;
