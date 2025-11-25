@@ -197,7 +197,7 @@ body {
 }
 @media (max-width: 767px){
     .container {
-        width: 96%;
+        width: 90%;
     }
     .Design_Week{
         display: flex;
