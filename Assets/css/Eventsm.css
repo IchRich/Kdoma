@@ -3,6 +3,14 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: Geologica, sans-serif;
+    color: var(--text);
+    background: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
 :root {
     --gap: 1.6vw;
     --gapm: 5.5vw;
@@ -84,7 +92,9 @@
 
 
     .container{
-        width: 94%;
+        width: 90%;
+        padding: 0;
+        padding-bottom: 8vw;
     }
 
     .event_img_mini img {
