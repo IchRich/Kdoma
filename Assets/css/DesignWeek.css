@@ -13,7 +13,7 @@
     --textminim:4.9vw;
     --textgrid: 1.25vw;
     --textgridmini: 4.5vw;
-    --texttitel: 6.7vw;
+    --texttitel: 8vw;
 
 }
 body {
@@ -254,7 +254,14 @@ body {
         width: 100%;
         min-width: 0;
         height: 11vw;
-        font-size: 3.9vw;
+        font-size: 4.3vw;
+    }
+    .btn {
+        font-size: 4.3vw;
+
+    }
+    .actions{
+        margin-top: 5.5vw;
     }
     .Design_Week_Project_Grid_Title{
         font-size: var(--texttitel);
