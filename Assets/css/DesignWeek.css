@@ -240,7 +240,7 @@ body {
         font-size: var(--textminim);
         margin-top:2.5vw;
         line-height: 110%;
-        margin-bottom: -1.3vw;
+        margin-bottom: -0.3vw;
     }
     .Design_Week_Project_Grid_Text{
         display: -webkit-box;
