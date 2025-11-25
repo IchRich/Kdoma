@@ -154,8 +154,7 @@ body {
         font-size: 1.85vw;
     }
     .Design_Week{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
 
     }
     .Design_Week_Img{
@@ -166,6 +165,7 @@ body {
     }
     .Design_Week_Center{
         gap: 4vw;
+        margin-top: 2.5vw;
     }
     .Design_Week_Button{
         display: flex;
