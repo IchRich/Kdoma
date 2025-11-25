@@ -263,6 +263,8 @@ body {
     }
     .Design_Week_Project_Grid_Text_Dop{
      color: var(--primary);
+        display: flex;
+        margin-top: -4vw;
 
     }
 }
