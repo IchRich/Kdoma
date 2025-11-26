@@ -30,6 +30,7 @@ html, body {
 }
 
 
+
 .Designers_Page_Grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);;
