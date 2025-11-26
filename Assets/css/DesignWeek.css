@@ -146,7 +146,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        width: calc(100% - 18px);
+        width: calc(100% - 40px);
         margin-inline: auto;
     }
     .btn_Archive {
@@ -173,7 +173,7 @@ body {
         justify-content: end;
     }
     .Design_Week_Button a{
-        width: 46.3vw;
+        width: calc(50% - (var(--gap) / 2));
         height: 6vw;
         font-size: 2.2vw;
     }

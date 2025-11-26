@@ -144,10 +144,11 @@ img {
 }
 
 .events__more {
-    margin-top: 3.1vw;
     text-align: end;
     width: 23%;
     margin-left: auto;
+    margin-top: 2.1vw;
+    margin-bottom: 5.2vw;
 }
 
 .btn_more {
@@ -190,7 +191,6 @@ img {
         width: 90%;
         padding: 0;
         max-width: 100%;
-        padding-bottom: 8vw;
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
@@ -259,7 +259,7 @@ img {
     }
 
     .events__more {
-        margin: 8px 0 24px;
+        margin: 5.5vw 0 16.7vw;
         text-align: center;
         width: 100%;
     }
