@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --container: 90%;
+    --gap: 2.3vw;
+    --edge: 0.57vw;
+    --text: #111;
+    --muted: #444;
+    --brand: rgba(173, 12, 12, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Geologica, Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.About_the_company_info{
+    display: flex;
+    align-items: center;
+}
+.About_the_company_info p {
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 110%;
+}
+.About_the_company_info_text {
+    margin-top: 0.5vw;
+    width: 34%;
+}
+.About_the_company_info img{
+    width: 33.5vw;
+    height: 13.5vw;
+    margin: 0 auto;
+}
+
+.Photo_Gallery{
+    margin-top: 5.2vw;
+}
+
+.Photo_Gallery_Grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    overflow: hidden;
+    gap: 1.6vw;
+    margin-top: 2.7vw;
+}
+.Photo_Gallery_Grid_Img_Big{
+    grid-column: span 2;
+}
+
+.Contacts{
+    margin-top: 5.2vw;
+    margin-bottom: 5.2vw;
+
+}
+.Contacts_Info{
+    margin-top: 2.7vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.6vw;
+}
+.Contacts_Info_Blok{
+    background-color:#F6F6F6 ;
+    padding: 0.6vw;
+}
+.Contacts_Info_Blok p {
+    color: #00000066;
+    margin: 0;
+}
+
+.contacts__map{
+    width: 100%;
+    overflow: hidden;
+}
+
+.Contacts_Info_Blok_Grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5vw;
+}
+.Contacts_Info_Blok_Grid_Box{
+    background-color: #E6E6E6 ;
+    padding: 1vw;
+}
+.Contacts_Info_Blok_Grid_Box_Text_Work_schedule{
+    display: flex;
+}
+.Contacts_Info_Blok_Grid_Box span{
+    font-size: 1vw;
+    color: #000;
+}
+.Contacts_Info_Blok_Grid_Box img{
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+.work-schedule-grid {
+    display: grid;
+    gap: 8px;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.schedule-flex{
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: calc(100% - 40px);
+        margin-inline: auto;
+    }
+
+    .About_the_company_info p{
+        font-size: 2.2vw;
+    }
+    .About_the_company_info p:nth-child(2) {
+        display: none;
+    }
+    .About_the_company_info_text{
+        width: 54%;
+    }
+    .About_the_company_info img{
+        width: 46vw;
+    }
+    .Contacts_Info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Contacts_Info_Blok_Grid_Box span{
+        font-size:2.4vw;
+        font-weight: 300;
+        line-height: 140%;
+    }
+    .Contacts_Info_Blok_Grid_Box img{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}
+
+@media (max-width: 767px){
+    .container {
+        padding: 0;
+        padding-bottom: 8vw;
+        width: 90%;
+    }
+    .About_the_company_info{
+        display: block;
+    }
+    .About_the_company_info_text{
+        width: 100%;
+    }
+    .About_the_company_info p{
+        font-size: 5vw;
+    }
+    .About_the_company_info img{
+        width: 81vw;
+        height: 29.5vw;
+    }
+    .Photo_Gallery_Grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Contacts_Info {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .Contacts_Info_Blok p{
+        font-size: 4.5vw;
+        font-weight: 300;
+        line-height: 110%;
+    }
+    .Contacts_Info_Blok{
+        padding: 3vw;
+    }
+    .Contacts_Info_Blok_Grid_Box span{
+        font-size:3vw;
+    }
+    .Contacts_Info_Blok_Grid_Box img{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .Contacts_Info_Blok_Grid_Box{
+        padding: 3vw;
+    }
+    .work-schedule-grid{
+        gap: 2vw;
+    }
+
+}
