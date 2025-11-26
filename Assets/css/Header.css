@@ -193,6 +193,11 @@ main
     align-items: center;
 }
 
+.mobile_drawer__head img
+{
+  width: auto;
+}
+
 .mobile_drawer__close {
     width: 36px;
     height: 36px;
