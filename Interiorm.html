@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Интерьеры — главная</title>
+    <script src="Assets/js/header.js" defer></script>
+    <link rel="stylesheet" href="Assets/css/Interiorm.css">
+    <link rel="stylesheet" href="Assets/css/Header.css" />
+</head>
+<body>
+<!-- Основной контент страницы без реального хедера/футера -->
+<header class="site_header">
+    <div class="header_inner">
+        <a class="logo" href="index.html" aria-label="Home">
+            <img src="Assets/image/LogoKD.svg" alt="Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" aria-hidden="true">
+        <label for="nav-toggle"
+               class="burger_btn"
+               aria-label="Открыть меню"
+               aria-controls="mobile_drawer"
+               aria-expanded="false">
+            <span></span>
+        </label>
+
+        <aside id="mobile_drawer" class="mobile_drawer" role="dialog" aria-modal="true" aria-label="Меню">
+            <div class="mobile_drawer__head">
+                <img src="Assets/image/SearchIcon.png" alt="">
+                <!-- <form class="mobile_search" role="search" action="/search">
+                    <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                </form> -->
+                <button type="button" class="mobile_drawer__close" aria-label="Закрыть меню"
+                        onclick="document.getElementById('nav-toggle').checked=false"></button>
+            </div>
+
+            <nav class="mobile_nav" aria-label="Основные разделы">
+                <ul class="mobile_nav__list">
+                    <li><a href="Interior.html">Интерьеры</a></li>
+                    <li><a href="Designers.html">Дизайнеры</a></li>
+                    <li><a href="Company.html">Компании</a></li>
+                    <li><a href="AboutDesign.html">Про дизайн</a></li>
+                    <li><a href="Events.html">События</a></li>
+                    <li><a href="AboutEdit.html">О редакции</a></li>
+                    <li><a class="accent" href="DesignSchool.html">Школа дизайна</a></li>
+                    <li><a class="accent" href="WeekDesign.html">Неделя дизайна</a></li>
+                    <li><a class="accent" href="Premia.html">Премия</a></li>
+                </ul>
+            </nav>
+
+            <!-- <section class="mobile_social" aria-label="Наши соцсети">
+                <h3>Наши соцсети</h3>
+                <ul>
+                    <li>
+                        <img src="Assets/image/vk.svg" alt="VK">
+                        <a href="#">ВКонтакте</a>
+                    </li>
+                    <li>
+                        <img src="Assets/image/TelegramLogo.svg">
+                        <a href="#">Telegram</a>
+                    </li>
+                </ul>
+            </section> -->
+        </aside>
+
+        <div class="mobile_overlay"></div>
+
+        <nav class="main_nav" aria-label="Главное меню">
+            <ul>
+                <li><a href="Interior.html">ИНТЕРЬЕРЫ</a></li>
+                <li><a href="Designers.html">ДИЗАЙНЕРЫ</a></li>
+                <li><a href="Company.html">КОМПАНИИ</a></li>
+                <li><a href="AboutDesign.html">ПРО ДИЗАЙН</a></li>
+                <li><a href="Events.html">СОБЫТИЯ</a></li>
+                <li><a href="AboutEdit.html" class="accent">О РЕДАКЦИИ</a></li>
+                <li><a class="accent" href="DesignSchool.html">ШКОЛА ДИЗАЙНА</a></li>
+                <li><a class="accent" href="DesignWeek.html">НЕДЕЛЯ ДИЗАЙНА</a></li>
+                <li><a class="accent" href="Premia.html">ПРЕМИЯ</a></li>
+            </ul>
+        </nav>
+
+        <div class="utils">
+            <a class="icon_btn" href="#" aria-label="VK">
+                <img src="Assets/image/vk.svg" alt="VK">
+            </a>
+            <a class="icon_btn" href="#" aria-label="Telegram">
+                <img src="Assets/image/TelegramLogo.svg" alt="Telegram">
+            </a>
+            <form class="search" role="search">
+                <input type="search" placeholder="Поиск" aria-label="Поиск" />
+                <button type="submit" aria-label="Найти">
+                    <img src="Assets/image/SearchIcon.png" alt="<UNK>">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="container">
+        <div class="breadcrumbs">
+            <div class="title-min">
+                <a href="index.html" class="title-glav">Главная</a>
+                <a class="title-glav">/</a>
+                <a href="Interior.html" class="title-glav">Интерьеры</a>
+                <a class="title-glav">/</a>
+                <a>Дизайнер Ольга Зайцева добавила в двухуровневую квартиру</a>
+            </div>
+            <h1 id="page-title" class="title">Дизайнер Ольга Зайцева добавила в двухуровневую квартиру</h1>
+        </div>
+            <div class="Designers_Grid">
+                <img src="Assets/image/Rectangle%20250.svg" alt="">
+                <div class="Designer_Info_Grid_Main">
+                    <div class="Designer_Info_Grid">
+                        <div>
+                          <div class="Designer_Info_Grid_Сontainer">
+                              <p class="Designer_Info_Grid_Title">Город</p>
+                              <p class="Designer_Info_Grid_Text">Калининград</p>
+                          </div>
+
+                            <div class="Designer_Info_Grid_Сontainer">
+                                <p class="Designer_Info_Grid_Title">Площадь</p>
+                                <p class="Designer_Info_Grid_Text">50 м.кв.</p>
+                            </div>
+
+                            <div class="Designer_Info_Grid_Сontainer">
+                                <p  class="Designer_Info_Grid_Title">Кол-во комнат</p>
+                                <p class="Designer_Info_Grid_Text">3</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="Designer_Info_Grid_Сontainer">
+                                <p  class="Designer_Info_Grid_Title">Фото</p>
+                                <p class="Designer_Info_Grid_Text">Сергей Мельников</p>
+                            </div>
+                            <div class="Designer_Info_Grid_Сontainer">
+                                <p  class="Designer_Info_Grid_Title">Стиль</p>
+                                <p class="Designer_Info_Grid_Text">Сергей Мельников</p>
+                            </div>
+                            <div class="Designer_Info_Grid_Сontainer">
+                                <p  class="Designer_Info_Grid_Title">Текст</p>
+                                <p class="Designer_Info_Grid_Text">Ольга Синявская</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Designer_Info_Grid_Mini">
+                            <div>
+                                <div class="Designer_Info_Grid_Сontainer">
+                                    <p class="Designer_Info_Grid_Title_Сontainer">Ольга Зайцева</p>
+                                    <p class="Designer_Info_Grid_Text">Архитектор</p>
+                                </div>
+                                <div class="Designer_Info_Grid_Сontainer_Info">
+                                    <div>
+                                        <img src="Assets/image/site_icon.webp" alt="">
+                                        <p class="Designer_Info_Grid_Title_B">https://dozorec.pro/</p>
+                                    </div>
+                                    <div>
+                                        <img src="Assets/image/phone_icon.webp" alt="">
+                                        <p class="Designer_Info_Grid_Title_B">+79622526027</p>
+                                    </div>
+                                    <div>
+                                        <img src="Assets/image/vk.svg" alt="">
+                                        <p class="Designer_Info_Grid_Title_B">@dozoretc</p>
+                                    </div>
+                                    <div>
+                                        <img src="Assets/image/TelegramLogo.svg" alt="">
+                                        <p class="Designer_Info_Grid_Title_B">@Dozoretc</p>
+                                    </div>
+                                    <div>
+                                        <img src="Assets/image/email_icon.webp" alt="">
+                                        <p class="Designer_Info_Grid_Title_B">dozorec.art@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="Designer_Info_Grid_Mini_PC">
+                                        <p class="Designer_Info_Grid_Mini_PC_Advertisement">Реклама <br>
+                                            Дозорец Екатерина Владиславовна <br>
+                                            ИНН 390802646115<br>
+                                            Erid:2SDnjbxPaKn</p>
+                                    </div>
+                                    <div class="Designer_Info_Grid_Mini_PAD">
+                                        <p>Реклама
+                                            Дозорец Екатерина Владиславовна
+                                            ИНН 390802646115
+                                            Erid:2SDnjbxPaKn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <img class="Designer_Info_Grid_Mini_Img" src="Assets/image/Rectangle%2098.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="Design_Info">
+            <div class="Design_Info_Container"> <!-- Добавляем контейнер-обертку -->
+                <aside class="brand_stack" id="brandStack">
+                    <a class="brand_stack__logo" href="/" aria-label="Перейти на главную">
+                        <img src="Assets/image/KDomaLogo.png" alt="">
+                    </a>
+                    <a class="brand_stack__cta" href="/magazine" aria-label="Читать актуальный номер">
+                        <span class="cta__text">Читать актуальный номер</span>
+                        <img class="cta__arrow" src="Assets/image/Pointer.png" alt="">
+                    </a>
+                </aside>
+
+                <ul class="cards">
+                    <p class="Card_Title_Сontainer">
+                        Квартиру в Пионерском семья с Чукотки приобрела в качестве летней резиденции на море с перспективой предлагать ее для посуточной аренды.
+                        — Несмотря на то, что квартира двухуровневая, общая площадь небольшая, порядка 50 «квадратов», — рассказывает дизайнер Ольга Зайцева.
+                        — Конечно же, хозяева были заинтересованы в увеличении полезных метров. Первый этаж мы расширили, присоединив лоджию к кухне-гостиной,
+                        а высота второго (около пяти метров) позволила спроектировать антресоль, организовав на ней спальню.
+                    </p>
+                    <div class="Card_Grid">
+                        <img src="Assets/image/Group%20886.svg" alt="">
+                        <img src="Assets/image/Group%20886.svg" alt="">
+                    </div>
+
+                    <p class="Card_Title_Сontainer">
+                        Квартиру в Пионерском семья с Чукотки приобрела в качестве летней резиденции на море с перспективой предлагать ее для посуточной аренды.
+                        — Несмотря на то, что квартира двухуровневая, общая площадь небольшая, порядка 50 «квадратов», — рассказывает дизайнер Ольга Зайцева.
+                        — Конечно же, хозяева были заинтересованы в увеличении полезных метров. Первый этаж мы расширили, присоединив лоджию к кухне-гостиной,
+                        а высота второго (около пяти метров) позволила спроектировать антресоль, организовав на ней спальню.
+                    </p>
+                    <div class="Card_Grid">
+                        <img class="Card_Grid_Img" src="Assets/image/Group%20985.svg" alt="">
+                        <img src="Assets/image/Group%20886.svg" alt="">
+                        <img src="Assets/image/Group%20886.svg" alt="">
+
+                    </div>
+                    <p class="Card_Title_Сontainer">
+                        Второй этаж спроектирован под чилаут-зону. — Мы хотели создать максимально расслабляющую атмосферу, — поясняет Ольга,
+                        — поэтому выбрали светлую цветовую палитру, которая настраивает на отдых днем, и предусмотрели множество подсветок, создающих романтичное настроение вечером.
+                        <br>
+                        Планируется наделить второй этаж еще одной функцией — кинозала,
+                        в скором времени здесь появится проектор с выводом изображения на белую стену или экран. Больше всего хлопот доставил антресольный этаж.
+                        множество подсветок, создающих романтичное настроение вечером. Планируется наделить второй этаж еще одной функцией — кинозала,
+                        в скором времени здесь появится проектор с выводом изображения на белую стену или экран. Больше всего хлопот доставил антресольный этаж.
+                    </p>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site_footer" role="contentinfo">
+    <div class="site_footer__inner">
+
+        <section class="site_footer__col site_footer__brand" aria-labelledby="footer_brand">
+            <a class="site_footer__logo" href="/" aria-label="На главную">
+                <img src="Assets/image/LogoKD.svg" width="75" height="50" alt="Логотип КД">
+            </a>
+            <div class="site_footer_text_content">
+                <p class="site_footer__text">Проект медиагруппы «Западная пресса».</p>
+                <p class="site_footer__text">ООО «Стартап»</p>
+                <p class="site_footer__text">ИНН 3906159571<br>ОГРН 1063906139659</p>
+            </div>
+        </section>
+
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Разделы сайта</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link" href="Interior.html">Интерьеры</a></li>
+                <li><a class="site_footer__link" href="Company.html">Компании</a></li>
+                <li><a class="site_footer__link" href="Designers.html">Дизайнеры</a></li>
+                <li><a class="site_footer__link" href="AboutEdit.html">О редакции</a></li>
+            </ul>
+        </nav>
+
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Публикации</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link" href="Events.html">События</a></li>
+                <li><a class="site_footer__link" href="AboutDesign.html">Про дизайн</a></li>
+                <li><a class="site_footer__link" href="Archive.html">Архив номеров</a></li>
+            </ul>
+        </nav>
+
+        <nav class="site_footer__col site_footer__sections" aria-labelledby="footer_sections">
+            <h2 id="footer_sections" class="site_footer__title">Наши проекты</h2>
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link site_footer__link_accent" href="DesignSchool.html">Школа дизайна</a></li>
+                <li><a class="site_footer__link site_footer__link_accent" href="WeekDesign.html">Неделя дизайна</a></li>
+                <li><a class="site_footer__link site_footer__link_accent" href="Premia.html">Премия</a></li>
+            </ul>
+        </nav>
+
+        <section class="site_footer__col site_footer__contacts" aria-labelledby="footer_contacts">
+            <h2 id="footer_contacts" class="site_footer__title">Контакты</h2>
+            <!-- <p class="site_footer__address">
+              г. Калининград,<br>
+              ул. Рокоссовского, д. 16/18<br>
+              Телефон редакции:<br>
+              <a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a>
+            </p> -->
+            <ul class="site_footer__list site_footer__list_sections">
+                <li><a class="site_footer__link">г. Калининград,</a></li>
+                <li><a class="site_footer__link">ул. Рокоссовского, д. 16/18</a></li>
+                <li><a class="site_footer__link">Телефон редакции:</a></li>
+                <li><a class="site_footer__link" href="tel:+74012677706">+7 (4012) 677-706</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <div class="site_footer__bottom">
+        <a class="site_footer__policy" href="Policy.html">Политика ОПД</a>
+        <div class="site_footer__dev_container">
+            <p class="site_footer__dev">Сайт разработан</p>
+            <img src="Assets/image/LogoKant.svg" width="138" height="14" alt="Логотип Kant">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
