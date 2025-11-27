@@ -49,17 +49,19 @@ html, body {
     font-size: var(--Designers_Page_Header_Text_PC);
     font-weight: 400;
     line-height: 110%;
+    margin-top: 0.5vw;
 }
 .Designers_Grid h1 {
     font-size: var(--Designers_Page_Header_Text_PC);
     font-weight: 400;
     line-height: 110%;
-    margin-top: 0;
+    margin-bottom: 1vw;
 }
 .Designers_Grid p {
     font-size: 1vw;
     font-weight: 300;
     line-height: 110%;
+    margin-bottom: 0.5vw;
 }
 .Designers_Grid li {
     display: flex;
@@ -73,7 +75,11 @@ html, body {
     height: 1.6vw;
 }
 .Designers_Grid_Contacts{
-    display: inline;
+    margin-bottom:1.15vw;
+}
+
+.About_Me{
+    margin-bottom: 1.5vw;
 }
 
 .Designers_Grid_Contacts a{
@@ -176,6 +182,14 @@ html, body {
 .Designers_Page_Grid_mob{
     display: none;
 }
+
+.title-glava{
+    color: #6B6B6B;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 300;
+    line-height: 110%;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         width: calc(100% - 40px);
@@ -195,18 +209,31 @@ html, body {
         font-size: 2.4vw;
 
     }
+    .title-glava{
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 110%;
+    }
+    .Designers_Page_Grid{
+        gap: 2.7vw;
+    }
     .Designers_Grid p{
         font-size: 2.4vw;
         margin-top: 1.2vw;
-
+        font-weight: 400;
+        line-height: 110%;
     }
+    .Designers_Grid li{
+        gap: 1.2vw;
+    }
+
     .Designers_Grid_Info p{
         font-size: 2.5vw;
         margin-top: 1.2vw;
     }
     .Designers_Grid img{
-        width: 4vw;
-        height: 4vw;
+        width: 10%;
+        height: auto;
     }
     .Designers_Grid_Contacts li{
         margin-bottom: 1.7vw;
@@ -255,16 +282,28 @@ html, body {
     }
     .Designers_Grid_Pad_n h1{
         font-size: 2.6vw;
+        margin-bottom: 2vw;
+        font-weight:400;
+        line-height: 110%;
 
     }  .Designers_Grid_Pad_n p{
         font-size: 2.4vw;
+        font-weight:300 ;
+        line-height: 110%;
 
     }
     .Designers_Grid_Pad h1{
         font-size: 2.6vw;
+        margin-bottom: 2vw;
+        font-weight:400;
+        line-height: 110%;
+
 
     }  .Designers_Grid_Pad p{
         font-size: 2.4vw;
+        margin-bottom: 1vw;
+               font-weight:300 ;
+               line-height: 110%;
 
     }
 
@@ -316,11 +355,13 @@ html, body {
     .Designers_Grid_Contacts a{
         font-size: 5.7vw;
         font-weight: 300;
+        line-height: 110%;
     }
     .Designers_Grid_Contacts div{
         display: flex;
         gap: 2.5vw;
         margin-bottom: 1.5vw;
+        align-items: center;
     }
     .Designers_Grid_Contacts h1{
         font-size:  5.7vw;
