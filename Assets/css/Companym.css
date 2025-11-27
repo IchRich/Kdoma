@@ -11,6 +11,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html, body {
@@ -19,8 +20,8 @@ html, body {
     font-family: Geologica, Arial, sans-serif;
     height: 100%;
     overflow-x: hidden;
+    color: var(--text);
 }
-
 
 
 
@@ -39,8 +40,10 @@ html, body {
     line-height: 110%;
 }
 .About_the_company_info_text {
-    margin-top: 0.5vw;
     width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
 }
 .About_the_company_info img{
     width: 33.5vw;

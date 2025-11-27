@@ -58,20 +58,20 @@ body {
 }
 
 .btn{
-        appearance: none;
-        border: 1px solid black;
-        background: none;
-        color: black;
-        font-size: 1vw;
-        font-weight: 300;
-        font-family: 'Geologica', serif;
-        width: calc((100% - (var(--gap) * 3)) / 4);
-        height: 3.1vw;
-        cursor: pointer;
-        transition: color 0.15s
-        ease, border-color 0.15s
-        ease, transform 0.05s
-        ease;
+    appearance: none;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: 300;
+    font-family: 'Geologica', serif;
+    width: calc((100% - (var(--gap) * 3)) / 4);
+    height: 3.1vw;
+    cursor: pointer;
+    transition: color 0.15s
+    ease, border-color 0.15s
+    ease, transform 0.05s
+    ease;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -80,8 +80,13 @@ body {
     }
     .btn {
         width: calc(50% - (var(--gap) / 2));
-        height: 5.2vw;
-        font-size: 1.85vw;
+        height: 5vw;
+        font-size: 1.6vw;
+    }
+    .actions
+    {
+        margin-top: 4vw;
+        margin-bottom: 10.4vw;
     }
 }
 @media (max-width: 767px){
@@ -95,6 +100,11 @@ body {
         width: 90%;
         padding: 0;
         padding-bottom: 8vw;
+    }
+    
+    .page
+    {
+        padding-bottom: 0;
     }
 
     .event_img_mini img {
@@ -124,6 +134,7 @@ body {
         font-size: 3.9vw;
     }
     .actions{
-        margin-top:5.5vw;
+        margin-top: 5.5vw;
+        margin-bottom: 16.8vw;
     }
 }
