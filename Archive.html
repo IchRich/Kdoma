@@ -101,10 +101,19 @@
         </div>
     </div>
 </header>
+
+<main>
 <!-- Шапка: заголовок + фильтры годов -->
-<header class="page_head">
-    <div class="container">
-        <h1 class="title">Все журналы</h1>
+<div class="page_head breadcrumbs">
+    <div class="container archive_head">
+        <div>
+            <div class="title-min">
+                <a href="index.html" class="title-glav">Главная</a>
+                <a>/</a>
+                <a>Все журналы</a>
+            </div>
+            <h1 id="page-title" class="title">Все журналы</h1>
+        </div>
 
         <!-- Мобильный триггер и дропдаун годов -->
         <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Годы" hidden>
@@ -125,14 +134,13 @@
             <a class="year" data-year="archive" href="#archive">архив</a>
         </nav>
     </div>
-</header>
+</div>
 
 <!-- Основной контент -->
-<main class="container">
-    <section class="catalog" aria-labelledby="y2024">
+    <section class="catalog container" aria-labelledby="y2024">
         <h2 id="y2024" class="visually_hidden">Журналы 2024</h2>
 
-        <ul class="grid">
+        <ul class="arhive_grid">
             <!-- Карточка года -->
             <li class="card card__year">
                 <a class="card__link" href="#y2024" aria-label="Текущий год: 2024">

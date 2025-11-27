@@ -28,13 +28,21 @@ body {
 }
 
 .container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.archive_head
+{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    gap: 36px;
-    max-width: 1720px;
-    margin: 0 auto;
-    padding: 24px 0 0;
+    gap: 1.9vw;
+}
+
+.catalog
+{
+    padding-bottom: 5.2vw;
 }
 
 .page_head {
@@ -42,7 +50,6 @@ body {
     background: linear-gradient(#fff, #fffcc0 0) padding-box;
     background: #fff;
     z-index: 5;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 .title {
@@ -82,13 +89,13 @@ body {
     box-shadow: 0 0 0 2px rgba(127, 13, 13, .08) inset;
 }
 
-.grid {
+.arhive_grid {
     list-style: none;
     padding: 0;
-    margin: 24px 0 0;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
-    column-gap: 31px;
+    gap: 1.6vw;
+    margin: 0 auto;
 }
 
 .filter_trigger_icon {
@@ -185,6 +192,12 @@ body {
     transition: none;
 }
 
+.card__cover__year img
+{
+    max-width: unset;
+    height: 100%;
+}
+
 .card__link {
     display: block;
     color: inherit;
@@ -231,19 +244,24 @@ body {
 }
 
 .card__meta {
-    padding: 10px 0 30px;
+    padding: 1vw 0 0;
 }
 
 .card__title {
-    margin: 0 0 6px;
-    font-size: 24px;
+    margin: 0 0 0.35vw;
+    font-size: 1.25vw;
     font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 135%;
 }
 
 .card__year {
     margin: 0;
     color: black;
-    font-size: 24px;
+    font-size: 1.25vw;
+    letter-spacing: -0.03em;
+    line-height: 135%;
+    font-weight: 300;
 }
 
 .visually_hidden {
@@ -258,15 +276,11 @@ body {
     border: 0;
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .container {
-        max-width: clamp(320px, 95vw, 720px);
-        padding-left: clamp(8px, 3vw, 16px);
-        padding-right: clamp(8px, 3vw, 16px);
-        padding-top: clamp(12px, 2.5vw, 16px);
-        padding-bottom: 0;
-        display: flex;
-        justify-content: space-between;
+        padding: 0;
+        padding-bottom: 8vw;
+        width: 90%;
     }
 
     .title {
@@ -278,25 +292,25 @@ body {
         display: none
     }
 
-    .grid {
+    .arhive_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: clamp(14px, 3vw, 20px) clamp(12px, 2.5vw, 18px);
         margin-top: clamp(10px, 2.5vw, 16px);
     }
 
-    .grid > .card.card__year {
+    .arhive_grid > .card.card__year {
         grid-column: auto;
         border: none;
         box-shadow: none;
         justify-self: start;
     }
 
-    .grid > .card.card__year > .card__link {
+    .arhive_grid > .card.card__year > .card__link {
         display: block;
     }
 
-    .grid > .card.card__year .card__cover {
+    .arhive_grid > .card.card__year .card__cover {
         aspect-ratio: 150 / 257;
         width: 100%;
     }
@@ -378,9 +392,8 @@ body {
     }
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        padding-top: calc(20px * var(--scale));
+        width: calc(100% - 40px);
+        margin-inline: auto;
     }
 
     .title {
@@ -390,18 +403,18 @@ body {
         letter-spacing: -0.02em;
     }
 
-    .grid > .card.card__year {
+    .arhive_grid > .card.card__year {
         grid-column: auto;
         border: none;
         box-shadow: none;
         justify-self: start;
     }
 
-    .grid > .card.card__year > .card__link {
+    .arhive_grid > .card.card__year > .card__link {
         display: block;
     }
 
-    .grid > .card.card__year .card__cover {
+    .arhive_grid > .card.card__year .card__cover {
         aspect-ratio: 150 / 257;
         width: 100%;
     }
@@ -431,7 +444,7 @@ body {
         box-shadow: 0 0 0 2px rgba(127, 13, 13, .08) inset;
     }
 
-    .grid {
+    .arhive_grid {
         display: grid;
         margin-top: calc(18px * var(--scale));
     }
