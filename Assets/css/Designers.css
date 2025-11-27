@@ -132,11 +132,12 @@ body {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    column-gap: 1.55vw;
 }
 
 .about {
     display: flex;
-    column-gap: 0.85vw;
+    column-gap: 1.55vw;
     align-items: start;
     width: 49%;
 }
@@ -160,6 +161,7 @@ body {
     font-size: 1.25vw;
     line-height: 1.1;
     font-family: Geologica, Arial, sans-serif;
+    letter-spacing: -0.03em;
 }
 
 .about__roles {
@@ -346,14 +348,13 @@ body {
     }
 
     .container {
-        max-width: 100%;
-        margin: 0 20px 48px;
+        width: 90%;
     }
 
     .content
     {
         margin-bottom: 0;
-        padding-bottom: 0;
+        padding: 0;
     }
 
     .page_title {
@@ -373,13 +374,12 @@ body {
 
     .row {
         flex-direction: column;
-        gap: 16px;
+        gap: 5.6vw;
         padding-bottom: 24px;
-        border-bottom: 1px solid var(--border);
     }
 
     .about {
-        gap: 12px;
+        gap: 5.6vw;
         align-items: stretch;
         flex-direction: row;
         width: 100%;
@@ -495,19 +495,18 @@ body {
 
     .cards {
         width: 100%;
-        margin-bottom: 3.9vw;
     }
 
     .row {
         display: flex;
         align-items: stretch;
-        gap: 4vw;
+        gap: 2.6vw;
     }
 
     .about {
         display: flex;
         align-items: flex-start;
-        row-gap: 2vw;
+        column-gap: 2.6vw;  
         width: 50%;
     }
 
@@ -525,13 +524,12 @@ body {
     }
 
     .about__name {
-        font-size: 22px;
-        margin: 0 0 6px;
+        font-size: 2.9vw;
+        margin: 0 0 1.3vw;
     }
 
     .about__roles {
-        font-size: 18px;
-        margin: 0 0 12px;
+        font-size: 2.3vw;
     }
 
     .about__cta {
@@ -584,5 +582,10 @@ body {
         height: 5.2vw;
         font-size: 1.85vw;
         width: calc(50% - (var(--gap) / 2));
+    }
+    .actions
+    {
+        margin-top: 4vw;
+        margin-bottom: 10.4vw;
     }
 }

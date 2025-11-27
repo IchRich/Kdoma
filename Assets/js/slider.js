@@ -1,4 +1,3 @@
-// slider.js — touch‑свайп фикс
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-slider]').forEach(initSlider);
 });
@@ -13,8 +12,18 @@ function initSlider(root) {
     let index = 0;
     let startX = 0, currentX = 0, touching = false;
 
+    // === ВАЖНО: читаем gap напрямую из CSS ===
+    const gapPx = parseFloat(getComputedStyle(track).gap) || 0;
+
+    // Сколько % занимает gap относительно ширины root
+    const gapPercent = (gapPx / root.clientWidth) * 100;
+
+    // Каждое смещение = 100% ширина слайда + gap в %
+    const step = 100 + gapPercent;
+
     const update = () => {
-        track.style.transform = `translateX(${-index * 100}%)`;
+        track.style.transform = `translateX(${-index * step}%)`;
+
         dots.forEach((d, i) => d.classList.toggle('is_active', i === index));
     };
 
@@ -41,18 +50,20 @@ function initSlider(root) {
     root.addEventListener('touchmove', e => {
         if (!touching) return;
         currentX = e.touches[0].clientX - startX;
-        const percent = currentX / root.clientWidth * 100;
-        track.style.transform = `translateX(${-(index * 100) + percent}%)`;
+        const percent = currentX / root.clientWidth * step;
+        track.style.transform = `translateX(${-(index * step) + percent}%)`;
     }, { passive: true });
 
     root.addEventListener('touchend', () => {
         if (!touching) return;
         touching = false;
         track.style.transition = '';
+
         if (Math.abs(currentX) > root.clientWidth * 0.2) {
             index += currentX < 0 ? 1 : -1;
             index = Math.max(0, Math.min(index, slides.length - 1));
         }
+
         currentX = 0;
         update();
     });

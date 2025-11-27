@@ -18,7 +18,7 @@ body {
 
 
 .container {
-    width: 91%;
+    width: 90%;
     margin-inline: auto;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        width: calc(100% - 18px);
+        width: calc(100% - 40px);
         margin-inline: auto;
     }
     .btn {
