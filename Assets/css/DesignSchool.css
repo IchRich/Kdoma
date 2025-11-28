@@ -917,7 +917,10 @@ body {
 @media (min-width:768px) and (max-width:1024px){
 
     /* Общий контейнер — от 720px до 100% */
-
+    .page .hero
+    {
+        padding: 2vw 0 5.2vw;
+    }
     .container{
         min-width: 36vw;
         width: 100%;
