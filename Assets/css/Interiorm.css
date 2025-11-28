@@ -5,8 +5,6 @@
     --gapp_mini: 4vw;
     --test_main_pc: 1vw;
     --test_nmain_pc: 1.25vw;
-
-    --test_main_pad: 2.34vw;
 }
 
 *,
@@ -147,9 +145,6 @@ body {
 .cards p {
     margin-top: 1.5vw ;
 }
-.Designer_Info_Grid_Main_Pad{
-    display: none;
-}
 @media (max-width: 1400px) {
     .brand_stack
     {
@@ -162,104 +157,15 @@ body {
         margin-inline: auto;
     }
 
-    .Designer_Info_Grid_Mini_PC_Advertisement {
-        display: none;
-    }
-
     .Designer_Info_Grid_Mini_PAD {
         display: block;
     }
-
     .brand_stack {
         display: none;
     }
 
-    .Designers_Grid {
-        display: inline;
     }
 
-    .Designer_Info_Grid_Сontainer p {
-        font-size: var(--test_main_pad);
-    }
-
-    .Designer_Info_Grid_Main {
-        display: none;
-    }
-
-    .Card_Title_Сontainer {
-        font-size: var(--test_main_pad);
-        width: auto;
-
-    }
-    .Designer_Info_Grid_Main_Pad{
-        display: inline;
-    }
-    .Designer_Info_Grid_Main_Pad_Text{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 3.9vw;
-
-
-    }
-    .Designer_Info_Grid_Сontainer{
-        margin-bottom: 2.6vw;
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title{
-        margin-right: 2.8vw;
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title_{
-        margin-right: 5.7vw;
-
-    }
-    .Designer_Info_Grid_Main_Pad_Info{
-        display: flex;
-        align-items: center;
-        gap: 4.2vw;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container div{
-        display: flex;
-        align-items: center;
-
-    }
-
-
-    /*.Designer_Info_Grid_Main_Pad_Info_Container_img{*/
-    /*    width: 100%;*/
-    /*}*/
-    .Info_Container img{
-        height: 3.1vw;
-    }
-    .Info_Container p {
-        margin: 0;
-        font-size: 2.1vw;
-    }
-    .Info_Container{
-        margin-bottom: 1.1vw ;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container p{
-        margin-top: 0;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container h1{
-        font-size: 2.8vw;
-        font-weight: 400;
-        line-height: 110%;
-        margin-top: 0;
-        margin-bottom: 0.8vw;
-
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title_{
-        width: 20.7vw ;
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title_1{
-        grid-column: span 2;
-    }
-
-    .title-glava {
-        color: #6B6B6B;
-        text-decoration: none;
-        font-size: 2vw;
-    }
-}
 @media (max-width: 767px){
     .container {
         padding: 0;
@@ -272,93 +178,7 @@ body {
     .brand_stack {
         display: none;
     }
-    .Designer_Info_Grid_Main {
-        display: none;
     }
-    .Designer_Info_Grid_Main_Pad{
-        display: block;
-        margin-top: 5.5vw;
-    }
-    .Designers_Grid{
-        display: block;
-        height: auto;
-    }
-    .Designer_Info_Grid_Main_Pad_Text{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title_1{
-        grid-column: span 2;
-
-
-    }
-    .Designer_Info_Grid_Сontainer p{
-        font-size: 5vw;
-    }
-    .Designer_Info_Grid_Main_Pad_Text_Title_{
-        width: auto;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container div{
-        display: flex;
-        align-items: center;
-
-    }
-
-
-    .Designer_Info_Grid_Main_Pad_Info {
-    display: flex;
-        justify-content: space-between;
-    }
-
-    .Info_Container img{
-        height: 5.5vw;
-    }
-    .Info_Container p {
-        margin: 0;
-        font-size: 2.1vw;
-    }
-    .Info_Container{
-        margin-bottom: 1.1vw ;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container p{
-        margin-top: 0;
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container h1{
-        font-size: 5.5vw;
-        font-weight: 400;
-        line-height: 110%;
-        margin-top: 0;
-        margin-bottom: 0.8vw;
-
-    }
-    .Designer_Info_Grid_Main_Pad_Info_Container p {
-        font-size: 5vw;
-
-    }
-
-    .Designer_Info_Grid_Main_Pad_Text_Title_1{
-        grid-column: span 2;
-        margin-top: 7.8vw;
-    }
-
-    .title-glava {
-        color: #6B6B6B;
-        text-decoration: none;
-        font-size: 4vw;
-    }
-    .Card_Title_Сontainer{
-        width: auto;
-        font-size: 4.5vw;
-    }
-    .Card_Grid {
-        display: grid;
-         grid-template-columns: repeat(1, 1fr);
-        gap: var(--gapp);
-    }
-}
-
-
 
 .brand_stack {
     position: fixed;
@@ -453,12 +273,6 @@ body {
 @media (max-width: 1024px) {
     .brand_stack {
         display: none;
-    }
-    .Card_Grid{
-        width: 100%;
-    }
-    .cards{
-        width: 100%;
     }
 }
 
