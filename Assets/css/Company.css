@@ -237,6 +237,7 @@ body {
     background: var(--bg-card);
     padding: 1.2vw;
     transition: transform .25s ease;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -288,11 +289,6 @@ body {
     font-weight: 300;
     transition: .2s ease;
     white-space: nowrap;
-}
-
-.card__link:hover {
-    color: #666;
-    transform: translateX(0.2vw);
 }
 
 .catalog__more {

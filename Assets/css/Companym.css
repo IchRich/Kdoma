@@ -76,7 +76,6 @@ html, body {
     margin-top: 2.7vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 1.6vw;
 }
 .Contacts_Info_Blok{
@@ -85,7 +84,7 @@ html, body {
 }
 .Contacts_Info_Blok p {
     color: #00000066;
-    margin: 0;
+    margin: 0.5vw;
 }
 
 .contacts__map{
@@ -107,21 +106,28 @@ html, body {
 }
 .Contacts_Info_Blok_Grid_Box span{
     font-size: 1vw;
+    font-weight: 300;
+    line-height: 110%;
     color: #000;
 }
 .Contacts_Info_Blok_Grid_Box img{
     width: 1.1vw;
-    height: 1.1vw;
+    height: auto;
 }
 
 .work-schedule-grid {
     display: grid;
-    gap: 8px;
+    gap: 0.8vw;
 }
 
 .schedule-row {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+.schedule-rows{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
 }
 .schedule-flex{
@@ -151,13 +157,26 @@ html, body {
         grid-template-columns: repeat(1, 1fr);
     }
     .Contacts_Info_Blok_Grid_Box span{
-        font-size:2.4vw;
+        font-size:  1.8vw;
         font-weight: 300;
         line-height: 140%;
     }
     .Contacts_Info_Blok_Grid_Box img{
         width: 2.5vw;
-        height: 2.5vw;
+        height: auto;
+    }
+    .Contacts_Info_Blok_Grid_Box{
+        padding:2.5vw;
+    }
+    .Contacts_Info_Blok{
+        padding:1.5vw;
+    }
+    .schedule-row{
+        grid-template-columns: 2fr 17fr;
+    }
+
+    .Contacts_Info_Blok_Grid{
+        gap: 1.3vw;
     }
 }
 
@@ -179,9 +198,16 @@ html, body {
     .About_the_company_info img{
         width: 81vw;
         height: 29.5vw;
+        margin-top: 4.2vw;
+    }
+    .Photo_Gallery
+    {
+        margin-top: 15.9vw;
     }
     .Photo_Gallery_Grid{
         grid-template-columns: repeat(2, 1fr);
+        gap: 5.5vw;
+        margin-top: 4.2vw;
     }
     .Contacts_Info {
         grid-template-columns: repeat(1, 1fr);
@@ -200,13 +226,51 @@ html, body {
     }
     .Contacts_Info_Blok_Grid_Box img{
         width: 5.5vw;
-        height: 5.5vw;
+        height: auto;
     }
     .Contacts_Info_Blok_Grid_Box{
         padding: 3vw;
     }
     .work-schedule-grid{
-        gap: 2vw;
+        gap: 1.5vw;
+    }
+    .schedule-row {
+        display: grid;
+        grid-template-columns: 2fr 7fr;
+        align-items: center;
+    }
+
+    .Contacts_Info_Blok_Grid_Box{
+        padding: 2.5vw;
+    }
+    .schedule-flex{
+        display: flex;
+        align-items: center;
+        gap: 1.4vw;
+        margin-bottom: 1.5vw;
+    }
+    .Contacts_Info_Blok{
+        padding: 2.7vw;
+    }
+    .contacts__map{
+        height: 81vw ;
+    }
+    .Contacts_Info_Blok p{
+        font-size: 2.7vw;
+    }
+    .span_com{
+        word-break: break-all;
+        display: block;
+        width: 20.4vw;
+    }
+    .Contacts_Info_Blok_Grid{
+        gap: 3vw;
+
+    }
+    .schedule-rows {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
     }
 
 }

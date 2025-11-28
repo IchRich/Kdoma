@@ -40,9 +40,9 @@ body {
 
 
 .cards_grid {
-    display: grid;
-    gap: var(--gap);
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
@@ -52,7 +52,7 @@ body {
 }
 
 .card_size_lg {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 
 .card_media {
