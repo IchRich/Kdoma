@@ -5,6 +5,11 @@
     --gapp_mini: 4vw;
     --test_main_pc: 1vw;
     --test_nmain_pc: 1.25vw;
+    --test_main_pad: 2.34vw;
+    --text: #121212;
+    --muted: rgba(199, 199, 199, 0);
+    --accent: #b40000;
+    --card: #E6E6E6;
 }
 
 *,
@@ -90,8 +95,9 @@ body {
 }
 .Designer_Info_Grid_Сontainer_Info img{
     width: 1.5vw;
-    height: 1.5vw;
+    height: auto;
 }
+
 .Designer_Info_Grid_Сontainer_Info div {
     display: flex;
     align-items: center;
@@ -106,7 +112,7 @@ body {
     line-height: 110%;
     width: 12.5vw;
 }
-.Designer_Info_Grid_Mini_PAD{
+.Designer_Info_Grid_Mini_PAD p{
     display: none;
 }
 .Design_Info{
@@ -139,12 +145,115 @@ body {
     width: 59.9vw;
 
 }
+.Card_Grid img{
+    width: 100%;
+}
 .Card_Grid_Img{
     grid-column: span 2;
+    width: 100%;
 }
 .cards p {
     margin-top: 1.5vw ;
 }
+
+
+.Designer_Info_Grid_Mini_PAD {
+    display: block;
+}
+
+.Designer_Info_Grid_Main_Pad{
+    display: none;
+}
+
+
+.brand_stack {
+    display: none;
+}
+/* Контейнер слайдера */
+.work_slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;      /* при необходимости поменяй */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Область просмотра */
+.slider__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Лента слайдов */
+.slider__track {
+    display: flex;
+    transition: transform .35s ease;
+    will-change: transform;
+}
+
+/* Отдельный слайд */
+.slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Стрелки навигации */
+.work_slider .nav {
+    height: 42.9vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: rgba(0, 0, 0, .2);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work_slider .nav::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+
+.work_slider .nav.prev {
+    left: 0;
+}
+
+.work_slider .nav.prev::before {
+    transform: rotate(-135deg);
+}
+
+.work_slider .nav.next {
+    right: 0;
+}
+
+.work_slider .nav.next::before {
+    transform: rotate(45deg);
+}
+
+
+
+
 @media (max-width: 1400px) {
     .brand_stack
     {
@@ -163,8 +272,111 @@ body {
     .brand_stack {
         display: none;
     }
+    .Designers_Grid {
+        display: inline;
+    }
+    .work_slider .nav{
+        display: none;
+    }
+    .Designer_Info_Grid_Сontainer p {
+        font-size: var(--test_main_pad);
+    }
+
+    .Designer_Info_Grid_Main {
+        display: none;
+    }
+
+    .Card_Title_Сontainer {
+        font-size: var(--test_main_pad);
+        width: auto;
+    }
+
+    .Designer_Info_Grid_Main_Pad {
+        display: inline;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 3.9vw;
+    }
+
+    .Designer_Info_Grid_Сontainer {
+        margin-bottom: 2.6vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title {
+        margin-right: 2.8vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_ {
+        margin-right: 5.7vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info {
+        display: flex;
+        align-items: center;
+        gap: 4.2vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container div {
+        display: flex;
+        align-items: center;
+    }
+
+    .Info_Container img {
+        height: auto;
+        width: 3vw;
 
     }
+
+    .Info_Container p {
+        margin: 0;
+        font-size: 2.1vw;
+    }
+
+    .Info_Container {
+        margin-bottom: 1.1vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container p {
+        margin-top: 0;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container h1 {
+        font-size: 2.8vw;
+        font-weight: 400;
+        line-height: 110%;
+        margin-top: 0;
+        margin-bottom: 0.8vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_ {
+        width: 20.7vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_1 {
+        grid-column: span 2;
+    }
+
+    .title-glava {
+        color: #6B6B6B;
+        text-decoration: none;
+        font-size: 2vw;
+    }
+    .cards{
+        width: 100%;
+    }
+    .Card_Grid{
+        width: 100%;
+    }
+    .Designer_Info_Grid_Mini_PC_Advertisement {
+        display: none;
+    }
+    .Designer_Info_Grid_Main_Pad_Info_Container_img{
+        width: 20.74vw;
+    }
+}
 
 @media (max-width: 767px){
     .container {
@@ -178,294 +390,113 @@ body {
     .brand_stack {
         display: none;
     }
-
-    }
-
-.brand_stack {
-    position: fixed;
-    z-index: 900;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    transform: translateY(0);
-    will-change: transform;
-    width: 16.5%;
-    right: 5%;
-    top: 11.15vw;
-    transition: all 0.3s ease;
-}
-
-.brand_stack__logo {
-    display: block;
-    margin-bottom: 1vw;
-    text-decoration: none;
-}
-
-.brand_stack__logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 389px;
-}
-
-.brand_stack__cta {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 15vw;
-    background: rgba(145, 145, 145, 1);
-    color: #fff;
-    text-decoration: none;
-    overflow: hidden;
-    transition: background 0.3s ease;
-}
-
-.brand_stack__cta:hover {
-    background: rgba(145, 145, 145, 0.7);
-}
-
-.cta__text {
-    white-space: nowrap;
-    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 1.25vw;
-    font-weight: 300;
-    line-height: 1;
-    margin: 0;
-}
-
-.cta__arrow {
-    position: absolute;
-    right: 0.75vw;
-    bottom: 0.65vw;
-    width: 2vw;
-    height: 2vw;
-    object-fit: contain;
-    pointer-events: none;
-}
-
-.brand_stack.sticky-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.brand_stack.sticky-bottom {
-    position: absolute;
-    bottom: 6.5vw;
-    top: auto;
-    right: 0;
-    left: auto;
-    width: 18.5%;
-}
-
-@media (max-width: 1400px) {
-    .brand_stack {
-        top: 12.15vw;
-    }
-}
-
-@media (max-width: 1024px) {
-    .brand_stack {
+    .work_slider .nav{
         display: none;
     }
-}
-
-.brand_stack_container {
-    position: relative;
-    height: 100vh;
-}
-
-.brand_stack_container .brand_stack {
-    position: sticky;
-    top: 11.15vw;
-    bottom: auto;
-}
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600&display=swap');
-
-:root {
-    --gapp: 2.84vw;
-    --gapp_mini: 4vw;
-    --test_main_pc: 1vw;
-    --test_nmain_pc: 1.25vw;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-html,
-body {
-    height: 100%;
-    margin: 0;
-    background: var(--bg);
-}
-
-.container {
-    width: 90%;
-    margin-inline: auto;
-}
-
-
-
-.Designers_Grid{
-    display: flex;
-    gap: var(--gapp);
-    height: 38.33vw;
-}
-
-.Designer_Info_Grid{
-    display: grid;
-    gap: var(--gapp_mini);
-    grid-template-columns: repeat(2, 1fr);
-}
-.Designer_Info_Grid_Main{
-    display: grid;
-    gap: 11.25vw;
-    grid-template-rows: repeat(2, 1fr);
-}
-.Designer_Info_Grid_Title{
-    font-size: var(--test_main_pc);
-    font-weight: 400;
-    line-height: 110%;
-    margin-top: 0;
-}
-.Designer_Info_Grid_Title_B{
-    font-size: var(--test_main_pc);
-    font-weight: 400;
-    line-height: 110%;
-    margin: 0;
-}
-
-.Designer_Info_Grid_Text{
-    font-size: var(--test_main_pc);
-    font-weight: 300;
-    line-height: 110%;
-    margin-top: 0;
-}
-
-.Designer_Info_Grid_Сontainer p{
-    margin-bottom: 0.5vw;
-}
-.Designer_Info_Grid_Сontainer{
-    margin-bottom: 1vw;
-}
-
-.Designer_Info_Grid_Mini{
-    height: 16.5vw;
-    display: grid;
-    gap: var(--gapp_mini);
-    grid-template-columns: repeat(2, 1fr);
-}
-.Designer_Info_Grid_Title_Сontainer{
-    font-size: var(--test_nmain_pc);
-    font-weight: 400;
-    line-height: 110%;
-    margin-top: 0;
-}
-.Designer_Info_Grid_Mini_Img{
-    width: auto;
-}
-.Designer_Info_Grid_Сontainer_Info{
-    margin-top: 1vw;
-    margin-bottom: 0.7vw;
-}
-.Designer_Info_Grid_Сontainer_Info img{
-    width: 1.5vw;
-    height: 1.5vw;
-}
-.Designer_Info_Grid_Сontainer_Info div {
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-    height: 1.5vw;
-    margin-bottom: 0.25vw;
-}
-.Designer_Info_Grid_Mini_PC_Advertisement{
-    color: #00000066;
-    font-size: 0.7vw;
-    font-weight: 400;
-    line-height: 110%;
-    width: 12.5vw;
-}
-.Designer_Info_Grid_Mini_PAD{
-    display: none;
-}
-.Design_Info{
-    margin-top: 3.64vw;
-}
-
-
-.cards{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap_y);
-    width: 80%;
-}
-.Card_Grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--gapp);
-}
-.Card_Title_Сontainer{
-    font-size: var(--test_nmain_pc);
-    font-weight: 300;
-    line-height: 110%;
-    margin-top: 0;
-    width: 59.9vw;
-}
-.Card_Grid{
-    width: 59.9vw;
-
-}
-.Card_Grid_Img{
-    grid-column: span 2;
-}
-.cards p {
-    margin-top: 1.5vw ;
-}
-@media (max-width: 1400px) {
-    .brand_stack
-    {
-        top: 12.15vw;
-    }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        width: calc(100% - 40px);
-        margin-inline: auto;
+    .Designer_Info_Grid_Main {
+        display: none;
     }
 
-    .Designer_Info_Grid_Mini_PAD{
+    .Designer_Info_Grid_Main_Pad {
         display: block;
-    }
-    .brand_stack {
-        display: none;
+        margin-top: 5.5vw;
     }
 
-}
-
-@media (max-width: 767px){
-    .container {
-        padding: 0;
-        padding-bottom: 8vw;
-        width: 90%;
-    }
-    .Designer_Info_Grid_Mini_PAD{
+    .Designers_Grid {
         display: block;
+        height: auto;
     }
-    .brand_stack {
+
+    .Designer_Info_Grid_Main_Pad_Text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_1 {
+        grid-column: span 2;
+    }
+
+    .Designer_Info_Grid_Сontainer p {
+        font-size: 4.5vw;
+        margin-top: 1.5vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_ {
+        width: auto;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container div {
+        display: flex;
+        align-items: center;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Info_Container img {
+        height: auto;
+        width: 5.8vw;
+    }
+
+    .Info_Container p {
+        margin: 0;
+        font-size: 2.1vw;
+    }
+
+    .Info_Container {
+        margin-bottom: 1.1vw;
+        gap: 2.7vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container p {
+        margin-top: 0;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container h1 {
+        font-size: 5.5vw;
+        font-weight: 400;
+        line-height: 110%;
+        margin-top: 0;
+        margin-bottom: 0.8vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Info_Container p {
+        font-size: 5vw;
+    }
+
+    .Designer_Info_Grid_Main_Pad_Text_Title_1 {
+        grid-column: span 2;
+        margin-top: 7.8vw;
+    }
+
+    .title-glava {
+        color: #6B6B6B;
+        text-decoration: none;
+        font-size: 4vw;
+    }
+
+    .Card_Title_Сontainer {
+        width: auto;
+        font-size: 4.5vw;
+    }
+
+    .Card_Grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--gapp);
+        width: auto;
+
+    }
+    .cards{
+        width: 100%;
+    }
+    .Designer_Info_Grid_Mini_PC_Advertisement {
         display: none;
+    }
+    .Designer_Info_Grid_Main_Pad_Info_Container_img{
+        width: 44%;
     }
 }
 
@@ -532,7 +563,6 @@ body {
     pointer-events: none;
 }
 
-/* Состояния для sticky позиционирования */
 .brand_stack.sticky-fixed {
     position: fixed;
     top: 0;
