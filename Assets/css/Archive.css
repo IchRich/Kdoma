@@ -52,12 +52,6 @@ body {
     z-index: 5;
 }
 
-.title {
-    margin: 0 0 12px;
-    font-size: 70px;
-    font-weight: 200;
-}
-
 .years {
     display: flex;
     gap: 10px;
@@ -190,6 +184,10 @@ body {
     height: 100%;
     cursor: default;
     transition: none;
+    background-image: url('../image/2024.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card__cover__year img
@@ -283,9 +281,16 @@ body {
         width: 90%;
     }
 
-    .title {
-        font-size: clamp(26px, 4.2vw, 30px);
-        font-weight: 200;
+    .catalog
+    {
+        padding-bottom: 14vw;
+    }
+
+    .archive_head
+    {
+        padding-bottom: 0;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     .years {
@@ -295,8 +300,7 @@ body {
     .arhive_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: clamp(14px, 3vw, 20px) clamp(12px, 2.5vw, 18px);
-        margin-top: clamp(10px, 2.5vw, 16px);
+        gap: 4.7vw;
     }
 
     .arhive_grid > .card.card__year {
@@ -313,10 +317,6 @@ body {
     .arhive_grid > .card.card__year .card__cover {
         aspect-ratio: 150 / 257;
         width: 100%;
-    }
-    .catalog
-    {
-        margin-bottom: 60px;
     }
 
     .card__year img {
@@ -345,7 +345,7 @@ body {
     }
 
     .card__title {
-        font-size: clamp(13px, 2.2vw, 16px);
+        font-size: 3.7vw;
         line-height: 1.25;
         font-weight: 300;
         margin: 0 0 4px;
@@ -356,10 +356,11 @@ body {
     }
 
     .card__year {
-        font-size: clamp(12px, 2.2vw, 16px);
+        font-size: 3.7vw;
         color: #000;
         font-weight: 300;
         margin: 0 0 2px;
+        width: 100%;
     }
 
     .filter_trigger_icon {
@@ -395,12 +396,15 @@ body {
         width: calc(100% - 40px);
         margin-inline: auto;
     }
+    
+    .archive_head
+    {
+        align-items: flex-end;
+    }
 
-    .title {
-        width: calc(42% * var(--scale));
-        font-size: 50px;
-        font-weight: 200;
-        letter-spacing: -0.02em;
+    .catalog
+    {
+        padding-bottom: 10.4vw;
     }
 
     .arhive_grid > .card.card__year {
@@ -421,7 +425,6 @@ body {
 
     .card__year img {
         width: 100%;
-        height: 90%;
         object-fit: cover;
         display: block;
     }
@@ -432,10 +435,10 @@ body {
     }
 
     .year {
-        width: 67px;
+        width: 10vw;
         padding-left: calc(5px * var(--scale));
         padding-right: calc(5px * var(--scale));
-        font-size: 20px;
+        font-size: 2.6vw;
     }
 
     .year.is_active {
@@ -446,7 +449,8 @@ body {
 
     .arhive_grid {
         display: grid;
-        margin-top: calc(18px * var(--scale));
+        margin-top: 5.2vw;
+        gap: 2.6vw;
     }
 
     .card__year {
@@ -464,8 +468,6 @@ body {
     }
 
     .card {
-        width: calc(167px * var(--scale));
-        height: calc(286px * var(--scale));
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -498,15 +500,13 @@ body {
 
     .card__meta {
         flex: 1 1 auto;
-        padding-left: calc(8px * var(--scale));
-        padding-right: calc(8px * var(--scale));
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
     .card__title {
-        font-size: 18px;
+        font-size: 2.35vw;
         font-weight: 300;
         line-height: 1.28;
         margin-bottom: calc(6px * var(--scale));
@@ -517,9 +517,9 @@ body {
     }
 
     .card__year {
-        font-size: calc(18px * var(--scale));
+        font-size: 2.35vw;
         font-weight: 300;
         color: black;
-        margin-top: calc(-8px * var(--scale));
+        width: 100%;
     }
 }
