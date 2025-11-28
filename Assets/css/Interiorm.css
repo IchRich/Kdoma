@@ -252,8 +252,60 @@ body {
 }
 
 
+.slider__dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
+}
 
+.slider__dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--muted);
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
 
+.slider__dots .dot.is_active {
+    width: 15px;
+    height: 15px;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgb(180, 0, 0);
+    aspect-ratio: 1/1;
+}
+.Design_Plan_Grid{
+    display: flex;
+
+    width: 59.9vw;
+}
+.Design_Plan_Grid_Left{
+    margin-right: 1.7vw;
+}
+.Design_Plan_Grid_Right{
+    margin-left: 2.8vw;
+}
+.Design_Plan_Grid p {
+    margin: 0;
+    font-size: var(--test_main_pc);
+    font-weight: 300;
+    line-height: 110%;
+}
+.Design_Plan_Grid h1 {
+    margin-top: 0;
+    font-size: 1.8vw;
+    font-weight: 300;
+    line-height: 100%;
+}
+.Design_Plan_Grid{
+    margin-bottom: 5vw;
+}
+.Design_Plan_Grid_Pad{
+    display: none;
+}
 @media (max-width: 1400px) {
     .brand_stack
     {
@@ -376,6 +428,29 @@ body {
     .Designer_Info_Grid_Main_Pad_Info_Container_img{
         width: 20.74vw;
     }
+    .Design_Plan_Grid{
+        display: none;
+
+    }
+    .Design_Plan_Grid_Pad{
+        display: flex;
+    }
+    .Design_Plan_Grid_Pad p{
+        margin: 0;
+        line-height: 110%;
+        font-weight: 300;
+        font-size: 2.4vw;
+    }
+    .Design_Plan_Grid_Pad h1 {
+        margin-top: 0;
+        line-height: 110%;
+        font-weight: 300;
+        font-size: 4vw;
+
+    }
+    .Design_Plan_Grid_Pad{
+        margin-bottom: 10vw;
+    }
 }
 
 @media (max-width: 767px){
@@ -383,6 +458,36 @@ body {
         padding: 0;
         padding-bottom: 8vw;
         width: 90%;
+    }
+    .Design_Plan_Grid{
+         display: none;
+    }
+    .Design_Plan_Grid_Pad{
+        display: block;
+    }
+    .Design_Plan_Grid_Left{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Design_Plan_Grid_Left img{
+        height: 42vw;
+        width: auto;
+    }
+    .Design_Plan_Grid_Pad p{
+        margin: 0;
+        line-height: 110%;
+        font-weight: 300;
+        font-size: 4.2vw;
+    }
+    .Design_Plan_Grid_Pad h1 {
+        margin-top: 0;
+        line-height: 110%;
+        font-weight: 300;
+        font-size: 6.6vw;
+
+    }
+    .Design_Plan_Grid_Pad{
+        margin-bottom: 10vw;
     }
     .Designer_Info_Grid_Mini_PAD{
         display: block;
@@ -498,111 +603,4 @@ body {
     .Designer_Info_Grid_Main_Pad_Info_Container_img{
         width: 44%;
     }
-}
-
-.brand_stack {
-    position: fixed;
-    z-index: 900;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    transform: translateY(0);
-    will-change: transform;
-    width: 16.5%;
-    right: 5%;
-    top: 11.15vw;
-    transition: all 0.3s ease;
-}
-
-.brand_stack__logo {
-    display: block;
-    margin-bottom: 1vw;
-    text-decoration: none;
-}
-
-.brand_stack__logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 389px;
-}
-
-.brand_stack__cta {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 15vw;
-    background: rgba(145, 145, 145, 1);
-    color: #fff;
-    text-decoration: none;
-    overflow: hidden;
-    transition: background 0.3s ease;
-}
-
-.brand_stack__cta:hover {
-    background: rgba(145, 145, 145, 0.7);
-}
-
-.cta__text {
-    white-space: nowrap;
-    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 1.25vw;
-    font-weight: 300;
-    line-height: 1;
-    margin: 0;
-}
-
-.cta__arrow {
-    position: absolute;
-    right: 0.75vw;
-    bottom: 0.65vw;
-    width: 2vw;
-    height: 2vw;
-    object-fit: contain;
-    pointer-events: none;
-}
-
-.brand_stack.sticky-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.brand_stack.sticky-bottom {
-    position: absolute;
-    bottom: 6.5vw;
-    top: auto;
-    right: 0;
-    left: auto;
-    width: 18.5%;
-}
-
-@media (max-width: 1400px) {
-    .brand_stack {
-        top: 12.15vw;
-    }
-}
-
-@media (max-width: 1024px) {
-    .brand_stack {
-        display: none;
-    }
-}
-
-.brand_stack_container {
-    position: relative;
-    height: 100vh;
-}
-
-.brand_stack_container .brand_stack {
-    position: sticky;
-    top: 11.15vw;
-    bottom: auto;
 }
