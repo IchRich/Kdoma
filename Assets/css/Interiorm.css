@@ -34,7 +34,7 @@ body {
 .Designers_Grid{
     display: flex;
     gap: var(--gapp);
-    height: 38.33vw;
+    height: 40vw;
 }
 
 .Designer_Info_Grid{
@@ -451,6 +451,11 @@ body {
     .Design_Plan_Grid_Pad{
         margin-bottom: 10vw;
     }
+    .Designer_Info_Grid_Main_Pad h1{
+        font-size: 3.5vw;
+        font-weight: 300;
+        line-height: 100%;
+    }
 }
 
 @media (max-width: 767px){
@@ -600,4 +605,17 @@ body {
     .Designer_Info_Grid_Main_Pad_Info_Container_img{
         width: 44%;
     }
+    .Designer_Info_Grid_Main_Pad h1{
+        font-size: 5.5vw;
+        font-weight: 300;
+        line-height: 100%;
+    }
+}
+.Designer_Info_Gride{
+    display: flex;
+}
+.Designer_Info_Grid_Titlee{
+    font-size: 2vw;
+    font-weight: 300;
+    line-height: 110%;
 }
