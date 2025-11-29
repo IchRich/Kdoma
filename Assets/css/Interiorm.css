@@ -463,27 +463,24 @@ body {
          display: none;
     }
     .Design_Plan_Grid_Pad{
-        display: block;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
     }
     .Design_Plan_Grid_Left{
         display: flex;
-        justify-content: space-between;
     }
-    .Design_Plan_Grid_Left img{
-        height: 42vw;
-        width: auto;
-    }
+    .Design_Plan_Grid_Left o
     .Design_Plan_Grid_Pad p{
         margin: 0;
         line-height: 110%;
         font-weight: 300;
-        font-size: 4.2vw;
+        font-size: 2.4vw;
     }
     .Design_Plan_Grid_Pad h1 {
         margin-top: 0;
         line-height: 110%;
         font-weight: 300;
-        font-size: 6.6vw;
+        font-size: 4vw;
 
     }
     .Design_Plan_Grid_Pad{
