@@ -44,6 +44,16 @@ body {
     line-height: 110%;
     width: 30.7vw;
 }
+.Dear_architectss {
+    grid-column: 2 / 2;
+}
+.Dear_architectss h1{
+    margin-top: 2.6vw;
+    font-size: 1.8vw;
+    font-weight: 300;
+    line-height: 100%;
+    margin-bottom: 0;
+}
 .Nominations {
     margin-top: 5.2vw;
 
@@ -69,6 +79,7 @@ body {
 .input-container__select{
     width:  43.3vw;
     height: 3.1vw;
+    background-color: #ffffff;
 }
 .Nominations_article p{
     margin-bottom: 0.5vw;
@@ -81,8 +92,11 @@ body {
 }
 .Nominations_grid_dop{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
+}
+.Nominations_grid_dop_flex{
+    width: 50%;
 }
 .Nominations_grid_dop_flex div{
     display: flex;
@@ -140,14 +154,30 @@ body {
     }
     .Nominations_grid_dop {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: auto;
     }
     .Nominations_article p{
         font-size: 2.3vw;
         width: 46vw;
     }
+    .Nominations {
+        margin-top:-13vw;
+    }
     .input-container__select{
         height: 5.8vw;
+    }
+    .btn{
+        height: 4.6vw;
+        font-size: 2vw;
+    }
+    .Nominations_grid_dop_flex{
+        width: 100%;
+        grid-column: 2 / 2;
+
+    }
+    .Dear_architectss {
+        grid-row: 2 / 2;
     }
 
 }
@@ -184,7 +214,23 @@ body {
     .Nominations_grid_dop{
         display: block;
     }
-    .bt{
+    .btn{
         height: 10.6vw;
+        font-size: 4.2vw;
+    }
+
+    .Nominations_grid_dop_flex{
+        width: 100%;
+        grid-column: 2 / 2;
+
+    }
+    .Nominations_grid_dop_flex div {
+        margin-bottom: 4vw;
+    }
+    .Dear_architectss {
+        grid-row: 2 / 2;
+    }
+    .Nominations {
+        margin-top:-13vw;
     }
 }
