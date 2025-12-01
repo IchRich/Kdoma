@@ -161,9 +161,6 @@ body {
         font-size: 2.3vw;
         width: 46vw;
     }
-    .Nominations {
-        margin-top:-13vw;
-    }
     .input-container__select{
         height: 5.8vw;
     }
@@ -230,7 +227,5 @@ body {
     .Dear_architectss {
         grid-row: 2 / 2;
     }
-    .Nominations {
-        margin-top:-13vw;
-    }
+
 }
