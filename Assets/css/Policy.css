@@ -47,9 +47,7 @@
   color: var(--font-color, #000);
   font-family: var(--font-family);
   font-style: normal;
-  line-height: var(--line-height-base);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-mobile-p);
+
   box-sizing: border-box;
 }
 
@@ -66,8 +64,6 @@ html, body {
 .container {
   width: 100%;
   max-width: 1920px;
-  min-width: 360px;
-  padding: var(--padding-container-mobile);
   box-sizing: border-box;
 }
 
@@ -90,11 +86,11 @@ h2 {
   font-size: var(--font-size-mobile-h2);
   letter-spacing: var(--letter-spacing-mobile-h2);
   margin-bottom: var(--margin-h2-mobile);
+  font-weight: 300;
 }
-
-p, div, a {
-  letter-spacing: var(--letter-spacing-mobile-text);
-  font-size: var(--font-size-mobile-p);
+section p
+{
+  font-weight: 300;
 }
 
 a {
@@ -191,7 +187,7 @@ button:hover {
   }
   button {
     margin: 0;
-    width: 50%;
+    width: 100%;
   }
   button .button_text_mobile {
     display: none;
@@ -242,6 +238,19 @@ button:hover {
     max-width: 100%;
     height: auto;
     width: auto;
+  }
+}
+
+@media (max-width: 767px) 
+{
+  section
+  {
+      width: 100% !important;
+      margin: 0 !important;
+  }
+  main
+  {
+    width: 90%;
   }
 }
 

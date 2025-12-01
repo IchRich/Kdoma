@@ -332,8 +332,6 @@ main
     text-decoration: none;
     transition: opacity 0.2s ease;
     color: inherit;
-    pointer-events: none;
-    cursor: default;
     text-decoration: none;
 }
 .site_footer__link a
@@ -347,7 +345,6 @@ main
     font-size: 1.04vw;
 }
 
-.site_footer__link:hover, .site_footer__link:focus-visible { opacity: 0.75; }
 .site_footer__link_accent { color: #a10000; }
 
 .site_footer__sections {
