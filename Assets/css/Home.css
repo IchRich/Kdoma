@@ -547,6 +547,7 @@ h2 {
     justify-content:center;
     max-width: var(--container);
     margin:0 auto;
+    align-content: space-between;
   }
 
   .card_col{ display:contents; }
@@ -556,10 +557,10 @@ h2 {
     width:100% !important; max-width:100%; overflow:hidden; position:relative;
   }
 
-  .card_interiors{ grid-column:1 / -1; aspect-ratio: 320/248; width:100%; height:auto; }
-  .card_designers{ grid-column:1 / 2; grid-row:2 / 4; aspect-ratio:150/297; width:100%; }
-  .card_companies{ grid-column:2 / 3; grid-row:2; aspect-ratio:150/109; width:100%; }
-  .card_banner{ grid-column:2 / 3; grid-row:3; aspect-ratio:150/168; width:100%; }
+  .card_interiors{ grid-column:1 / -1; width:100%; height:auto; }
+  .card_designers{ grid-column:1 / 2; grid-row:2 / 4; width:100%; }
+  .card_companies{ grid-column:2 / 3; grid-row:2; width:100%; }
+  .card_banner{ grid-column:2 / 3; grid-row:3; width:100%; }
 
   .card h2{
     top: 2vw;

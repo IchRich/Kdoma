@@ -14,6 +14,7 @@
     <script src="Assets/js/filter-panel.js" defer></script>
     <link rel="stylesheet" href="Assets/css/Header.css">
     <link rel="stylesheet" href="Assets/css/Archive.css">
+    <script src="Assets/js/filters-panel.js" defer></script>
 </head>
 <body>
 <header class="site_header">
@@ -104,38 +105,83 @@
 
 <main>
 <!-- Шапка: заголовок + фильтры годов -->
-<div class="page_head breadcrumbs">
-    <div class="container archive_head">
-        <div class="breadcrumbs">
-            <div class="title-min">
-                <a href="index.html" class="title-glav">Главная</a>
-                <a>/</a>
-                <a>Все журналы</a>
+            <div class="container section__header">
+                <div class="header">
+
+                    <div class="breadcrumbs ">
+                        <div class="title-min">
+                            <a href="index.html" class="title-glav">Главная</a>
+                            <a>/</a>
+                            <a>Архив</a>
+                        </div>
+                        <h1 class="title">Архив</h1>
+                    </div>
+
+                    <div class="breadcrumbs header__filters">
+                        <!-- Десктопный триггер -->
+                        <button id="filter_trigger_desktop" class="filter_trigger" aria-haspopup="dialog" aria-expanded="false"
+                                aria-controls="filter_dropdown">
+                            <span class="filter_trigger__label">Год выпуска</span>
+                            <img src="Assets/image/Galochka.svg" alt="">
+                        </button>
+
+                        <!-- Мобильный триггер -->
+                        <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Фильтры">
+                            <img class="filter_trigger_icon__img" src="Assets/image/FilterIcon.svg" alt="">
+                        </button>
+
+                        <!-- Компактная плашка-дропдаун прямо под кнопкой -->
+                        <div class="filter_dropdown" id="filter_dropdown" hidden>
+                            <div class="filter_dropdown__panel" role="dialog" aria-modal="false"
+                                 aria-labelledby="filter_panel_title">
+                                 
+                                <div class="mobile_drawer__head">
+                                    <img src="Assets/image/SearchIcon.png" alt="">
+                                    <!-- <form class="mobile_search" role="search" action="/search">
+                                        <input type="search" name="q" placeholder="Поиск" aria-label="Поиск">
+                                    </form> -->
+                                    <button type="button" class="mobile_drawer__close filter_dropdown__close" aria-label="Закрыть меню"></button>
+                                </div>
+
+                                <div class="filter_dropdown__body">
+                                    <!-- Год выпуска -->
+                                    <details class="filter_acc" open>
+                                        <summary class="filter_acc__sum">Год выпуска<img src="Assets/image/Galochka.svg" alt=""></summary>
+                                        <div class="filter_acc__body">
+                                           <label class="filter_check"><input type="checkbox" name="year[]" value="2025"> 2025</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2024"> 2024</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2023"> 2023</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2022"> 2022</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2021"> 2021</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2020"> 2020</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2019"> 2019</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2018"> 2018</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2017"> 2017</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2016"> 2016</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2015"> 2015</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2014"> 2014</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2013"> 2013</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2012"> 2012</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2011"> 2011</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2010"> 2010</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2009"> 2009</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2008"> 2008</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2007"> 2007</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2006"> 2006</label>
+<label class="filter_check"><input type="checkbox" name="year[]" value="2005"> 2005</label>
+
+
+                                        </div>
+                                    </details>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1 id="page-title" class="title">Все журналы</h1>
-        </div>
-
-        <!-- Мобильный триггер и дропдаун годов -->
-        <button id="filter_trigger_mobile" class="filter_trigger_icon" type="button" aria-label="Годы" hidden>
-            <img class="filter_trigger_icon__img" src="Assets/image/FilterIcon.svg" alt="" />
-        </button>
-        <div class="years_dropdown" id="years_dropdown" hidden>
-            <div class="years_dropdown__panel" role="menu" aria-label="Выбор года">
-                <ul class="years_dropdown__list" id="years_dropdown_list"></ul>
-            </div>
-        </div>
-
-        <!-- Десктопная панель годов -->
-        <nav class="years" aria-label="Фильтр по годам" id="year_nav">
-            <a class="year" data-year="2025" href="#2025">2025</a>
-            <a class="year is_active" data-year="2024" href="#2024" aria-current="page">2024</a>
-            <a class="year" data-year="2023" href="#2023">2023</a>
-            <a class="year" data-year="2022" href="#2022">2022</a>
-            <a class="year" data-year="archive" href="#archive">архив</a>
-        </nav>
-    </div>
-</div>
-
+<div id="filter_overlay" class="filter_overlay" hidden></div>
 <!-- Основной контент -->
     <section class="catalog container" aria-labelledby="y2024">
         <h2 id="y2024" class="visually_hidden">Журналы 2024</h2>
