@@ -77,7 +77,7 @@ body {
 .Designer_Info_Grid_Mini{
     height: 16.5vw;
     display: grid;
-    gap: var(--gapp_mini);
+    gap: 2.4vw;
     grid-template-columns: repeat(2, 1fr);
 }
 .Designer_Info_Grid_Title_Сontainer{
@@ -306,6 +306,8 @@ body {
 .Design_Plan_Grid_Pad{
     display: none;
 }
+.Info_Container img {
+}
 @media (max-width: 1400px) {
     .brand_stack
     {
@@ -374,6 +376,7 @@ body {
     .Designer_Info_Grid_Main_Pad_Info_Container div {
         display: flex;
         align-items: center;
+        gap: 0.5vw;
     }
 
     .Info_Container img {
@@ -415,6 +418,7 @@ body {
         color: #6B6B6B;
         text-decoration: none;
         font-size: 2vw;
+        margin: 0;
     }
     .cards{
         width: 100%;
@@ -474,22 +478,22 @@ body {
     .Design_Plan_Grid_Left{
         display: flex;
     }
-    .Design_Plan_Grid_Left o
     .Design_Plan_Grid_Pad p{
         margin: 0;
         line-height: 110%;
         font-weight: 300;
-        font-size: 2.4vw;
+        font-size: 4.3vw;
     }
     .Design_Plan_Grid_Pad h1 {
         margin-top: 0;
         line-height: 110%;
         font-weight: 300;
-        font-size: 4vw;
+        font-size: 6.5vw;
 
     }
     .Design_Plan_Grid_Pad{
         margin-bottom: 10vw;
+        display: block;
     }
     .Designer_Info_Grid_Mini_PAD{
         display: block;
@@ -590,11 +594,14 @@ body {
     }
 
     .Card_Grid {
-        display: grid;
+        display: block;
         grid-template-columns: repeat(1, 1fr);
         gap: var(--gapp);
         width: auto;
 
+    }
+    .Card_Grid img {
+        margin-bottom: 11vw;
     }
     .cards{
         width: 100%;
@@ -609,6 +616,12 @@ body {
         font-size: 5.5vw;
         font-weight: 300;
         line-height: 100%;
+    }
+    .Design_Plan_Grid_Left img{
+        width: 46.1vw;
+    }
+    .Design_Plan_Grid_Left{
+        justify-content: space-between;
     }
 }
 .Designer_Info_Gride{
