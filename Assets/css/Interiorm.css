@@ -117,6 +117,7 @@ body {
 }
 .Design_Info{
     margin-top: 3.64vw;
+    position: relative;
 }
 
 
@@ -631,4 +632,144 @@ body {
     font-size: 2vw;
     font-weight: 300;
     line-height: 110%;
+}
+
+
+.brand_stack {
+    position: absolute;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 16.5%;
+    margin-left: auto;
+    top: 11.15vw;
+    align-self: flex-start;
+}
+
+.brand_stack__logo {
+    display: block;
+    margin-bottom: 1vw;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.brand_stack__logo:hover {
+    opacity: 0.9;
+}
+
+.brand_stack__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 320 / 433;
+}
+
+.brand_stack__cta {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 15vw;
+    background: rgba(145, 145, 145, 1);
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.brand_stack__cta:hover {
+    background: rgba(145, 145, 145, 0.7);
+}
+
+.cta__text {
+    white-space: nowrap;
+    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    padding: 0 1vw;
+}
+
+.cta__arrow {
+    position: absolute;
+    right: 0.75vw;
+    bottom: 0.65vw;
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+.brand_stack__cta:hover .cta__arrow {
+    transform: translateX(0.2vw);
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .brand_stack {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand_stack {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .brand_stack {
+        width: 28vw;
+    }
+
+    .brand_stack__cta {
+        height: 200px;
+    }
+
+    .cta__text {
+        font-size: 24px;
+    }
+
+    .cta__arrow {
+        width: 32px;
+        height: 32px;
+        right: 12px;
+        bottom: 10px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .brand_stack {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 5vw;
+        position: static;
+        top: auto;
+    }
+
+    .brand_stack__logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .brand_stack__cta {
+        height: 60px;
+    }
+
+    .cta__text {
+        font-size: 16px;
+    }
+
+    .cta__arrow {
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        bottom: 10px;
+    }
 }
