@@ -54,32 +54,32 @@ body {
     line-height: 100%;
     margin-bottom: 0;
 }
+.Nominations {
+    margin-top: 5.2vw;
 
-.Nominations_titel{
+}
+.Nominations h1 {
     font-size: 2.6vw;
     margin: 0;
     font-weight: 200;
     line-height: 110%;
 }
-.Nominations_titel_mini{
-    font-size: 1.6vw;
-}
-
 .Nominations p {
     font-size: 1vw;
+    margin-top: 2.6vw;
     margin-bottom: 0;
     font-weight: 300;
     line-height: 110%;
 }
 .Nominations_grid{
-    display: block;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
     gap: 1.5vw;
 }
 .input-container__select{
     width:  43.3vw;
     height: 3.1vw;
     background-color: #ffffff;
-    border: 1px solid var(--text);
 }
 .Nominations_article p{
     margin-bottom: 0.5vw;
@@ -93,11 +93,10 @@ body {
 .Nominations_grid_dop{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4.9vw;
 
 }
 .Nominations_grid_dop_flex{
-    width: 100%;
+    width: 50%;
 }
 .Nominations_grid_dop_flex div{
     display: flex;
@@ -131,9 +130,6 @@ body {
     font-family: inherit;
     margin-bottom: 5vw;
 }
-.Nominations{
-    margin-top: 5vw;
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -160,13 +156,14 @@ body {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: auto;
-        gap: 0;
     }
     .Nominations_article p{
         font-size: 2.3vw;
         width: 46vw;
     }
-
+    .Nominations {
+        margin-top:-13vw;
+    }
     .input-container__select{
         height: 5.8vw;
     }
@@ -181,9 +178,6 @@ body {
     }
     .Dear_architectss {
         grid-row: 2 / 2;
-    }
-    .Nominations{
-        margin-top: 5vw;
     }
 
 }
@@ -212,13 +206,9 @@ body {
     .input-container__select{
         width: 100%;
         height: 10.6vw;
-        margin-bottom: 2.5vw;
     }
     .Nominations_article p{
         font-size: 4.2vw;
-        line-height: 110%;
-        font-weight: 300;
-        margin-bottom:2.5vw;
 
     }
     .Nominations_grid_dop{
@@ -239,5 +229,8 @@ body {
     }
     .Dear_architectss {
         grid-row: 2 / 2;
+    }
+    .Nominations {
+        margin-top:-13vw;
     }
 }
