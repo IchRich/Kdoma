@@ -16,6 +16,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 html,
 body {
@@ -154,7 +155,8 @@ body {
     width: 100%;
 }
 .cards p {
-    margin-top: 1.5vw ;
+    margin-top: 1.5vw;
+    margin-bottom: 1.6vw;
 }
 
 

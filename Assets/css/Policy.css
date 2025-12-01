@@ -130,6 +130,7 @@ button {
   border: 1px solid var(--color-border, #000);
   cursor: pointer;
   transition: 0.3s;
+  background: transparent;
 }
 button span {
   text-transform: uppercase;
@@ -146,6 +147,20 @@ button img {
 
 button:hover {
   opacity: 0.7;
+}
+
+.search button
+{
+  width: auto;
+}
+
+.search button img
+{
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 @media (min-width: 768px) {
@@ -176,7 +191,7 @@ button:hover {
   }
   button {
     margin: 0;
-    width: 65.8%;
+    width: 50%;
   }
   button .button_text_mobile {
     display: none;
@@ -206,7 +221,7 @@ button:hover {
     font-size: var(--font-size-pc-p);
   }
   button {
-    width: 54%;
+    width: 40%;
     padding: 10px 41px;
   }
   button span {
@@ -215,6 +230,18 @@ button:hover {
   }
   button img {
     width: 40px;
+  }
+  .search button
+  {
+    padding: 0;
+  }
+  .search button img
+  {
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
   }
 }
 

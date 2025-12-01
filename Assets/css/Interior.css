@@ -118,12 +118,10 @@ body {
         gap: 5.5vw;
     }
 
-    .card_image {
-        height: 15vw;
-    }
+
 
   .card_image {
-    height: auto;
+    height: 65vw;
     object-fit: cover;
   }
 
