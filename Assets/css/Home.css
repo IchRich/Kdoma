@@ -557,7 +557,7 @@ h2 {
     width:100% !important; max-width:100%; overflow:hidden; position:relative;
   }
 
-  .card_interiors{ grid-column:1 / -1; width:100%; height:auto; }
+  .card_interiors{ grid-column:1 / -1; aspect-ratio: 320 / 248; width:100%; height:auto; }
   .card_designers{ grid-column:1 / 2; grid-row:2 / 4; width:100%; }
   .card_companies{ grid-column:2 / 3; grid-row:2; width:100%; }
   .card_banner{ grid-column:2 / 3; grid-row:3; width:100%; }
