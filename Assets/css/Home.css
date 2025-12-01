@@ -461,7 +461,6 @@ h2 {
   padding-left: 1.35em;
 }
 .readmore{
-  margin-left:-1.04vw;
   color:#be2a21;
   text-decoration:underline;
   text-underline-offset: 0.2vw;
@@ -523,9 +522,9 @@ h2 {
   }
   .hero h1{
     width:100%;
-    margin-top: 30vw;
+    margin-top: 43vw;
     text-align:center;
-    font-size:10vw;
+    font-size:8vw;
     line-height:1;
     font-weight:300;
   }
@@ -602,11 +601,6 @@ h2 {
   }
 
   .about_editorial__col{ gap: 1.2vh; }
-  .readmore
-  {
-    margin-left: 24%;
-    margin-right: 24%;
-  }
 
   .about_design_card figcaption{ font-size:4.5vw; margin-top:1vw; }
 
@@ -724,7 +718,7 @@ h2 {
   {
     font-size:4.5vw;
     line-height:1.1;
-    margin: 0 0 8vw 0;
+    margin: 0 0 0 0;
   }
   .about_editorial__content hr
   {
@@ -733,10 +727,13 @@ h2 {
   }
   .about_editorial__col:nth-of-type(2)
   {
-    margin-bottom: 7vw;
+    margin-bottom: 0vw;
   }
   .readmore {
     text-underline-offset: 0.7vw;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
   .about_editorial__text
   {
@@ -748,6 +745,11 @@ h2 {
     margin:0 0 0 -5vw;
     margin: 0;
     padding: 0;
+  }
+
+  .about_editorial__list li
+  {
+    display: none;
   }
 
   .about_editorial__btn, .about_editorial__btn__red{
@@ -788,8 +790,8 @@ h2 {
     width: calc(100% - 40px);
   }
   .hero h1{
-    font-size:9vw;
-    margin-top:45vw;
+    font-size: 6vw;
+    margin-top: 20vw;
     padding:0 2vw;
     line-height:0.85;
     font-weight:300;
@@ -892,7 +894,6 @@ h2 {
     margin-bottom: 1.3vw;
   }
   .readmore {
-    margin-left: -2.6vw;
     text-underline-offset: 0.5vw;
   }
 

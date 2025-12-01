@@ -40,6 +40,11 @@ body {
     gap: 1.9vw;
 }
 
+.archive_head .breadcrumbs
+{
+    margin-bottom: 0;
+}
+
 .catalog
 {
     padding-bottom: 5.2vw;
@@ -344,6 +349,11 @@ body {
         padding: 0 clamp(2px, 1vw, 4px) 0;
     }
 
+    .archive_head .breadcrumbs
+    {
+        margin-bottom: 0;
+    }
+
     .card__title {
         font-size: 3.7vw;
         line-height: 1.25;
@@ -382,6 +392,11 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
     :root {
         --scale: clamp(1, calc(1 + (100vw - 768px) / (1024 - 768) * 0.20), 1.2);
+    }
+
+    .archive_head .breadcrumbs
+    {
+        margin-bottom: 0;
     }
 
     .filter_trigger_icon {
