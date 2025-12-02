@@ -11,8 +11,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html, body {
@@ -22,6 +20,8 @@ html, body {
     overflow-x: hidden;
     color: var(--text);
     background: #fff;
+    margin: 0;
+
 }
 
 .container {
@@ -72,7 +72,7 @@ html, body {
 }
 .Designers_Grid img {
     width: 1.6vw;
-    height: 1.6vw;
+    height: auto;
 }
 .Designers_Grid_Contacts{
     margin-bottom:1.15vw;
@@ -224,7 +224,7 @@ html, body {
         line-height: 110%;
     }
     .Designers_Grid li{
-        gap: 1.2vw;
+        gap: 0.7vw;
     }
 
     .Designers_Grid_Info p{
@@ -232,11 +232,11 @@ html, body {
         margin-top: 1.2vw;
     }
     .Designers_Grid img{
-        width: 10%;
+        width: 4vw;
         height: auto;
     }
     .Designers_Grid_Contacts li{
-        margin-bottom: 1.7vw;
+        margin-bottom: 1.8vw;
     }
     .Designers_Grid_Contacts{
         margin-top: 3vw;
@@ -259,6 +259,9 @@ html, body {
     }
     .Portfolio_Grid_Info_Img_Mini{
         height: auto;
+        width: 100%;
+    }
+    .Portfolio_Grid_Info_Img{
         width: 100%;
     }
 
@@ -349,8 +352,8 @@ html, body {
 
     }
     .Designers_Grid_Contacts img {
-        width:8.5vw;
-        height: 8.5vw;
+        width:8vw;
+        height: auto;
     }
     .Designers_Grid_Contacts a{
         font-size: 5.7vw;
@@ -369,14 +372,20 @@ html, body {
         margin-bottom: 3.1vw;
     }
     .Portfolio_Grid_Info_Img_Mini{
-        width: 42vw;
+        width: auto;
         height: auto;
     }
     .Portfolio_Grid_Info p{
         font-size: 4.5vw;
+        height: 14.4vw;
+
     }
     .Portfolio_Grid_Info_Big p{
         font-size: 4.5vw;
+    }
+    .Portfolio_Grid_Info_Img{
+        height: 64.2vw;
+        width: 100%;
     }
 
 }
