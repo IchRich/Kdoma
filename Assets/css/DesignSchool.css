@@ -701,9 +701,10 @@ body {
         display: block;
     }
     .mobile_speaker__name{
-        font-size: 5.5vw;
+        font-size: 5vw;
         font-weight: 400;
         margin: 2.5vw 0 0;
+        line-height: 1.1;
     }
     .mobile_speaker__role{
         font-weight: 300;
