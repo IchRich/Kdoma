@@ -42,8 +42,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   color: var(--font-color, #000);
   font-family: var(--font-family);
   font-style: normal;
@@ -54,7 +52,8 @@
 }
 
 html, body {
-  width: 100%;
+    margin: 0;
+    width: 100%;
   min-width: 360px;
   box-sizing: border-box;
   display: flex;
