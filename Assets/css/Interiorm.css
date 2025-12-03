@@ -201,7 +201,7 @@ body {
 
 /* Стрелки навигации */
 .work_slider .nav {
-    height: 42.9vw;
+    height: auto;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -214,6 +214,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.work_slider:hover .nav {
+    opacity: 1;
+    visibility: visible;
+}
+.work_slider {
+    position: relative;
 }
 
 .work_slider .nav::before {
@@ -275,9 +285,7 @@ body {
 .Design_Plan_Grid_Left{
     margin-right: 1.7vw;
 }
-.Design_Plan_Grid_Right{
-    margin-left: 2.8vw;
-}
+
 .Design_Plan_Grid p {
     margin: 0;
     font-size: var(--test_main_pc);
@@ -460,6 +468,7 @@ body {
         font-size: 3.2vw;
         font-weight: 300;
         line-height: 110%;
+        margin-top: 2.6vw;
     }
 }
 
@@ -541,6 +550,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 2.7vw ;
+        gap: 8vw;
     }
     .Designer_Flex_Grids_Pad_Info h1{
         font-size: 4.2vw;
@@ -614,6 +624,7 @@ body {
         font-size: 5.3vw;
         font-weight: 300;
         line-height: 110%;
+        margin-top: 2.6vw;
     }
 }
 
