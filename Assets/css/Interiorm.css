@@ -361,6 +361,52 @@ body {
 .Designer_Flex_Grids_PadB{
     display: none;
 }
+.Card_Info_Flex{
+    width: 58.7vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    background: #F6F6F6;
+    padding: 0.5vw;
+    margin-bottom: 5vw;
+}
+.Card_Info_Flex_L p{
+    font-size: 0.8vw;
+    font-weight: 300;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 0;
+}
+.Card_Info_Flex_R{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5vw;
+    width: 100%;
+}
+.Card_Info_Flex_R_Block{
+    padding: 1vw;
+    background: #E6E6E6;
+}
+.Card_Info_Flex_R_Block p{
+    margin: 0;
+    font-size: 1vw;
+}
+.Card_Info_Flex_R_Block div{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+.Card_Info_Flex_R_Block img {
+    width: 1vw;
+    height: auto;
+}
+.Card_Info_Flex_R_Block h1{
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 110%;
+
+}
+
 @media (max-width: 1400px) {
     .brand_stack
     {
@@ -530,8 +576,27 @@ body {
         flex-direction: column;
         justify-content: flex-end;
     }
-
-
+    .Card_Info_Flex{
+        width: 100%;
+        padding: 1.3vw;
+        margin-bottom: 10.4vw;
+        gap: 1.3vw;
+    }
+    .Card_Info_Flex_R{
+        gap: 1.3vw;
+    }
+    .Card_Info_Flex_R_Block img{
+        width:2.6vw ;
+    }
+    .Card_Info_Flex_R_Block h1 {
+        font-size: 2.3vw;
+    }
+    .Card_Info_Flex_R_Block p{
+        font-size: 1.8vw;
+    }
+    .Card_Info_Flex_L p{
+        font-size: 1.8vw;
+    }
 }
 
 @media (max-width: 767px){
@@ -715,6 +780,41 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    }
+    .Card_Info_Flex{
+        display: block;
+        width: 100%;
+        padding: 1.3vw;
+        margin-bottom: 10.4vw;
+        gap: 1.3vw;
+    }
+    .Card_Info_Flex_R{
+        gap: 1.3vw;
+    }
+    .Card_Info_Flex_R_Block img{
+        width:5.3vw ;
+    }
+    .Card_Info_Flex_R_Block h1 {
+        font-size: 3.2vw;
+    }
+    .Card_Info_Flex_R_Block p{
+        font-size: 3.2vw;
+    }
+    .Card_Info_Flex_L p{
+        font-size: 3.2vw;
+    }
+    .Card_Info_Flex_R_Block{
+        padding: 2.6vw;
+    }
+    .Card_Info_Flex_L{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 5.3vw;
+    }
+    .Card_Info_Flex_L img{
+        width: 37.3vw;
+        height: auto;
     }
 }
 
