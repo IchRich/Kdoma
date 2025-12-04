@@ -302,16 +302,14 @@ body {
     height: 12px;
     border-radius: 50%;
     border: 0;
-    background: var(--muted);
+    background: #c7c7c7;
     cursor: pointer;
     aspect-ratio: 1/1;
 }
 
 .slider__dots .dot.is_active {
-    width: 15px;
-    height: 15px;
+
     background: var(--accent);
-    box-shadow: 0 0 0 3px rgb(180, 0, 0);
     aspect-ratio: 1/1;
 }
 .Design_Plan_Grid{
