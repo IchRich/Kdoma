@@ -235,7 +235,7 @@ body {
 
 /* Стрелки навигации */
 .work_slider .nav {
-    height: auto;
+    height: 94%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -292,7 +292,9 @@ body {
     gap: 8px;
     justify-content: center;
     align-items: center;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .slider__dots .dot {
