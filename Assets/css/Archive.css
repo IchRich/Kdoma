@@ -646,13 +646,12 @@ body {
 
     .filter_trigger_icon {
         display: inline-flex;
-        padding: clamp(6px, 1.8vw, 8px);
         border-radius: clamp(8px, 2.4vw, 10px);
     }
 
     .filter_trigger_icon__img {
-        width: clamp(18px, 3.2vw, 22px);
-        height: clamp(18px, 3.2vw, 22px);
+        width: 100%;
+        height: auto;
     }
 
     .show_more, .btn_show_more {
