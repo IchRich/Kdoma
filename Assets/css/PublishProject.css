@@ -169,6 +169,7 @@ body {
 
     .input-container__select{
         height: 5.8vw;
+        width: 100%;
     }
     .btn{
         height: 4.6vw;
