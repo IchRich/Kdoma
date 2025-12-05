@@ -56,12 +56,14 @@ html, body {
     font-weight: 400;
     line-height: 110%;
     margin-bottom: 1vw;
+    margin-top: 0;
 }
 .Designers_Grid p {
     font-size: 1vw;
     font-weight: 300;
     line-height: 110%;
     margin-bottom: 0.5vw;
+    margin-top: 0;
 }
 .Designers_Grid li {
     display: flex;
@@ -76,6 +78,7 @@ html, body {
 }
 .Designers_Grid_Contacts{
     margin-bottom:1.15vw;
+    padding: 0;
 }
 
 .About_Me{
@@ -204,6 +207,7 @@ html, body {
     }
     .Designers_Grid h1{
         font-size: 2.6vw;
+        margin-top: 0;
     }
     .Designers_Grid_Contacts a{
         font-size: 2.4vw;
@@ -213,6 +217,8 @@ html, body {
         font-size: 2vw;
         font-weight: 400;
         line-height: 110%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .Designers_Page_Grid{
         gap: 2.7vw;
@@ -237,9 +243,10 @@ html, body {
     }
     .Designers_Grid_Contacts li{
         margin-bottom: 1.8vw;
+        margin-top: 0;
     }
     .Designers_Grid_Contacts{
-        margin-top: 3vw;
+        margin-top: 2.6vw;
     }
     .title-glav br {
         display: none;
@@ -367,6 +374,7 @@ html, body {
         align-items: center;
     }
     .Designers_Grid_Contacts h1{
+        margin-top: 0;
         font-size:  5.7vw;
         font-weight: 300;
         margin-bottom: 3.1vw;
