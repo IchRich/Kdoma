@@ -31,6 +31,7 @@ body {
     position: relative;
     width: 90%;
     margin: auto;
+    padding: 0 0 2vh 0;
 }
 
 .page_title {
@@ -318,8 +319,9 @@ body {
 }
 
 .more:hover {
-    background: #111;
-    color: #fff;
+    background: var(--brand);
+    color: white;
+    border-color: var(--brand);
 }
 .title-min{
     display: flex;
@@ -341,6 +343,144 @@ body {
     }
 }
 
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --gap_x: 24px;
+        --gap_y: 32px;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+        margin-inline: auto;
+    }
+
+    .content
+    {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .page_title {
+        font-size: 56px;
+        margin: 0 0 32px;
+        line-height: 1.05;
+    }
+
+    .brand_stack {
+        display: none;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        align-items: stretch;
+        gap: 2.6vw;
+    }
+
+    .about {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 2.6vw;  
+        width: 50%;
+    }
+
+    .about__avatar {
+        width: 50%;
+        height: 30.5vw;
+        object-fit: cover;
+    }
+
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        height: 30.5vw;
+    }
+
+    .about__name {
+        font-size: 2.9vw;
+        margin: 0 0 1.3vw;
+    }
+
+    .about__roles {
+        font-size: 2.3vw;
+    }
+
+    .about__cta {
+        height: 5.2vw;
+        font-size: 1.85vw;  
+    }
+
+    .about__cta::after {
+        content: "ПОРТФОЛИО";
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text);
+        font-size: 16px;
+        font-weight: 300;
+        pointer-events: none;
+    }
+
+    .work
+    {
+        width: 50%;
+    }
+
+    .work_slider__slide img {
+        height: 30.5vw;
+        object-fit: cover;
+    }
+
+    .work_slider .nav {
+        display: none
+    }
+
+    .work_slider__dots {
+        padding-top: 8px;
+        gap: 6px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.is_active {
+        width: 12px;
+        height: 12px;
+    }
+
+    .more {
+        width: calc(50% - (var(--gap) / 2));
+        appearance: none;
+        border: 1px solid var(--text);
+        background: #fff;
+        font-weight: 300;
+        font-family: Geologica, Arial, sans-serif;
+        cursor: pointer;
+        transition: all .18s
+        ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-main);
+        text-transform: uppercase;
+        grid-column: 2/2;
+        height: 4vw;
+        font-size: 1.3vw;
+    }
+    .actions
+    {
+        margin-top: 3.1vw;
+    }
+}
 @media (max-width: 767px) {
     :root {
         --gap_x: 16px;
@@ -456,136 +596,12 @@ body {
         height: 11vw;
         font-size: 3.9vw;
     }
-    
+
     .actions {
-    margin: 5.5vw 0 16.7vw;
+        margin: 5.5vw 0 16.7vw;
     }
 
     .nav {
         display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    :root {
-        --gap_x: 24px;
-        --gap_y: 32px;
-    }
-
-    .container {
-        width: calc(100% - 40px);
-        margin-inline: auto;
-    }
-
-    .content
-    {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-
-    .page_title {
-        font-size: 56px;
-        margin: 0 0 32px;
-        line-height: 1.05;
-    }
-
-    .brand_stack {
-        display: none;
-    }
-
-    .cards {
-        width: 100%;
-    }
-
-    .row {
-        display: flex;
-        align-items: stretch;
-        gap: 2.6vw;
-    }
-
-    .about {
-        display: flex;
-        align-items: flex-start;
-        column-gap: 2.6vw;  
-        width: 50%;
-    }
-
-    .about__avatar {
-        width: 50%;
-        height: 30.5vw;
-        object-fit: cover;
-    }
-
-    .about__info {
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        height: 30.5vw;
-    }
-
-    .about__name {
-        font-size: 2.9vw;
-        margin: 0 0 1.3vw;
-    }
-
-    .about__roles {
-        font-size: 2.3vw;
-    }
-
-    .about__cta {
-        height: 5.2vw;
-        font-size: 1.85vw;  
-    }
-
-    .about__cta::after {
-        content: "ПОРТФОЛИО";
-        position: absolute;
-        left: 14px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--text);
-        font-size: 16px;
-        font-weight: 300;
-        pointer-events: none;
-    }
-
-    .work
-    {
-        width: 50%;
-    }
-
-    .work_slider__slide img {
-        height: 30.5vw;
-        object-fit: cover;
-    }
-
-    .work_slider .nav {
-        display: none
-    }
-
-    .work_slider__dots {
-        padding-top: 8px;
-        gap: 6px;
-    }
-
-    .dot {
-        width: 10px;
-        height: 10px;
-    }
-
-    .dot.is_active {
-        width: 12px;
-        height: 12px;
-    }
-
-    .more {
-        height: 5.2vw;
-        font-size: 1.85vw;
-        width: calc(50% - (var(--gap) / 2));
-    }
-    .actions
-    {
-        margin-top: 4vw;
-        margin-bottom: 10.4vw;
     }
 }

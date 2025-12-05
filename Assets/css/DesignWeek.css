@@ -28,6 +28,7 @@ body {
 .container {
     width: 90%;
     margin-inline: auto;
+    padding: 0 0 2vh 0;
 }
 .Design_Week{
     display: grid;
@@ -120,7 +121,7 @@ body {
 .actions{
     display: flex;
     justify-content: flex-end;
-    margin-top: 2.1vw;
+    margin-top: 3.1vw;
     margin-bottom: 5.2vw;
 }
 .btn_Archive{
@@ -140,6 +141,11 @@ body {
     ease;
 
 }
+.btn_Archive:hover{
+    background: var(--brand);
+    color: white;
+    border-color: var(--brand);
+}
 .Design_Week_Project_Grid_Text_Dop{
     display: none;
 }
@@ -151,8 +157,22 @@ body {
     }
     .btn_Archive {
         width: calc(50% - (var(--gap) / 2));
-        height: 5.2vw;
-        font-size: 1.85vw;
+        appearance: none;
+        border: 1px #000000 solid;);
+        background: #fff;
+        font-weight: 300;
+        font-family: Geologica, Arial, sans-serif;
+        cursor: pointer;
+        transition: all .18s
+        ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-main);
+        text-transform: uppercase;
+        grid-column: 2/2;
+        height: 4vw;
+        font-size: 1.3vw;
     }
     .Design_Week{
         display: block;
@@ -255,13 +275,11 @@ body {
 
     .btn_Archive{
         width: 100%;
-        min-width: 0;
-        height: 11vw;
-        font-size: 4.3vw;
+        height: 40px;
+        font-size: 16px;
     }
     .btn {
         font-size: 4.3vw;
-
     }
     .actions{
         margin-top: 5.5vw;

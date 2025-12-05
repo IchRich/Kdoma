@@ -96,8 +96,9 @@ body {
 }
 
 .btn:hover {
-  background: #111;
-  color: #fff;
+    background: var(--brand);
+    color: white;
+    border-color: var(--brand);
 }
 
 .btn:active {
@@ -136,10 +137,9 @@ body {
   }
 
   .btn {
-    width: 100%;
-    min-width: 0;
-    height: 11vw;
-    font-size: 3.9vw;
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
   }
     .page{
         padding: 0;
@@ -176,8 +176,22 @@ body {
   }
 
   .btn {
-    width: calc(50% - (var(--gap) / 2));
-    height: 5.2vw;
-    font-size: 1.85vw;
+      width: calc(50% - (var(--gap) / 2));
+      appearance: none;
+      border: 1px solid var(--text);
+      background: #fff;
+      font-weight: 300;
+      font-family: Geologica, Arial, sans-serif;
+      cursor: pointer;
+      transition: all .18s
+      ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      text-transform: uppercase;
+      grid-column: 2/2;
+      height: 4vw;
+      font-size: 1.3vw;
   }
 }

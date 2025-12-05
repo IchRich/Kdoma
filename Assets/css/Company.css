@@ -37,6 +37,7 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
+    padding: 0 0 2vh 0;
 }
 
 
@@ -313,8 +314,9 @@ body {
 }
 
 .btn:hover {
-    background: #000;
-    color: #fff;
+    background: var(--brand);
+    color: white;
+    border-color: var(--brand);
 }
 
 
@@ -479,9 +481,9 @@ body {
     }
 
     .catalog__more {
-    margin-top: 5.6vw;
-    margin-bottom: 16.7vw;
-    justify-content: center;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
     }
 
     .btn {
@@ -564,16 +566,31 @@ body {
     }
 
     .btn {
-    width: calc((100% - var(--gap)) /2);
-    height: 5vw;
-    font-size: 1.6vw;
+        width: calc(50% - (var(--gap) / 2));
+        appearance: none;
+        border: 1px solid var(--text);
+        background: #fff;
+        font-weight: 300;
+        font-family: Geologica, Arial, sans-serif;
+        cursor: pointer;
+        transition: all .18s
+        ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-main);
+        text-transform: uppercase;
+        grid-column: 2/2;
+        height: 4vw;
+        font-size: 1.3vw;
     }
 
 
 
     .catalog__more {
-    margin-bottom: 10.5vw;
-    margin-top: 4vw;
+         margin-bottom: 5.2vw;
+        margin-top: 3.1vw;
+
 
     }
     .title-min
