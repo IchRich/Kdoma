@@ -99,7 +99,7 @@ body {
 .Designer_Flex_Grids2{
     width:100%;
     display:flex;
-    gap:5.6vw;
+    gap:2.3vw;
     grid-row: 3 / 3;
 }
 
@@ -193,9 +193,7 @@ body {
     margin-bottom: 1.6vw;
 }
 
-.brand_stack {
-    display: none;
-}
+
 /* Контейнер слайдера */
 .work_slider {
     position: relative;
@@ -410,21 +408,14 @@ body {
 .Design_Plan_Grid_Right{
     margin-left: 2.6vw;
 }
-@media (max-width: 1400px) {
-    .brand_stack
-    {
-        top: 12.15vw;
-    }
-}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         width: calc(100% - 40px);
         margin-inline: auto;
     }
 
-    .brand_stack {
-        display: none;
-    }
+
     .work_slider .nav{
         display: none;
     }
@@ -605,6 +596,80 @@ body {
     }
 }
 
+.brand_stack {
+    position: fixed;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(0);
+    will-change: transform;
+    width: 20%;
+    right: 5%;
+    top: 5vw;
+    transition: all 0.3s ease;
+}
+
+
+
+.brand_stack.sticky-bottom {
+    position: absolute;
+    bottom: 6.5vw;
+    top: auto;
+    right: 0;
+    left: auto;
+    width: 20%;
+
+}
+
+.brandstack__logo img {
+    display: block;
+    width: 320px;
+    height: auto;
+}
+
+.brand_stack__cta {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 15vw;
+    background: rgba(145, 145, 145, 1);
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.brandstack__cta .cta__text {
+    white-space: nowrap;
+    font-family: Geologica, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.brandstack__cta .cta__arrow {
+    position: absolute;
+    right: 0.75vw;
+    bottom: 0.65vw;
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.brandstack__cta:hover {
+    background: rgba(145, 145, 145, 0.7);
+}
+
+@media (max-width: 1400px) {
+    .brandstack {
+        top: 12.15vw;
+    }
+}
+.Design_Info{
+    position: relative;
+}
 @media (max-width: 767px){
     .container {
         padding: 0;
@@ -638,9 +703,7 @@ body {
         margin-bottom: 10vw;
         display: block;
     }
-    .brand_stack {
-        display: none;
-    }
+
     .work_slider .nav{
         display: none;
     }
@@ -826,149 +889,3 @@ body {
         margin-left: 0;
     }
 }
-
-/*.Designer_Info_Gride{*/
-/*    display: flex;*/
-/*}*/
-/*.Designer_Info_Grid_Titlee{*/
-/*    font-size: 2vw;*/
-/*    font-weight: 300;*/
-/*    line-height: 110%;*/
-/*}*/
-
-/*.brand_stack {*/
-/*    position: absolute;*/
-/*    z-index: 900;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: stretch;*/
-/*    width: 16.5%;*/
-/*    margin-left: auto;*/
-/*    top: 11.15vw;*/
-/*    align-self: flex-start;*/
-/*}*/
-
-/*.brand_stack__logo {*/
-/*    display: block;*/
-/*    margin-bottom: 1vw;*/
-/*    text-decoration: none;*/
-/*    transition: opacity 0.3s ease;*/
-/*}*/
-
-/*.brand_stack__logo:hover {*/
-/*    opacity: 0.9;*/
-/*}*/
-
-/*.brand_stack__logo img {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    object-fit: cover;*/
-/*    aspect-ratio: 320 / 433;*/
-/*}*/
-
-/*.brand_stack__cta {*/
-/*    position: relative;*/
-/*    display: grid;*/
-/*    place-items: center;*/
-/*    width: 100%;*/
-/*    height: 15vw;*/
-/*    background: rgba(145, 145, 145, 1);*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    overflow: hidden;*/
-/*    transition: background 0.3s ease;*/
-/*}*/
-
-/*.brand_stack__cta:hover {*/
-/*    background: rgba(145, 145, 145, 0.7);*/
-/*}*/
-
-/*.cta__text {*/
-/*    white-space: nowrap;*/
-/*    font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;*/
-/*    font-size: 1.25vw;*/
-/*    font-weight: 300;*/
-/*    line-height: 1;*/
-/*    margin: 0;*/
-/*    text-align: center;*/
-/*    padding: 0 1vw;*/
-/*}*/
-
-/*.cta__arrow {*/
-/*    position: absolute;*/
-/*    right: 0.75vw;*/
-/*    bottom: 0.65vw;*/
-/*    width: 2vw;*/
-/*    height: 2vw;*/
-/*    object-fit: contain;*/
-/*    pointer-events: none;*/
-/*    transition: transform 0.3s ease;*/
-/*}*/
-
-/*.brand_stack__cta:hover .cta__arrow {*/
-/*    transform: translateX(0.2vw);*/
-/*}*/
-
-/*@media (min-width: 768px) and (max-width: 1024px) {*/
-/*    .brand_stack {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 767px) {*/
-/*    .brand_stack {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 1920px) {*/
-/*    .brand_stack {*/
-/*        width: 28vw;*/
-/*    }*/
-
-/*    .brand_stack__cta {*/
-/*        height: 200px;*/
-/*    }*/
-
-/*    .cta__text {*/
-/*        font-size: 24px;*/
-/*    }*/
-
-/*    .cta__arrow {*/
-/*        width: 32px;*/
-/*        height: 32px;*/
-/*        right: 12px;*/
-/*        bottom: 10px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 1024px) {*/
-/*    .brand_stack {*/
-/*        width: 100%;*/
-/*        max-width: 300px;*/
-/*        margin: 0 auto 5vw;*/
-/*        position: static;*/
-/*        top: auto;*/
-/*    }*/
-
-/*    .brand_stack__logo img {*/
-/*        max-width: 100%;*/
-/*        height: auto;*/
-/*    }*/
-
-/*    .brand_stack__cta {*/
-/*        height: 60px;*/
-/*    }*/
-
-/*    .cta__text {*/
-/*        font-size: 16px;*/
-/*    }*/
-
-/*    .cta__arrow {*/
-/*        width: 20px;*/
-/*        height: 20px;*/
-/*        right: 10px;*/
-/*        bottom: 10px;*/
-/*    }*/
-/*}*/

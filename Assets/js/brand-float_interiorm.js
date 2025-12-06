@@ -6,6 +6,7 @@ class StickyBrandStackObserver {
         this.sentinelTop = document.createElement('div');
         this.sentinelBottom = document.createElement('div');
 
+
         this.init();
     }
 
