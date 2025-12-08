@@ -366,6 +366,71 @@ body {
 .Design_Plan_Grid_Right{
     margin-left: 2.6vw;
 }
+.brand_stack {
+    position: fixed;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(0);
+    will-change: transform;
+    width: 20%;
+    right: 5%;
+    top: 5vw;
+    transition: all 0.3s ease;
+}
+
+
+
+.brand_stack.sticky-bottom {
+    position: absolute;
+    bottom: 6.5vw;
+    top: auto;
+    right: 0;
+    left: auto;
+    width: 20%;
+
+}
+
+.brandstack__logo img {
+    display: block;
+    width: 320px;
+    height: auto;
+}
+
+.brand_stack__cta {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 15vw;
+    background: rgba(145, 145, 145, 1);
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.brandstack__cta .cta__text {
+    white-space: nowrap;
+    font-family: Geologica, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 1.25vw;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.brandstack__cta .cta__arrow {
+    position: absolute;
+    right: 0.75vw;
+    bottom: 0.65vw;
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.brandstack__cta:hover {
+    background: rgba(145, 145, 145, 0.7);
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -536,71 +601,7 @@ body {
     }
 }
 
-.brand_stack {
-    position: fixed;
-    z-index: 900;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    transform: translateY(0);
-    will-change: transform;
-    width: 20%;
-    right: 5%;
-    top: 5vw;
-    transition: all 0.3s ease;
-}
 
-
-
-.brand_stack.sticky-bottom {
-    position: absolute;
-    bottom: 6.5vw;
-    top: auto;
-    right: 0;
-    left: auto;
-    width: 20%;
-
-}
-
-.brandstack__logo img {
-    display: block;
-    width: 320px;
-    height: auto;
-}
-
-.brand_stack__cta {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 15vw;
-    background: rgba(145, 145, 145, 1);
-    color: #fff;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-.brandstack__cta .cta__text {
-    white-space: nowrap;
-    font-family: Geologica, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 1.25vw;
-    font-weight: 300;
-    line-height: 1;
-}
-
-.brandstack__cta .cta__arrow {
-    position: absolute;
-    right: 0.75vw;
-    bottom: 0.65vw;
-    width: 2vw;
-    height: 2vw;
-    object-fit: contain;
-    pointer-events: none;
-}
-
-.brandstack__cta:hover {
-    background: rgba(145, 145, 145, 0.7);
-}
 
 @media (max-width: 1400px) {
     .brandstack {
