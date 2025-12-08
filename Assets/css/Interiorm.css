@@ -33,8 +33,11 @@ body {
 
 .Designer_Flex{
     display: flex;
-    gap: 2.9vw;
+    /*gap: 2.9vw;*/
+    justify-content: space-between;
 }
+
+
 .Designer_Flex_Grids1 h1{
     font-size: 2vw;
     font-weight: 300;
@@ -90,6 +93,7 @@ body {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     height: 39.6vw;
+    width: 27.9vw;
 }
 .Designer_Flex_Grids1{
     width:100%;
@@ -741,7 +745,6 @@ body {
     }
     .Design_Info{
         margin-top: 10.6vw;
-        position: relative;
     }
     .Designer_Flex_Grids_Pad_Info{
         display: block;
