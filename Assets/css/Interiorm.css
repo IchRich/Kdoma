@@ -380,8 +380,6 @@ body {
     transition: all 0.3s ease;
 }
 
-
-
 .brand_stack.sticky-bottom {
     position: absolute;
     bottom: 6.5vw;
