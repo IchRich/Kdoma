@@ -162,6 +162,7 @@ body {
 .Design_Info{
     margin-top: 3.64vw;
     position: relative;
+    display: flex;
 }
 
 .cards{
@@ -170,7 +171,13 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    width: 60vw;
 
+}
+.brand_stack_r{
+    width: 100%;
+    height: fit-content;
+    position: relative;
 }
 .Card_Grid{
     display: grid;
@@ -390,7 +397,7 @@ body {
     top: auto;
     right: 0;
     left: auto;
-    width: 20%;
+    width: 66%;
 
 }
 
@@ -1054,12 +1061,13 @@ body {
 
     .contact__info {
         gap: 2.8vw;
+        width: 45%;
 
     }
 
     .contact__row {
-       display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        gap: 2.8vw;
 
     }
 
@@ -1072,7 +1080,7 @@ body {
     .contact__data {
         font-size: 3.8vw;
         display: flex;
-
+        white-space: normal;
         flex-direction: column;
         gap: 1vw;
     }
