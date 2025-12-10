@@ -298,27 +298,26 @@ body {
 
 .slider__dots {
     display: flex;
-    gap: 8px;
     justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-top: 0.5vw;
 
 }
 
 .slider__dots .dot {
-    width: 12px;
-    height: 12px;
+    width: 0.6vw;
+    height: min-content;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 0;
-    background: #c7c7c7;
+    background: #ccc;
     cursor: pointer;
-    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    border: 0;
 }
 
 .slider__dots .dot.is_active {
 
-    background: var(--accent);
+    background: var(--brand);
     aspect-ratio: 1/1;
 }
 .Design_Plan_Grid{
@@ -630,7 +629,9 @@ body {
     .brand_stack{
         display: none;
     }
-
+    .slider__dots .dot{
+        width: 1.6vw;
+    }
 }
 
 
@@ -687,15 +688,13 @@ body {
     }
 
     .Card_Grid {
-        display: block;
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: var(--gapp);
         width: auto;
 
     }
-    .Card_Grid img {
-        margin-bottom: 11vw;
-    }
+
     .cards{
         width: 100%;
     }
@@ -824,6 +823,9 @@ body {
     }
     .Design_Plan_Grid_Right{
         margin-left: 0;
+    }
+    .slider__dots .dot{
+        margin-top: 2.8vw;
     }
 
 }
