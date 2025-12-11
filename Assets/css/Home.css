@@ -490,6 +490,12 @@ h2 {
 }
 .about_editorial__btn__red:hover{ background:rgba(153, 0, 0, 1); border-color:rgba(153, 0, 0, 1); }
 
+.events-section-wrapper {
+    background-color: #ededed;
+}
+.event_caption{
+    background-color:#ededed;
+}
 /* ===== МОБИЛЬНЫЙ <= 767px ===== */
 @media (max-width: 767px) {
   .card:hover
