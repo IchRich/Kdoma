@@ -113,8 +113,7 @@ body {
 .Nominations_grid_dop{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-    gap: 4.9vw;
+    gap:3.5vw;
 }
 .Nominations_grid_dop_flex{
     width: 100%;
