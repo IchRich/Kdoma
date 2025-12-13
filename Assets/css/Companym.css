@@ -134,6 +134,15 @@ html, body {
     align-items: center;
     gap: 0.6vw;
 }
+.Photo_Gallery_Grid_Img_Big img{
+    width: auto;
+    height: 26vw;
+}
+
+.Photo_Gallery_Grid_Img img{
+    width: auto;
+    height: 26vw;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         width: calc(100% - 40px);
@@ -190,7 +199,18 @@ html, body {
     .Contacts_Info_Blok_Grid{
         gap: 1.3vw;
     }
+
+    .Photo_Gallery_Grid_Img_Big img{
+        width: auto;
+        height: 30.7vw;
+    }
+
+    .Photo_Gallery_Grid_Img img{
+        width: auto;
+        height: 30.7vw;
+    }
 }
+
 
 @media (max-width: 767px){
     .container {
@@ -324,5 +344,13 @@ html, body {
         grid-template-columns: 1fr 2fr;
         align-items: center;
     }
+    .Photo_Gallery_Grid_Img_Big img{
+        width: auto;
+        height: 53.8vw;
+    }
 
+    .Photo_Gallery_Grid_Img img{
+        width: auto;
+        height: 53.8vw;
+    }
 }
