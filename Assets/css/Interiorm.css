@@ -898,10 +898,10 @@ body {
 }
 
 .contact__row {
-    flex: 1;
     display: flex;
     gap: 0.5vw;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     min-width: 0;
 }
@@ -915,7 +915,6 @@ body {
 }
 
 .contact__data {
-    flex: 1;
     font-size: 1vw;
     line-height: 1.1;
     color: var(--text);
