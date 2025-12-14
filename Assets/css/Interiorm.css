@@ -397,7 +397,8 @@ body {
 }
 .brand_stack.sticky-active {
     position: fixed;
-    top: 0.1vw;
+    top: 0.5vw;
+    bottom: 0.5vw;
     right: 5%;
     width: 27vw;
     opacity: 1;
