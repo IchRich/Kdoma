@@ -252,19 +252,23 @@ h2 {
 
 
 .btn_slider {
-  position: absolute;
-  top: 0;
-  width: 7%;
-  height: calc(100% - 1.1vw);
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(67px);
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 7%;
+    height: calc(100% - 1.1vw);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(67px);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background 0.2s ease;
 }
+
 
 .btn_slider.prev {
   left: 0;
@@ -275,14 +279,14 @@ h2 {
 }
 
 .btn_slider span {
-  color: #fff;
-  font-size: 22px;
-  font-weight: bold;
-  user-select: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn_slider.prev::after {
@@ -293,6 +297,7 @@ h2 {
     border-top: 2px solid #fff;
     transform: rotate(225deg);
     display: block;
+    transition: border-color 0.2s ease;
 }
 
 .btn_slider.next::after {
@@ -303,6 +308,11 @@ h2 {
     border-top: 2px solid #fff;
     transform: rotate(45deg);
     display: block;
+    transition: border-color 0.2s ease;
+}
+.slider:hover .btn_slider {
+    opacity: 1;
+    visibility: visible;
 }
 
 .btn_slider :hover {
