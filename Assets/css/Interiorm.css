@@ -511,7 +511,9 @@ body {
         display: none;
     }
     .Design_Plan_Grid_Pad{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gapp);
     }
     .Design_Plan_Grid_Pad p{
         margin: 0;
@@ -528,6 +530,7 @@ body {
     }
     .Design_Plan_Grid_Pad{
         margin-bottom: 10vw;
+        margin-top: 7.8vw;
     }
     .Designer_Flex{
         display: block;
@@ -696,7 +699,7 @@ body {
 
     }
     .Design_Plan_Grid_Pad{
-        margin-bottom: 10vw;
+        margin-top: 8vw;
         display: block;
     }
 
