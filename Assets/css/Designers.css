@@ -290,18 +290,18 @@ body {
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 0.6vw;
+    height: min-content;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background: var(--dot);
-    border: none;
+    background: #ccc;
     cursor: pointer;
+    flex-shrink: 0;
+    border: 0;
 }
 
 .dot.is_active {
-    width: 15px;
-    height: 15px;
-    background: var(--dot_active);
+    background: var(--brand);
 }
 
 .actions {
@@ -454,13 +454,12 @@ body {
     }
 
     .dot {
-        width: 10px;
-        height: 10px;
+        width: 1.6vw;
     }
 
     .dot.is_active {
-        width: 12px;
-        height: 12px;
+        background: var(--brand);
+        aspect-ratio: 1 / 1;
     }
 
     .more {
