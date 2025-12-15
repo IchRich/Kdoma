@@ -470,7 +470,7 @@ body {
 .brand_stack__cta .cta__text {
     white-space: nowrap;
     font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    font-size: 2.1vw;
+    font-size: 2vw;
     font-weight: 300;
     line-height: 1;
 }
@@ -883,7 +883,7 @@ body {
 
 .contact__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.8vw;
     padding: 0.9vw;
     background: #E6E6E6;
@@ -904,28 +904,29 @@ body {
     display: flex;
     align-items: center;
     gap: 0.55vw;
-    flex-shrink: 0;
+
 }
 
 .contact__row {
     display: flex;
-    gap: 0.5vw;
+    flex: 1;
+    gap: 1vw;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     min-width: 0;
 }
 
 .contact__label {
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: black;
+    white-space: nowrap;
+    min-width: 5vw;
     line-height: 1.1;
-    flex-shrink: 0;
 }
 
 .contact__data {
-    font-size: 1vw;
+    font-size: 0.9vw;
     line-height: 1.1;
     color: var(--text);
     font-weight: 300;
@@ -933,10 +934,11 @@ body {
     display: flex;
     gap: 0.2vw;
     flex-direction: column;
-    line-height: 1.2;
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    flex: 1;
+    white-space: pre-line;
 }
 
 .contact__data a {
@@ -1026,8 +1028,10 @@ body {
     }
 
     .contact__icon {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 2vw;
+        height: 2vw;
+        flex-shrink: 0;
+        display: block;
     }
 
     .contact__row {
