@@ -213,7 +213,7 @@ body {
 .work_slider {
     position: relative;
     width: 100%;
-    max-width: 900px;      /* при необходимости поменяй */
+    max-width: 900px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -390,15 +390,15 @@ body {
     align-items: stretch;
     width: 28vw;
     right: 0;
-    top: 0;
+    top: 2vw;
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
 }
 .brand_stack.sticky-active {
     position: fixed;
-    top: 0.5vw;
-    bottom: 0.5vw;
+    top: 2.6vw;
+    bottom: 2.6vw;
     right: 5%;
     width: 27vw;
     opacity: 1;
@@ -862,6 +862,12 @@ body {
     box-sizing: border-box;
 }
 
+.contactss{
+    padding: 0.1vw 0 4vw;
+    width: 59.9vw;
+    max-width: 100%;
+    box-sizing: border-box;
+}
 .contacts__list {
     list-style: none;
     background: #F6F6F6;
