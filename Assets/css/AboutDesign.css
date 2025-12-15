@@ -67,18 +67,18 @@ body{
 }
 
 .pd_btn{
-  appearance: none;
-  border: 1px solid black;
-  background: var(--btn-bg);
-  color: black;
-  font-size: 1vw;
-  font-weight: 300;
-  font-family: 'Geologica', serif;
-  width: calc((100% - (var(--gap) * 3)) / 4);
-  height: 3.1vw;
-  cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
-  text-transform: uppercase;
+    width: calc(33% - (var(--gap) / 2));
+    height: 3.5vw;
+    font-size: 1.1vw;
+    font-weight: 300;
+    cursor: pointer;
+    border: 1px solid #000;
+    background: #fff;
+    transition: all .2s ease;
+    font-family: Geologica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: var(--text-main);
+
 }
 .pd_btn:hover{ background:#111; color:#fff; }
 
@@ -164,8 +164,9 @@ body{
     }
 
     .pd_btn {
+
+
         width: 100%;
-        min-width: 0;
         height: 11vw;
         font-size: 3.9vw;
     }
@@ -224,8 +225,21 @@ body{
     }
     .pd_btn{
         width: calc(50% - (var(--gap) / 2));
-        height: 5.2vw;
-        font-size: 1.85vw;
+        appearance: none;
+        border: 1px solid var(--text);
+        background: #fff;
+        font-weight: 300;
+        font-family: Geologica, Arial, sans-serif;
+        cursor: pointer;
+        transition: all .18s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-main);
+        text-transform: uppercase;
+        grid-column: 2 / 2;
+        height: 4vw;
+        font-size: 1.3vw;
     }
 }
 @media (max-width: 460px) {
