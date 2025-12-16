@@ -688,6 +688,8 @@ body {
     }
     .Design_Plan_Grid_Left{
         display: flex;
+        margin-bottom: 5.3vw;
+
     }
     .Design_Plan_Grid_Pad p{
         margin: 0;
@@ -695,13 +697,16 @@ body {
         font-weight: 300;
         font-size: 4.3vw;
     }
-    .Design_Plan_Grid_Pad h1 {
+    .Design_Plan_Grid_Pad h1{
         margin-top: 0;
         line-height: 110%;
         font-weight: 300;
         font-size: 6.5vw;
+        margin-bottom: 5.3vw;
 
     }
+
+
     .Design_Plan_Grid_Pad{
         margin-top: 8vw;
         display: block;
