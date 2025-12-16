@@ -1025,6 +1025,7 @@ body {
     .contact__item {
         padding: 1vw;
         gap: 1vw;
+        align-items: center;
     }
 
     .contact__icon {
@@ -1036,6 +1037,7 @@ body {
 
     .contact__row {
         gap: 0.8vw;
+
     }
 
     .contact__info {
@@ -1044,6 +1046,7 @@ body {
 
     .contact__label {
         font-size: 2.3vw;
+        min-width: 8vw;
 
     }
 

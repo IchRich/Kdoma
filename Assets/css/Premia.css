@@ -256,7 +256,7 @@ h2 {
     top: 0;
     width: 7%;
     height: calc(100% - 1.1vw);
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(67px);
     border: none;
     cursor: pointer;
@@ -301,14 +301,13 @@ h2 {
 }
 
 .btn_slider.next::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid #fff;
-    border-top: 2px solid #fff;
-    transform: rotate(45deg);
+    content: '';
     display: block;
-    transition: border-color 0.2s ease;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
 }
 .slider:hover .btn_slider {
     opacity: 1;
