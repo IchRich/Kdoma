@@ -81,7 +81,7 @@ body {
     .btn {
         width: calc(50% - (var(--gap) / 2));
         height: 5vw;
-        font-size: 1.6vw;
+        font-size: 1.3vw;
     }
     .actions
     {
@@ -130,7 +130,7 @@ body {
         width: 100%;
         min-width: 0;
         height: 11vw;
-        font-size: 3.9vw;
+        font-size: 3.5vw;
     }
     .actions{
         margin-top: 5.5vw;
