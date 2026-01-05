@@ -569,6 +569,9 @@ h2 {
   {
     max-height: 9.5vw;
   }
+  .btn_slider {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) 
@@ -696,6 +699,9 @@ h2 {
   }
   .award_ceremony_grid .btn.btn--outline
   {
+    display: none;
+  }
+  .btn_slider {
     display: none;
   }
 }
