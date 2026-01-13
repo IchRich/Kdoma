@@ -490,6 +490,12 @@ h2 {
 }
 .about_editorial__btn__red:hover{ background:rgba(153, 0, 0, 1); border-color:rgba(153, 0, 0, 1); }
 
+.events-section-wrapper {
+    background-color: #ededed;
+}
+.event_caption{
+    background-color:#ededed;
+}
 /* ===== МОБИЛЬНЫЙ <= 767px ===== */
 @media (max-width: 767px) {
   .card:hover
@@ -626,7 +632,7 @@ h2 {
     justify-content:center;
     width: 100%;
   }
-  .about_design_all{ width:100%; height:11vw; font-size:4vw; }
+  .about_design_all{ width:100%; height:11vw; font-size:3.5vw; }
 
   .journal_block{
     display:grid;
@@ -858,7 +864,7 @@ h2 {
   }
   .about_design_all, .journal_actions .journal_btn, .journal_actions .journal_btn_s, .hero_btn{
     height: 5.9vw;
-    font-size:2.1vw;
+    font-size:1.3vw;
   }
   .about_editorial__title
   {
@@ -932,7 +938,7 @@ h2 {
   .about_editorial__btn, .about_editorial__btn__red 
   {
     height: 5.9vw;
-    font-size: 2.1vw;
+    font-size: 1.3vw;
   }
   h2
   {
@@ -956,7 +962,7 @@ h2 {
   .events_btn{
     width: 100%;
     height: 5.9vw;
-    font-size: 2.1vw;
+    font-size: 1.3vw;
   }
   .event_caption
   {

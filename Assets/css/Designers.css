@@ -147,6 +147,12 @@ body {
     width: 50%;
     height: 23vw;
     object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.about__avatar:hover {
+    filter: grayscale(0%);
 }
 
 .about__info {
@@ -284,18 +290,18 @@ body {
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 0.6vw;
+    height: min-content;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background: var(--dot);
-    border: none;
+    background: #ccc;
     cursor: pointer;
+    flex-shrink: 0;
+    border: 0;
 }
 
 .dot.is_active {
-    width: 15px;
-    height: 15px;
-    background: var(--dot_active);
+    background: var(--brand);
 }
 
 .actions {
@@ -413,7 +419,7 @@ body {
 
     .about__cta {
         height: 5.2vw;
-        font-size: 1.85vw;  
+        font-size: 1.85vw;
     }
 
     .about__cta::after {
@@ -448,13 +454,12 @@ body {
     }
 
     .dot {
-        width: 10px;
-        height: 10px;
+        width: 1.6vw;
     }
 
     .dot.is_active {
-        width: 12px;
-        height: 12px;
+        background: var(--brand);
+        aspect-ratio: 1 / 1;
     }
 
     .more {
@@ -465,14 +470,13 @@ body {
         font-weight: 300;
         font-family: Geologica, Arial, sans-serif;
         cursor: pointer;
-        transition: all .18s
-        ease;
+        transition: all .18s ease;
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--text-main);
         text-transform: uppercase;
-        grid-column: 2/2;
+        grid-column: 2 / 2;
         height: 4vw;
         font-size: 1.3vw;
     }
@@ -591,10 +595,9 @@ body {
     }
 
     .more {
-        font-family: 'Geologica', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         width: 100%;
         height: 11vw;
-        font-size: 3.9vw;
+        font-size: 3.5vw;
     }
 
     .actions {

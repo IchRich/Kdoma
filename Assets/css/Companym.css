@@ -88,9 +88,14 @@ html, body {
 
 .contacts__map{
     width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
+.contacts__map iframe{
+    width: 100%;
+    height: 100%;
+}
 .Contacts_Info_Blok_Grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,6 +104,9 @@ html, body {
 .Contacts_Info_Blok_Grid_Box{
     background-color: #E6E6E6 ;
     padding: 1vw;
+}
+.Contacts_Info_Blok p {
+    font-size: 0.8vw;
 }
 .Contacts_Info_Blok_Grid_Box_Text_Work_schedule{
     display: flex;
@@ -133,6 +141,15 @@ html, body {
     display: flex;
     align-items: center;
     gap: 0.6vw;
+}
+.Photo_Gallery_Grid_Img_Big img{
+    width: auto;
+    height: 26vw;
+}
+
+.Photo_Gallery_Grid_Img img{
+    width: auto;
+    height: 26vw;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
@@ -190,7 +207,21 @@ html, body {
     .Contacts_Info_Blok_Grid{
         gap: 1.3vw;
     }
+
+    .Photo_Gallery_Grid_Img_Big img{
+        width: auto;
+        height: 30.7vw;
+    }
+
+    .Photo_Gallery_Grid_Img img{
+        width: auto;
+        height: 30.7vw;
+    }
+    .Contacts_Info_Blok p {
+        font-size: 1.8vw;
+    }
 }
+
 
 @media (max-width: 767px){
     .container {
@@ -324,5 +355,16 @@ html, body {
         grid-template-columns: 1fr 2fr;
         align-items: center;
     }
+    .Photo_Gallery_Grid_Img_Big img{
+        width: auto;
+        height: 53.8vw;
+    }
 
+    .Photo_Gallery_Grid_Img img{
+        width: auto;
+        height: 53.8vw;
+    }
+    .Contacts_Info_Blok p {
+        font-size: 2.6vw;
+    }
 }

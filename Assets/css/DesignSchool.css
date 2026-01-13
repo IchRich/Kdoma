@@ -573,7 +573,7 @@ body {
     /* Кнопки */
     .btn{
         height: 11vw;
-        font-size: 4.3vw;
+        font-size: 3.5vw;
         padding: 0 16vw;
     }
 
@@ -863,13 +863,13 @@ body {
         margin-top: 5.5vw;
     }
     .archive__actions .btn{
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         height: 11vw;
         width: 100%;
     }
     .archive__actions .btn img{
-        width: 4vw;
-        height:  4vw;
+        width: 3.5vw;
+        height: 3.5vw;
     }
 
     /* ===== КОНТАКТЫ ===== */
@@ -962,7 +962,7 @@ body {
     /* Кнопки */
     .btn{
         height: 6vw;
-        font-size: 2vw;
+        font-size: 1.3vw;
         padding: 1vw 9vw;
     }
 

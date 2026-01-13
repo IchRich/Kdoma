@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Assets/css/Interiorm.css">
     <link rel="stylesheet" href="Assets/css/Header.css" />
     <script src="Assets/js/Interiorm-slider.js" defer></script>
-    <script src="Assets/js/test.js" defer></script>
+    <script src="Assets/js/brand-float_interiorm.js" defer></script>
 
 </head>
 <body>
@@ -120,33 +120,33 @@
                 <div class="Designer_Flex_Grids1">
                     <div class="Designer_Flex_Grids1_L">
                         <div>
-                            <p>Город</p>
+                            <h2>Город</h2>
                             <p>Калининград</p>
                         </div>
 
                         <div>
-                            <p>Площадь</p>
+                            <h2>Площадь</h2>
                             <p>50 м.кв.</p>
                         </div>
 
                         <div>
-                            <p>Кол-во комнат</p>
+                            <h2>Кол-во комнат</h2>
                             <p>3</p>
                         </div>
                     </div>
                     <div class="Designer_Flex_Grids1_R">
                         <div>
-                            <p>Фото</p>
+                            <h2>Фото</h2>
                             <p>Сергей Мельников</p>
                         </div>
 
                         <div>
-                            <p>Стиль</p>
+                            <h2>Стиль</h2>
                             <p>Сергей Мельников.</p>
                         </div>
 
                         <div>
-                            <p>Текст</p>
+                            <h2>Текст</h2>
                             <p>Ольга Синявская</p>
                         </div>
                     </div>
@@ -257,15 +257,15 @@
 
             </div>
         <div class="Design_Info">
-<!--            <aside class="brand_stack" id="brandStack">-->
-<!--                <a class="brand_stack__logo" href="/" aria-label="Перейти на главную">-->
-<!--                    <img src="Assets/image/Oblozka_Orlova.jpg" alt="">-->
-<!--                </a>-->
-<!--                <a class="brand_stack__cta" href="/magazine" aria-label="Читать актуальный номер">-->
-<!--                    <span class="cta__text">Читать актуальный номер</span>-->
-<!--                    <img class="cta__arrow" src="Assets/image/Pointer.png" alt="">-->
-<!--                </a>-->
-<!--            </aside>-->
+            <aside class="brand_stack" id="brandStack">
+                <a class="brand_stack__logo" href="/" aria-label="Перейти на главную">
+                    <img src="Assets/image/Oblozka_Orlova.jpg" alt="">
+                </a>
+                <a class="brand_stack__cta" href="/magazine" aria-label="Читать актуальный номер">
+                    <span class="cta__text">Читать актуальный номер</span>
+                    <img class="cta__arrow" src="Assets/image/Pointer.png" alt="">
+                </a>
+            </aside>
 
                 <ul class="cards">
                     <p class="Card_Title_Сontainer">
@@ -310,7 +310,27 @@
                     </p>
                     <div class="Card_Grid">
                         <img class="Card_Grid_Img" src="Assets/image/Rectangle%20250.svg" alt="">
-                        <img src="Assets/image/Group%20941.svg" alt="">
+
+                        <div class="work_slider" data-slider>
+                            <div class="slider__viewport">
+                                <div class="slider__track">
+                                    <div class="slide">
+                                        <img src="Assets/image/Group%20941.svg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="Assets/image/Group%20941.svg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="Assets/image/Group%20941.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__dots" aria-label="Пагинация"><button type="button" class="dot is_active" aria-label="Слайд 1"></button><button type="button" class="dot" aria-label="Слайд 2"></button><button type="button" class="dot" aria-label="Слайд 3"></button></div>
+
+                            <button class="nav prev" type="button" aria-label="Предыдущий слайд"></button>
+                            <button class="nav next" type="button" aria-label="Следующий слайд"></button>
+
+                        </div>
                         <img src="Assets/image/Group%20941.svg" alt="">
 
                     </div>
@@ -325,69 +345,69 @@
                         в скором времени здесь появится проектор с выводом изображения на белую стену или экран. Больше всего хлопот доставил антресольный этаж.
                     </p>
 
+                    <div class="Design_Plan_Grid">
+                        <div class="Design_Plan_Grid_Left">
+                            <h1>План</h1>
+                            <p>1. Ванна</p>
+                            <p>2. Кухня</p>
+                            <p>3. Спальня</p>
+                            <p>4. Гостиная</p>
+                            <p>5. Холл</p>
+                        </div>
+                        <img src="Assets/image/Group%20366.svg" alt="">
+                        <div class="Design_Plan_Grid_Right">
+                            <h1>Участники проекта</h1>
+                            <p>лепнина, жалюзи — InterioRRoom;</p>
+                            <p>паркетная доска — «СБР студио»;</p>
+                            <p>краска — Desan;</p>
+                            <p>кухня — «Арт Интерьер»;</p>
+                            <p>кровать — «Арт Флекс»;</p>
+                            <p>стулья — divan.ru;</p>
+                            <p>плитка в ванной — ТД «Строитель»;</p>
+                            <p>плитка на полу кухни — «Керасфера»;</p>
+                            <p>двери — «Два брата»;</p>
+                            <p>стол — Lagom Home;</p>
+                            <p>бра на кухне — «Бауцентр»;</p>
+                            <p>ванна — OZON;</p>
+                            <p>розетки, технический свет — «Западный город»;</p>
+                            <p>консоли, тумба с раковиной в ванной — IKEA;</p>
+                        </div>
+                    </div>
+                    <div class="Design_Plan_Grid_Pad">
+                        <div class="Design_Plan_Grid_Left">
+                            <div>
+                                <h1>План</h1>
+                                <p>1. Ванна</p>
+                                <p>2. Кухня</p>
+                                <p>3. Спальня</p>
+                                <p>4. Гостиная</p>
+                                <p>5. Холл</p>
+                            </div>
+                            <img src="Assets/image/Group%20366.svg" alt="">
 
+                        </div>
+                        <div class="Design_Plan_Grid_Right">
+                            <h1>Участники проекта</h1>
+                            <p>лепнина, жалюзи — InterioRRoom;</p>
+                            <p>паркетная доска — «СБР студио»;</p>
+                            <p>краска — Desan;</p>
+                            <p>кухня — «Арт Интерьер»;</p>
+                            <p>кровать — «Арт Флекс»;</p>
+                            <p>стулья — divan.ru;</p>
+                            <p>плитка в ванной — ТД «Строитель»;</p>
+                            <p>плитка на полу кухни — «Керасфера»;</p>
+                            <p>двери — «Два брата»;</p>
+                            <p>стол — Lagom Home;</p>
+                            <p>бра на кухне — «Бауцентр»;</p>
+                            <p>ванна — OZON;</p>
+                            <p>розетки, технический свет — «Западный город»;</p>
+                            <p>консоли, тумба с раковиной в ванной — IKEA;</p>
+                        </div>
+                    </div>
                 </ul>
             </div>
 
-        <div class="Design_Plan_Grid">
-            <div class="Design_Plan_Grid_Left">
-                <h1>План</h1>
-                <p>1. Ванна</p>
-                <p>2. Кухня</p>
-                <p>3. Спальня</p>
-                <p>4. Гостиная</p>
-                <p>5. Холл</p>
-            </div>
-            <img src="Assets/image/Group%20366.svg" alt="">
-            <div class="Design_Plan_Grid_Right">
-                <h1>Участники проекта</h1>
-                <p>лепнина, жалюзи — InterioRRoom;</p>
-                <p>паркетная доска — «СБР студио»;</p>
-                <p>краска — Desan;</p>
-                <p>кухня — «Арт Интерьер»;</p>
-                <p>кровать — «Арт Флекс»;</p>
-                <p>стулья — divan.ru;</p>
-                <p>плитка в ванной — ТД «Строитель»;</p>
-                <p>плитка на полу кухни — «Керасфера»;</p>
-                <p>двери — «Два брата»;</p>
-                <p>стол — Lagom Home;</p>
-                <p>бра на кухне — «Бауцентр»;</p>
-                <p>ванна — OZON;</p>
-                <p>розетки, технический свет — «Западный город»;</p>
-                <p>консоли, тумба с раковиной в ванной — IKEA;</p>
-            </div>
-        </div>
-        <div class="Design_Plan_Grid_Pad">
-            <div class="Design_Plan_Grid_Left">
-                <div>
-                    <h1>План</h1>
-                    <p>1. Ванна</p>
-                    <p>2. Кухня</p>
-                    <p>3. Спальня</p>
-                    <p>4. Гостиная</p>
-                    <p>5. Холл</p>
-                </div>
-                <img src="Assets/image/Group%20366.svg" alt="">
 
-            </div>
-            <div class="Design_Plan_Grid_Right">
-                <h1>Участники проекта</h1>
-                <p>лепнина, жалюзи — InterioRRoom;</p>
-                <p>паркетная доска — «СБР студио»;</p>
-                <p>краска — Desan;</p>
-                <p>кухня — «Арт Интерьер»;</p>
-                <p>кровать — «Арт Флекс»;</p>
-                <p>стулья — divan.ru;</p>
-                <p>плитка в ванной — ТД «Строитель»;</p>
-                <p>плитка на полу кухни — «Керасфера»;</p>
-                <p>двери — «Два брата»;</p>
-                <p>стол — Lagom Home;</p>
-                <p>бра на кухне — «Бауцентр»;</p>
-                <p>ванна — OZON;</p>
-                <p>розетки, технический свет — «Западный город»;</p>
-                <p>консоли, тумба с раковиной в ванной — IKEA;</p>
-            </div>
-        </div>
     </section>
 </main>
 <footer class="site_footer" role="contentinfo">
